@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>122828838543-im8gnt66l2b728m8u6ddoijgm94mge6v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.122828838543-im8gnt66l2b728m8u6ddoijgm94mge6v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDr04RwCehO-vDrgNWvDI_jdVlzxZABRb8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>122828838543</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sthefanny.Bora-Today</string>
+	<key>PROJECT_ID</key>
+	<string>bora-today</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bora-today.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:122828838543:ios:216b9c392b2f193210c2fa</string>
+</dict>
+</plist>

@@ -6,11 +6,23 @@
 //
 
 import SwiftUI
+import FirebaseAnalytics
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hello, world!")
+                .padding()
+            
+            Button("Crash") {
+                fatalError("Crash was triggered")
+            }
+        }
+        .onAppear() {
+            Analytics.logEvent(AnalyticsEventScreenView,
+                               parameters: [AnalyticsParameterScreenName: "\(ContentView.self)",
+                                           AnalyticsParameterScreenClass: "\(ContentView.self)"])
+        }
     }
 }
 
