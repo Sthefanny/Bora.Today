@@ -10,19 +10,22 @@
 		E503CBF528BE8D7600C7D9D7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF428BE8D7600C7D9D7 /* FirebaseAnalytics */; };
 		E503CBF728BE8D7600C7D9D7 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF628BE8D7600C7D9D7 /* FirebaseCrashlytics */; };
 		E503CBF928BE8E5F00C7D9D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */; };
-		E5168E7728BD49CF0052174E /* Bora_TodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5168E7628BD49CF0052174E /* Bora_TodayApp.swift */; };
-		E5168E7928BD49CF0052174E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5168E7828BD49CF0052174E /* ContentView.swift */; };
+		E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5168E7628BD49CF0052174E /* BoraTodayApp.swift */; };
 		E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7A28BD49D30052174E /* Assets.xcassets */; };
 		E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7D28BD49D30052174E /* Preview Assets.xcassets */; };
+		E51C131828C27F8000124B6F /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = E51C131728C27F8000124B6F /* Sentry */; };
+		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
+		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5168E7328BD49CF0052174E /* Bora.Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bora.Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5168E7628BD49CF0052174E /* Bora_TodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bora_TodayApp.swift; sourceTree = "<group>"; };
-		E5168E7828BD49CF0052174E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5168E7628BD49CF0052174E /* BoraTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoraTodayApp.swift; sourceTree = "<group>"; };
 		E5168E7A28BD49D30052174E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5168E7D28BD49D30052174E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			files = (
 				E503CBF528BE8D7600C7D9D7 /* FirebaseAnalytics in Frameworks */,
 				E503CBF728BE8D7600C7D9D7 /* FirebaseCrashlytics in Frameworks */,
+				E51C131828C27F8000124B6F /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +61,10 @@
 		E5168E7528BD49CF0052174E /* Bora.Today */ = {
 			isa = PBXGroup;
 			children = (
+				E5BD6A6628D3B3C10097D9C6 /* Common */,
+				E5BD6A6228D3B2120097D9C6 /* Modules */,
 				E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */,
-				E5168E7628BD49CF0052174E /* Bora_TodayApp.swift */,
-				E5168E7828BD49CF0052174E /* ContentView.swift */,
+				E5168E7628BD49CF0052174E /* BoraTodayApp.swift */,
 				E5168E7A28BD49D30052174E /* Assets.xcassets */,
 				E5168E7C28BD49D30052174E /* Preview Content */,
 			);
@@ -74,6 +79,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E5BD6A6228D3B2120097D9C6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD6A6328D3B2610097D9C6 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E5BD6A6328D3B2610097D9C6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD6A6428D3B2740097D9C6 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E5BD6A6628D3B3C10097D9C6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD6A6728D3B3CA0097D9C6 /* Helpers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E5BD6A6728D3B3CA0097D9C6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,6 +121,7 @@
 				E5168E6F28BD49CF0052174E /* Sources */,
 				E5168E7028BD49CF0052174E /* Frameworks */,
 				E5168E7128BD49CF0052174E /* Resources */,
+				E51C131928C2897800124B6F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -93,6 +131,7 @@
 			packageProductDependencies = (
 				E503CBF428BE8D7600C7D9D7 /* FirebaseAnalytics */,
 				E503CBF628BE8D7600C7D9D7 /* FirebaseCrashlytics */,
+				E51C131728C27F8000124B6F /* Sentry */,
 			);
 			productName = Bora.Today;
 			productReference = E5168E7328BD49CF0052174E /* Bora.Today.app */;
@@ -124,6 +163,7 @@
 			mainGroup = E5168E6A28BD49CF0052174E;
 			packageReferences = (
 				E503CBF328BE8D7600C7D9D7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E51C131628C27F8000124B6F /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
 			);
 			productRefGroup = E5168E7428BD49CF0052174E /* Products */;
 			projectDirPath = "";
@@ -147,13 +187,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E51C131928C2897800124B6F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which sentry-cli >/dev/null; then\nexport SENTRY_ORG=sthefanny-gonzaga\nexport SENTRY_PROJECT=bora_today\nexport SENTRY_AUTH_TOKEN=f802e997b39c41b49543eb93550cbb2ecd0de934391e4b63ba2d3343e5bb4eab\nERROR=$(sentry-cli upload-dif \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E5168E6F28BD49CF0052174E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5168E7928BD49CF0052174E /* ContentView.swift in Sources */,
-				E5168E7728BD49CF0052174E /* Bora_TodayApp.swift in Sources */,
+				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
+				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
+				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +341,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
 				DEVELOPMENT_TEAM = H7R4J57657;
 				ENABLE_PREVIEWS = YES;
@@ -297,6 +361,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sthefanny.Bora-Today";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
@@ -326,6 +392,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sthefanny.Bora-Today";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,6 +431,14 @@
 				kind = branch;
 			};
 		};
+		E51C131628C27F8000124B6F /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -376,6 +451,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E503CBF328BE8D7600C7D9D7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		E51C131728C27F8000124B6F /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E51C131628C27F8000124B6F /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
