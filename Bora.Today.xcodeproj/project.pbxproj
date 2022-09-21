@@ -17,6 +17,8 @@
 		E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6228D8EEDE003131F0 /* BottomMenuView.swift */; };
 		E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6528D8F13E003131F0 /* SearchView.swift */; };
 		E535BD6928D8F168003131F0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6828D8F168003131F0 /* CreateView.swift */; };
+		E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E569F6F328DA48BA004115CA /* LocationManager.swift */; };
+		E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E581AFA728DB8D8500288B4D /* Figtree.ttf */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,9 @@
 		E535BD6228D8EEDE003131F0 /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
 		E535BD6528D8F13E003131F0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E535BD6828D8F168003131F0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		E569F6F328DA48BA004115CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E581AFA728DB8D8500288B4D /* Figtree.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Figtree.ttf; sourceTree = "<group>"; };
+		E581AFA928DB8DC700288B4D /* Bora-Today-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bora-Today-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,9 +72,11 @@
 		E5168E7528BD49CF0052174E /* Bora.Today */ = {
 			isa = PBXGroup;
 			children = (
+				E581AFA528DB8D5C00288B4D /* Assets */,
 				E5BD6A6628D3B3C10097D9C6 /* Common */,
 				E5BD6A6228D3B2120097D9C6 /* Modules */,
 				E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */,
+				E581AFA928DB8DC700288B4D /* Bora-Today-Info.plist */,
 				E5168E7628BD49CF0052174E /* BoraTodayApp.swift */,
 				E5168E7A28BD49D30052174E /* Assets.xcassets */,
 				E5168E7C28BD49D30052174E /* Preview Content */,
@@ -109,6 +116,37 @@
 			path = Create;
 			sourceTree = "<group>";
 		};
+		E569F6EF28DA47C9004115CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E569F6F228DA48A8004115CA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E569F6F328DA48BA004115CA /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E581AFA528DB8D5C00288B4D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E581AFA628DB8D6300288B4D /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E581AFA628DB8D6300288B4D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E581AFA728DB8D8500288B4D /* Figtree.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E5BD6A6228D3B2120097D9C6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +169,8 @@
 		E5BD6A6628D3B3C10097D9C6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E569F6F228DA48A8004115CA /* Managers */,
+				E569F6EF28DA47C9004115CA /* Models */,
 				E5BD6A6728D3B3CA0097D9C6 /* Helpers */,
 			);
 			path = Common;
@@ -214,6 +254,7 @@
 			files = (
 				E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */,
 				E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */,
+				E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */,
 				E503CBF928BE8E5F00C7D9D7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +291,7 @@
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
 				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
+				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 			);
@@ -385,11 +427,16 @@
 				DEVELOPMENT_TEAM = H7R4J57657;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bora-Today-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need access to your location to show you relevant events. With \"Always\" we'll also send you nice notifications.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need access to your location to show you relevant events. With \"Always\" we'll also send you nice notifications.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to show you relevant events.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,11 +463,16 @@
 				DEVELOPMENT_TEAM = H7R4J57657;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bora-Today-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need access to your location to show you relevant events. With \"Always\" we'll also send you nice notifications.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need access to your location to show you relevant events. With \"Always\" we'll also send you nice notifications.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to show you relevant events.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,14 +7,34 @@
 
 import SwiftUI
 import FirebaseAnalytics
+import MapKit
 
 struct HomeView: View {
+    @StateObject var locationManager = LocationManager()
+    
     var body: some View {
-        VStack {
-            Text("Home View aqui!")
-        }
-        .onAppear() {
-            AnalyticsHelper.logPage(pageName: "\(HomeView.self)")
+        GeometryReader { proxy in
+            VStack(alignment: .leading) {
+                Text("**Hey Maria Inês,**\nWelcome to \(Text("Curitiba").underline().foregroundColor(Color.orange))")
+                    .font(Font.custom("Figtree", size: 22))
+                
+                Map(coordinateRegion: $locationManager.region, showsUserLocation: true)
+                    .frame(height: proxy.size.height * 0.2)
+                    .cornerRadius(10)
+                
+                Text("Recomendados")
+                    .fontWeight(.semibold)
+                    .font(Font.custom("Figtree", size: 17))
+                    .padding(.top, 20)
+                
+                Spacer()
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 10)
+            .onAppear() {
+                AppHelper.logPage(pageName: "\(HomeView.self)")
+                locationManager.requestLocation()
+            }
         }
     }
 }

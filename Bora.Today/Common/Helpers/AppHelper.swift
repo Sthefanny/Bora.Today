@@ -8,7 +8,7 @@
 import FirebaseAnalytics
 import Sentry
 
-class AnalyticsHelper {
+class AppHelper {
     static func logPage(pageName: String) {
         Analytics.logEvent(AnalyticsEventScreenView,
                            parameters: [AnalyticsParameterScreenName: "\(pageName)",

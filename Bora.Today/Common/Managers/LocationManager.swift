@@ -1,0 +1,63 @@
+//
+//  LocationManager.swift
+//  Bora.Today
+//
+//  Created by Sthefanny Gonzaga on 20/09/22.
+//
+
+import Foundation
+import CoreLocation
+import MapKit
+
+final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+    private let locationManager = CLLocationManager()
+    
+    @Published var authorizationStatus: CLAuthorizationStatus = .notDetermined
+    @Published var location: CLLocationCoordinate2D?
+    @Published var region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: -25.452946, longitude: -49.2540298),
+        span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+    )
+    
+    override init() {
+        super.init()
+        locationManager.delegate = self
+    }
+    
+    func requestLocation() {
+        requestAuthorization(always: true)
+        locationManager.requestLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.first else { return }
+        
+        DispatchQueue.main.async {
+            self.location = location.coordinate
+            self.region = MKCoordinateRegion(
+                center: location.coordinate,
+                span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+            )
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        //Handle any errors here...
+        print (error)
+        AppHelper.logError(domain: "LocationManager", code: nil)
+    }
+    
+    public func requestAuthorization(always: Bool = false) {
+        if self.authorizationStatus == .denied || self.authorizationStatus == .notDetermined {
+            if always {
+                self.locationManager.requestAlwaysAuthorization()
+            } else {
+                self.locationManager.requestWhenInUseAuthorization()
+            }
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        self.authorizationStatus = status
+    }
+}
