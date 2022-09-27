@@ -10,6 +10,7 @@
 		E503CBF528BE8D7600C7D9D7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF428BE8D7600C7D9D7 /* FirebaseAnalytics */; };
 		E503CBF728BE8D7600C7D9D7 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF628BE8D7600C7D9D7 /* FirebaseCrashlytics */; };
 		E503CBF928BE8E5F00C7D9D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */; };
+		E51365ED28DBA58D00319497 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E51365EF28DBA58D00319497 /* Localizable.strings */; };
 		E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5168E7628BD49CF0052174E /* BoraTodayApp.swift */; };
 		E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7A28BD49D30052174E /* Assets.xcassets */; };
 		E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7D28BD49D30052174E /* Preview Assets.xcassets */; };
@@ -18,6 +19,8 @@
 		E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6528D8F13E003131F0 /* SearchView.swift */; };
 		E535BD6928D8F168003131F0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6828D8F168003131F0 /* CreateView.swift */; };
 		E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E569F6F328DA48BA004115CA /* LocationManager.swift */; };
+		E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EB528E337C80027A01A /* PlaceModel.swift */; };
+		E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */; };
 		E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E581AFA728DB8D8500288B4D /* Figtree.ttf */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
@@ -25,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E51365EE28DBA58D00319497 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E51365F028DBA5A100319497 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E5168E7328BD49CF0052174E /* Bora.Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bora.Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5168E7628BD49CF0052174E /* BoraTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoraTodayApp.swift; sourceTree = "<group>"; };
 		E5168E7A28BD49D30052174E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +38,8 @@
 		E535BD6528D8F13E003131F0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E535BD6828D8F168003131F0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		E569F6F328DA48BA004115CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E5711EB528E337C80027A01A /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotationView.swift; sourceTree = "<group>"; };
 		E581AFA728DB8D8500288B4D /* Figtree.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Figtree.ttf; sourceTree = "<group>"; };
 		E581AFA928DB8DC700288B4D /* Bora-Today-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bora-Today-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -53,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E51365EA28DBA51D00319497 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				E51365EF28DBA58D00319497 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		E5168E6A28BD49CF0052174E = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +87,7 @@
 		E5168E7528BD49CF0052174E /* Bora.Today */ = {
 			isa = PBXGroup;
 			children = (
+				E51365EA28DBA51D00319497 /* Localization */,
 				E581AFA528DB8D5C00288B4D /* Assets */,
 				E5BD6A6628D3B3C10097D9C6 /* Common */,
 				E5BD6A6228D3B2120097D9C6 /* Modules */,
@@ -119,6 +135,7 @@
 		E569F6EF28DA47C9004115CA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E5711EB528E337C80027A01A /* PlaceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,6 +146,14 @@
 				E569F6F328DA48BA004115CA /* LocationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		E5711EB728E33DE60027A01A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E581AFA528DB8D5C00288B4D /* Assets */ = {
@@ -161,6 +186,7 @@
 		E5BD6A6328D3B2610097D9C6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E5711EB728E33DE60027A01A /* Components */,
 				E5BD6A6428D3B2740097D9C6 /* HomeView.swift */,
 			);
 			path = Home;
@@ -232,6 +258,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = E5168E6A28BD49CF0052174E;
 			packageReferences = (
@@ -252,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E51365ED28DBA58D00319497 /* Localizable.strings in Resources */,
 				E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */,
 				E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */,
 				E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */,
@@ -288,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */,
+				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
+				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
 				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
@@ -298,6 +328,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E51365EF28DBA58D00319497 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E51365EE28DBA58D00319497 /* en */,
+				E51365F028DBA5A100319497 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E5168E7F28BD49D30052174E /* Debug */ = {
