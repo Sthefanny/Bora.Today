@@ -1,3 +1,8 @@
-//
-//
-//"Hello, Angelo!" = "Hello, Angelo!;
+
+"hello_world" = "Hello everyone!!!";
+"this_text_localised" = "This text was localized on the fly as well.";
+"settings_language" = "Language";
+"settings_language_footer" = "Choose interface language.";
+"home" = "Home";
+"create" = "Create";
+"search" = "Search";

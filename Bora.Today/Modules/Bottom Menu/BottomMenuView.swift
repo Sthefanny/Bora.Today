@@ -8,26 +8,29 @@
 import SwiftUI
 
 struct BottomMenuView: View {
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
     var body: some View {
-        ZStack {
-            NavigationView {
+        ZStack(alignment: .top) {
+//            NavigationView {
                 TabView {
                     HomeView()
                         .tabItem {
                             Image(systemName: "house")
-                            Text("Home")
+                            Text("home".localized(language))
                         }
                     
                     CreateView()
                         .tabItem {
                             Image(systemName: "plus")
-                            Text("Create")
+                            Text("create".localized(language))
                         }
                     
                     SearchView()
                         .tabItem {
                             Image(systemName: "magnifyingglass")
-                            Text("Search")
+                            Text("search".localized(language))
                         }
                 }
                 .onAppear() {
@@ -41,7 +44,9 @@ struct BottomMenuView: View {
                 }
                 .accentColor(.purple)
                 .shadow(color: .red.opacity(0.5), radius: 6, x: 0, y: 0)
-            }
+            
+                SettingsView()
+//            }
         }
     }
 }

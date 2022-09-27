@@ -30,11 +30,11 @@ struct PlaceAnnotationView: View {
           .foregroundColor(.red)
           .offset(x: 0, y: -5)
       }
-      .onTapGesture {
-        withAnimation(.easeInOut) {
-          showTitle.toggle()
-        }
-      }
+//      .onTapGesture {
+//        withAnimation(.easeInOut) {
+//          showTitle.toggle()
+//        }
+//      }
     }
 }
 

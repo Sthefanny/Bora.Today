@@ -12,24 +12,31 @@ import MapKit
 struct HomeView: View {
     @StateObject var locationManager = LocationManager()
     
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
     var body: some View {
         GeometryReader { proxy in
             VStack(alignment: .leading) {
-                Text("Hello, Angelo!")
-                            .font(.largeTitle)
-                            .padding()
+                Text("hello_world".localized(language))
+                    .font(.largeTitle)
+                    .padding()
                 
                 Text("**Hey Maria Inês,**\nWelcome to \(Text("Curitiba").underline().foregroundColor(Color.orange))")
                     .font(Font.custom("Figtree", size: 22))
                 
                 Map(coordinateRegion: $locationManager.region, showsUserLocation: true, annotationItems: locationManager.mapLocations) { place in
                     MapAnnotation(coordinate: place.coordinate) {
-                        PlaceAnnotationView(title: place.name)
+                        NavigationLink {
+                            CreateView()
+                        } label: {
+                            PlaceAnnotationView(title: place.name)
+                        }
                     }
                     
                 }
-                    .frame(height: proxy.size.height * 0.2)
-                    .cornerRadius(10)
+                .frame(height: proxy.size.height * 0.2)
+                .cornerRadius(10)
                 
                 Text("Recomendados")
                     .fontWeight(.semibold)
@@ -45,7 +52,6 @@ struct HomeView: View {
             .onAppear() {
                 AppHelper.logPage(pageName: "\(HomeView.self)")
                 locationManager.requestLocation()
-                locationManager.test()
             }
         }
     }
