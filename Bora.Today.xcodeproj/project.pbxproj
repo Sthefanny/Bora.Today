@@ -28,6 +28,14 @@
 		E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E581AFA728DB8D8500288B4D /* Figtree.ttf */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
+		E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */; };
+		E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9028E6080300556A80 /* TabItemView.swift */; };
+		E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */; };
+		E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9528E6281300556A80 /* CornerRadiusStyleExtension.swift */; };
+		E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9728E6298400556A80 /* TabBottomView.swift */; };
+		E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */; };
+		E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9B28E62B1800556A80 /* CustomTabView.swift */; };
+		E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9E28E62DE800556A80 /* AppConfig.swift */; };
 		F4496BEF574AC0C95EECE203 /* Pods_Bora_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +63,14 @@
 		E581AFA928DB8DC700288B4D /* Bora-Today-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bora-Today-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemDataModel.swift; sourceTree = "<group>"; };
+		E5C19A9028E6080300556A80 /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
+		E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusShapeModel.swift; sourceTree = "<group>"; };
+		E5C19A9528E6281300556A80 /* CornerRadiusStyleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusStyleExtension.swift; sourceTree = "<group>"; };
+		E5C19A9728E6298400556A80 /* TabBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBottomView.swift; sourceTree = "<group>"; };
+		E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTypeEnum.swift; sourceTree = "<group>"; };
+		E5C19A9B28E62B1800556A80 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		E5C19A9E28E62DE800556A80 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bora_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,6 +150,7 @@
 		E535BD6128D8EEC5003131F0 /* Bottom Menu */ = {
 			isa = PBXGroup;
 			children = (
+				E5C19A8F28E607F000556A80 /* Components */,
 				E535BD6228D8EEDE003131F0 /* BottomMenuView.swift */,
 			);
 			path = "Bottom Menu";
@@ -159,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				E5711EB528E337C80027A01A /* PlaceModel.swift */,
+				E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */,
+				E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				E5711EBB28E3441B0027A01A /* LanguageEnum.swift */,
+				E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -191,6 +211,7 @@
 		E5711EBD28E344CB0027A01A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E5C19A9528E6281300556A80 /* CornerRadiusStyleExtension.swift */,
 				E5711EBE28E344EC0027A01A /* StringLocalizationExtension.swift */,
 			);
 			path = Extensions;
@@ -244,6 +265,7 @@
 		E5BD6A6628D3B3C10097D9C6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E5C19A9D28E62DCE00556A80 /* Configs */,
 				E5711EBD28E344CB0027A01A /* Extensions */,
 				E5711EBA28E344070027A01A /* Enums */,
 				E569F6F228DA48A8004115CA /* Managers */,
@@ -259,6 +281,24 @@
 				E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E5C19A8F28E607F000556A80 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E5C19A9028E6080300556A80 /* TabItemView.swift */,
+				E5C19A9728E6298400556A80 /* TabBottomView.swift */,
+				E5C19A9B28E62B1800556A80 /* CustomTabView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E5C19A9D28E62DCE00556A80 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				E5C19A9E28E62DE800556A80 /* AppConfig.swift */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		F9245BA0B1FA24767694B63C /* Pods */ = {
@@ -418,13 +458,21 @@
 			files = (
 				E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */,
 				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
+				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
+				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
+				E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */,
+				E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */,
+				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
+				E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
 				E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */,
 				E5711EBF28E344EC0027A01A /* StringLocalizationExtension.swift in Sources */,
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
 				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
+				E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
+				E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
@@ -582,8 +630,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -619,8 +667,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

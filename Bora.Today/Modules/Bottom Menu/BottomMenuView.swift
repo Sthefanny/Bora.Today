@@ -8,45 +8,29 @@
 import SwiftUI
 
 struct BottomMenuView: View {
-    @AppStorage("language")
-    private var language = LocalizationManager.shared.language
+    
+    @State var selectedIndex: Int = 0
     
     var body: some View {
-        ZStack(alignment: .top) {
-//            NavigationView {
-                TabView {
-                    HomeView()
-                        .tabItem {
-                            Image(systemName: "house")
-                            Text("home".localized(language))
-                        }
-                    
-                    CreateView()
-                        .tabItem {
-                            Image(systemName: "plus")
-                            Text("create".localized(language))
-                        }
-                    
-                    SearchView()
-                        .tabItem {
-                            Image(systemName: "magnifyingglass")
-                            Text("search".localized(language))
-                        }
-                }
-                .onAppear() {
-                    let appearance = UITabBarAppearance()
-                    appearance.configureWithTransparentBackground()
-                    appearance.shadowColor = .black
-                    appearance.shadowImage = UIImage(named: "tab-shadow")?.withRenderingMode(.alwaysTemplate)
-                    appearance.backgroundColor = UIColor.white
-
-                    UITabBar.appearance().scrollEdgeAppearance = appearance
-                }
-                .accentColor(.purple)
-                .shadow(color: .red.opacity(0.5), radius: 6, x: 0, y: 0)
-            
-                SettingsView()
-//            }
+        CustomTabView(tabs: TabType.allCases.map({ $0.tabItem }), selectedIndex: $selectedIndex) { index in
+            let type = TabType(rawValue: index) ?? .home
+            getTabView(type: type)
+        }
+    }
+    
+    @ViewBuilder
+    func getTabView(type: TabType) -> some View {
+        switch type {
+        case .home:
+            HomeView()
+        case .search:
+            SearchView()
+        case .create:
+            CreateView()
+        case .history:
+            HomeView()
+        case .profile:
+            HomeView()
         }
     }
 }
@@ -54,5 +38,6 @@ struct BottomMenuView: View {
 struct BottomMenuView_Previews: PreviewProvider {
     static var previews: some View {
         BottomMenuView()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
     }
 }
