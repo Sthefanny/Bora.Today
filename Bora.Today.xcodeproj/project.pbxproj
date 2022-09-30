@@ -19,6 +19,9 @@
 		E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6528D8F13E003131F0 /* SearchView.swift */; };
 		E535BD6928D8F168003131F0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6828D8F168003131F0 /* CreateView.swift */; };
 		E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E569F6F328DA48BA004115CA /* LocationManager.swift */; };
+		E56C538728E754610078191F /* FontSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C538628E754610078191F /* FontSystem.swift */; };
+		E56C538928E755F00078191F /* FontEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C538828E755F00078191F /* FontEnum.swift */; };
+		E56C538B28E757BD0078191F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C538A28E757BD0078191F /* ColorExtension.swift */; };
 		E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EB528E337C80027A01A /* PlaceModel.swift */; };
 		E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */; };
 		E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EBB28E3441B0027A01A /* LanguageEnum.swift */; };
@@ -53,6 +56,9 @@
 		E535BD6528D8F13E003131F0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E535BD6828D8F168003131F0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		E569F6F328DA48BA004115CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E56C538628E754610078191F /* FontSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSystem.swift; sourceTree = "<group>"; };
+		E56C538828E755F00078191F /* FontEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontEnum.swift; sourceTree = "<group>"; };
+		E56C538A28E757BD0078191F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E5711EB528E337C80027A01A /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotationView.swift; sourceTree = "<group>"; };
 		E5711EBB28E3441B0027A01A /* LanguageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageEnum.swift; sourceTree = "<group>"; };
@@ -204,6 +210,7 @@
 			children = (
 				E5711EBB28E3441B0027A01A /* LanguageEnum.swift */,
 				E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */,
+				E56C538828E755F00078191F /* FontEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -213,6 +220,7 @@
 			children = (
 				E5C19A9528E6281300556A80 /* CornerRadiusStyleExtension.swift */,
 				E5711EBE28E344EC0027A01A /* StringLocalizationExtension.swift */,
+				E56C538A28E757BD0078191F /* ColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				E5C19A9E28E62DE800556A80 /* AppConfig.swift */,
+				E56C538628E754610078191F /* FontSystem.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -459,10 +468,13 @@
 				E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */,
 				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
 				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
+				E56C538B28E757BD0078191F /* ColorExtension.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
 				E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */,
 				E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
+				E56C538928E755F00078191F /* FontEnum.swift in Sources */,
+				E56C538728E754610078191F /* FontSystem.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
 				E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,

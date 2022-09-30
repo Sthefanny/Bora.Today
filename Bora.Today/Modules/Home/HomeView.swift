@@ -19,11 +19,11 @@ struct HomeView: View {
         GeometryReader { proxy in
             VStack(alignment: .leading) {
                 Text("hello_world".localized(language))
-                    .font(.largeTitle)
+                    .font(.appLargeTitle)
                     .padding()
                 
                 Text("**Hey Maria Inês,**\nWelcome to \(Text("Curitiba").underline().foregroundColor(Color.orange))")
-                    .font(Font.custom("Figtree", size: 22))
+                    .font(.appTitle2)
                 
                 Map(coordinateRegion: $locationManager.region, showsUserLocation: true, annotationItems: locationManager.mapLocations) { place in
                     MapAnnotation(coordinate: place.coordinate) {
@@ -40,7 +40,7 @@ struct HomeView: View {
                 
                 Text("Recomendados")
                     .fontWeight(.semibold)
-                    .font(Font.custom("Figtree", size: 17))
+                    .font(.headline)
                     .padding(.top, 20)
                 
                 Spacer()
