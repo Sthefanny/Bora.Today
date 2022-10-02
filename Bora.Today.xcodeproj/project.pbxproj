@@ -21,7 +21,7 @@
 		E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E569F6F328DA48BA004115CA /* LocationManager.swift */; };
 		E56C538728E754610078191F /* FontSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C538628E754610078191F /* FontSystem.swift */; };
 		E56C538928E755F00078191F /* FontEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C538828E755F00078191F /* FontEnum.swift */; };
-		E56C538B28E757BD0078191F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C538A28E757BD0078191F /* ColorExtension.swift */; };
+		E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C538A28E757BD0078191F /* ColorConfig.swift */; };
 		E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EB528E337C80027A01A /* PlaceModel.swift */; };
 		E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */; };
 		E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EBB28E3441B0027A01A /* LanguageEnum.swift */; };
@@ -29,6 +29,13 @@
 		E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EC028E346A00027A01A /* LocalizationManager.swift */; };
 		E5711EC428E347620027A01A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EC328E347620027A01A /* SettingsView.swift */; };
 		E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E581AFA728DB8D8500288B4D /* Figtree.ttf */; };
+		E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE428E9D5360044CE58 /* ButtonDefault.swift */; };
+		E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */; };
+		E5878AEA28E9E30F0044CE58 /* ButtonStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE928E9E30F0044CE58 /* ButtonStroke.swift */; };
+		E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AEB28E9E93C0044CE58 /* DefaultButtonStyle.swift */; };
+		E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AEE28EA01880044CE58 /* StrokeButtonStyle.swift */; };
+		E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF028EA0F1B0044CE58 /* TextButtonStyle.swift */; };
+		E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF228EA10460044CE58 /* ButtonText.swift */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
 		E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */; };
@@ -58,7 +65,7 @@
 		E569F6F328DA48BA004115CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E56C538628E754610078191F /* FontSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSystem.swift; sourceTree = "<group>"; };
 		E56C538828E755F00078191F /* FontEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontEnum.swift; sourceTree = "<group>"; };
-		E56C538A28E757BD0078191F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		E56C538A28E757BD0078191F /* ColorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConfig.swift; sourceTree = "<group>"; };
 		E5711EB528E337C80027A01A /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotationView.swift; sourceTree = "<group>"; };
 		E5711EBB28E3441B0027A01A /* LanguageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageEnum.swift; sourceTree = "<group>"; };
@@ -67,6 +74,13 @@
 		E5711EC328E347620027A01A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E581AFA728DB8D8500288B4D /* Figtree.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Figtree.ttf; sourceTree = "<group>"; };
 		E581AFA928DB8DC700288B4D /* Bora-Today-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bora-Today-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E5878AE428E9D5360044CE58 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEnum.swift; sourceTree = "<group>"; };
+		E5878AE928E9E30F0044CE58 /* ButtonStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStroke.swift; sourceTree = "<group>"; };
+		E5878AEB28E9E93C0044CE58 /* DefaultButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonStyle.swift; sourceTree = "<group>"; };
+		E5878AEE28EA01880044CE58 /* StrokeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeButtonStyle.swift; sourceTree = "<group>"; };
+		E5878AF028EA0F1B0044CE58 /* TextButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonStyle.swift; sourceTree = "<group>"; };
+		E5878AF228EA10460044CE58 /* ButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonText.swift; sourceTree = "<group>"; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemDataModel.swift; sourceTree = "<group>"; };
@@ -211,6 +225,7 @@
 				E5711EBB28E3441B0027A01A /* LanguageEnum.swift */,
 				E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */,
 				E56C538828E755F00078191F /* FontEnum.swift */,
+				E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -220,7 +235,6 @@
 			children = (
 				E5C19A9528E6281300556A80 /* CornerRadiusStyleExtension.swift */,
 				E5711EBE28E344EC0027A01A /* StringLocalizationExtension.swift */,
-				E56C538A28E757BD0078191F /* ColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +263,35 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		E5878AE228E9D5150044CE58 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E5878AE328E9D51C0044CE58 /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E5878AE328E9D51C0044CE58 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E5878AED28E9E9540044CE58 /* Styles */,
+				E5878AE428E9D5360044CE58 /* ButtonDefault.swift */,
+				E5878AE928E9E30F0044CE58 /* ButtonStroke.swift */,
+				E5878AF228EA10460044CE58 /* ButtonText.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		E5878AED28E9E9540044CE58 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E5878AEB28E9E93C0044CE58 /* DefaultButtonStyle.swift */,
+				E5878AEE28EA01880044CE58 /* StrokeButtonStyle.swift */,
+				E5878AF028EA0F1B0044CE58 /* TextButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		E5BD6A6228D3B2120097D9C6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +316,7 @@
 		E5BD6A6628D3B3C10097D9C6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E5878AE228E9D5150044CE58 /* Components */,
 				E5C19A9D28E62DCE00556A80 /* Configs */,
 				E5711EBD28E344CB0027A01A /* Extensions */,
 				E5711EBA28E344070027A01A /* Enums */,
@@ -304,6 +348,7 @@
 		E5C19A9D28E62DCE00556A80 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				E56C538A28E757BD0078191F /* ColorConfig.swift */,
 				E5C19A9E28E62DE800556A80 /* AppConfig.swift */,
 				E56C538628E754610078191F /* FontSystem.swift */,
 			);
@@ -468,10 +513,13 @@
 				E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */,
 				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
 				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
-				E56C538B28E757BD0078191F /* ColorExtension.swift in Sources */,
+				E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
+				E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */,
 				E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */,
+				E5878AEA28E9E30F0044CE58 /* ButtonStroke.swift in Sources */,
 				E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */,
+				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				E56C538928E755F00078191F /* FontEnum.swift in Sources */,
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
@@ -482,12 +530,16 @@
 				E5711EBF28E344EC0027A01A /* StringLocalizationExtension.swift in Sources */,
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
 				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
+				E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */,
 				E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */,
+				E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
 				E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
+				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
+				E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */,
 				E5711EC428E347620027A01A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

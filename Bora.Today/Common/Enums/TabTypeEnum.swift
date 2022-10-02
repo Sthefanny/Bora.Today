@@ -17,15 +17,15 @@ enum TabType: Int, CaseIterable {
     var tabItem: TabItemData {
         switch self {
         case .home:
-            return TabItemData(image: "home", selectedImage: "home_selected", title: "Home")
+            return TabItemData(image: "home", selectedImage: "home_selected", title: "home")
         case .search:
-            return TabItemData(image: "search", selectedImage: "search_selected", title: "Explore")
+            return TabItemData(image: "search", selectedImage: "search_selected", title: "search")
         case .create:
-            return TabItemData(image: "create", selectedImage: "create_selected", title: "Create")
+            return TabItemData(image: "create", selectedImage: "create_selected", title: "create")
         case .history:
-            return TabItemData(image: "history", selectedImage: "history_selected", title: "History")
+            return TabItemData(image: "history", selectedImage: "history_selected", title: "history")
         case .profile:
-            return TabItemData(image: "profile", selectedImage: "profile_selected", title: "Profile")
+            return TabItemData(image: "profile", selectedImage: "profile_selected", title: "profile")
         }
     }
 }

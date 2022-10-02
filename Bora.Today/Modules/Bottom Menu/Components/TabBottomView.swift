@@ -33,8 +33,8 @@ struct TabBottomView: View {
                 }
             }
             .frame(width: width, height: AppConfig.bottomMenuHeight)
-            .padding(.bottom, 10)
-            .background(Color.white)
+            .padding(.bottom, 15)
+            .background(Color.appWhite)
             .cornerRadius(radius: 10.0, corners: [.topLeft, .topRight])
             .shadow(radius: 12, x: 0, y: -7)
     }

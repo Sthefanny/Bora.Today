@@ -12,24 +12,20 @@ struct CustomTabView<Content: View>: View {
     let tabs: [TabItemData]
     @Binding var selectedIndex: Int
     @ViewBuilder let content: (Int) -> Content
-    var height: CGFloat = UIScreen.main.bounds.height - AppConfig.bottomMenuHeight - 10
     
     var body: some View {
-        ZStack {
+        VStack {
             TabView(selection: $selectedIndex) {
                 ForEach(tabs.indices) { index in
                     content(index)
                         .tag(index)
                 }
             }
-            .frame(height: height)
             
-            VStack {
-                Spacer()
-                TabBottomView(tabbarItems: tabs, selectedIndex: $selectedIndex)
-                    .ignoresSafeArea()
-            }
+            Spacer()
+            TabBottomView(tabbarItems: tabs, selectedIndex: $selectedIndex)
         }
+        .ignoresSafeArea()
     }
 }
 

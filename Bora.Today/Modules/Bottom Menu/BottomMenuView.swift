@@ -12,9 +12,13 @@ struct BottomMenuView: View {
     @State var selectedIndex: Int = 0
     
     var body: some View {
-        CustomTabView(tabs: TabType.allCases.map({ $0.tabItem }), selectedIndex: $selectedIndex) { index in
-            let type = TabType(rawValue: index) ?? .home
-            getTabView(type: type)
+        
+        GeometryReader { screen in
+            CustomTabView(tabs: TabType.allCases.map({ $0.tabItem }), selectedIndex: $selectedIndex) { index in
+                let type = TabType(rawValue: index) ?? .home
+                getTabView(type: type)
+                    .frame(width: screen.size.width, height: screen.size.height)
+            }
         }
     }
     

@@ -16,8 +16,9 @@ struct HomeView: View {
     private var language = LocalizationManager.shared.language
     
     var body: some View {
-        GeometryReader { proxy in
+        GeometryReader { screen in
             VStack(alignment: .leading) {
+                SettingsView()
                 Text("hello_world".localized(language))
                     .font(.appLargeTitle)
                     .padding()
@@ -35,7 +36,7 @@ struct HomeView: View {
                     }
                     
                 }
-                .frame(height: proxy.size.height * 0.2)
+                .frame(height: screen.size.height * 0.2)
                 .cornerRadius(10)
                 
                 Text("Recomendados")
@@ -43,12 +44,10 @@ struct HomeView: View {
                     .font(.headline)
                     .padding(.top, 20)
                 
-                Spacer()
                 
-                Button("Teste", action: locationManager.test)
+                ButtonText(buttonType: .imageAndTextBigger, text: "Teste", icon: "record.circle", action:  locationManager.test, isDisabled: .constant(false))
             }
             .padding(.horizontal, 20)
-            .padding(.vertical, 10)
             .onAppear() {
                 AppHelper.logPage(pageName: "\(HomeView.self)")
                 locationManager.requestLocation()
@@ -60,5 +59,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
     }
 }

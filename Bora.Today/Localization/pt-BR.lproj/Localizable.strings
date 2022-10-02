@@ -2,6 +2,10 @@
 "this_text_localised" = "This text was localized on the fly as well.";
 "settings_language" = "Linguagem";
 "settings_language_footer" = "Escolha o idioma da interface.";
+
+//Bottom Menu
 "home" = "Casa";
 "create" = "Criar";
 "search" = "Buscar";
+"history" = "Historia";
+"profile" = "Perfil";

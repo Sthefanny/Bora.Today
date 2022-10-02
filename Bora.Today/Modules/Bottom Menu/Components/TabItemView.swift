@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct TabItemView: View {
+    
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
     let data: TabItemData
     let isSelected: Bool
     
@@ -23,7 +27,7 @@ struct TabItemView: View {
             
             Spacer().frame(height: 4)
             
-            Text(data.title)
+            Text(data.title.localized(language))
                 .foregroundColor(.black)
                 .font(.system(size: 14))
         }

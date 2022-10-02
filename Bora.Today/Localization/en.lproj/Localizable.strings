@@ -3,6 +3,10 @@
 "this_text_localised" = "This text was localized on the fly as well.";
 "settings_language" = "Language";
 "settings_language_footer" = "Choose interface language.";
+
+//Bottom Menu
 "home" = "Home";
 "create" = "Create";
 "search" = "Search";
+"history" = "History";
+"profile" = "Profile";
