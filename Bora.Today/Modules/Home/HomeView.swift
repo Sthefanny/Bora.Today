@@ -21,8 +21,10 @@ struct HomeView: View {
                 Text("today_title".localized(language))
                     .font(.appTitle1)
                     .padding(.vertical, 16)
+                    .padding(.leading, 21)
+                
+                BannerListView()
             }
-            .padding(.horizontal, 21)
         }
     }
 }

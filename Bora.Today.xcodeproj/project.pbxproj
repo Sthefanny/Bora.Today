@@ -49,6 +49,7 @@
 		E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9E28E62DE800556A80 /* AppConfig.swift */; };
 		E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */; };
 		E5CE02E628EB4CF8000FCB77 /* LocationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */; };
+		E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E728EB5E25000FCB77 /* BannerListView.swift */; };
 		F4496BEF574AC0C95EECE203 /* Pods_Bora_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		E5C19A9E28E62DE800556A80 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
 		E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationErrorView.swift; sourceTree = "<group>"; };
+		E5CE02E728EB5E25000FCB77 /* BannerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerListView.swift; sourceTree = "<group>"; };
 		EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bora_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */,
+				E5CE02E728EB5E25000FCB77 /* BannerListView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				E56C538928E755F00078191F /* FontEnum.swift in Sources */,
+				E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */,
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
 				E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */,
