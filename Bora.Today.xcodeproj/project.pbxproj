@@ -36,6 +36,7 @@
 		E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AEE28EA01880044CE58 /* StrokeButtonStyle.swift */; };
 		E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF028EA0F1B0044CE58 /* TextButtonStyle.swift */; };
 		E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF228EA10460044CE58 /* ButtonText.swift */; };
+		E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
 		E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */; };
@@ -46,6 +47,8 @@
 		E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */; };
 		E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9B28E62B1800556A80 /* CustomTabView.swift */; };
 		E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9E28E62DE800556A80 /* AppConfig.swift */; };
+		E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */; };
+		E5CE02E628EB4CF8000FCB77 /* LocationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */; };
 		F4496BEF574AC0C95EECE203 /* Pods_Bora_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,7 @@
 		E5878AEE28EA01880044CE58 /* StrokeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeButtonStyle.swift; sourceTree = "<group>"; };
 		E5878AF028EA0F1B0044CE58 /* TextButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonStyle.swift; sourceTree = "<group>"; };
 		E5878AF228EA10460044CE58 /* ButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonText.swift; sourceTree = "<group>"; };
+		E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBannerView.swift; sourceTree = "<group>"; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemDataModel.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTypeEnum.swift; sourceTree = "<group>"; };
 		E5C19A9B28E62B1800556A80 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		E5C19A9E28E62DE800556A80 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
+		E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationErrorView.swift; sourceTree = "<group>"; };
 		EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bora_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -214,7 +220,7 @@
 		E5711EB728E33DE60027A01A /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */,
+				E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -266,6 +272,8 @@
 		E5878AE228E9D5150044CE58 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E5CE02E228EB4BD5000FCB77 /* Location */,
+				E5878AF428EA1B6E0044CE58 /* Map */,
 				E5878AE328E9D51C0044CE58 /* Buttons */,
 			);
 			path = Components;
@@ -290,6 +298,14 @@
 				E5878AF028EA0F1B0044CE58 /* TextButtonStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		E5878AF428EA1B6E0044CE58 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		E5BD6A6228D3B2120097D9C6 /* Modules */ = {
@@ -353,6 +369,15 @@
 				E56C538628E754610078191F /* FontSystem.swift */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		E5CE02E228EB4BD5000FCB77 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */,
+				E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		F9245BA0B1FA24767694B63C /* Pods */ = {
@@ -512,12 +537,15 @@
 			files = (
 				E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */,
 				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
+				E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */,
 				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
 				E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
 				E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */,
 				E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */,
+				E5CE02E628EB4CF8000FCB77 /* LocationErrorView.swift in Sources */,
 				E5878AEA28E9E30F0044CE58 /* ButtonStroke.swift in Sources */,
+				E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */,
 				E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */,
 				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,

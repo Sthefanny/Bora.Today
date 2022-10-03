@@ -10,7 +10,7 @@ import CoreLocation
 import MapKit
 
 final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-    private let locationManager = CLLocationManager()
+    private let locationManager: CLLocationManager
     
     @Published var authorizationStatus: CLAuthorizationStatus = .notDetermined
     @Published var location: CLLocationCoordinate2D?
@@ -21,8 +21,14 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
     @Published var mapLocations: [PlaceModel] = []
     
     override init() {
+        locationManager = CLLocationManager()
+        authorizationStatus = locationManager.authorizationStatus
+        
         super.init()
         locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        requestLocation()
     }
     
     func requestLocation() {

@@ -8,16 +8,29 @@
 import SwiftUI
 
 struct BottomMenuView: View {
-    
+    @StateObject var locationManager = LocationManager()
     @State var selectedIndex: Int = 0
     
     var body: some View {
         
         GeometryReader { screen in
             CustomTabView(tabs: TabType.allCases.map({ $0.tabItem }), selectedIndex: $selectedIndex) { index in
-                let type = TabType(rawValue: index) ?? .home
-                getTabView(type: type)
-                    .frame(width: screen.size.width, height: screen.size.height)
+                switch locationManager.authorizationStatus {
+                case .notDetermined:
+                    AnyView(RequestLocationView())
+                        .environmentObject(locationManager)
+                case .restricted:
+                    LocationErrorView(errorText: "Location use is restricted.")
+                case .denied:
+                    LocationErrorView(errorText: "The app does not have location permissions. Please enable them in settings.")
+                case .authorizedAlways, .authorizedWhenInUse:
+                    let type = TabType(rawValue: index) ?? .home
+                    getTabView(type: type)
+                        .frame(width: screen.size.width, height: screen.size.height)
+                        .environmentObject(locationManager)
+                default:
+                    Text("Unexpected status")
+                }
             }
         }
     }

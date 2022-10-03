@@ -18,40 +18,11 @@ struct HomeView: View {
     var body: some View {
         GeometryReader { screen in
             VStack(alignment: .leading) {
-                SettingsView()
-                Text("hello_world".localized(language))
-                    .font(.appLargeTitle)
-                    .padding()
-                
-                Text("**Hey Maria Inês,**\nWelcome to \(Text("Curitiba").underline().foregroundColor(Color.orange))")
-                    .font(.appTitle2)
-                
-                Map(coordinateRegion: $locationManager.region, showsUserLocation: true, annotationItems: locationManager.mapLocations) { place in
-                    MapAnnotation(coordinate: place.coordinate) {
-                        NavigationLink {
-                            CreateView()
-                        } label: {
-                            PlaceAnnotationView(title: place.name)
-                        }
-                    }
-                    
-                }
-                .frame(height: screen.size.height * 0.2)
-                .cornerRadius(10)
-                
-                Text("Recomendados")
-                    .fontWeight(.semibold)
-                    .font(.headline)
-                    .padding(.top, 20)
-                
-                
-                ButtonText(buttonType: .imageAndTextBigger, text: "Teste", icon: "record.circle", action:  locationManager.test, isDisabled: .constant(false))
+                Text("today_title".localized(language))
+                    .font(.appTitle1)
+                    .padding(.vertical, 16)
             }
-            .padding(.horizontal, 20)
-            .onAppear() {
-                AppHelper.logPage(pageName: "\(HomeView.self)")
-                locationManager.requestLocation()
-            }
+            .padding(.horizontal, 21)
         }
     }
 }

@@ -10,3 +10,6 @@
 "search" = "Search";
 "history" = "History";
 "profile" = "Profile";
+
+//Today
+"today_title" = "Today in Curitiba";
