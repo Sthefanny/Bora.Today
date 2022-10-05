@@ -8,22 +8,19 @@
 import SwiftUI
 
 struct BannerListView: View {
-    
-    init() {
-        UIPageControl.appearance().currentPageIndicatorTintColor = .systemCyan
-        UIPageControl.appearance().pageIndicatorTintColor = .systemGray2
-    }
+    let model: TopExperienceModel
+    @State private var currentIndex = 0
     
     var body: some View {
         GeometryReader { screen in
-            TabView {
-                ImageBannerView(image: "today_bg", isFirst: true, isLast: false)
-                ImageBannerView(image: "today_bg", isFirst: false, isLast: false)
-                ImageBannerView(image: "today_bg", isFirst: false, isLast: true)
+            TabView(selection: $currentIndex.animation()) {
+                ForEach(0..<model.experiences.count, id: \.self) { index in
+                    let item = model.experiences[index]
+                    ImageBannerView(model: item, isFirst: index == 0, isLast: index == model.experiences.count-1)
+                }
             }
-            .frame(width: screen.size.width, height: AppConfig.todayImageBannerHeight)
-            .tabViewStyle(.page(indexDisplayMode: .always))
-            .indexViewStyle(.page(backgroundDisplayMode: .always))
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+            .overlay(PageDotsIndexView(numberOfPages: model.experiences.count, currentIndex: currentIndex))
         }
         
     }
@@ -31,6 +28,6 @@ struct BannerListView: View {
 
 struct BannerListView_Previews: PreviewProvider {
     static var previews: some View {
-        BannerListView()
+        BannerListView(model: TopExperienceModel.example)
     }
 }

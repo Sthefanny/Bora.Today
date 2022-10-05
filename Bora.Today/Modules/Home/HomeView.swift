@@ -23,7 +23,7 @@ struct HomeView: View {
                     .padding(.vertical, 16)
                     .padding(.leading, 21)
                 
-                BannerListView()
+                BannerListView(model: TopExperienceModel.example)
             }
         }
     }

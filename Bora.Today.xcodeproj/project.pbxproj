@@ -14,7 +14,10 @@
 		E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5168E7628BD49CF0052174E /* BoraTodayApp.swift */; };
 		E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7A28BD49D30052174E /* Assets.xcassets */; };
 		E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7D28BD49D30052174E /* Preview Assets.xcassets */; };
+		E51AF60D28ECC17400303CED /* ExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AF60C28ECC17400303CED /* ExperienceModel.swift */; };
 		E51C131828C27F8000124B6F /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = E51C131728C27F8000124B6F /* Sentry */; };
+		E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */; };
+		E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */; };
 		E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6228D8EEDE003131F0 /* BottomMenuView.swift */; };
 		E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6528D8F13E003131F0 /* SearchView.swift */; };
 		E535BD6928D8F168003131F0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6828D8F168003131F0 /* CreateView.swift */; };
@@ -63,6 +66,9 @@
 		E5168E7628BD49CF0052174E /* BoraTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoraTodayApp.swift; sourceTree = "<group>"; };
 		E5168E7A28BD49D30052174E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5168E7D28BD49D30052174E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E51AF60C28ECC17400303CED /* ExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceModel.swift; sourceTree = "<group>"; };
+		E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDotsIndexView.swift; sourceTree = "<group>"; };
+		E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopExperiencesModel.swift; sourceTree = "<group>"; };
 		E535BD6228D8EEDE003131F0 /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
 		E535BD6528D8F13E003131F0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E535BD6828D8F168003131F0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
@@ -206,6 +212,8 @@
 				E5711EB528E337C80027A01A /* PlaceModel.swift */,
 				E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */,
 				E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */,
+				E51AF60C28ECC17400303CED /* ExperienceModel.swift */,
+				E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +232,7 @@
 			children = (
 				E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */,
 				E5CE02E728EB5E25000FCB77 /* BannerListView.swift */,
+				E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -545,6 +554,7 @@
 				E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
 				E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */,
+				E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */,
 				E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */,
 				E5CE02E628EB4CF8000FCB77 /* LocationErrorView.swift in Sources */,
 				E5878AEA28E9E30F0044CE58 /* ButtonStroke.swift in Sources */,
@@ -563,12 +573,14 @@
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
 				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
 				E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */,
+				E51AF60D28ECC17400303CED /* ExperienceModel.swift in Sources */,
 				E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */,
 				E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
 				E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
+				E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 				E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */,
