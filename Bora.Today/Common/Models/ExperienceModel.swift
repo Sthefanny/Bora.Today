@@ -35,7 +35,7 @@ extension ExperienceModel {
             name: "Burguer na Stel",
             location: "Casa da Stel",
             datetime: "12/10/2022, 18:00 AM",
-            image: "today_bg"
+            image: "exp1"
         )
     }
     
@@ -45,7 +45,7 @@ extension ExperienceModel {
             name: "Brooday",
             location: "Outback",
             datetime: "Amanha, 18:00 AM",
-            image: "today_bg"
+            image: "exp2"
         )
     }
 }

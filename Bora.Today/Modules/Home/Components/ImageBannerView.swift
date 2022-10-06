@@ -31,8 +31,8 @@ struct ImageBannerView: View {
                     .padding(.top, 12)
                 
                 HStack {
-                    _buildPlaceDetails(screen: screen)
-                    _buildDateDetails(screen: screen)
+                    _buildPlaceDetails()
+                    _buildDateDetails()
                 }
                 .frame(width: screen.size.width - AppConfig.todayImageBannerPadding, alignment: .leading)
                 .padding(.top, 12)
@@ -68,7 +68,7 @@ struct ImageBannerView: View {
             .cornerRadius(radius: 0, corners: [])
     }
     
-    func _buildPlaceDetails(screen: GeometryProxy) -> some View {
+    func _buildPlaceDetails() -> some View {
         HStack {
             Image("pin_place")
                 .foregroundColor(.black)
@@ -80,7 +80,7 @@ struct ImageBannerView: View {
         }
     }
     
-    func _buildDateDetails(screen: GeometryProxy) -> some View {
+    func _buildDateDetails() -> some View {
         HStack {
             Image("time")
                 .foregroundColor(.black)

@@ -17,13 +17,27 @@ struct HomeView: View {
     
     var body: some View {
         GeometryReader { screen in
-            VStack(alignment: .leading) {
-                Text("today_title".localized(language))
-                    .font(.appTitle1)
-                    .padding(.vertical, 16)
-                    .padding(.leading, 21)
-                
-                BannerListView(model: TopExperienceModel.example)
+            ScrollView {
+                VStack(alignment: .leading) {
+                    Text("today_title".localized(language))
+                        .font(.appTitle1)
+                        .foregroundColor(.appBlack)
+                        .padding(.vertical, 16)
+                        .padding(.leading, 21)
+                    
+                    BannerListView(model: TopExperienceModel.example)
+                        .frame(width: screen.size.width, height: screen.size.height * 0.28)
+                    
+                    Text("recommended".localized(language))
+                        .font(.appTitle3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.appBlack)
+                        .padding(.vertical, 16)
+                        .padding(.leading, 21)
+                    
+                    ExperienceListView(model: TopExperienceModel.example)
+                    Spacer()
+                }
             }
         }
     }

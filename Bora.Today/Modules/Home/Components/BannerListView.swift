@@ -21,8 +21,8 @@ struct BannerListView: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
             .overlay(PageDotsIndexView(numberOfPages: model.experiences.count, currentIndex: currentIndex))
+            
         }
-        
     }
 }
 
