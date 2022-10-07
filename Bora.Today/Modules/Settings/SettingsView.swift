@@ -42,7 +42,7 @@ private extension SettingsView {
         guard let flag = Flag(countryCode: countryCode) else {
             return Image(systemName: "questionmark.circle")
         }
-        return Image(uiImage: flag.image(style: .circle))
+        return Image(uiImage: flag.image(style: .square))
     }
 }
 

@@ -12,11 +12,12 @@ extension Color {
     static let appTitleActive = Color("title-active")
     static let appBlack = Color("black")
     static let appWhite = Color("white")
-    static let appPrimary = Color("primary")
-    static let appAccent = Color("accent")
-    static let appError = Color("error")
-    static let appCaution = Color("caution")
-    static let appSuccess = Color("success")
+    static let appGray = Color("gray")
+    static let appPink = Color("pink")
+    static let appBlue = Color("blue")
+    static let appRed = Color("red")
+    static let appYellow = Color("yellow")
+    static let appGreen = Color("green")
     static let appBlueButton = Color("button-blue")
     static let appBlueButtonPressed = Color("button-blue-pressed")
     static let appBlueButtonDisabled = Color("button-blue").opacity(0.36)
@@ -24,6 +25,7 @@ extension Color {
     static let appButtonWhiteContent = Color("button-white")
     static let appButtonBlackContent = Color("button-black")
     static let appButtonBlackContentDisabled = Color("button-black").opacity(0.36)
+    static let appGrayText = Color("gray-text")
     
     
 }

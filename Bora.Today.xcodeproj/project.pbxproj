@@ -14,7 +14,17 @@
 		E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5168E7628BD49CF0052174E /* BoraTodayApp.swift */; };
 		E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7A28BD49D30052174E /* Assets.xcassets */; };
 		E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7D28BD49D30052174E /* Preview Assets.xcassets */; };
+		E5180A5C28EF5C210066E1E4 /* ReviewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5180A5B28EF5C210066E1E4 /* ReviewListView.swift */; };
+		E5180A5F28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5180A5D28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf */; };
+		E5180A6028EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5180A5E28EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf */; };
+		E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5180A6228EF5EAF0066E1E4 /* StickerView.swift */; };
+		E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5180A6428EF635A0066E1E4 /* StickerModel.swift */; };
+		E51AF60D28ECC17400303CED /* ExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AF60C28ECC17400303CED /* ExperienceModel.swift */; };
 		E51C131828C27F8000124B6F /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = E51C131728C27F8000124B6F /* Sentry */; };
+		E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */; };
+		E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */; };
+		E5206B2C28EE0DC900EFF316 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2B28EE0DC900EFF316 /* ExperienceView.swift */; };
+		E5206B2E28EE10ED00EFF316 /* ExperienceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2D28EE10ED00EFF316 /* ExperienceListView.swift */; };
 		E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6228D8EEDE003131F0 /* BottomMenuView.swift */; };
 		E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6528D8F13E003131F0 /* SearchView.swift */; };
 		E535BD6928D8F168003131F0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6828D8F168003131F0 /* CreateView.swift */; };
@@ -28,6 +38,7 @@
 		E5711EBF28E344EC0027A01A /* StringLocalizationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EBE28E344EC0027A01A /* StringLocalizationExtension.swift */; };
 		E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EC028E346A00027A01A /* LocalizationManager.swift */; };
 		E5711EC428E347620027A01A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EC328E347620027A01A /* SettingsView.swift */; };
+		E573753228F0A41400A40A26 /* StickerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573753128F0A41400A40A26 /* StickerListView.swift */; };
 		E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E581AFA728DB8D8500288B4D /* Figtree.ttf */; };
 		E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE428E9D5360044CE58 /* ButtonDefault.swift */; };
 		E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */; };
@@ -49,6 +60,7 @@
 		E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9E28E62DE800556A80 /* AppConfig.swift */; };
 		E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */; };
 		E5CE02E628EB4CF8000FCB77 /* LocationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */; };
+		E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E728EB5E25000FCB77 /* BannerListView.swift */; };
 		F4496BEF574AC0C95EECE203 /* Pods_Bora_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +74,16 @@
 		E5168E7628BD49CF0052174E /* BoraTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoraTodayApp.swift; sourceTree = "<group>"; };
 		E5168E7A28BD49D30052174E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5168E7D28BD49D30052174E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5180A5B28EF5C210066E1E4 /* ReviewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListView.swift; sourceTree = "<group>"; };
+		E5180A5D28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PalmerLakePrint-Regular.otf"; sourceTree = "<group>"; };
+		E5180A5E28EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PalmerLakeScript-Regular.otf"; sourceTree = "<group>"; };
+		E5180A6228EF5EAF0066E1E4 /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		E5180A6428EF635A0066E1E4 /* StickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerModel.swift; sourceTree = "<group>"; };
+		E51AF60C28ECC17400303CED /* ExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceModel.swift; sourceTree = "<group>"; };
+		E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDotsIndexView.swift; sourceTree = "<group>"; };
+		E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopExperiencesModel.swift; sourceTree = "<group>"; };
+		E5206B2B28EE0DC900EFF316 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		E5206B2D28EE10ED00EFF316 /* ExperienceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceListView.swift; sourceTree = "<group>"; };
 		E535BD6228D8EEDE003131F0 /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
 		E535BD6528D8F13E003131F0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E535BD6828D8F168003131F0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
@@ -75,6 +97,7 @@
 		E5711EBE28E344EC0027A01A /* StringLocalizationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalizationExtension.swift; sourceTree = "<group>"; };
 		E5711EC028E346A00027A01A /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		E5711EC328E347620027A01A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E573753128F0A41400A40A26 /* StickerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerListView.swift; sourceTree = "<group>"; };
 		E581AFA728DB8D8500288B4D /* Figtree.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Figtree.ttf; sourceTree = "<group>"; };
 		E581AFA928DB8DC700288B4D /* Bora-Today-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bora-Today-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5878AE428E9D5360044CE58 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
@@ -97,6 +120,7 @@
 		E5C19A9E28E62DE800556A80 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
 		E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationErrorView.swift; sourceTree = "<group>"; };
+		E5CE02E728EB5E25000FCB77 /* BannerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerListView.swift; sourceTree = "<group>"; };
 		EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bora_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,6 +197,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E5180A6128EF5E9E0066E1E4 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				E5180A6228EF5EAF0066E1E4 /* StickerView.swift */,
+				E573753128F0A41400A40A26 /* StickerListView.swift */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
 		E535BD6128D8EEC5003131F0 /* Bottom Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +237,9 @@
 				E5711EB528E337C80027A01A /* PlaceModel.swift */,
 				E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */,
 				E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */,
+				E51AF60C28ECC17400303CED /* ExperienceModel.swift */,
+				E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */,
+				E5180A6428EF635A0066E1E4 /* StickerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +257,11 @@
 			isa = PBXGroup;
 			children = (
 				E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */,
+				E5CE02E728EB5E25000FCB77 /* BannerListView.swift */,
+				E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */,
+				E5206B2B28EE0DC900EFF316 /* ExperienceView.swift */,
+				E5206B2D28EE10ED00EFF316 /* ExperienceListView.swift */,
+				E5180A5B28EF5C210066E1E4 /* ReviewListView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -264,6 +305,8 @@
 		E581AFA628DB8D6300288B4D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E5180A5D28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf */,
+				E5180A5E28EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf */,
 				E581AFA728DB8D8500288B4D /* Figtree.ttf */,
 			);
 			path = Fonts;
@@ -272,6 +315,7 @@
 		E5878AE228E9D5150044CE58 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E5180A6128EF5E9E0066E1E4 /* Stickers */,
 				E5CE02E228EB4BD5000FCB77 /* Location */,
 				E5878AF428EA1B6E0044CE58 /* Map */,
 				E5878AE328E9D51C0044CE58 /* Buttons */,
@@ -460,8 +504,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5180A6028EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf in Resources */,
 				E51365ED28DBA58D00319497 /* Localizable.strings in Resources */,
 				E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */,
+				E5180A5F28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf in Resources */,
 				E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */,
 				E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */,
 				E503CBF928BE8E5F00C7D9D7 /* GoogleService-Info.plist in Resources */,
@@ -542,16 +588,20 @@
 				E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
 				E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */,
+				E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */,
 				E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */,
 				E5CE02E628EB4CF8000FCB77 /* LocationErrorView.swift in Sources */,
 				E5878AEA28E9E30F0044CE58 /* ButtonStroke.swift in Sources */,
 				E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */,
+				E5206B2C28EE0DC900EFF316 /* ExperienceView.swift in Sources */,
 				E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */,
 				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				E56C538928E755F00078191F /* FontEnum.swift in Sources */,
+				E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */,
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
+				E573753228F0A41400A40A26 /* StickerListView.swift in Sources */,
 				E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
 				E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */,
@@ -559,12 +609,18 @@
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
 				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
 				E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */,
+				E51AF60D28ECC17400303CED /* ExperienceModel.swift in Sources */,
 				E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */,
+				E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */,
 				E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
 				E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */,
+				E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
+				E5180A5C28EF5C210066E1E4 /* ReviewListView.swift in Sources */,
+				E5206B2E28EE10ED00EFF316 /* ExperienceListView.swift in Sources */,
+				E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 				E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */,
