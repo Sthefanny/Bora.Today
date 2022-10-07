@@ -19,7 +19,7 @@ struct LocationErrorView: View {
                 Text(errorText)
                 
                 Button("Request again") {
-                    locationManager.requestAuthorization(always: true)
+                    AppHelper.openMobileSettings()
                 }
             }
             .padding()

@@ -26,7 +26,7 @@ struct HomeView: View {
                         .padding(.leading, 21)
                     
                     BannerListView(model: TopExperienceModel.example)
-                        .frame(height: screen.size.height * 0.28)
+                        .frame(height: screen.size.height * 0.3)
                     
                     Text("recommended".localized(language))
                         .font(.appTitle3)
@@ -36,6 +36,7 @@ struct HomeView: View {
                         .padding(.leading, 21)
                     
                     ExperienceListView(model: TopExperienceModel.example)
+                        .frame(height: screen.size.height * 0.35)
                     Spacer()
                 }
 //            }

@@ -19,4 +19,8 @@ class AppHelper {
         let error = NSError(domain: domain, code: code ?? 0, userInfo: userInfo)
         SentrySDK.capture(error: error)
     }
+    
+    static func openMobileSettings() {
+        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+    }
 }
