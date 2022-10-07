@@ -19,7 +19,7 @@ struct PageDotsIndexView: View {
     private let circleSize: CGFloat = 6
     private let circleSpacing: CGFloat = 4
     
-    private let primaryColor = Color.appAccent
+    private let primaryColor = Color.appBlue
     private let secondaryColor = Color.appGray
     
     

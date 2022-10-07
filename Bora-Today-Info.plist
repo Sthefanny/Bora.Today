@@ -5,6 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Figtree.ttf</string>
+		<string>PalmerLakePrint-Regular.otf</string>
+		<string>PalmerLakeScript-Regular.otf</string>
 	</array>
 </dict>
 </plist>

@@ -14,6 +14,11 @@
 		E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5168E7628BD49CF0052174E /* BoraTodayApp.swift */; };
 		E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7A28BD49D30052174E /* Assets.xcassets */; };
 		E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5168E7D28BD49D30052174E /* Preview Assets.xcassets */; };
+		E5180A5C28EF5C210066E1E4 /* ReviewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5180A5B28EF5C210066E1E4 /* ReviewListView.swift */; };
+		E5180A5F28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5180A5D28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf */; };
+		E5180A6028EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5180A5E28EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf */; };
+		E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5180A6228EF5EAF0066E1E4 /* StickerView.swift */; };
+		E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5180A6428EF635A0066E1E4 /* StickerModel.swift */; };
 		E51AF60D28ECC17400303CED /* ExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AF60C28ECC17400303CED /* ExperienceModel.swift */; };
 		E51C131828C27F8000124B6F /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = E51C131728C27F8000124B6F /* Sentry */; };
 		E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */; };
@@ -33,6 +38,7 @@
 		E5711EBF28E344EC0027A01A /* StringLocalizationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EBE28E344EC0027A01A /* StringLocalizationExtension.swift */; };
 		E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EC028E346A00027A01A /* LocalizationManager.swift */; };
 		E5711EC428E347620027A01A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EC328E347620027A01A /* SettingsView.swift */; };
+		E573753228F0A41400A40A26 /* StickerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573753128F0A41400A40A26 /* StickerListView.swift */; };
 		E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E581AFA728DB8D8500288B4D /* Figtree.ttf */; };
 		E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE428E9D5360044CE58 /* ButtonDefault.swift */; };
 		E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */; };
@@ -68,6 +74,11 @@
 		E5168E7628BD49CF0052174E /* BoraTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoraTodayApp.swift; sourceTree = "<group>"; };
 		E5168E7A28BD49D30052174E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5168E7D28BD49D30052174E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5180A5B28EF5C210066E1E4 /* ReviewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListView.swift; sourceTree = "<group>"; };
+		E5180A5D28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PalmerLakePrint-Regular.otf"; sourceTree = "<group>"; };
+		E5180A5E28EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PalmerLakeScript-Regular.otf"; sourceTree = "<group>"; };
+		E5180A6228EF5EAF0066E1E4 /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		E5180A6428EF635A0066E1E4 /* StickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerModel.swift; sourceTree = "<group>"; };
 		E51AF60C28ECC17400303CED /* ExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceModel.swift; sourceTree = "<group>"; };
 		E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDotsIndexView.swift; sourceTree = "<group>"; };
 		E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopExperiencesModel.swift; sourceTree = "<group>"; };
@@ -86,6 +97,7 @@
 		E5711EBE28E344EC0027A01A /* StringLocalizationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalizationExtension.swift; sourceTree = "<group>"; };
 		E5711EC028E346A00027A01A /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		E5711EC328E347620027A01A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E573753128F0A41400A40A26 /* StickerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerListView.swift; sourceTree = "<group>"; };
 		E581AFA728DB8D8500288B4D /* Figtree.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Figtree.ttf; sourceTree = "<group>"; };
 		E581AFA928DB8DC700288B4D /* Bora-Today-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bora-Today-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5878AE428E9D5360044CE58 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
@@ -185,6 +197,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E5180A6128EF5E9E0066E1E4 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				E5180A6228EF5EAF0066E1E4 /* StickerView.swift */,
+				E573753128F0A41400A40A26 /* StickerListView.swift */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
 		E535BD6128D8EEC5003131F0 /* Bottom Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +239,7 @@
 				E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */,
 				E51AF60C28ECC17400303CED /* ExperienceModel.swift */,
 				E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */,
+				E5180A6428EF635A0066E1E4 /* StickerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +261,7 @@
 				E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */,
 				E5206B2B28EE0DC900EFF316 /* ExperienceView.swift */,
 				E5206B2D28EE10ED00EFF316 /* ExperienceListView.swift */,
+				E5180A5B28EF5C210066E1E4 /* ReviewListView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -282,6 +305,8 @@
 		E581AFA628DB8D6300288B4D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E5180A5D28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf */,
+				E5180A5E28EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf */,
 				E581AFA728DB8D8500288B4D /* Figtree.ttf */,
 			);
 			path = Fonts;
@@ -290,6 +315,7 @@
 		E5878AE228E9D5150044CE58 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E5180A6128EF5E9E0066E1E4 /* Stickers */,
 				E5CE02E228EB4BD5000FCB77 /* Location */,
 				E5878AF428EA1B6E0044CE58 /* Map */,
 				E5878AE328E9D51C0044CE58 /* Buttons */,
@@ -478,8 +504,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5180A6028EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf in Resources */,
 				E51365ED28DBA58D00319497 /* Localizable.strings in Resources */,
 				E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */,
+				E5180A5F28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf in Resources */,
 				E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */,
 				E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */,
 				E503CBF928BE8E5F00C7D9D7 /* GoogleService-Info.plist in Resources */,
@@ -573,6 +601,7 @@
 				E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */,
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
+				E573753228F0A41400A40A26 /* StickerListView.swift in Sources */,
 				E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
 				E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */,
@@ -582,11 +611,14 @@
 				E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */,
 				E51AF60D28ECC17400303CED /* ExperienceModel.swift in Sources */,
 				E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */,
+				E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */,
 				E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
 				E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */,
+				E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
+				E5180A5C28EF5C210066E1E4 /* ReviewListView.swift in Sources */,
 				E5206B2E28EE10ED00EFF316 /* ExperienceListView.swift in Sources */,
 				E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,

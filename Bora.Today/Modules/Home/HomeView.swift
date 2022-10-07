@@ -17,7 +17,7 @@ struct HomeView: View {
     
     var body: some View {
         GeometryReader { screen in
-            ScrollView {
+//            ScrollView {
                 VStack(alignment: .leading) {
                     Text("today_title".localized(language))
                         .font(.appTitle1)
@@ -26,7 +26,7 @@ struct HomeView: View {
                         .padding(.leading, 21)
                     
                     BannerListView(model: TopExperienceModel.example)
-                        .frame(width: screen.size.width, height: screen.size.height * 0.28)
+                        .frame(height: screen.size.height * 0.28)
                     
                     Text("recommended".localized(language))
                         .font(.appTitle3)
@@ -38,7 +38,7 @@ struct HomeView: View {
                     ExperienceListView(model: TopExperienceModel.example)
                     Spacer()
                 }
-            }
+//            }
         }
     }
 }

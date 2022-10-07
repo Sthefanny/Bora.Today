@@ -12,22 +12,26 @@ struct ExperienceView: View {
     let isFirst: Bool
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            _buildImage()
-            
-            Text(model.name)
-                .font(.appHeadline)
-                .foregroundColor(.appBlack)
-                .padding(.top, 12)
-                .padding(.bottom, 8)
-            
-            
-            VStack(alignment: .leading, spacing: 4) {
-                _buildPlaceDetails()
-                _buildDateDetails()
+        ZStack {
+            VStack(alignment: .leading, spacing: 0) {
+                _buildImage()
+                
+                Text(model.name)
+                    .font(.appHeadline)
+                    .foregroundColor(.appBlack)
+                    .padding(.top, 12)
+                    .padding(.bottom, 8)
+                
+                
+                VStack(alignment: .leading, spacing: 4) {
+                    _buildPlaceDetails()
+                    _buildDateDetails()
+                }
             }
+            .padding(.leading, getPadding())
+            
+            StickerListView(stickerList: model.stickers!)
         }
-        .padding(.leading, getPadding())
     }
     
     func getPadding() -> CGFloat {
@@ -74,6 +78,6 @@ struct ExperienceView: View {
 
 struct ExperienceView_Previews: PreviewProvider {
     static var previews: some View {
-        ExperienceView(model: ExperienceModel.example2, isFirst: true)
+        ExperienceView(model: ExperienceModel.example1, isFirst: true)
     }
 }

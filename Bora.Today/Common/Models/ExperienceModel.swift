@@ -12,7 +12,8 @@ struct ExperienceModel: Identifiable {
     let name: String
     let location: String
     let datetime: String
-    var image: String
+    let image: String
+    let stickers: [StickerModel]?
 }
 
 #if DEBUG
@@ -25,7 +26,8 @@ extension ExperienceModel {
             name: "Rolê de Skate",
             location: "Condomínio Sachas",
             datetime: "Hoje, 18:00 AM",
-            image: "today_bg"
+            image: "today_bg",
+            stickers: [StickerModel.legal, StickerModel.bora, StickerModel.top]
         )
     }
     
@@ -35,7 +37,8 @@ extension ExperienceModel {
             name: "Burguer na Stel",
             location: "Casa da Stel",
             datetime: "12/10/2022, 18:00 AM",
-            image: "exp1"
+            image: "exp1",
+            stickers: [StickerModel.legal, StickerModel.top]
         )
     }
     
@@ -45,7 +48,8 @@ extension ExperienceModel {
             name: "Brooday",
             location: "Outback",
             datetime: "Amanha, 18:00 AM",
-            image: "exp2"
+            image: "exp2",
+            stickers: [StickerModel.top]
         )
     }
 }
