@@ -37,6 +37,8 @@ struct HomeView: View {
                     
                     ExperienceListView(model: TopExperienceModel.example)
                         .frame(height: screen.size.height * 0.35)
+                    
+                    ButtonStroke(buttonType: .imageAndTextBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, isDisabled: .constant(false))
                     Spacer()
                 }
 //            }

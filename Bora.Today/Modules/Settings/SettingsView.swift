@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import FlagKit
 
 struct SettingsView: View {
     // Step #1
@@ -19,30 +18,18 @@ struct SettingsView: View {
                         LocalizationManager.shared.language = .english
                     } label: {
                         Text("English (US)")
-                        flagBy(countryCode: "US")
+                        FlagView(countryCode: "US", size: CGFloat(40))
                     }
                     Button {
                         LocalizationManager.shared.language = .portuguese
                     } label: {
                         Text("Português")
-                        flagBy(countryCode: "BR")
+                        FlagView(countryCode: "BR", size: CGFloat(40))
                     }
                 } label: {
                     Spacer()
-                    flagBy(countryCode: language.userSymbol.uppercased())
-                        .resizable()
-                        .frame(width: 40, height: 40)
+                    FlagView(countryCode: language.userSymbol.uppercased(), size: CGFloat(40))
                 }.padding()
-    }
-}
-
-private extension SettingsView {
-    
-    func flagBy(countryCode: String) -> Image {
-        guard let flag = Flag(countryCode: countryCode) else {
-            return Image(systemName: "questionmark.circle")
-        }
-        return Image(uiImage: flag.image(style: .square))
     }
 }
 
