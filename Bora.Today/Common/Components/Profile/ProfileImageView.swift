@@ -21,7 +21,7 @@ struct ProfileImageView: View {
                 .stroke(Color.red, lineWidth: 0))
             
             FlagView(countryCode: country, size: CGFloat(25))
-                .offset(x: -30, y: -20)
+                .offset(x: 30, y: 20)
         }
     }
 }

@@ -12,19 +12,23 @@ struct ReviewCardView: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(alignment: .top) {
                 ProfileImageView(image: model.user.image, country: model.user.originCountry)
                 VStack(alignment: .leading) {
-                    HStack {
+                    HStack(alignment: .top) {
                         Text("@" + model.user.username + " em " + model.location)
                             .font(.appHeadline)
                         
                         Spacer()
                         
-                        HStack {
+                        HStack(spacing: 3) {
                             Image(systemName: "star.fill")
-                                .frame(width: 12, height: 12)
+                                .resizable()
+                                .foregroundColor(.appBlueButton)
+                                .frame(width: 10, height: 10)
+                            
                             Text("\(String(format: "%.1f", model.score))")
+                                .font(.appCaption1)
                         }
                     }
                     
@@ -41,11 +45,17 @@ struct ReviewCardView: View {
                 }
             }
         }
+        .padding(10)
+        .background(Color.appWhite)
+        .cornerRadius(18)
     }
 }
 
 struct ReviewCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ReviewCardView(model: ReviewModel.example1)
+        ZStack {
+            Color.black.background()
+            ReviewCardView(model: ReviewModel.example1)
+        }
     }
 }
