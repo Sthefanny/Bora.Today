@@ -47,6 +47,9 @@
 		E5711EC428E347620027A01A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EC328E347620027A01A /* SettingsView.swift */; };
 		E573753228F0A41400A40A26 /* StickerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573753128F0A41400A40A26 /* StickerListView.swift */; };
 		E573753528F0BB8400A40A26 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573753428F0BB8400A40A26 /* CalendarView.swift */; };
+		E57DE48528F7548600DB4447 /* TagOnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57DE48428F7548600DB4447 /* TagOnBoardingView.swift */; };
+		E57DE48828F756E400DB4447 /* OnboardingTagStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57DE48728F756E400DB4447 /* OnboardingTagStyle.swift */; };
+		E57DE48A28F75C6D00DB4447 /* DefaultTagStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57DE48928F75C6D00DB4447 /* DefaultTagStyle.swift */; };
 		E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E581AFA728DB8D8500288B4D /* Figtree.ttf */; };
 		E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE428E9D5360044CE58 /* ButtonDefault.swift */; };
 		E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */; };
@@ -114,6 +117,9 @@
 		E5711EC328E347620027A01A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E573753128F0A41400A40A26 /* StickerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerListView.swift; sourceTree = "<group>"; };
 		E573753428F0BB8400A40A26 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E57DE48428F7548600DB4447 /* TagOnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagOnBoardingView.swift; sourceTree = "<group>"; };
+		E57DE48728F756E400DB4447 /* OnboardingTagStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTagStyle.swift; sourceTree = "<group>"; };
+		E57DE48928F75C6D00DB4447 /* DefaultTagStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTagStyle.swift; sourceTree = "<group>"; };
 		E581AFA728DB8D8500288B4D /* Figtree.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Figtree.ttf; sourceTree = "<group>"; };
 		E581AFA928DB8DC700288B4D /* Bora-Today-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bora-Today-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5878AE428E9D5360044CE58 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
@@ -250,7 +256,9 @@
 		E554265928F33BDD0088C652 /* Tags */ = {
 			isa = PBXGroup;
 			children = (
+				E57DE48628F756C800DB4447 /* Styles */,
 				E554265A28F33C190088C652 /* TagDefaultView.swift */,
+				E57DE48428F7548600DB4447 /* TagOnBoardingView.swift */,
 			);
 			path = Tags;
 			sourceTree = "<group>";
@@ -344,6 +352,15 @@
 				E573753428F0BB8400A40A26 /* CalendarView.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		E57DE48628F756C800DB4447 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E57DE48728F756E400DB4447 /* OnboardingTagStyle.swift */,
+				E57DE48928F75C6D00DB4447 /* DefaultTagStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		E581AFA528DB8D5C00288B4D /* Assets */ = {
@@ -642,11 +659,13 @@
 				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
 				E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */,
 				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
+				E57DE48828F756E400DB4447 /* OnboardingTagStyle.swift in Sources */,
 				E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */,
 				E573753528F0BB8400A40A26 /* CalendarView.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
 				E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */,
 				E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */,
+				E57DE48A28F75C6D00DB4447 /* DefaultTagStyle.swift in Sources */,
 				E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */,
 				E554266928F354840088C652 /* ReviewModel.swift in Sources */,
 				E5878AEA28E9E30F0044CE58 /* ButtonStroke.swift in Sources */,
@@ -686,6 +705,7 @@
 				E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */,
 				E554265B28F33C190088C652 /* TagDefaultView.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
+				E57DE48528F7548600DB4447 /* TagOnBoardingView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 				E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */,
 				E5711EC428E347620027A01A /* SettingsView.swift in Sources */,

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TagModel {
     let text: String
-    let icon: String
+    let icon: String?
     let color: Color
 }
 
@@ -18,12 +18,30 @@ struct TagModel {
 // MARK: - Example Item
 extension TagModel {
     
-    static var example: TagModel {
+    static var example1: TagModel {
 
         TagModel(
             text: "Arte e Cultura",
             icon: "sparkles",
-            color: Color.white
+            color: Color.appOrange
+        )
+    }
+    
+    static var example2: TagModel {
+
+        TagModel(
+            text: "Happy Hour",
+            icon: "fork.knife",
+            color: Color.appPink
+        )
+    }
+    
+    static var example3: TagModel {
+
+        TagModel(
+            text: "Museus",
+            icon: "theatermasks.fill",
+            color: Color.appGreen
         )
     }
 }

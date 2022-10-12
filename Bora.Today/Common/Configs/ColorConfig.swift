@@ -18,6 +18,7 @@ extension Color {
     static let appRed = Color("red")
     static let appYellow = Color("yellow")
     static let appGreen = Color("green")
+    static let appOrange = Color("orange")
     static let appBlueButton = Color("button-blue")
     static let appBlueButtonPressed = Color("button-blue-pressed")
     static let appBlueButtonDisabled = Color("button-blue").opacity(0.36)
