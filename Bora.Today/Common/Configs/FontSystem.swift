@@ -10,7 +10,7 @@ import SwiftUI
 
 extension Font {
     static func appFont(size: CGFloat) -> Font {
-        return Font.custom(AppFont.figtree.rawValue, size: size)
+        return Font.custom(AppFont.figtree.name, size: size)
     }
     
     static let appLargeTitle = appFont(size: 34).weight(.regular)

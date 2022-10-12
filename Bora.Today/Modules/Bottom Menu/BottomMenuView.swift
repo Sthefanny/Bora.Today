@@ -16,13 +16,8 @@ struct BottomMenuView: View {
         GeometryReader { screen in
             CustomTabView(tabs: TabType.allCases.map({ $0.tabItem }), selectedIndex: $selectedIndex) { index in
                 switch locationManager.authorizationStatus {
-                case .notDetermined:
-                    AnyView(RequestLocationView())
-                        .environmentObject(locationManager)
-                case .restricted:
-                    LocationErrorView(errorText: "Location use is restricted.")
-                case .denied:
-                    LocationErrorView(errorText: "The app does not have location permissions. Please enable them in settings.")
+                case .notDetermined, .restricted, .denied:
+                    RequestLocationView()
                 case .authorizedAlways, .authorizedWhenInUse:
                     let type = TabType(rawValue: index) ?? .home
                     getTabView(type: type)

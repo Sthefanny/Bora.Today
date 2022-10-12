@@ -16,3 +16,8 @@
 "recommended" = "Recommended";
 "reviewsTitle" = "Reviews";
 "reviewsText" = "Follow what other people are finding";
+
+//RequestLocationView
+"activeLocation" = "Activate your Location";
+"configure" = "Configure";
+"activeLocationDescription" = "In order to continue using the app, you must allow us to track your location in your phone's settings";

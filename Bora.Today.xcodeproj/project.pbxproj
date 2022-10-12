@@ -56,6 +56,7 @@
 		E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF028EA0F1B0044CE58 /* TextButtonStyle.swift */; };
 		E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF228EA10460044CE58 /* ButtonText.swift */; };
 		E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */; };
+		E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
 		E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */; };
@@ -67,7 +68,6 @@
 		E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9B28E62B1800556A80 /* CustomTabView.swift */; };
 		E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9E28E62DE800556A80 /* AppConfig.swift */; };
 		E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */; };
-		E5CE02E628EB4CF8000FCB77 /* LocationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */; };
 		E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E728EB5E25000FCB77 /* BannerListView.swift */; };
 		F4496BEF574AC0C95EECE203 /* Pods_Bora_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +124,7 @@
 		E5878AF028EA0F1B0044CE58 /* TextButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonStyle.swift; sourceTree = "<group>"; };
 		E5878AF228EA10460044CE58 /* ButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonText.swift; sourceTree = "<group>"; };
 		E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBannerView.swift; sourceTree = "<group>"; };
+		E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CoveredByYourGrace-Regular.ttf"; sourceTree = "<group>"; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemDataModel.swift; sourceTree = "<group>"; };
@@ -135,7 +136,6 @@
 		E5C19A9B28E62B1800556A80 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		E5C19A9E28E62DE800556A80 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
-		E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationErrorView.swift; sourceTree = "<group>"; };
 		E5CE02E728EB5E25000FCB77 /* BannerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerListView.swift; sourceTree = "<group>"; };
 		EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bora_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -357,6 +357,7 @@
 		E581AFA628DB8D6300288B4D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */,
 				E5180A5D28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf */,
 				E5180A5E28EF5DF80066E1E4 /* PalmerLakeScript-Regular.otf */,
 				E581AFA728DB8D8500288B4D /* Figtree.ttf */,
@@ -475,7 +476,6 @@
 			isa = PBXGroup;
 			children = (
 				E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */,
-				E5CE02E528EB4CF8000FCB77 /* LocationErrorView.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -565,6 +565,7 @@
 				E5168E7E28BD49D30052174E /* Preview Assets.xcassets in Resources */,
 				E5180A5F28EF5DF80066E1E4 /* PalmerLakePrint-Regular.otf in Resources */,
 				E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */,
+				E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */,
 				E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */,
 				E503CBF928BE8E5F00C7D9D7 /* GoogleService-Info.plist in Resources */,
 			);
@@ -647,7 +648,6 @@
 				E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */,
 				E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */,
 				E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */,
-				E5CE02E628EB4CF8000FCB77 /* LocationErrorView.swift in Sources */,
 				E554266928F354840088C652 /* ReviewModel.swift in Sources */,
 				E5878AEA28E9E30F0044CE58 /* ButtonStroke.swift in Sources */,
 				E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */,

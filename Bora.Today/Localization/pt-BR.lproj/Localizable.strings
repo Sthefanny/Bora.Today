@@ -15,3 +15,8 @@
 "recommended" = "Recomendados";
 "reviewsTitle" = "Reviews";
 "reviewsText" = "Acompanhe o que outras pessoas estão achando";
+
+//RequestLocationView
+"activeLocation" = "Ative sua Localização";
+"configure" = "Configurar";
+"activeLocationDescription" = "Para continuar usando o app é necessário que você permita rastrearmos sua localização nos ajustes do seu celular";

@@ -52,9 +52,9 @@ struct DefaultButtonStyle: ButtonStyle {
     func getRadius() -> CGFloat {
         switch self.buttonType {
         case .textOnly:
-            return 9
+            return 30
         case .imageOnly:
-            return 9
+            return 30
         case .imageAndText:
             return 30
         case .imageAndTextBigger:

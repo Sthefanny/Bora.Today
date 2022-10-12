@@ -18,7 +18,7 @@ struct CalendarView: View {
             )
             .datePickerStyle(.graphical)
             .background(Color.appYellow)
-            .font(.custom(AppFont.palmerLakeScript.rawValue, size: 32))
+            .font(.custom(AppFont.palmerLakeScript.name, size: 32))
             .accentColor(Color.appPink)
     }
 }

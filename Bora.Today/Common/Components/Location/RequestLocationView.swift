@@ -9,27 +9,34 @@ import SwiftUI
 
 struct RequestLocationView: View {
     @EnvironmentObject var locationManager: LocationManager
-        
-        var body: some View {
-            VStack {
-                Image(systemName: "location.circle")
-                    .resizable()
-                    .frame(width: 100, height: 100, alignment: .center)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                Button(action: {
-                    print("allowing perms")
-                }, label: {
-                    Label("Allow tracking", systemImage: "location")
-                })
-                .padding(10)
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-                Text("We need your permission to track you.")
-                    .foregroundColor(.gray)
-                    .font(.caption)
+    @State var isDisabled = false
+    
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
+    var body: some View {
+        GeometryReader { screen in
+            HStack(alignment: .center) {
+                VStack {
+                    Text("activeLocation".localized(language))
+                        .font(.custom(AppFont.coveredByYourGrace.name, size: 40))
+                        .padding(.bottom, 10)
+                    
+                    Text("activeLocationDescription".localized(language))
+                        .font(.custom(AppFont.figtree.name, size: 12))
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.center)
+                        .frame(width: screen.size.width * 0.6, alignment: .center)
+                    
+                    ButtonDefault(buttonType: ButtonType.imageAndTextBigger, text: "configure".localized(language), icon: "", action: {
+                        AppHelper.openMobileSettings()
+                    }, isDisabled: $isDisabled)
+                    .padding(.top)
+                }
             }
+            .frame(width: screen.size.width, height: screen.size.height, alignment: .center)
         }
+    }
 }
 
 struct RequestLocationView_Previews: PreviewProvider {

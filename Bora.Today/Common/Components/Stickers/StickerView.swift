@@ -15,7 +15,7 @@ struct StickerView: View {
     
     var body: some View {
         Text(model.text)
-            .font(.custom(model.font.rawValue, size: model.fontSize))
+            .font(.custom(model.font.name, size: model.fontSize))
             .foregroundColor(model.fontColor)
             .frame(width: model.size, height: model.size, alignment: .center)
             .background(model.bgColor)
