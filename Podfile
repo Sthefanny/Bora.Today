@@ -6,6 +6,6 @@ target 'Bora.Today' do
   use_frameworks!
 
   pod 'SwiftLint'
-  pod 'FlagKit'
+  pod 'SwiftFlags'
 
 end

@@ -17,7 +17,7 @@ struct HomeView: View {
     
     var body: some View {
         GeometryReader { screen in
-//            ScrollView {
+            ScrollView {
                 VStack(alignment: .leading) {
                     Text("today_title".localized(language))
                         .font(.appTitle1)
@@ -38,10 +38,13 @@ struct HomeView: View {
                     ExperienceListView(model: TopExperienceModel.example)
                         .frame(height: screen.size.height * 0.35)
                     
-                    ButtonStroke(buttonType: .imageAndTextBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, isDisabled: .constant(false))
+                    ReviewListView(model: [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3])
+                        .frame(height: screen.size.height * 0.35)
                     Spacer()
                 }
-//            }
+            }
+            .frame(height: screen.size.height)
+            .ignoresSafeArea()
         }
     }
 }

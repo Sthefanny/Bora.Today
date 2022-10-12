@@ -6,17 +6,15 @@
 //
 
 import SwiftUI
-import FlagKit
+import SwiftFlags
 
 struct FlagView: View {
     let countryCode: String
     let size: CGFloat
     
     var body: some View {
-        guard let flag = Flag(countryCode: countryCode) else {
-            return Image(systemName: "questionmark.circle").resizable().frame(width: size, height: size, alignment: .center)
-        }
-        return Image(uiImage: flag.image(style: .circle)).resizable().frame(width: size, height: size, alignment: .center)
+        return Text(SwiftFlags.flag(for: countryCode) ?? "?")
+            .font(.system(size: size))
     }
 }
 

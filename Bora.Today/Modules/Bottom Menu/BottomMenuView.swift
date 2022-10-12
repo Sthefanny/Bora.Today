@@ -28,11 +28,13 @@ struct BottomMenuView: View {
                     getTabView(type: type)
                         .frame(width: screen.size.width, height: screen.size.height)
                         .environmentObject(locationManager)
+                        .ignoresSafeArea()
                 default:
                     Text("Unexpected status")
                 }
             }
         }
+        .ignoresSafeArea()
     }
     
     @ViewBuilder

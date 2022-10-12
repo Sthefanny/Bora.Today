@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftFlags
 
 struct ProfileImageView: View {
     let image: String
@@ -20,8 +21,8 @@ struct ProfileImageView: View {
                 .overlay(Circle()
                 .stroke(Color.red, lineWidth: 0))
             
-            FlagView(countryCode: country, size: CGFloat(25))
-                .offset(x: 30, y: 20)
+            FlagView(countryCode: country, size: 18)
+                .offset(x: 27, y: 27)
         }
     }
 }

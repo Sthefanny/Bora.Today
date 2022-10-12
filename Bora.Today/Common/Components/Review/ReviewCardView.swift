@@ -45,6 +45,7 @@ struct ReviewCardView: View {
                 }
             }
         }
+        .frame(height: 131)
         .padding(10)
         .background(Color.appWhite)
         .cornerRadius(18)
@@ -57,5 +58,6 @@ struct ReviewCardView_Previews: PreviewProvider {
             Color.black.background()
             ReviewCardView(model: ReviewModel.example1)
         }
+        .ignoresSafeArea()
     }
 }
