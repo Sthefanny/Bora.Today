@@ -11,7 +11,7 @@ enum AppFont: String {
     case figtree = "Figtree"
     case palmerLakeScript = "PalmerLakeScript-Regular"
     case palmerLakePrint = "PalmerLakePrint-Regular"
-    case coveredByYourGrace = "CoveredByYourGrace-Regular"
+    case coveredByYourGrace = "CoveredByYourGrace"
 
     var name: String {
         return self.rawValue
