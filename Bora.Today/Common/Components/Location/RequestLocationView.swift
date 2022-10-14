@@ -17,21 +17,20 @@ struct RequestLocationView: View {
     var body: some View {
         GeometryReader { screen in
             HStack(alignment: .center) {
-                VStack {
+                VStack(spacing: 16) {
                     Text("activeLocation".localized(language))
                         .font(.custom(AppFont.coveredByYourGrace.name, size: 40))
-                        .padding(.bottom, 10)
+                        .padding(0)
                     
                     Text("activeLocationDescription".localized(language))
-                        .font(.custom(AppFont.figtree.name, size: 12))
+                        .font(.appSubheadline)
                         .fontWeight(.medium)
                         .multilineTextAlignment(.center)
-                        .frame(width: screen.size.width * 0.6, alignment: .center)
+                        .frame(width: screen.size.width * 0.7, alignment: .center)
                     
                     ButtonDefault(buttonType: ButtonType.imageAndTextBigger, text: "configure".localized(language), icon: "", action: {
                         AppHelper.openMobileSettings()
                     }, isDisabled: $isDisabled)
-                    .padding(.top)
                 }
             }
             .frame(width: screen.size.width, height: screen.size.height, alignment: .center)
