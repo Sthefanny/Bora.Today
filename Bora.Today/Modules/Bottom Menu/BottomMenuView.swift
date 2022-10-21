@@ -13,6 +13,19 @@ struct BottomMenuView: View {
     
     var body: some View {
         
+//        TabView {
+//            HomeView()
+//                .tabItem {
+//                    Image("home")
+//                    Text("tab1")
+//                }
+//
+//            SearchView()
+//                .tabItem {
+//                    Label("Order", systemImage: "square.and.pencil")
+//                }
+//        }
+        
         GeometryReader { screen in
             CustomTabView(tabs: TabType.allCases.map({ $0.tabItem }), selectedIndex: $selectedIndex) { index in
                 switch locationManager.authorizationStatus {
@@ -21,13 +34,14 @@ struct BottomMenuView: View {
                 case .authorizedAlways, .authorizedWhenInUse:
                     let type = TabType(rawValue: index) ?? .home
                     getTabView(type: type)
-                        .frame(width: screen.size.width, height: screen.size.height)
+                        .frame(width: screen.size.width, height: screen.size.height - AppConfig.bottomMenuHeight)
+                        .padding(.vertical, 30)
                         .environmentObject(locationManager)
-                        .ignoresSafeArea()
                 default:
                     Text("Unexpected status")
                 }
             }
+            .frame(height: screen.size.height)
         }
         .ignoresSafeArea()
     }
@@ -42,7 +56,7 @@ struct BottomMenuView: View {
         case .create:
             CreateView()
         case .history:
-            HomeView()
+            HistoryView()
         case .profile:
             HomeView()
         }

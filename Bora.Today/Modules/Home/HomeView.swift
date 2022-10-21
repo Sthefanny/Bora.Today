@@ -44,7 +44,6 @@ struct HomeView: View {
                 }
             }
             .frame(height: screen.size.height)
-            .ignoresSafeArea()
         }
     }
 }

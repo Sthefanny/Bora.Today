@@ -20,3 +20,9 @@
 "activeLocation" = "Ative sua Localização";
 "configure" = "Configurar";
 "activeLocationDescription" = "Para continuar usando o app é necessário que você permita rastrearmos sua localização nos ajustes do seu celular";
+
+//HistoryView
+"historyTitle" = "História";
+"notificationsButton" = "Notificações";
+"historyGreeting %@" = "Olá %@! Essa é sua história em:";
+"yourAchievements" = "Suas conquistas";

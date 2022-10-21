@@ -21,3 +21,9 @@
 "activeLocation" = "Activate your Location";
 "configure" = "Configure";
 "activeLocationDescription" = "In order to continue using the app, you must allow us to track your location in your phone's settings";
+
+//HistoryView
+"historyTitle" = "History";
+"notificationsButton" = "Notifications";
+"historyGreeting %@" = "Hello %@! This is your story in:";
+"yourAchievements" = "Your achievements";
