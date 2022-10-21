@@ -18,7 +18,7 @@ struct HomeView: View {
     var body: some View {
         GeometryReader { screen in
             ScrollView {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 0) {
                     Text("today_title".localized(language))
                         .font(.appTitle1)
                         .foregroundColor(.appBlack)
@@ -36,7 +36,7 @@ struct HomeView: View {
                         .padding(.leading, 21)
                     
                     ExperienceListView(model: TopExperienceModel.example)
-                        .frame(height: screen.size.height * 0.35)
+                        .frame(height: screen.size.height * 0.4)
                     
                     ReviewListView(model: [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3])
                         .frame(height: screen.size.height * 0.35)
