@@ -13,7 +13,7 @@ struct ReviewCardView: View {
     var body: some View {
         VStack {
             HStack(alignment: .top) {
-                ProfileImageView(image: model.user.image, country: model.user.originCountry)
+                ProfileImageView()
                 VStack(alignment: .leading) {
                     HStack(alignment: .top) {
                         Text("@" + model.user.username + " em " + model.location)

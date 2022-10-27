@@ -8,14 +8,46 @@
 import SwiftUI
 
 struct HistoryAchievementView: View {
+    
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
+    var model: [AchievementModel]
+    
+    init() {
+        self.model = [AchievementModel.example1, AchievementModel.example2, AchievementModel.example3]
+    }
+    
     var body: some View {
-        VStack (alignment: .leading, spacing: 4) {
-            Image("achiev1")
+        VStack(alignment: .leading, spacing: 0) {
+            Text("yourAchievements".localized(language))
+                .font(.appHeadline)
+                .fontWeight(.bold)
+                .padding(.leading, 21)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(0..<model.count, id: \.self) { index in
+                        let item = model[index]
+                        _buildCard(item: item)
+                            .padding(.leading, index == 0 ? 21 : 0)
+                            .padding(.trailing, index == model.count - 1 ? 21 : 0)
+                    }
+                }
+            }
+            .padding(.top, 16)
         }
-        .padding(.top, 24)
-        .padding(.bottom, 12)
-        .padding(.horizontal, 12)
-        .cornerRadius(18)
+    }
+    
+    private func _buildCard(item: AchievementModel) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Image(item.image)
+                .cornerRadius(18)
+            
+            Text(item.date)
+                .font(.appCaption1)
+                .foregroundColor(.appBlack)
+        }
     }
 }
 

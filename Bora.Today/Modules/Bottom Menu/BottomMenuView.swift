@@ -18,6 +18,7 @@ struct BottomMenuView: View {
     
     init() {
         UITabBar.appearance().barTintColor = UIColor(Color.appWhite)
+        UITabBar.appearance().backgroundColor = UIColor(Color.appWhite)
         UITabBar.appearance().unselectedItemTintColor = UIColor(Color.appBlack)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.init(name: AppFont.figtree.name, size: 12)! ], for: .normal)
     }
@@ -59,14 +60,14 @@ struct BottomMenuView: View {
                             Text("history".localized(language))
                         }
                         .tag(3)
-                    
-                    HomeView()
-                        .tabItem {
+                
+                    SettingsView()                        .tabItem {
                             Image(selection == 4 ? "profile_selected" : "profile")
                             Text("profile".localized(language))
                         }
                         .tag(4)
                 }
+                .frame(height: screen.size.height)
                 .accentColor(.appBlack)
                 .padding(.top, 20)
                 .preferredColorScheme(.light)

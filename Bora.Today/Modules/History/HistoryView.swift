@@ -16,25 +16,31 @@ struct HistoryView: View {
     
     @State var isDisabled = false
     
+    @State var isNotificationsPresented = false
+    
     init() {
         model = UserModel.example1
     }
     
     var body: some View {
         GeometryReader { screen in
-            VStack(alignment: .leading, spacing: 0) {
-                _buildHeader
-                
-                _buildWelcome
-                
-                _buildCards
-                
-                _buildAchievements
-                
-                SettingsView()
+            ScrollView {
+                VStack(alignment: .leading, spacing: 0) {
+                    _buildHeader
+                    
+                    _buildWelcome
+                    
+                    _buildCards
+                    
+                    _buildAchievements
+                }
+                .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
+                .padding(.vertical, 20)
             }
-            .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
-            .padding(.vertical, 20)
+            .frame(height: screen.size.height)
+            .popover(isPresented: $isNotificationsPresented) {
+                NotificationsView(isNotificationsPresented: $isNotificationsPresented)
+            }
         }
     }
     
@@ -48,6 +54,7 @@ struct HistoryView: View {
             
             ButtonText(buttonType: .imageAndText, text: "notificationsButton".localized(language), icon: "bell.badge", action: {
                 print("clicked")
+                self.isNotificationsPresented = true
             }, color: .appBlueButton, isDisabled: $isDisabled)
         }
         .padding(.horizontal, 21)
@@ -57,9 +64,17 @@ struct HistoryView: View {
     private var _buildWelcome: some View {
         VStack(alignment: .leading, spacing: 4) {
             //ToDo: ver como traduzir com parametro em tempo real
-            Text("historyGreeting \(model.name)")
-                .font(.appCallout)
-                .foregroundColor(.black)
+            HStack(spacing: 2) {
+                Text("historyGreeting1")
+                    .font(.appCallout)
+                    .foregroundColor(.black)
+                Text("\(model.name)!")
+                    .font(.appCallout)
+                    .foregroundColor(.black)
+                Text("historyGreeting2")
+                    .font(.appCallout)
+                    .foregroundColor(.black)
+            }
             
             HStack(spacing: 4) {
                 Text(model.actualCity)
@@ -82,25 +97,20 @@ struct HistoryView: View {
             
             VStack (spacing: 12) {
                 
-                    HistoryCardView(model: model.history[1])
+                HistoryCardView(model: model.history[1])
                 
-                    HistoryCardView(model: model.history[2])
+                HistoryCardView(model: model.history[2])
             }
         }
         .padding(.horizontal, 21)
     }
     
     private var _buildAchievements: some View {
-        VStack (spacing: 0) {
-            Text("yourAchievements".localized(language))
-                .font(.appHeadline)
-                .fontWeight(.bold)
-        }
-        .padding(.top, 32)
-        .padding(.bottom, 16)
-        .padding(.horizontal, 21)
+        HistoryAchievementView()
+            .padding(.top, 32)
+            .padding(.bottom, 16)
     }
-
+    
 }
 
 struct HistoryView_Previews: PreviewProvider {

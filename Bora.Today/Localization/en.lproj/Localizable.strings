@@ -25,5 +25,13 @@
 //HistoryView
 "historyTitle" = "History";
 "notificationsButton" = "Notifications";
-"historyGreeting %@" = "Hello %@! This is your story in:";
+"historyGreeting1" = "Hello";
+"historyGreeting2" = "This is your story in:";
 "yourAchievements" = "Your achievements";
+
+//NofiticationsView
+"notificationTitle" = "Notifications";
+"notificationRowTitle" = "How was the";
+"notificationRowText" = "Tell us about your experience :)";
+"notificationConnectionText" = "has connected with you!";
+"notificationGoingToText" = "goes to -";
