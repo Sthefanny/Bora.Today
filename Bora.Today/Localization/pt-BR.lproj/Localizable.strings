@@ -34,3 +34,7 @@
 "notificationRowText" = "Conte como foi sua experiência :)";
 "notificationConnectionText" = "se conectou com você!";
 "notificationGoingToText" = "vai para -";
+
+//LocationHistoryView
+"locationHistoryTitle" = "Seu histórico de locais:";
+"locationHistoryButton" = "Adicionar novo local";

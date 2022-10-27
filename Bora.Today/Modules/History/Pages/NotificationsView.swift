@@ -82,7 +82,7 @@ struct NotificationsView: View {
     private func _buildNotificationText(item: NotificationModel) -> some View {
         switch item.type {
         case .howWasExperience:
-            return VStack(alignment: .leading, spacing: 8) {
+            return AnyView(VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 2) {
                     Text("notificationRowTitle".localized(language))
                         .font(.appHeadline)
@@ -96,9 +96,9 @@ struct NotificationsView: View {
                 Text("notificationRowText".localized(language))
                     .font(.appSubheadline)
                     .foregroundColor(.appBlack)
-            }
+            })
         case .connection:
-            return VStack(alignment: .leading, spacing: 8) {
+            return AnyView(VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 2) {
                     Text("@\(item.username ?? "")")
                         .font(.appHeadline)
@@ -108,21 +108,21 @@ struct NotificationsView: View {
                         .font(.appHeadline)
                         .foregroundColor(.appBlack)
                 }
-            }
+            })
         case .goingToEvent:
-            return VStack(alignment: .leading, spacing: 8) {
-                    Text("@\(item.username ?? "") ")
-                        .font(.appHeadline)
-                        .foregroundColor(.appBlack)
-                    
-                    + Text("notificationGoingToText".localized(language))
-                        .font(.appHeadline)
-                        .foregroundColor(.appBlack)
-                    
-                    + Text(" \(item.event ?? "")")
-                        .font(.appHeadline)
-                        .foregroundColor(.appBlack)
-            }
+            return AnyView(VStack(alignment: .leading, spacing: 8) {
+                Text("@\(item.username ?? "") ")
+                    .font(.appHeadline)
+                    .foregroundColor(.appBlack)
+                
+                + Text("notificationGoingToText".localized(language))
+                    .font(.appHeadline)
+                    .foregroundColor(.appBlack)
+                
+                + Text(" \(item.event ?? "")")
+                    .font(.appHeadline)
+                    .foregroundColor(.appBlack)
+            })
         }
     }
 }

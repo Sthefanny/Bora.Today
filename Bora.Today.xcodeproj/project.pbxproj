@@ -70,6 +70,8 @@
 		E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
+		E5BE868A290B012900FDDA47 /* LocationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */; };
+		E5BE868C290B0A9700FDDA47 /* LocationHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE868B290B0A9700FDDA47 /* LocationHistoryModel.swift */; };
 		E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */; };
 		E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9028E6080300556A80 /* TabItemView.swift */; };
 		E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */; };
@@ -150,6 +152,8 @@
 		E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CoveredByYourGrace-Regular.ttf"; sourceTree = "<group>"; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryView.swift; sourceTree = "<group>"; };
+		E5BE868B290B0A9700FDDA47 /* LocationHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryModel.swift; sourceTree = "<group>"; };
 		E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemDataModel.swift; sourceTree = "<group>"; };
 		E5C19A9028E6080300556A80 /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusShapeModel.swift; sourceTree = "<group>"; };
@@ -323,6 +327,7 @@
 				E505596C28FF3A1800DB5A74 /* HistoryCardModel.swift */,
 				E5D0274F2903239300C7FAAA /* AchievementModel.swift */,
 				E57D4ACC290711B100ACE493 /* NotificationModel.swift */,
+				E5BE868B290B0A9700FDDA47 /* LocationHistoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				E57D4ACA29070CCA00ACE493 /* NotificationsView.swift */,
+				E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -750,6 +756,7 @@
 				E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */,
 				E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */,
 				E554266728F34E900088C652 /* FlagView.swift in Sources */,
+				E5BE868C290B0A9700FDDA47 /* LocationHistoryModel.swift in Sources */,
 				E554265D28F33E280088C652 /* TagModel.swift in Sources */,
 				E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
@@ -764,6 +771,7 @@
 				E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */,
 				E554265B28F33C190088C652 /* TagDefaultView.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
+				E5BE868A290B012900FDDA47 /* LocationHistoryView.swift in Sources */,
 				E57D4ACD290711B100ACE493 /* NotificationModel.swift in Sources */,
 				E57DE48528F7548600DB4447 /* TagOnBoardingView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,

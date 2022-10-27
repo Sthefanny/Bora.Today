@@ -15,8 +15,8 @@ struct HistoryView: View {
     private let model: UserModel
     
     @State var isDisabled = false
-    
     @State var isNotificationsPresented = false
+    @State var isLocationHistoryPresented = false
     
     init() {
         model = UserModel.example1
@@ -24,22 +24,26 @@ struct HistoryView: View {
     
     var body: some View {
         GeometryReader { screen in
-            ScrollView {
-                VStack(alignment: .leading, spacing: 0) {
-                    _buildHeader
-                    
-                    _buildWelcome
-                    
-                    _buildCards
-                    
-                    _buildAchievements
+            ZStack {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 0) {
+                        _buildHeader
+                        
+                        _buildWelcome
+                        
+                        _buildCards
+                        
+                        _buildAchievements
+                    }
+                    .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
+                    .padding(.vertical, 20)
                 }
-                .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
-                .padding(.vertical, 20)
-            }
-            .frame(height: screen.size.height)
-            .popover(isPresented: $isNotificationsPresented) {
-                NotificationsView(isNotificationsPresented: $isNotificationsPresented)
+                .frame(height: screen.size.height)
+                .popover(isPresented: $isNotificationsPresented) {
+                    NotificationsView(isNotificationsPresented: $isNotificationsPresented)
+                }
+                
+                LocationHistoryView(isLocationHistoryPresented: $isLocationHistoryPresented)
             }
         }
     }
@@ -53,7 +57,6 @@ struct HistoryView: View {
             Spacer()
             
             ButtonText(buttonType: .imageAndText, text: "notificationsButton".localized(language), icon: "bell.badge", action: {
-                print("clicked")
                 self.isNotificationsPresented = true
             }, color: .appBlueButton, isDisabled: $isDisabled)
         }
@@ -85,6 +88,9 @@ struct HistoryView: View {
                 Image(systemName: "square.and.pencil")
                     .font(.appHeadline)
                     .foregroundColor(.appBlueButton)
+            }
+            .onTapGesture {
+                self.isLocationHistoryPresented = true
             }
         }
         .padding(.horizontal, 21)
