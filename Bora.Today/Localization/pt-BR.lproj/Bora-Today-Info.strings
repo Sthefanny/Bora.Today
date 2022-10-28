@@ -1,0 +1,10 @@
+/* 
+  Bora-Today-Info.strings
+  Bora.Today
+
+  Created by Larissa Paschoalin on 19/10/22.
+  
+*/
+
+"NSPhotoLibraryAddUsageDescription" = "Dê permissão para poder salvar a imagem em sua galeria.";
+"NSPhotoLibraryAddUsageDescription" = "Permissão para acessar imagens da sua galeria para adiciona-las.";

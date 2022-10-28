@@ -9,30 +9,46 @@ import SwiftUI
 
 struct StickerView: View {
     let model: StickerModel
-    let index: CGFloat
-    let positionX: CGFloat
-    let positionY: CGFloat
+    @State private var isSelected = false
+    var index: CGFloat?
+    var positionX: CGFloat?
+    var positionY: CGFloat?
     
     var body: some View {
-        Text(model.text)
-            .font(.custom(model.font.name, size: model.fontSize))
-            .foregroundColor(model.fontColor)
-            .frame(width: model.size, height: model.size, alignment: .center)
-            .background(model.bgColor)
-            .clipShape(Circle())
-            .offset(x: positionX, y: positionY)
-//            .position(x: positionX, y: positionY)
+        VStack {
+            ZStack {
+//                if isSelected {
+//                    Circle()
+//                        .foregroundColor(.clear)
+//                        .frame(width: model.size * 1.2, height: model.size * 1.2, alignment: .center)
+//                        .background(
+//                            Circle()
+//                                .stroke(Color.appGray, lineWidth: 2)
+//                        )
+//                }
+                
+                Text(model.text)
+                    .font(.custom(model.font.name, size: model.fontSize))
+                    .foregroundColor(model.fontColor)
+                    .frame(width: model.size, height: model.size, alignment: .center)
+                    .background(model.bgColor)
+                    .clipShape(Circle())
+            }
+        }
+        .padding(4)
+        .overlay(
+            Circle().stroke(isSelected ? Color.appGray : Color.clear, lineWidth: 2)
+        )
+        .onTapGesture {
+            isSelected.toggle()
+        }
     }
 }
 
 struct StickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ZStack {
-            StickerView(model: StickerModel.legal, index: 1, positionX: -50, positionY: -52)
-            StickerView(model: StickerModel.top, index: 0, positionX: -28, positionY: -25)
-            StickerView(model: StickerModel.bora, index: 2, positionX: -65, positionY: -22)
-            StickerView(model: StickerModel.irado, index: 3, positionX: -15, positionY: -55)
-            StickerView(model: StickerModel.delicia, index: 4, positionX: -85, positionY: -55)
+        Group {
+            StickerView(model: StickerModel.legal)
         }
     }
 }

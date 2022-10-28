@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct TagModel {
+    var id = UUID()
     let text: String
     let icon: String?
     let color: Color

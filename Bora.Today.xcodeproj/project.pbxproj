@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90124762290B0F3100A556FF /* CreateSelectTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90124761290B0F3100A556FF /* CreateSelectTagView.swift */; };
+		9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */; };
+		9042C0AA28FF34050040693D /* ButtonAddPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A928FF34050040693D /* ButtonAddPhoto.swift */; };
+		9042C0AD28FF369E0040693D /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AC28FF369E0040693D /* TextFieldView.swift */; };
+		9042C0B028FF9B940040693D /* CreateDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AF28FF9B940040693D /* CreateDatePickerView.swift */; };
+		9042C0B228FFA6070040693D /* CreateSelectStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0B128FFA6070040693D /* CreateSelectStickerView.swift */; };
+		90764B48290786DB008F1460 /* TextAreaLimitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90764B47290786DB008F1460 /* TextAreaLimitedView.swift */; };
+		90764B4A290793A0008F1460 /* CreateSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90764B49290793A0008F1460 /* CreateSliderView.swift */; };
+		9083E054290059BB002007B1 /* Bora-Today-Info.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9083E056290059BB002007B1 /* Bora-Today-Info.strings */; };
 		E503CBF528BE8D7600C7D9D7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF428BE8D7600C7D9D7 /* FirebaseAnalytics */; };
 		E503CBF728BE8D7600C7D9D7 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF628BE8D7600C7D9D7 /* FirebaseCrashlytics */; };
 		E503CBF928BE8E5F00C7D9D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */; };
@@ -77,6 +86,16 @@
 
 /* Begin PBXFileReference section */
 		320CA60A3E816E73A23E3B55 /* Pods-Bora.Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.release.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.release.xcconfig"; sourceTree = "<group>"; };
+		90124761290B0F3100A556FF /* CreateSelectTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSelectTagView.swift; sourceTree = "<group>"; };
+		9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditExperienceModel.swift; sourceTree = "<group>"; };
+		9042C0A928FF34050040693D /* ButtonAddPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAddPhoto.swift; sourceTree = "<group>"; };
+		9042C0AC28FF369E0040693D /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		9042C0AF28FF9B940040693D /* CreateDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDatePickerView.swift; sourceTree = "<group>"; };
+		9042C0B128FFA6070040693D /* CreateSelectStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSelectStickerView.swift; sourceTree = "<group>"; };
+		90764B47290786DB008F1460 /* TextAreaLimitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaLimitedView.swift; sourceTree = "<group>"; };
+		90764B49290793A0008F1460 /* CreateSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSliderView.swift; sourceTree = "<group>"; };
+		9083E055290059BB002007B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Bora-Today-Info.strings"; sourceTree = "<group>"; };
+		9083E057290059BF002007B1 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Bora-Today-Info.strings"; sourceTree = "<group>"; };
 		9C876D527B07214A5AE66AB6 /* Pods-Bora.Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.debug.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.debug.xcconfig"; sourceTree = "<group>"; };
 		E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E51365EE28DBA58D00319497 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -169,10 +188,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9042C0AB28FF36840040693D /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				9042C0AC28FF369E0040693D /* TextFieldView.swift */,
+				90764B47290786DB008F1460 /* TextAreaLimitedView.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		9042C0AE28FF9B770040693D /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				9042C0AF28FF9B940040693D /* CreateDatePickerView.swift */,
+				9042C0B128FFA6070040693D /* CreateSelectStickerView.swift */,
+				90764B49290793A0008F1460 /* CreateSliderView.swift */,
+				90124761290B0F3100A556FF /* CreateSelectTagView.swift */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
 		E51365EA28DBA51D00319497 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
 				E51365EF28DBA58D00319497 /* Localizable.strings */,
+				9083E056290059BB002007B1 /* Bora-Today-Info.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -248,6 +288,7 @@
 		E535BD6728D8F159003131F0 /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				9042C0AE28FF9B770040693D /* Componentes */,
 				E535BD6828D8F168003131F0 /* CreateView.swift */,
 			);
 			path = Create;
@@ -292,6 +333,7 @@
 				E554265C28F33E280088C652 /* TagModel.swift */,
 				E554266828F354840088C652 /* ReviewModel.swift */,
 				E554266A28F354D70088C652 /* UserModel.swift */,
+				9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -385,6 +427,7 @@
 		E5878AE228E9D5150044CE58 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9042C0AB28FF36840040693D /* TextField */,
 				E554266328F34C9F0088C652 /* Profile */,
 				E554265E28F349270088C652 /* Review */,
 				E573753328F0BB7500A40A26 /* Calendar */,
@@ -404,6 +447,7 @@
 				E5878AE428E9D5360044CE58 /* ButtonDefault.swift */,
 				E5878AE928E9E30F0044CE58 /* ButtonStroke.swift */,
 				E5878AF228EA10460044CE58 /* ButtonText.swift */,
+				9042C0A928FF34050040693D /* ButtonAddPhoto.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -584,6 +628,7 @@
 				E5168E7B28BD49D30052174E /* Assets.xcassets in Resources */,
 				E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */,
 				E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */,
+				9083E054290059BB002007B1 /* Bora-Today-Info.strings in Resources */,
 				E503CBF928BE8E5F00C7D9D7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,26 +713,33 @@
 				E57DE48A28F75C6D00DB4447 /* DefaultTagStyle.swift in Sources */,
 				E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */,
 				E554266928F354840088C652 /* ReviewModel.swift in Sources */,
+				90764B48290786DB008F1460 /* TextAreaLimitedView.swift in Sources */,
 				E5878AEA28E9E30F0044CE58 /* ButtonStroke.swift in Sources */,
+				90764B4A290793A0008F1460 /* CreateSliderView.swift in Sources */,
 				E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */,
 				E5206B2C28EE0DC900EFF316 /* ExperienceView.swift in Sources */,
 				E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */,
 				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				E554266B28F354D70088C652 /* UserModel.swift in Sources */,
+				9042C0AD28FF369E0040693D /* TextFieldView.swift in Sources */,
 				E56C538928E755F00078191F /* FontEnum.swift in Sources */,
 				E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */,
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
+				9042C0B028FF9B940040693D /* CreateDatePickerView.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
 				E554266528F34CBC0088C652 /* ProfileImageView.swift in Sources */,
 				E573753228F0A41400A40A26 /* StickerListView.swift in Sources */,
 				E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
+				9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */,
 				E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */,
+				9042C0AA28FF34050040693D /* ButtonAddPhoto.swift in Sources */,
 				E5711EBF28E344EC0027A01A /* StringLocalizationExtension.swift in Sources */,
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
 				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
 				E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */,
+				90124762290B0F3100A556FF /* CreateSelectTagView.swift in Sources */,
 				E51AF60D28ECC17400303CED /* ExperienceModel.swift in Sources */,
 				E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */,
 				E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */,
@@ -697,6 +749,7 @@
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
 				E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */,
 				E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */,
+				9042C0B228FFA6070040693D /* CreateSelectStickerView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
@@ -715,6 +768,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9083E056290059BB002007B1 /* Bora-Today-Info.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9083E055290059BB002007B1 /* en */,
+				9083E057290059BF002007B1 /* pt-BR */,
+			);
+			name = "Bora-Today-Info.strings";
+			sourceTree = "<group>";
+		};
 		E51365EF28DBA58D00319497 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
