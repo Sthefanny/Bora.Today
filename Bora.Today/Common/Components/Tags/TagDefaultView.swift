@@ -34,9 +34,11 @@ struct TagDefaultView_Previews: PreviewProvider {
         ZStack {
 //            Color.orange.edgesIgnoringSafeArea(.all)
             VStack {
-                TagDefaultView(model: TagModel.example1, isSelected: false)
-                TagDefaultView(model: TagModel.example2, isSelected: false)
-                TagDefaultView(model: TagModel.example3, isSelected: false)
+                TagDefaultView(model: TagModel.familia, isSelected: false)
+                TagDefaultView(model: TagModel.danca, isSelected: false)
+                TagDefaultView(model: TagModel.arLivre, isSelected: false)
+                TagDefaultView(model: TagModel.comidas, isSelected: false)
+                TagDefaultView(model: TagModel.saude, isSelected: false)
             }
         }
     }
