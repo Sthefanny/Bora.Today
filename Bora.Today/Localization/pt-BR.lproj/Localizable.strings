@@ -3,6 +3,9 @@
 "settings_language" = "Linguagem";
 "settings_language_footer" = "Escolha o idioma da interface.";
 
+//General
+"back" = "Voltar";
+
 //Bottom Menu
 "home" = "Casa";
 "create" = "Criar";
@@ -38,3 +41,6 @@
 //LocationHistoryView
 "locationHistoryTitle" = "Seu histórico de locais:";
 "locationHistoryButton" = "Adicionar novo local";
+
+//CalendarView
+"agendaTitle" = "Agenda";

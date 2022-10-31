@@ -45,6 +45,8 @@ struct HomeView: View {
             }
             .frame(height: screen.size.height)
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 

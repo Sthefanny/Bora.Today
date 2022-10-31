@@ -4,6 +4,9 @@
 "settings_language" = "Language";
 "settings_language_footer" = "Choose interface language.";
 
+//General
+"back" = "Back";
+
 //Bottom Menu
 "home" = "Home";
 "create" = "Create";
@@ -39,3 +42,6 @@
 //LocationHistoryView
 "locationHistoryTitle" = "Your location history:";
 "locationHistoryButton" = "Add new location";
+
+//CalendarView
+"agendaTitle" = "Agenda";

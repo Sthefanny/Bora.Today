@@ -23,6 +23,9 @@
 		E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5180A6428EF635A0066E1E4 /* StickerModel.swift */; };
 		E51AF60D28ECC17400303CED /* ExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AF60C28ECC17400303CED /* ExperienceModel.swift */; };
 		E51C131828C27F8000124B6F /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = E51C131728C27F8000124B6F /* Sentry */; };
+		E51CB0C3290B2E0C00DBAC7C /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51CB0C2290B2E0C00DBAC7C /* EventView.swift */; };
+		E51CB0C5290B2ECD00DBAC7C /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51CB0C4290B2ECD00DBAC7C /* CalendarView.swift */; };
+		E51CB0C7290B31AE00DBAC7C /* FormattedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51CB0C6290B31AE00DBAC7C /* FormattedDate.swift */; };
 		E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */; };
 		E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */; };
 		E5206B2C28EE0DC900EFF316 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2B28EE0DC900EFF316 /* ExperienceView.swift */; };
@@ -49,7 +52,6 @@
 		E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EC028E346A00027A01A /* LocalizationManager.swift */; };
 		E5711EC428E347620027A01A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5711EC328E347620027A01A /* SettingsView.swift */; };
 		E573753228F0A41400A40A26 /* StickerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573753128F0A41400A40A26 /* StickerListView.swift */; };
-		E573753528F0BB8400A40A26 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573753428F0BB8400A40A26 /* CalendarView.swift */; };
 		E57D4ACB29070CCA00ACE493 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D4ACA29070CCA00ACE493 /* NotificationsView.swift */; };
 		E57D4ACD290711B100ACE493 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D4ACC290711B100ACE493 /* NotificationModel.swift */; };
 		E57D4ACF2907128000ACE493 /* NotificationTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D4ACE2907128000ACE493 /* NotificationTypeEnum.swift */; };
@@ -72,6 +74,8 @@
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
 		E5BE868A290B012900FDDA47 /* LocationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */; };
 		E5BE868C290B0A9700FDDA47 /* LocationHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE868B290B0A9700FDDA47 /* LocationHistoryModel.swift */; };
+		E5BE868E290B15D900FDDA47 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE868D290B15D900FDDA47 /* EventModel.swift */; };
+		E5BE8691290B186100FDDA47 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = E5BE8690290B186100FDDA47 /* FSCalendar */; };
 		E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */; };
 		E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9028E6080300556A80 /* TabItemView.swift */; };
 		E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */; };
@@ -104,6 +108,9 @@
 		E5180A6228EF5EAF0066E1E4 /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
 		E5180A6428EF635A0066E1E4 /* StickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerModel.swift; sourceTree = "<group>"; };
 		E51AF60C28ECC17400303CED /* ExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceModel.swift; sourceTree = "<group>"; };
+		E51CB0C2290B2E0C00DBAC7C /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		E51CB0C4290B2ECD00DBAC7C /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E51CB0C6290B31AE00DBAC7C /* FormattedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedDate.swift; sourceTree = "<group>"; };
 		E5206B2728EE038800EFF316 /* PageDotsIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDotsIndexView.swift; sourceTree = "<group>"; };
 		E5206B2928EE074000EFF316 /* TopExperiencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopExperiencesModel.swift; sourceTree = "<group>"; };
 		E5206B2B28EE0DC900EFF316 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
@@ -130,7 +137,6 @@
 		E5711EC028E346A00027A01A /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		E5711EC328E347620027A01A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E573753128F0A41400A40A26 /* StickerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerListView.swift; sourceTree = "<group>"; };
-		E573753428F0BB8400A40A26 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		E57D4ACA29070CCA00ACE493 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		E57D4ACC290711B100ACE493 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		E57D4ACE2907128000ACE493 /* NotificationTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTypeEnum.swift; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryView.swift; sourceTree = "<group>"; };
 		E5BE868B290B0A9700FDDA47 /* LocationHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryModel.swift; sourceTree = "<group>"; };
+		E5BE868D290B15D900FDDA47 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		E5C19A8B28E603C800556A80 /* TabItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemDataModel.swift; sourceTree = "<group>"; };
 		E5C19A9028E6080300556A80 /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		E5C19A9228E627CB00556A80 /* CornerRadiusShapeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusShapeModel.swift; sourceTree = "<group>"; };
@@ -176,6 +183,7 @@
 				E503CBF528BE8D7600C7D9D7 /* FirebaseAnalytics in Frameworks */,
 				E503CBF728BE8D7600C7D9D7 /* FirebaseCrashlytics in Frameworks */,
 				E51C131828C27F8000124B6F /* Sentry in Frameworks */,
+				E5BE8691290B186100FDDA47 /* FSCalendar in Frameworks */,
 				F4496BEF574AC0C95EECE203 /* Pods_Bora_Today.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +205,8 @@
 				E505596A28FF38A300DB5A74 /* HistoryCardView.swift */,
 				E56ACD152901C89F00BE2EE1 /* HistoryAchievementView.swift */,
 				E57D4AD029071A0400ACE493 /* NotificationSystemImageView.swift */,
+				E51CB0C4290B2ECD00DBAC7C /* CalendarView.swift */,
+				E51CB0C6290B31AE00DBAC7C /* FormattedDate.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -328,6 +338,7 @@
 				E5D0274F2903239300C7FAAA /* AchievementModel.swift */,
 				E57D4ACC290711B100ACE493 /* NotificationModel.swift */,
 				E5BE868B290B0A9700FDDA47 /* LocationHistoryModel.swift */,
+				E5BE868D290B15D900FDDA47 /* EventModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -383,19 +394,12 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		E573753328F0BB7500A40A26 /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				E573753428F0BB8400A40A26 /* CalendarView.swift */,
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
 		E57D4AC929070CB000ACE493 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
 				E57D4ACA29070CCA00ACE493 /* NotificationsView.swift */,
 				E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */,
+				E51CB0C2290B2E0C00DBAC7C /* EventView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -443,7 +447,6 @@
 			children = (
 				E554266328F34C9F0088C652 /* Profile */,
 				E554265E28F349270088C652 /* Review */,
-				E573753328F0BB7500A40A26 /* Calendar */,
 				E5180A6128EF5E9E0066E1E4 /* Stickers */,
 				E5CE02E228EB4BD5000FCB77 /* Location */,
 				E5878AF428EA1B6E0044CE58 /* Map */,
@@ -586,6 +589,7 @@
 				E503CBF428BE8D7600C7D9D7 /* FirebaseAnalytics */,
 				E503CBF628BE8D7600C7D9D7 /* FirebaseCrashlytics */,
 				E51C131728C27F8000124B6F /* Sentry */,
+				E5BE8690290B186100FDDA47 /* FSCalendar */,
 			);
 			productName = Bora.Today;
 			productReference = E5168E7328BD49CF0052174E /* Bora.Today.app */;
@@ -619,6 +623,7 @@
 			packageReferences = (
 				E503CBF328BE8D7600C7D9D7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				E51C131628C27F8000124B6F /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				E5BE868F290B186100FDDA47 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = E5168E7428BD49CF0052174E /* Products */;
 			projectDirPath = "";
@@ -719,7 +724,6 @@
 				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
 				E57DE48828F756E400DB4447 /* OnboardingTagStyle.swift in Sources */,
 				E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */,
-				E573753528F0BB8400A40A26 /* CalendarView.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
 				E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */,
 				E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */,
@@ -752,6 +756,7 @@
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
 				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
 				E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */,
+				E5BE868E290B15D900FDDA47 /* EventModel.swift in Sources */,
 				E51AF60D28ECC17400303CED /* ExperienceModel.swift in Sources */,
 				E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */,
 				E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */,
@@ -765,9 +770,12 @@
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
+				E51CB0C5290B2ECD00DBAC7C /* CalendarView.swift in Sources */,
 				E5D027502903239300C7FAAA /* AchievementModel.swift in Sources */,
+				E51CB0C3290B2E0C00DBAC7C /* EventView.swift in Sources */,
 				E5180A5C28EF5C210066E1E4 /* ReviewListView.swift in Sources */,
 				E5206B2E28EE10ED00EFF316 /* ExperienceListView.swift in Sources */,
+				E51CB0C7290B31AE00DBAC7C /* FormattedDate.swift in Sources */,
 				E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */,
 				E554265B28F33C190088C652 /* TagDefaultView.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
@@ -1024,6 +1032,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		E5BE868F290B186100FDDA47 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1041,6 +1057,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E51C131628C27F8000124B6F /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
 			productName = Sentry;
+		};
+		E5BE8690290B186100FDDA47 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5BE868F290B186100FDDA47 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

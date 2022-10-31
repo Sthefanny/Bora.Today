@@ -46,6 +46,8 @@ struct HistoryView: View {
                 LocationHistoryView(isLocationHistoryPresented: $isLocationHistoryPresented)
             }
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
     
     private var _buildHeader: some View {
@@ -99,7 +101,9 @@ struct HistoryView: View {
     
     private var _buildCards: some View {
         HStack (spacing: 12) {
-            HistoryCardView(model: model.history[0])
+            NavigationLink(destination: CalendarView()) {
+                HistoryCardView(model: model.history[0])
+            }
             
             VStack (spacing: 12) {
                 
