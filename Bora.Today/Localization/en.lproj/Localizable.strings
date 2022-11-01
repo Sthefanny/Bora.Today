@@ -1,4 +1,3 @@
-
 "hello_world" = "Hello everyone!!!";
 "this_text_localised" = "This text was localized on the fly as well.";
 "settings_language" = "Language";
@@ -21,3 +20,20 @@
 "activeLocation" = "Activate your Location";
 "configure" = "Configure";
 "activeLocationDescription" = "In order to continue using the app, you must allow us to track your location in your phone's settings";
+
+//ExpandTextView
+"aboutExperience" = "About the experience";
+"viewMore" = "View More";
+"viewLess" = "View Less";
+
+//ExperienceView
+"participants" = "Participants";
+
+//CreateHostedButton
+"hosted" = "Hosted by";
+
+//ReportButton
+"report" = "Report";
+
+//SaveButton
+"save" = "Save";

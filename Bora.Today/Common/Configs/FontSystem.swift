@@ -15,8 +15,8 @@ extension Font {
     
     static let appLargeTitle = appFont(size: 34).weight(.regular)
     static let appTitle1 = appFont(size: 28).weight(.semibold)
-    static let appTitle2 = appFont(size: 22).weight(.regular)
-    static let appTitle3 = appFont(size: 20).weight(.regular)
+    static let appTitle2 = appFont(size: 22).weight(.semibold)
+    static let appTitle3 = appFont(size: 20).weight(.semibold)
     static let appHeadline = appFont(size: 17).weight(.semibold)
     static let appBody = appFont(size: 17).weight(.regular)
     static let appCallout = appFont(size: 15).weight(.medium)

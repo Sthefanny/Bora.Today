@@ -20,3 +20,21 @@
 "activeLocation" = "Ative sua Localização";
 "configure" = "Configurar";
 "activeLocationDescription" = "Para continuar usando o app é necessário que você permita rastrearmos sua localização nos ajustes do seu celular";
+
+//ExpandTextView
+"aboutExperience" = "Sobre a experiência";
+"viewMore" = "Ler Mais";
+"viewLess" = "Ler Menos";
+
+//ExperienceView
+"participants" = "Participantes";
+
+//CreateHostedButton
+"hosted" = "Criado por";
+
+//ReportButton
+"report" = "Reportar";
+
+//SaveButton
+"save" = "Salvar";
+

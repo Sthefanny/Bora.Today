@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ExperienceView: View {
+struct ExperienceHomeView: View {
     let model: ExperienceModel
     let isFirst: Bool
     
@@ -76,8 +76,8 @@ struct ExperienceView: View {
     }
 }
 
-struct ExperienceView_Previews: PreviewProvider {
+struct ExperienceHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ExperienceView(model: ExperienceModel.example1, isFirst: true)
+        ExperienceHomeView(model: ExperienceModel.example1, isFirst: true)
     }
 }
