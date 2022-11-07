@@ -50,6 +50,7 @@ struct ExperienceView: View {
                     .padding(.init(top: 0, leading: 21, bottom: 0, trailing: 21))
                     
                     
+                    //Chamar texto do Model
                     CreateTextExpandView("Muitas barraquinhas e comidas típicas da Tailandia pra voce se deliciar e conhecer um pouco mais sobre a culinária tailandesa no Brasil e aproveitar. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. but also the leap into electronic typesetting, remaining essentially unchanged. Muitas barraquinhas e comidas típicas da Tailandia pra voce se deliciar e conhecer um pouco mais sobre a culinária tailandesa no Brasil e aproveitar. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. but also the leap into electronic typesetting, remaining essentially unchanged.", lineLimit: 3)
                         .padding(.init(top: 0, leading: 21, bottom: 0, trailing: 21))
                     

@@ -37,3 +37,6 @@
 
 //SaveButton
 "save" = "Save";
+
+//PlaceExperienceView
+"CreateExperience" = "Create Experience";

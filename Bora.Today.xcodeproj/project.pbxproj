@@ -17,6 +17,8 @@
 		9384189529073097000A66D1 /* ReportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384189429073097000A66D1 /* ReportButton.swift */; };
 		938418972907374C000A66D1 /* ButtonDefaultBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938418962907374C000A66D1 /* ButtonDefaultBig.swift */; };
 		9384189929073951000A66D1 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384189829073951000A66D1 /* SaveButton.swift */; };
+		93B5E6AA29197D77004DE6B3 /* CreateExperienceCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5E6A929197D77004DE6B3 /* CreateExperienceCornerButton.swift */; };
+		93B5E6AD29197DA1004DE6B3 /* CreateReviewsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5E6AC29197DA1004DE6B3 /* CreateReviewsFilter.swift */; };
 		93DF14902901DA6F0027D985 /* CreateTextExpandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF148F2901DA6F0027D985 /* CreateTextExpandView.swift */; };
 		E503CBF528BE8D7600C7D9D7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF428BE8D7600C7D9D7 /* FirebaseAnalytics */; };
 		E503CBF728BE8D7600C7D9D7 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF628BE8D7600C7D9D7 /* FirebaseCrashlytics */; };
@@ -98,6 +100,8 @@
 		9384189429073097000A66D1 /* ReportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportButton.swift; sourceTree = "<group>"; };
 		938418962907374C000A66D1 /* ButtonDefaultBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefaultBig.swift; sourceTree = "<group>"; };
 		9384189829073951000A66D1 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
+		93B5E6A929197D77004DE6B3 /* CreateExperienceCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExperienceCornerButton.swift; sourceTree = "<group>"; };
+		93B5E6AC29197DA1004DE6B3 /* CreateReviewsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewsFilter.swift; sourceTree = "<group>"; };
 		93DF148F2901DA6F0027D985 /* CreateTextExpandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTextExpandView.swift; sourceTree = "<group>"; };
 		9C876D527B07214A5AE66AB6 /* Pods-Bora.Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.debug.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.debug.xcconfig"; sourceTree = "<group>"; };
 		E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -212,6 +216,23 @@
 				9353B984290AFE2100D3DB6D /* ExperienceReviewView.swift */,
 				9353B986290B010300D3DB6D /* CreateReviewImage.swift */,
 				9353B988290B084400D3DB6D /* CreateUsersListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		93B5E6A629197D4B004DE6B3 /* Local Experience */ = {
+			isa = PBXGroup;
+			children = (
+				93B5E6A829197D59004DE6B3 /* Components */,
+			);
+			path = "Local Experience";
+			sourceTree = "<group>";
+		};
+		93B5E6A829197D59004DE6B3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				93B5E6A929197D77004DE6B3 /* CreateExperienceCornerButton.swift */,
+				93B5E6AC29197DA1004DE6B3 /* CreateReviewsFilter.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -477,6 +498,7 @@
 		E5BD6A6228D3B2120097D9C6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				93B5E6A629197D4B004DE6B3 /* Local Experience */,
 				9319EDD828FF2AB0006012D4 /* Experience */,
 				E535BD6128D8EEC5003131F0 /* Bottom Menu */,
 				E5BD6A6328D3B2610097D9C6 /* Home */,
@@ -726,6 +748,7 @@
 				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				E554266B28F354D70088C652 /* UserModel.swift in Sources */,
+				93B5E6AA29197D77004DE6B3 /* CreateExperienceCornerButton.swift in Sources */,
 				E56C538928E755F00078191F /* FontEnum.swift in Sources */,
 				938418972907374C000A66D1 /* ButtonDefaultBig.swift in Sources */,
 				E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */,
@@ -757,6 +780,7 @@
 				E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
+				93B5E6AD29197DA1004DE6B3 /* CreateReviewsFilter.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
 				E5180A5C28EF5C210066E1E4 /* ReviewListView.swift in Sources */,
 				E5206B2E28EE10ED00EFF316 /* ExperienceListView.swift in Sources */,
