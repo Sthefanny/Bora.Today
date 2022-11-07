@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "pin_place.png",
+      "filename" : "pic3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "bxs_time-five.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "bxs_time-five (1).png",
       "idiom" : "universal",
       "scale" : "3x"
     }
