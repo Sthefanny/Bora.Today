@@ -11,6 +11,8 @@ struct ExperienceReviewView: View {
     let model: ReviewModel
     @State private var showPicture: Bool = false
     
+    //se for diferente de nul = foto aparece, se não = foto não aparece (bool)
+    
     var body: some View {
                 VStack {
                     HStack(alignment: .top) {

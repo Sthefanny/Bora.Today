@@ -19,6 +19,8 @@
 		9384189929073951000A66D1 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384189829073951000A66D1 /* SaveButton.swift */; };
 		93B5E6AA29197D77004DE6B3 /* CreateExperienceCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5E6A929197D77004DE6B3 /* CreateExperienceCornerButton.swift */; };
 		93B5E6AD29197DA1004DE6B3 /* CreateReviewsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5E6AC29197DA1004DE6B3 /* CreateReviewsFilter.swift */; };
+		93B5E6AF2919970F004DE6B3 /* LocalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5E6AE2919970F004DE6B3 /* LocalsView.swift */; };
+		93B5E6B129199996004DE6B3 /* LocalBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5E6B029199996004DE6B3 /* LocalBannerView.swift */; };
 		93DF14902901DA6F0027D985 /* CreateTextExpandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF148F2901DA6F0027D985 /* CreateTextExpandView.swift */; };
 		E503CBF528BE8D7600C7D9D7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF428BE8D7600C7D9D7 /* FirebaseAnalytics */; };
 		E503CBF728BE8D7600C7D9D7 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E503CBF628BE8D7600C7D9D7 /* FirebaseCrashlytics */; };
@@ -102,6 +104,8 @@
 		9384189829073951000A66D1 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
 		93B5E6A929197D77004DE6B3 /* CreateExperienceCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExperienceCornerButton.swift; sourceTree = "<group>"; };
 		93B5E6AC29197DA1004DE6B3 /* CreateReviewsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewsFilter.swift; sourceTree = "<group>"; };
+		93B5E6AE2919970F004DE6B3 /* LocalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsView.swift; sourceTree = "<group>"; };
+		93B5E6B029199996004DE6B3 /* LocalBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBannerView.swift; sourceTree = "<group>"; };
 		93DF148F2901DA6F0027D985 /* CreateTextExpandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTextExpandView.swift; sourceTree = "<group>"; };
 		9C876D527B07214A5AE66AB6 /* Pods-Bora.Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.debug.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.debug.xcconfig"; sourceTree = "<group>"; };
 		E503CBF828BE8E5F00C7D9D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				93B5E6A829197D59004DE6B3 /* Components */,
+				93B5E6AE2919970F004DE6B3 /* LocalsView.swift */,
 			);
 			path = "Local Experience";
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			children = (
 				93B5E6A929197D77004DE6B3 /* CreateExperienceCornerButton.swift */,
 				93B5E6AC29197DA1004DE6B3 /* CreateReviewsFilter.swift */,
+				93B5E6B029199996004DE6B3 /* LocalBannerView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -758,6 +764,7 @@
 				9353B987290B010300D3DB6D /* CreateReviewImage.swift in Sources */,
 				E554266528F34CBC0088C652 /* ProfileImageView.swift in Sources */,
 				E573753228F0A41400A40A26 /* StickerListView.swift in Sources */,
+				93B5E6AF2919970F004DE6B3 /* LocalsView.swift in Sources */,
 				E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
 				E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */,
@@ -790,6 +797,7 @@
 				E554265B28F33C190088C652 /* TagDefaultView.swift in Sources */,
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
 				E57DE48528F7548600DB4447 /* TagOnBoardingView.swift in Sources */,
+				93B5E6B129199996004DE6B3 /* LocalBannerView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 				E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */,
 				E5711EC428E347620027A01A /* SettingsView.swift in Sources */,

@@ -40,3 +40,8 @@
 
 //PlaceExperienceView
 "CreateExperience" = "Create Experience";
+"all" = "See all";
+"friends" = "Friends";
+"sameCountry" = "Same Country";
+"reviews" = "Reviews";
+"experiencesHere" = "Experiências Here";
