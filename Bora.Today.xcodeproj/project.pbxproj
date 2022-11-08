@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93055CF1291AEAF600650C02 /* ReviewDynamiclList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93055CF0291AEAF600650C02 /* ReviewDynamiclList.swift */; };
 		9319EDDB28FF2B72006012D4 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319EDDA28FF2B72006012D4 /* ExperienceView.swift */; };
 		9319EDDD28FF33C2006012D4 /* IconLocationTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */; };
 		9353B985290AFE2100D3DB6D /* ExperienceReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353B984290AFE2100D3DB6D /* ExperienceReviewView.swift */; };
@@ -129,6 +130,7 @@
 		013F9E79290C553D00288327 /* CountryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryHelper.swift; sourceTree = "<group>"; };
 		01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCountriesListView.swift; sourceTree = "<group>"; };
 		320CA60A3E816E73A23E3B55 /* Pods-Bora.Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.release.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.release.xcconfig"; sourceTree = "<group>"; };
+		93055CF0291AEAF600650C02 /* ReviewDynamiclList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDynamiclList.swift; sourceTree = "<group>"; };
 		9319EDDA28FF2B72006012D4 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 		9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLocationTextButton.swift; sourceTree = "<group>"; };
 		9353B984290AFE2100D3DB6D /* ExperienceReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceReviewView.swift; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 				93B5E6A929197D77004DE6B3 /* CreateExperienceCornerButton.swift */,
 				93B5E6AC29197DA1004DE6B3 /* CreateReviewsFilter.swift */,
 				93B5E6B029199996004DE6B3 /* LocalBannerView.swift */,
+				93055CF0291AEAF600650C02 /* ReviewDynamiclList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -948,6 +951,7 @@
 				93B5E6AF2919970F004DE6B3 /* LocalsView.swift in Sources */,
 				E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */,
 				E58456C928FDCB2D0072031A /* HistoryView.swift in Sources */,
+				93055CF1291AEAF600650C02 /* ReviewDynamiclList.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
 				E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */,
 				E5711EBF28E344EC0027A01A /* StringLocalizationExtension.swift in Sources */,

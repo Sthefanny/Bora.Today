@@ -21,8 +21,6 @@ struct ExperienceView: View {
                 
                 Spacer()
                 
-//                ReportButton(buttonType: .imageAndTextBigger, text: "report".localized(language), icon: "exclamationmark.bubble", color: Color.appRed, action: {print("teste")}, isDisabled: .constant(false))
-                
                 ExperienceImageBannerView(model: ExperienceModel.example1)
                 
                 VStack (alignment: .leading, spacing: 32){
@@ -47,12 +45,12 @@ struct ExperienceView: View {
                             CreateHostedButton(model: ReviewModel.example1)
                         }
                     }
-                    .padding(.init(top: 0, leading: 21, bottom: 0, trailing: 21))
+                    .padding(.horizontal, AppConfig.safeAreaHorizontal)
                     
                     
-                    //Chamar texto do Model
+                    //Chamar texto do Model - Lari já fez
                     CreateTextExpandView("Muitas barraquinhas e comidas típicas da Tailandia pra voce se deliciar e conhecer um pouco mais sobre a culinária tailandesa no Brasil e aproveitar. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. but also the leap into electronic typesetting, remaining essentially unchanged. Muitas barraquinhas e comidas típicas da Tailandia pra voce se deliciar e conhecer um pouco mais sobre a culinária tailandesa no Brasil e aproveitar. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. but also the leap into electronic typesetting, remaining essentially unchanged.", lineLimit: 3)
-                        .padding(.init(top: 0, leading: 21, bottom: 0, trailing: 21))
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
                     
                     VStack (alignment: .leading, spacing: 16){
                         Text("participants".localized(language))
@@ -72,7 +70,7 @@ struct ExperienceView: View {
                     
                     ButtonDefaultBig(buttonType: .imageAndTextBigger, text: "Bora!", icon: "seal.fill", action: {print("teste")}, isDisabled: .constant(false))
                 }
-                .padding(.init(top: 0, leading: 21, bottom: 0, trailing: 21))
+                .padding(.horizontal, AppConfig.safeAreaHorizontal)
                 
                 
             }

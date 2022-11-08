@@ -1,15 +1,9 @@
-//
-//  ExperienceModel.swift
-//  Bora.Today
-//
-//  Created by Sthefanny Gonzaga on 04/10/22.
-//
-
 import Foundation
 
 struct ExperienceModel: Identifiable {
     let id = UUID()
     let name: String
+    var description: String
     let location: String
     let datetime: String
     let image: String
@@ -24,6 +18,7 @@ extension ExperienceModel {
 
         ExperienceModel(
             name: "Rolê de Skate",
+            description: "Começa assim pra gente ter uma descrição antes de ter que colocar em todos hahaha teste isso aqui é um teste",
             location: "Condomínio Sachas",
             datetime: "Hoje, 18:00 AM",
             image: "today_bg",
@@ -35,6 +30,7 @@ extension ExperienceModel {
 
         ExperienceModel(
             name: "Burguer na Stel",
+            description: "Começa assim pra gente ter uma descrição antes de ter que colocar em todos hahaha teste isso aqui é um teste",
             location: "Casa da Stel",
             datetime: "12/10/2022, 18:00 AM",
             image: "exp1",
@@ -46,6 +42,7 @@ extension ExperienceModel {
 
         ExperienceModel(
             name: "Brooday",
+            description: "Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer",
             location: "Outback",
             datetime: "Amanha, 18:00 AM",
             image: "exp2",

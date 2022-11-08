@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CreateTextExpandView: View {
+    
     @StateObject var locationManager = LocationManager()
     
     @AppStorage("language")
