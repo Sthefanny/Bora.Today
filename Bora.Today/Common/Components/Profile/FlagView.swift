@@ -13,7 +13,7 @@ struct FlagView: View {
     let size: CGFloat
     
     var body: some View {
-        return Text(SwiftFlags.flag(for: countryCode) ?? "?")
+        return Text(SwiftFlags.flag(for: countryCode) ?? "")
             .font(.system(size: size))
     }
 }

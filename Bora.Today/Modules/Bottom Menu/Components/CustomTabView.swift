@@ -16,15 +16,16 @@ struct CustomTabView<Content: View>: View {
     var body: some View {
         
         GeometryReader { screen in
-            VStack {
+            ZStack(alignment: .bottom) {
                 TabView(selection: $selectedIndex) {
                     ForEach(tabs.indices) { index in
                         content(index)
                             .tag(index)
+                            .ignoresSafeArea()
+                            .frame(width: screen.size.width, height: screen.size.height - AppConfig.bottomMenuHeight)
                     }
                 }
                 
-                Spacer()
                 TabBottomView(tabbarItems: tabs, selectedIndex: $selectedIndex)
             }
             .ignoresSafeArea()
