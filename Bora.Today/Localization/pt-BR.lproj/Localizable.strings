@@ -3,6 +3,9 @@
 "settings_language" = "Linguagem";
 "settings_language_footer" = "Escolha o idioma da interface.";
 
+//General
+"back" = "Voltar";
+
 //Bottom Menu
 "home" = "Casa";
 "create" = "Criar";
@@ -20,3 +23,49 @@
 "activeLocation" = "Ative sua Localização";
 "configure" = "Configurar";
 "activeLocationDescription" = "Para continuar usando o app é necessário que você permita rastrearmos sua localização nos ajustes do seu celular";
+
+//HistoryView
+"historyTitle" = "História";
+"notificationsButton" = "Notificações";
+"historyGreeting1" = "Olá";
+"historyGreeting2" = "Essa é sua história em:";
+"yourAchievements" = "Suas conquistas";
+
+//NofiticationsView
+"notificationTitle" = "Notificações";
+"notificationRowTitle" = "Como foi";
+"notificationRowText" = "Conte como foi sua experiência :)";
+"notificationConnectionText" = "se conectou com você!";
+"notificationGoingToText" = "vai para -";
+
+//LocationHistoryView
+"locationHistoryTitle" = "Seu histórico de locais:";
+"locationHistoryButton" = "Adicionar novo local";
+
+//CalendarView
+"agendaTitle" = "Agenda";
+
+//Agenda
+"today" = "Hoje";
+"yesterday" = "Ontem";
+"tomorrow" = "Amanhã";
+"from" = "De";
+"to" = "Até";
+
+//ExpandTextView
+"aboutExperience" = "Sobre a experiência";
+"viewMore" = "Ler Mais";
+"viewLess" = "Ler Menos";
+
+//ExperienceView
+"participants" = "Participantes";
+
+//CreateHostedButton
+"hosted" = "Criado por";
+
+//ReportButton
+"report" = "Reportar";
+
+//SaveButton
+"save" = "Salvar";
+

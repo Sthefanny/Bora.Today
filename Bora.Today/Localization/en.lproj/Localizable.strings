@@ -1,8 +1,10 @@
-
 "hello_world" = "Hello everyone!!!";
 "this_text_localised" = "This text was localized on the fly as well.";
 "settings_language" = "Language";
 "settings_language_footer" = "Choose interface language.";
+
+//General
+"back" = "Back";
 
 //Bottom Menu
 "home" = "Home";
@@ -21,3 +23,48 @@
 "activeLocation" = "Activate your Location";
 "configure" = "Configure";
 "activeLocationDescription" = "In order to continue using the app, you must allow us to track your location in your phone's settings";
+
+//HistoryView
+"historyTitle" = "History";
+"notificationsButton" = "Notifications";
+"historyGreeting1" = "Hello";
+"historyGreeting2" = "This is your story in:";
+"yourAchievements" = "Your achievements";
+
+//NofiticationsView
+"notificationTitle" = "Notifications";
+"notificationRowTitle" = "How was the";
+"notificationRowText" = "Tell us about your experience :)";
+"notificationConnectionText" = "has connected with you!";
+"notificationGoingToText" = "goes to -";
+
+//LocationHistoryView
+"locationHistoryTitle" = "Your location history:";
+"locationHistoryButton" = "Add new location";
+
+//CalendarView
+"agendaTitle" = "Agenda";
+
+//Agenda
+"today" = "Today";
+"yesterday" = "Yesterday";
+"tomorrow" = "Tomorrow";
+"from" = "From";
+"to" = "To";
+
+//ExpandTextView
+"aboutExperience" = "About the experience";
+"viewMore" = "View More";
+"viewLess" = "View Less";
+
+//ExperienceView
+"participants" = "Participants";
+
+//CreateHostedButton
+"hosted" = "Hosted by";
+
+//ReportButton
+"report" = "Report";
+
+//SaveButton
+"save" = "Save";
