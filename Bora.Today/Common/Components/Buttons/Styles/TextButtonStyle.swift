@@ -19,7 +19,7 @@ struct TextButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         return configuration.label
             .padding(10)
-            .foregroundColor(isEnabled ? .appButtonBlackContent : .appButtonBlackContentDisabled)
+            .foregroundColor(isEnabled ? .appBlueButton : .appButtonBlackContentDisabled)
             .background(backgroundView(configuration: configuration))
     }
     

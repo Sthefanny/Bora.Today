@@ -51,3 +51,21 @@
 "tomorrow" = "Amanhã";
 "from" = "De";
 "to" = "Até";
+
+//ExpandTextView
+"aboutExperience" = "Sobre a experiência";
+"viewMore" = "Ler Mais";
+"viewLess" = "Ler Menos";
+
+//ExperienceView
+"participants" = "Participantes";
+
+//CreateHostedButton
+"hosted" = "Criado por";
+
+//ReportButton
+"report" = "Reportar";
+
+//SaveButton
+"save" = "Salvar";
+

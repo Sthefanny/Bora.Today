@@ -18,7 +18,7 @@ struct ExperienceListView: View {
                     
                     ForEach(0..<model.experiences.count, id: \.self) { index in
                         let item = model.experiences[index]
-                        ExperienceView(model: item, isFirst: index == 0)
+                        ExperienceHomeView(model: item, isFirst: index == 0)
                     }
                 }
             }
