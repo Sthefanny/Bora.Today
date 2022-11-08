@@ -42,7 +42,7 @@ extension ExperienceModel {
 
         ExperienceModel(
             name: "Brooday",
-            description: "Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer",
+            description: "Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor.",
             location: "Outback",
             datetime: "Amanha, 18:00 AM",
             image: "exp2",

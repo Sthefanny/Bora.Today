@@ -18,7 +18,8 @@ struct CreateTextExpandView: View {
         
         @State private var expanded: Bool = false
         @State private var showViewButton: Bool = false
-        var text: String
+//        var text: String
+    let model: ExperienceModel
     //chamar da tela de Criar Experiência
         
         var body: some View {
@@ -28,13 +29,13 @@ struct CreateTextExpandView: View {
                         .font(.appHeadline)
                         .foregroundColor(.appBlack)
                 ZStack {
-                    Text(text)
+                    Text(model.description)
                         .font(.appFootnote)
                         .foregroundColor(.appBlack)
                         .lineLimit(expanded ? nil : lineLimit)
                     
                     ScrollView(.vertical) {
-                        Text(text)
+                        Text(model.description)
                             .font(.appFootnote)
                             .foregroundColor(.appBlack)
                             .background(
@@ -43,7 +44,7 @@ struct CreateTextExpandView: View {
                                         .onAppear {
                                             showViewButton = proxy.size.height > CGFloat(22 * lineLimit)
                                         }
-                                        .onChange(of: text) { _ in
+                                        .onChange(of: model.description) { _ in
                                             showViewButton = proxy.size.height > CGFloat(22 * lineLimit)
                                         }
                                 }
@@ -72,8 +73,8 @@ struct CreateTextExpandView: View {
             }
         }
     
-    init(_ text: String, lineLimit: Int) {
-        self.text = text
+    init(_ model: ExperienceModel, lineLimit: Int) {
+        self.model = model
         self.lineLimit = lineLimit
         
     }
@@ -91,7 +92,7 @@ struct CreateTextExpandView: View {
 
 struct CreateTextExpandView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateTextExpandView("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", lineLimit: 3)
+        CreateTextExpandView(ExperienceModel.example3, lineLimit: 3)
     }
 }
 }
