@@ -84,6 +84,8 @@
 		E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */; };
 		E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9B28E62B1800556A80 /* CustomTabView.swift */; };
 		E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9E28E62DE800556A80 /* AppConfig.swift */; };
+		E5CD4646291478530062263A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD4645291478530062263A /* DateHelper.swift */; };
+		E5CD464829147D6F0062263A /* CalendarEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD464729147D6F0062263A /* CalendarEventView.swift */; };
 		E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */; };
 		E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE02E728EB5E25000FCB77 /* BannerListView.swift */; };
 		E5D027502903239300C7FAAA /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0274F2903239300C7FAAA /* AchievementModel.swift */; };
@@ -169,6 +171,8 @@
 		E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTypeEnum.swift; sourceTree = "<group>"; };
 		E5C19A9B28E62B1800556A80 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		E5C19A9E28E62DE800556A80 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		E5CD4645291478530062263A /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		E5CD464729147D6F0062263A /* CalendarEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventView.swift; sourceTree = "<group>"; };
 		E5CE02E328EB4C56000FCB77 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
 		E5CE02E728EB5E25000FCB77 /* BannerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerListView.swift; sourceTree = "<group>"; };
 		E5D0274F2903239300C7FAAA /* AchievementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
@@ -205,8 +209,8 @@
 				E505596A28FF38A300DB5A74 /* HistoryCardView.swift */,
 				E56ACD152901C89F00BE2EE1 /* HistoryAchievementView.swift */,
 				E57D4AD029071A0400ACE493 /* NotificationSystemImageView.swift */,
-				E51CB0C4290B2ECD00DBAC7C /* CalendarView.swift */,
 				E51CB0C6290B31AE00DBAC7C /* FormattedDate.swift */,
+				E5CD464729147D6F0062263A /* CalendarEventView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -397,6 +401,7 @@
 		E57D4AC929070CB000ACE493 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				E51CB0C4290B2ECD00DBAC7C /* CalendarView.swift */,
 				E57D4ACA29070CCA00ACE493 /* NotificationsView.swift */,
 				E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */,
 				E51CB0C2290B2E0C00DBAC7C /* EventView.swift */,
@@ -525,6 +530,7 @@
 			isa = PBXGroup;
 			children = (
 				E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */,
+				E5CD4645291478530062263A /* DateHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -738,6 +744,7 @@
 				E5206B2C28EE0DC900EFF316 /* ExperienceView.swift in Sources */,
 				E505596D28FF3A1800DB5A74 /* HistoryCardModel.swift in Sources */,
 				E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */,
+				E5CD4646291478530062263A /* DateHelper.swift in Sources */,
 				E56ACD162901C89F00BE2EE1 /* HistoryAchievementView.swift in Sources */,
 				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
@@ -781,6 +788,7 @@
 				E535BD6928D8F168003131F0 /* CreateView.swift in Sources */,
 				E5BE868A290B012900FDDA47 /* LocationHistoryView.swift in Sources */,
 				E57D4ACD290711B100ACE493 /* NotificationModel.swift in Sources */,
+				E5CD464829147D6F0062263A /* CalendarEventView.swift in Sources */,
 				E57DE48528F7548600DB4447 /* TagOnBoardingView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 				E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */,

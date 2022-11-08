@@ -45,3 +45,10 @@
 
 //CalendarView
 "agendaTitle" = "Agenda";
+
+//Agenda
+"today" = "Today";
+"yesterday" = "Yesterday";
+"tomorrow" = "Tomorrow";
+"from" = "From";
+"to" = "To";

@@ -44,3 +44,10 @@
 
 //CalendarView
 "agendaTitle" = "Agenda";
+
+//Agenda
+"today" = "Hoje";
+"yesterday" = "Ontem";
+"tomorrow" = "Amanhã";
+"from" = "De";
+"to" = "Até";
