@@ -9,6 +9,11 @@ import SwiftUI
 
 struct OnboardingSelectCountryView: View {
     
+    @State var boraMeaningTitle: String
+    @State var boraMeaningSubheadline: String
+    @State var boraMeaningText: String
+    @State var boraMeaningCallToAction: String
+    
     var backgroundColor: Color
     var foregroundColor: Color
     @State private var showPicker: Bool = false
@@ -18,7 +23,7 @@ struct OnboardingSelectCountryView: View {
             ZStack {
                 backgroundColor.edgesIgnoringSafeArea(.all)
                 VStack(alignment: .leading, spacing: 0) {
-                    BoraMeaningView(boraMeaningTitle: "bo.ra", boraMeaningSubheadline: "Substantivo feminino", boraMeaningText: "Expressão usada para indicar que alguém vai sair, precisa sair, está de saída, indo embora; embora: bora, amanhã voltamos!\nExpressão que incentiva a saída de outra pessoa ou que faça algo.", boraMeaningCallToAction: "então bora começar...")
+                    BoraMeaningView(boraMeaningTitle: $boraMeaningTitle, boraMeaningSubheadline: $boraMeaningSubheadline, boraMeaningText: $boraMeaningText, boraMeaningCallToAction: $boraMeaningCallToAction)
                     
                     VStack(alignment: .leading, spacing: 0){
                         Text("Qual seu país de origem?")
@@ -43,7 +48,7 @@ struct OnboardingSelectCountryView: View {
 
 struct OnboardingSelectCountryView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingSelectCountryView(backgroundColor: .appBlue, foregroundColor: .appWhite)
+        OnboardingSelectCountryView(boraMeaningTitle: "bo.ra.", boraMeaningSubheadline: "Substantivo feminino", boraMeaningText: "Expressão que incentiva a saída de outra pessoa ou que faça algo.\nPra gente, é como se fosse o pontapé inicial pra novas aventuras.", boraMeaningCallToAction: "então bora começar?",backgroundColor: .appBlue, foregroundColor: .appWhite)
         
         
     }
@@ -51,10 +56,10 @@ struct OnboardingSelectCountryView_Previews: PreviewProvider {
 
 struct BoraMeaningView: View {
     
-    let boraMeaningTitle: String
-    let boraMeaningSubheadline: String
-    let boraMeaningText: String
-    let boraMeaningCallToAction: String
+    @Binding var boraMeaningTitle: String
+    @Binding var boraMeaningSubheadline: String
+    @Binding var boraMeaningText: String
+    @Binding var boraMeaningCallToAction: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
