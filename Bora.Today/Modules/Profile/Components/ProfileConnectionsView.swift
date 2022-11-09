@@ -8,21 +8,27 @@
 import SwiftUI
 
 struct ProfileConnectionsView: View {
+        
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(spacing: 0){
                 Text("Conexões")
                     .font(.appHeadline)
+                    .foregroundColor(.appBlack)
+                
                 Spacer()
-                HStack(spacing: 4) {
-                    Text("20+")
+                
+                Button(action: {print("teste")}, label: {
+                    HStack(spacing: 4) {
+                        Text("20" + "+")
                         .font(.appCallout)
                     Image(systemName: "chevron.right")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 8, height: 8)
-                }
-                .foregroundColor(.appBlueButton)
+                    }
+                    .foregroundColor(.appBlueButton)
+                })
             }
             .padding(.horizontal, AppConfig.safeAreaHorizontal)
             .padding(.bottom, 16)

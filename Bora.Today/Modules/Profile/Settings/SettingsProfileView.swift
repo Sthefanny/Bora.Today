@@ -1,25 +1,35 @@
 //
-//  OnboardingCountriesListView.swift
+//  SettingsProfileView.swift
 //  Bora.Today
 //
-//  Created by Ana Luisa Duda Stege on 04/11/22.
+//  Created by Ana Luisa Duda Stege on 09/11/22.
 //
 
 import SwiftUI
 
-struct OnboardingCountriesListView: View {
+struct SettingsProfileView: View {
+    
+    @Binding var backgroundPrivateColor: Color
+    
     var body: some View {
         VStack{
-            HeaderView(headerTitle: "Selecionar país")
-            Spacer(minLength: 32)
-            CountriesListView()
+            HeaderView(headerTitle: "Configurações")
+            VStack {
+                HStack {
+                    Text("Conexões")
+                        .font(.appHeadline)
+                    .foregroundColor(.appBlack)
+                    Spacer()
+                }
+            }
+
         }
     }
 }
 
-struct OnboardingCountriesListView_Previews: PreviewProvider {
+struct SettingsProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingCountriesListView()
+        SettingsProfileView(backgroundPrivateColor: .constant(.appYellow))
     }
 }
 

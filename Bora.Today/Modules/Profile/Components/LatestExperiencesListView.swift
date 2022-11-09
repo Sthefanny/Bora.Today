@@ -9,24 +9,17 @@ import SwiftUI
 
 struct LatestExperiencesListView: View {
     let model: TopExperienceModel
+    let spacing: CGFloat? = 12
     let columns = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
+        GridItem(.flexible(),spacing: 12),
+        GridItem(.flexible(),spacing: 12),
     ]
     
     var body: some View {
-        GeometryReader { screen in
-            ScrollView(.vertical, showsIndicators: false) {
-                LazyVGrid(columns: columns) {
-                    ForEach(0..<model.experiences.count, id: \.self) { index in
-                        let item = model.experiences[index]
-                        ExperienceHomeView(model: item, isFirst: index == 0)
-                    }
-                }
-                HStack(spacing: 12) {
-                    
-                    
-                }
+        LazyVGrid(columns: columns, alignment: .center, spacing: spacing) {
+            ForEach(0..<model.experiences.count, id: \.self) { index in
+                let item = model.experiences[index]
+                ExperienceProfileView(model: item)
             }
         }
     }

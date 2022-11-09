@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		011C5D4B2911A28E00539EED /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C5D4A2911A28E00539EED /* PickerView.swift */; };
+		012A74C3291C1D340071CBDD /* ExperienceProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */; };
+		012A74C7291C2DF80071CBDD /* SettingsProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */; };
 		013DDCB729030EE7003C5F88 /* OnboardingIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DDCB529030EE7003C5F88 /* OnboardingIntroView.swift */; };
 		013DDCB829030EE7003C5F88 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DDCB629030EE7003C5F88 /* OnboardingView.swift */; };
 		013DDCBA29030FCF003C5F88 /* OnboardingSelectCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DDCB929030FCF003C5F88 /* OnboardingSelectCountryView.swift */; };
@@ -104,6 +106,8 @@
 
 /* Begin PBXFileReference section */
 		011C5D4A2911A28E00539EED /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceProfileView.swift; sourceTree = "<group>"; };
+		012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileView.swift; sourceTree = "<group>"; };
 		013DDCB529030EE7003C5F88 /* OnboardingIntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingIntroView.swift; sourceTree = "<group>"; };
 		013DDCB629030EE7003C5F88 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		013DDCB929030FCF003C5F88 /* OnboardingSelectCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSelectCountryView.swift; sourceTree = "<group>"; };
@@ -258,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				013F9E75290B709500288327 /* EditProfile */,
+				012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				01549294291AE3C30068218A /* TagInterestsView.swift */,
 				01549296291AE6580068218A /* ProfileHeaderView.swift */,
 				01549298291AEB4A0068218A /* ProfileConnectionsView.swift */,
+				012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */,
 				0154929A291AECF30068218A /* LatestExperiencesListView.swift */,
 			);
 			path = Components;
@@ -851,6 +857,7 @@
 				E573753528F0BB8400A40A26 /* CalendarView.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
 				9319EDDB28FF2B72006012D4 /* ExperienceView.swift in Sources */,
+				012A74C7291C2DF80071CBDD /* SettingsProfileView.swift in Sources */,
 				E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */,
 				E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */,
 				E57DE48A28F75C6D00DB4447 /* DefaultTagStyle.swift in Sources */,
@@ -894,6 +901,7 @@
 				013DDCB729030EE7003C5F88 /* OnboardingIntroView.swift in Sources */,
 				013F9E78290B70EE00288327 /* CountriesListView.swift in Sources */,
 				E5C19A9328E627CB00556A80 /* CornerRadiusShapeModel.swift in Sources */,
+				012A74C3291C1D340071CBDD /* ExperienceProfileView.swift in Sources */,
 				93DF14902901DA6F0027D985 /* CreateTextExpandView.swift in Sources */,
 				E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */,
 				013DDCBE29032166003C5F88 /* OnboardingInterestsListView.swift in Sources */,
