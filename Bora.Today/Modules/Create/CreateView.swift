@@ -5,16 +5,91 @@
 //  Created by Sthefanny Gonzaga on 19/09/22.
 //
 
+
 import SwiftUI
 
-struct CreateView: View {
-    var body: some View {
-        Text("Create View Aqui!")
-    }
+class CreateExperience: ObservableObject {
+    @Published var title: String = ""
+    @Published var place: String = ""
+    @Published var description: String = ""
 }
 
-struct CreateView_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateView()
+struct CreateView: View {
+    
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
+    
+    var createExperience = CreateExperience()
+    
+    func validateTextField(value: String) -> Bool {
+        return !value.isEmpty
+    }
+    //var photoSelected: Bool = false
+    
+    var body: some View {
+        GeometryReader { screen in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 24) {
+                    Text("createViewTitle".localized(language))
+                        .font(.appTitle1)
+                        .foregroundColor(.appBlack)
+                        .padding(.vertical, 16)
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                    
+                    //adicioanr photo picker aqui
+                    Text("PHOTO PICKER")
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                
+                    
+                    CreateSelectStickerView()
+                    
+                    TextFieldView(
+                        title: "textFieldTitle".localized(language),
+                        value: createExperience.title,
+                        errorMessage: "errorMessageTitle".localized(language),
+                        validate: self.validateTextField
+                    )
+                    .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                    
+                    TextFieldView(
+                        title: "textFieldPlace".localized(language),
+                        value: createExperience.place,
+                        errorMessage: "errorMessagePlace".localized(language),
+                        validate: self.validateTextField
+                    )
+                    .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                    
+                    
+                    CreateDatePickerView(date: .now)
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                    
+                    TextAreaLimitedView(
+                        title: "textAreaTitle".localized(language),
+                        example: "textAreaPlaceholder".localized(language),
+                        value: createExperience.place,
+                        errorMessage: "errorMessageTextArea".localized(language),
+                        validate: self.validateTextField)
+                    .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                    
+                    CreateSelectTagView()
+                    
+                    CreateSliderView()
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                    
+                    ButtonDefault(buttonType: .textOnly, text: "postButton".localized(language), icon: "", action: {
+                        print("publicar")
+                    }, isDisabled: .constant(false))
+                    .frame(width: screen.size.width, alignment: .center)
+                    
+                }
+            }
+        }
+    }
+    
+    struct CreateView_Previews: PreviewProvider {
+        static var previews: some View {
+            CreateView()
+        }
     }
 }

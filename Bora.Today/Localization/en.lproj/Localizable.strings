@@ -68,3 +68,29 @@
 
 //SaveButton
 "save" = "Save";
+
+//CreateView
+"createViewTitle" = "Create experience";
+"textFieldTitle" = "Title of the experiment";
+"errorMessageTitle" = "Please enter a title";
+"textFieldPlace" = "Place";
+"errorMessagePlace" = "Ops, you need to inform the location";
+"textAreaTitle" = "Description";
+"textAreaPlaceholder" = "E.g.: A costume party with a circus theme!";
+"errorMessageTextArea" = "Give us a little more information";
+"postButton" = "Post";
+
+//CreateDatePicker
+"datePickerTitle" = "Date and time";
+
+//CreateSelectStickerView
+"selectStickerTitle" = "Select up to 3 stickers";
+"selectStickerFootnote" = "to show how amazing your experience will be!";
+
+
+//CreateSelectTagView
+"selectTagTitle" = "Select up to 3 categories";
+"more" = "More";
+
+//CreateSliderView
+"sliderTitle" = "Number of participants";
