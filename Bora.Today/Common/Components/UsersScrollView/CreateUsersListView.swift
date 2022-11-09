@@ -25,7 +25,7 @@ struct CreateUsersListView: View {
                     ProfileImageView(image: item.user.image, country: item.user.originCountry)
                 }
             }
-            .padding(.leading, 21)
+            .padding(.leading, AppConfig.safeAreaHorizontal)
         }
         
     }

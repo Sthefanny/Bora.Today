@@ -207,7 +207,7 @@ extension TagModel {
     
     static var espiritualidade: TagModel {
         TagModel(
-            text: "Espiritualidae",
+            text: "Espiritualidade",
             icon: "camera.macro",
             color: Color.appGreen
         )

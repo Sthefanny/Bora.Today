@@ -14,6 +14,8 @@ struct UserModel: Identifiable {
     let username: String
     let image: String
     let originCountry: String
+    let tags: [TagModel]?
+    let bio: String
 }
 
 #if DEBUG
@@ -27,7 +29,9 @@ extension UserModel {
             location: "lat/long",
             username: "Broo",
             image: "today_bg",
-            originCountry: "BR"
+            originCountry: "BR",
+            tags: [TagModel.espiritualidade, TagModel.hobbies, TagModel.happyHour],
+            bio: "Morando no centrão de Curitiba há 1 ano. Sou de portugal e amo um role cultura com novas pessoas, bora se encontrar e formar novas experiênciasl! ✨🥰🌏🇧🇷"
         )
     }
     
@@ -38,7 +42,9 @@ extension UserModel {
             location: "lat/long",
             username: "Deh",
             image: "exp1",
-            originCountry: "PT"
+            originCountry: "PT",
+            tags: [],
+            bio: "Morando no centrão de Curitiba há 1 ano. Sou de portugal e amo um role cultura com novas pessoas, bora se encontrar e formar novas experiênciasl! ✨🥰🌏🇧🇷"
         )
     }
     
@@ -49,7 +55,9 @@ extension UserModel {
             location: "lat/long",
             username: "Jess",
             image: "exp2",
-            originCountry: "US"
+            originCountry: "US",
+            tags: [TagModel.adrenalina, TagModel.natureza, TagModel.museus],
+            bio: "Morando no centrão de Curitiba há 1 ano. Sou de portugal e amo um role cultura com novas pessoas, bora se encontrar e formar novas experiênciasl! ✨🥰🌏🇧🇷"
         )
     }
 }
