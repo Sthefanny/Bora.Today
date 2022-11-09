@@ -9,14 +9,16 @@ import SwiftUI
 
 struct CreateSliderView: View {
     @State var sliderValue: Double = 3
-    //@State var color: Color = .red
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
     
     var body: some View {
         VStack {
             HStack {
-                Text("Quantidade de participantes \(Image("asterisk"))")
+                Text("\(Text("sliderTitle".localized(language))) \(Image("asterisk"))")
                     .font(.appHeadline)
                     .foregroundColor(.appBlack)
+                
                 
                 Spacer()
                 
@@ -31,8 +33,10 @@ struct CreateSliderView: View {
                         .font(.appTitle1)
                         .foregroundColor(Color.appBlue)
                         .padding(.leading, -6)
+                        
                 }
             }
+            .padding(.bottom, -2)
             
             
             Slider(

@@ -69,3 +69,29 @@
 //SaveButton
 "save" = "Salvar";
 
+
+//CreateView
+"createViewTitle" = "Criar experiência";
+"textFieldTitle" = "Título da experiência";
+"errorMessageTitle" = "Por favor, informe um título";
+"textFieldPlace" = "Local";
+"errorMessagePlace" = "Opa, precisa informar o local";
+"textAreaTitle" = "Descrição";
+"textAreaPlaceholder" = "Ex.: Uma festa á fantasia com o tema circo!";
+"errorMessageTextArea" = "Nos dê mais um pouco de informações";
+"postButton" = "Publicar";
+
+//CreateDatePicker
+"datePickerTitle" = "Data e hora";
+
+//CreateSelectStickerView
+"selectStickerTitle" = "Selecione até 3 adesivos";
+"selectStickerFootnote" = "pra mostrar o quanto sua experiência vai ser incrível!";
+
+
+//CreateSelectTagView
+"selectTagTitle" = "Selecione até 3 categorias";
+"more" = "Ver mais";
+
+//CreateSliderView
+"sliderTitle" = "Quantidade de participantes";

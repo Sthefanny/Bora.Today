@@ -7,9 +7,35 @@
 
 import SwiftUI
 
+class StickerManager: ObservableObject {
+//
+//    @Published var stickersSelected: [StickerModel] = []
+//    {
+//        didSet {
+//
+//            if stickersSelected.count >= 3 {
+//                stickersSelected = oldValue
+//            } else {
+//                stickersSelected.append(stickersSelected)
+//            print(stickersSelected)
+//            }
+//        }
+//
+//    }
+    
+//    func update(model: StickerModel) {
+//            stickersSelected?.append(model)
+//        print(stickersSelected)
+//    }
+}
+
 struct StickerView: View {
+    //var callback: (Bool) -> Bool
+    
+    @StateObject var manager = StickerManager()
+    
     let model: StickerModel
-    @State private var isSelected = false
+    @State private var isSelected: Bool = false
     var index: CGFloat?
     var positionX: CGFloat?
     var positionY: CGFloat?
@@ -41,9 +67,12 @@ struct StickerView: View {
         )
         .onTapGesture {
             isSelected.toggle()
+           // manager.stickersSelected = model
         }
     }
 }
+
+
 
 struct StickerView_Previews: PreviewProvider {
     static var previews: some View {

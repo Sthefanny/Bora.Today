@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CreateSelectTagView: View {
-    
     //MUDAR AQUI COM A LÓGICA DA ANA PARA O ONBOARDING
+    
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
     
     private let tags: [TagModel] = [
         .example1,
@@ -25,14 +27,24 @@ struct CreateSelectTagView: View {
         VStack (alignment: .leading) {
             
             HStack {
-                Text("Tags \(Image("asterisk"))")
+                VStack(alignment: .leading) {
+                    Text("\(Text("selectTagTitle".localized(language))) \(Image("asterisk"))")
+                        .font(.appHeadline)
+                        .foregroundColor(.appBlack)
+                    
+//                    Text("em que categorias se encaixa?")
+//                        .font(.appFootnote)
+                        
+                }
+                //.padding(.bottom, 8)
+               
                 
                 Spacer()
                 
                 Button(action: {
                     print("abrir modal com todas as tags")
                 }) {
-                    Text("Lista ordenada \(Image(systemName: "chevron.right"))")
+                    Text("\(Text("more".localized(language))) \(Image(systemName: "chevron.right"))")
                     
                 }
             }

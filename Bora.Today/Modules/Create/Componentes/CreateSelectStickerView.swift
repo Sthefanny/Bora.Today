@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CreateSelectStickerView: View {
-    //@State private var isSelected = false
+
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
     
     private let stickers: [StickerModel] = [
         .bora,
@@ -24,19 +26,27 @@ struct CreateSelectStickerView: View {
     
     var body: some View {
         ScrollView(.vertical) {
-            VStack(alignment: .leading) {
-                Text("Selecione até 3 adesivos")
+            VStack(alignment: .leading, spacing: 0) {
+                
+                Text("selectStickerTitle".localized(language))
                     .font(.appHeadline)
+                    .padding(.horizontal, 21)
+                    
+                
+                Text("selectStickerFootnote".localized(language))
+                    .font(.appFootnote)
+                    .padding(.horizontal, 21)
+                    .padding(.bottom, 8)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        ForEach(stickers, id: \.self) { sticker in
-                            
-                            StickerView(model: sticker)
-                                .padding(.horizontal, -2)
-                                .padding(.vertical, 2)
-                            
+                        ForEach(0..<stickers.count, id: \.self) { index in
+                            let item = stickers[index]
+                            StickerView(model: item)
+                                .padding(.leading, index == 0 ? 21 : 0)
+                                .padding(.trailing, index == stickers.count - 1 ? 21 : 0)
                         }
+                        
                     }
                 }
             }

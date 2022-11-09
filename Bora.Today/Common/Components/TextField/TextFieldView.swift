@@ -20,8 +20,13 @@ struct OvalTextFieldStyle: TextFieldStyle {
 
 struct TextFieldView: View {
     let title: String
-    let isMandatory: Bool
-    @State private var fill = ""
+    @State var value: String = ""
+    var isMandatory: Bool = true
+    var errorMessage: String = ""
+    var validate: ((String) -> Bool)?
+    
+    @FocusState private var isFocused: Bool
+    @State private var isValid: Bool?
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -38,9 +43,26 @@ struct TextFieldView: View {
             .padding(.bottom, 8)
             
             
-            TextField("", text: $fill)
+            TextField("", text: $value)
+                .focused($isFocused)
+                .onChange(of: isFocused) { editingChanged in
+                    // Check if is focus in, then return
+                    if editingChanged {
+                        return
+                    }
+                    
+                    guard let validate = self.validate else { return }
+                    self.isValid = validate(self.value)
+                }
                 .textFieldStyle(OvalTextFieldStyle())
-
+                .padding(.bottom, 6)
+            
+            if !errorMessage.isEmpty && isValid == false {
+                Text(errorMessage)
+                    .font(.appCaption2)
+                    .foregroundColor(.appRed)
+            }
+            
         }
         
     }
@@ -48,6 +70,13 @@ struct TextFieldView: View {
 
 struct TextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        TextFieldView(title: "Titulo do Evento", isMandatory: true)
+        VStack {
+            TextFieldView(
+                title: "Titulo do Evento",
+                value: "",
+                errorMessage: "Por favor, informe o Titulo do Evento") { value in
+                    return !value.isEmpty
+                }
+        }
     }
 }

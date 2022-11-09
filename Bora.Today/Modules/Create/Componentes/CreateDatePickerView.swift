@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CreateDatePickerView: View {
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
     
     @State var date: Date
     
@@ -15,10 +17,9 @@ struct CreateDatePickerView: View {
         
         VStack {
             
-            DatePicker("Data e hora \(Image("asterisk"))", selection: $date)
+            DatePicker("\(Text("datePickerTitle".localized(language))) \(Image("asterisk"))", selection: $date, in: .now...)
                 .font(.appHeadline)
                 .foregroundColor(.appBlack)
-            
         }
     }
 }
