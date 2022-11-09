@@ -9,10 +9,21 @@ import SwiftUI
 
 struct PlaceCardView: View {
     let model: PlaceModel
+    var isInDiscover: Bool
+    @State var isSaved: Bool
     
     var body: some View {
         
         HStack(spacing: 0) {
+            
+            HStack(spacing: 4) {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.appBlueButton)
+                
+                Text(String(format: "%.1f", model.rating))
+        
+            }.padding(.trailing, 22)
+            
             
             VStack(alignment: .leading, spacing: 0) {
                 Text(model.name)
@@ -21,10 +32,10 @@ struct PlaceCardView: View {
                     .padding(.bottom, 8)
                 
                 
-                HStack {
+                HStack(spacing: 0) {
                     Image("pin_place")
                         .foregroundColor(.black)
-                        .padding(.horizontal, 4)
+                        .padding(.trailing, 8)
                     
                     Text(model.address)
                         .font(.appFootnote)
@@ -34,17 +45,30 @@ struct PlaceCardView: View {
                 .padding(.bottom, 4)
                 
             }
-            .padding(.trailing, 32)
             
             Spacer()
             
-            HStack {
-                Image(systemName: "star.fill")
-                    .foregroundColor(.appBlue)
+            VStack {
                 
-                Text(String(format: "%.1f", model.rating))
-        
+                
+                if isInDiscover {
+                    Image(systemName: isSaved ? "bookmark.fill" : "bookmark")
+                        .font(.system(size: 24))
+                        .foregroundColor(.appBlueButton)
+                        .onTapGesture {
+                            isSaved.toggle()
+                            //FUTURAMENTE LEVAR PARA A PAGINA DE SALVOS QUANDO SALVAR ALGUM PELA PRIMEIRA VEZ
+                        }
+                } else {
+                    Image(systemName: "chevron.right")
+                        .foregroundColor(.appBlueButton)
+                        .font(.title)
+                        .onTapGesture {
+                            print("-leva para página da experiência-")
+                    }
+                }
             }
+            
         }
         
     }
@@ -52,6 +76,6 @@ struct PlaceCardView: View {
 
 struct PlaceCardView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaceCardView(model: .place2)
+        PlaceCardView(model: .place2, isInDiscover: true, isSaved: false)
     }
 }
