@@ -10,6 +10,7 @@ import Foundation
 struct ExperienceModel: Identifiable {
     let id = UUID()
     let name: String
+    var description: String
     let location: String
     let datetime: String
     let image: String
@@ -24,6 +25,7 @@ extension ExperienceModel {
 
         ExperienceModel(
             name: "Rolê de Skate",
+            description: "Começa assim pra gente ter uma descrição antes de ter que colocar em todos hahaha teste isso aqui é um teste",
             location: "Condomínio Sachas",
             datetime: "Hoje, 18:00 AM",
             image: "today_bg",
@@ -35,6 +37,7 @@ extension ExperienceModel {
 
         ExperienceModel(
             name: "Burguer na Stel",
+            description: "Começa assim pra gente ter uma descrição antes de ter que colocar em todos hahaha teste isso aqui é um teste",
             location: "Casa da Stel",
             datetime: "12/10/2022, 18:00 AM",
             image: "exp1",
@@ -46,6 +49,7 @@ extension ExperienceModel {
 
         ExperienceModel(
             name: "Brooday",
+            description: "Começa assim pra gente ter uma descrição antes de ter que colocar em todos hahaha teste isso aqui é um teste",
             location: "Outback",
             datetime: "Amanha, 18:00 AM",
             image: "exp2",
