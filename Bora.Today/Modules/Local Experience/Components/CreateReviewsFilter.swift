@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-//DE RUIM, DEPOIS EU ARRUMO
-
 struct CreateReviewsFilter: View {
     
     @StateObject var locationManager = LocationManager()

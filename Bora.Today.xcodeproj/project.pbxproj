@@ -19,6 +19,7 @@
 		01AB5C992915942700C59E6A /* OnboardingCountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */; };
 		9304631C291B0F9700CA7795 /* LocalExperienceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304631B291B0F9700CA7795 /* LocalExperienceCardView.swift */; };
 		9304631E291C1D5200CA7795 /* LocalExperienceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304631D291C1D5200CA7795 /* LocalExperienceListView.swift */; };
+		93046322291C266400CA7795 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046321291C266400CA7795 /* ImagePicker.swift */; };
 		93055CF1291AEAF600650C02 /* ReviewDynamiclList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93055CF0291AEAF600650C02 /* ReviewDynamiclList.swift */; };
 		9319EDDB28FF2B72006012D4 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319EDDA28FF2B72006012D4 /* ExperienceView.swift */; };
 		9319EDDD28FF33C2006012D4 /* IconLocationTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */; };
@@ -134,6 +135,7 @@
 		320CA60A3E816E73A23E3B55 /* Pods-Bora.Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.release.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.release.xcconfig"; sourceTree = "<group>"; };
 		9304631B291B0F9700CA7795 /* LocalExperienceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExperienceCardView.swift; sourceTree = "<group>"; };
 		9304631D291C1D5200CA7795 /* LocalExperienceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExperienceListView.swift; sourceTree = "<group>"; };
+		93046321291C266400CA7795 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		93055CF0291AEAF600650C02 /* ReviewDynamiclList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDynamiclList.swift; sourceTree = "<group>"; };
 		9319EDDA28FF2B72006012D4 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 		9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLocationTextButton.swift; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 				9353B984290AFE2100D3DB6D /* ExperienceReviewView.swift */,
 				9353B986290B010300D3DB6D /* CreateReviewImage.swift */,
 				9353B988290B084400D3DB6D /* CreateUsersListView.swift */,
+				93046321291C266400CA7795 /* ImagePicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -988,6 +991,7 @@
 				9353B985290AFE2100D3DB6D /* ExperienceReviewView.swift in Sources */,
 				E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
+				93046322291C266400CA7795 /* ImagePicker.swift in Sources */,
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
 				93B5E6AD29197DA1004DE6B3 /* CreateReviewsFilter.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,

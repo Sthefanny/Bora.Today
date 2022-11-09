@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct CreateReviewImage: View {
-//    @State var images: [UIImage]
+    //    @State private var selectedImage: UIImage?
+    //    @State private var isImagePickerDisplay = false
+    //    @State private var selected: Bool = false
+    @State private var image = UIImage()
+    @State private var showSheet = false
+    //    @State var images: [UIImage]
     
     var body: some View {
         HStack (alignment: .center, spacing: 12){
             
-            Button(action: {}) {
-                //esse botão precisa abrir a foto maior (PHOTO PICKER)
-            Image("today_bg")
+            Image(uiImage: self.image)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 64, height: 64)
+                .background(Color.black.opacity(0.2))
                 .cornerRadius(18)
-            }
+                .onTapGesture {
+                    showSheet = true
+                }
+                .sheet(isPresented: $showSheet) {
+                    ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+                }
         }
     }
 }
