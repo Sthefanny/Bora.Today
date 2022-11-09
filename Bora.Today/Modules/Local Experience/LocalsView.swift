@@ -60,7 +60,6 @@ struct LocalsView: View {
                             Text("reviews".localized(language))
                                 .font(.appHeadline)
                                 .padding(.leading, 21)
-                            
                         }
                         
                     }

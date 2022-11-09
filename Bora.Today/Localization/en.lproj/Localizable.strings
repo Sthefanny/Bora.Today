@@ -76,3 +76,6 @@
 "sameCountry" = "Same Country";
 "reviews" = "Reviews";
 "experiencesHere" = "Experiências Here";
+
+//PhotoPicker
+"addPic" = "Select image";
