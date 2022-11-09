@@ -9,7 +9,8 @@ import SwiftUI
 
 struct LocalExperienceCardView: View {
     
-    let model: ExperienceModel
+    var model: ExperienceModel
+    
     var body: some View {
         
         Button(action: {
@@ -60,6 +61,6 @@ struct LocalExperienceCardView: View {
 
 struct LocalExperienceCardView_Previews: PreviewProvider {
     static var previews: some View {
-        LocalExperienceCardView(model: .example2)
+        LocalExperienceCardView(model: ExperienceModel.example1)
     }
 }

@@ -8,12 +8,13 @@
 import SwiftUI
 import SwiftFlags
 
+//por algum motivo quebrou - não tá gerando imagens diferentes
+
 struct CreateUsersListView: View {
-    private let model: [ReviewModel]
-    //lista de ReviewModel - List
+    private let model: [UserModel]
     
     init() {
-        model = [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3, ReviewModel.example1, ReviewModel.example2, ReviewModel.example3]
+        model = [UserModel.example1, UserModel.example2, UserModel.example3, UserModel.example1, UserModel.example2, UserModel.example3]
     
     }
     
