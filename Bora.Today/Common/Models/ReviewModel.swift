@@ -42,7 +42,7 @@ extension ReviewModel {
             text: "Um hamburguão muito foda com nasdjna campeaonato de VR very funnnn ladlsad jklsaj dlska jdlksa ldksja lkdjsa dkhsuai hdsakjndsa",
             score: 3.0,
             tags: ["Acessível", "Divertido", "Barato"],
-            images: [UIImage(named: "today_bg")!, UIImage(named: "today_bg")!, UIImage(named: "today_bg")!]
+            images: [UIImage(named: "today_bg")!, UIImage(named: "pic3")!, UIImage(named: "pic2")!]
         )
     }
     
@@ -54,7 +54,7 @@ extension ReviewModel {
             text: "Um hamburguão muito foda com nasdjna campeaonato de VR very funnnn ladlsad jklsaj dlska jdlksa ldksja lkdjsa dkhsuai hdsakjndsa",
             score: 2.0,
             tags: ["Acessível", "Divertido", "Barato"],
-            images: [UIImage(named: "today_bg")!, UIImage(named: "today_bg")!, UIImage(named: "today_bg")!]
+            images: [UIImage(named: "today_bg")!]
         )
     }
 }

@@ -53,10 +53,10 @@ struct ExperienceReviewView: View {
                                     ImageView(uiImage: item)
                                 }
                             }
+                            .padding(.top, 4)
                         }
                     }
                 }
-                .frame(height: 131)
             }
         }
 
