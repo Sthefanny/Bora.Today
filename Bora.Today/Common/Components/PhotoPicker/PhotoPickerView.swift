@@ -14,20 +14,23 @@ struct PhotoPickerView: View {
     @State var pickerResult: [UIImage] = []
     
     var body: some View {
-        NavigationView {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack (alignment: .center, spacing: 12){
-                    ForEach(pickerResult, id: \.self) { uiImage in
-                        ImageView(uiImage: uiImage)
+        GeometryReader { screen in
+            HStack (alignment: .center, spacing: 12){
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack (alignment: .center, spacing: 12){
+                        ForEach(pickerResult, id: \.self) { uiImage in
+                            ImageView(uiImage: uiImage)
+                        }
                     }
+                    .padding()
                 }
-                .padding()
-            }
-            .edgesIgnoringSafeArea(.bottom)
-            .navigationBarItems(trailing: selectPhotoButton)
-            .sheet(isPresented: $photoPickerIsPresented) {
-                PhotoPicker(pickerResult: $pickerResult,
-                            isPresented: $photoPickerIsPresented)
+                .edgesIgnoringSafeArea(.bottom)
+                selectPhotoButton
+                    .sheet(isPresented: $photoPickerIsPresented) {
+                        PhotoPicker(pickerResult: $pickerResult,
+                                    isPresented: $photoPickerIsPresented)
+                    }
+                    .frame(width: screen.size.width, alignment: .center)
             }
         }
     }
@@ -37,7 +40,17 @@ struct PhotoPickerView: View {
         Button(action: {
             photoPickerIsPresented = true
         }, label: {
-            Label("Select", systemImage: "photo")
+            VStack (alignment: .center, spacing: 8){
+                Image(systemName: "camera")
+                Text("Adicionar Image")
+                    .font(.appButtonText)
+                    .multilineTextAlignment(.center)
+            }
+            .frame(width: 85, height: 85)
+            .padding(8)
+            .foregroundColor(.appWhite)
+            .background(Color.appBlueButton)
+            .cornerRadius(18)
         })
     }
 }
