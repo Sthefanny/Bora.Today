@@ -8,6 +8,8 @@
 //import SwiftUI
 //import PhotosUI
 //
+//ISSO AQUI PODE SER USADO PELA LARI NA PAGINA DE CRIAR EXPERIÊNCIA - MAS VAI TER QUE MUDAR ALGUMAS COISAS
+
 //struct CreateReviewImage: View {
 //    //    @State private var selectedImage: UIImage?
 //    //    @State private var isImagePickerDisplay = false

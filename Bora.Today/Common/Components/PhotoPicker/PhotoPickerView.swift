@@ -23,7 +23,8 @@ struct PhotoPickerView: View {
                 }
                 .padding()
             }
-            .navigationBarItems(leading: CreateImagePickerButton(buttonType: .imageAndTextBigger, text: "AddPic".localized(language), icon: "camera", action:{print("teste")}, isDisabled: .constant(false)))
+            .edgesIgnoringSafeArea(.bottom)
+            .navigationBarItems(trailing: selectPhotoButton)
             .sheet(isPresented: $photoPickerIsPresented) {
                 PhotoPicker(pickerResult: $pickerResult,
                             isPresented: $photoPickerIsPresented)

@@ -345,6 +345,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9304632B291C3C2300CA7795 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				9353B986290B010300D3DB6D /* CreateReviewImage.swift */,
+				93046323291C30A500CA7795 /* PhotoPicker.swift */,
+				93046325291C30BE00CA7795 /* ImageView.swift */,
+				93046327291C30EC00CA7795 /* PhotoPickerView.swift */,
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
 		9319EDD828FF2AB0006012D4 /* Experience */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,19 +368,10 @@
 		9319EDD928FF2AC8006012D4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				938418962907374C000A66D1 /* ButtonDefaultBig.swift */,
 				93DF148F2901DA6F0027D985 /* CreateTextExpandView.swift */,
 				9384188E29071FF6000A66D1 /* CreateHostedButton.swift */,
 				93841890290728A7000A66D1 /* ExperienceImageBannerView.swift */,
-				9384189429073097000A66D1 /* ReportButton.swift */,
-				9384189829073951000A66D1 /* SaveButton.swift */,
 				9353B984290AFE2100D3DB6D /* ExperienceReviewView.swift */,
-				9353B986290B010300D3DB6D /* CreateReviewImage.swift */,
-				9353B988290B084400D3DB6D /* CreateUsersListView.swift */,
-				93046323291C30A500CA7795 /* PhotoPicker.swift */,
-				93046325291C30BE00CA7795 /* ImageView.swift */,
-				93046327291C30EC00CA7795 /* PhotoPickerView.swift */,
-				93046329291C34DB00CA7795 /* CreateImagePickerButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -513,6 +515,7 @@
 		E554266328F34C9F0088C652 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				9353B988290B084400D3DB6D /* CreateUsersListView.swift */,
 				E554266428F34CBC0088C652 /* ProfileImageView.swift */,
 				E554266628F34E900088C652 /* FlagView.swift */,
 			);
@@ -643,6 +646,7 @@
 		E5878AE228E9D5150044CE58 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9304632B291C3C2300CA7795 /* PhotoPicker */,
 				011C5D4C29158B9000539EED /* CountriesList */,
 				E554266328F34C9F0088C652 /* Profile */,
 				E554265E28F349270088C652 /* Review */,
@@ -663,6 +667,10 @@
 				E5878AE928E9E30F0044CE58 /* ButtonStroke.swift */,
 				E5878AF228EA10460044CE58 /* ButtonText.swift */,
 				9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */,
+				93046329291C34DB00CA7795 /* CreateImagePickerButton.swift */,
+				9384189829073951000A66D1 /* SaveButton.swift */,
+				938418962907374C000A66D1 /* ButtonDefaultBig.swift */,
+				9384189429073097000A66D1 /* ReportButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";

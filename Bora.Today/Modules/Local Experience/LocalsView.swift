@@ -61,7 +61,7 @@ struct LocalsView: View {
                                 .font(.appHeadline)
                                 .padding(.leading, 21)
                         }
-                        
+                        PhotoPickerView()
                     }
                 }
                 Spacer()
