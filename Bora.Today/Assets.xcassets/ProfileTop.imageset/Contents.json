@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "EmptyStateIcon.png",
+      "filename" : "ProfileTop.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "EmptyStateIcon@2x.png",
+      "filename" : "ProfileTop@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "EmptyStateIcon@3x.png",
+      "filename" : "ProfileTop@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
