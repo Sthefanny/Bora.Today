@@ -43,7 +43,7 @@ struct CreateExperienceCornerButton: View {
                         .font(.appButtonText)
                         .multilineTextAlignment(.center)
                 }
-                .frame(width: 119, height: 119)
+                .frame(width: 101, height: 101)
                 .foregroundColor(.appWhite)
                 .tint(Color.appBlueButton)
                 .cornerRadius(18)

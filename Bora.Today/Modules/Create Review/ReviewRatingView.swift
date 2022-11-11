@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct ReviewRatingView: View {
+    
+    @StateObject var locationManager = LocationManager()
+    
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
     @Binding var rating: Int
     
     var body: some View {
-        Section {
-        RatingView(rating: $rating)
+        
+        VStack {
+            
+            //Adicionar componente de Card da Lari na View -
+            
+            Section {
+                RatingView(rating: $rating)
+                //se o rating é maior que 3 - tagsReview positivas, se menor que 3, tagsReview negativas.
+            }
+            
+            //Adicionar componente TextField da Lari
+            PhotoPickerView()
+            
+            //Adicionar TagReviewModel
+            
+            ButtonDefault(buttonType: .textOnly, text: "publishReview".localized(language), icon: "record.circle", action: {print("teste")}, isDisabled: .constant(false))
         }
     }
 }

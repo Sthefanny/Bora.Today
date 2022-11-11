@@ -18,9 +18,9 @@ struct LocalExperienceCardView: View {
         }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 18)
-                    .frame(minWidth: 0, maxWidth: 316, minHeight: 0, maxHeight: 121)
+                    .frame(minWidth: 0, maxWidth: 348, minHeight: 119, maxHeight: 119)
                     .foregroundColor(.appWhite)
-                    .shadow(color: .appGray, radius: 10, x: 7, y: 7)
+                    .shadow(color: .appGray, radius: 5, x: 5, y: 5)
                 
                 HStack(alignment: .top, spacing: 0) {
                     //experience.image
@@ -53,8 +53,8 @@ struct LocalExperienceCardView: View {
                     }
                 }
                 .padding(16)
-                .frame(minWidth: 0, maxWidth: 316, minHeight: 0, maxHeight: 121)
             }
+            .frame(minWidth: 0, maxWidth: 348, minHeight: 119, maxHeight: 119)
         }
     }
 }

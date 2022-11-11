@@ -22,10 +22,11 @@ struct ReviewDynamicListView: View {
             VStack {
                 ForEach(0..<model.count) {index in
                     let item = model[index]
-                    ExperienceReviewView(model: ReviewModel.example2)
+                    ExperienceReviewView(model: item)
+                    Divider()
+                        .overlay(Color.appGray)
                 }
             }
-            .padding(.leading, 21)
         }
         
     }

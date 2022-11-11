@@ -23,7 +23,7 @@ struct LocalExperienceListView: View {
                         //por algum motivo quebrou - não tá gerando imagens diferentes (aqui também, mas o problema dve ser no componente)
                         ForEach(0..<model.count) {index in
                             let item = model[index]
-                            LocalExperienceCardView(model: ExperienceModel.example1)
+                            LocalExperienceCardView(model: item)
                         }
                     }
                     .padding(.leading, 21)

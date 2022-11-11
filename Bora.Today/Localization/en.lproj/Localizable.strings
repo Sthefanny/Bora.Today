@@ -79,3 +79,6 @@
 
 //PhotoPicker
 "addPic" = "Select image";
+
+//GiveReviewView
+"publishReview" = "Publish Review";

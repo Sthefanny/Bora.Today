@@ -46,22 +46,37 @@ struct LocalsView: View {
                         }
                         .padding(.init(top: 0, leading: 21, bottom: 0, trailing: 21))
                         
+                        HStack (alignment: .center){
                         VStack (alignment: .leading, spacing: 16){
                             Text("experiencesHere".localized(language))
                                 .font(.appHeadline)
                             
+                            //NÃO TÁ DO TAMANHO CERTO - 119
                             CreateExperienceCornerButton(buttonType: ButtonType.imageAndTextBigger, text: "Create Experience", icon: "createIcon2", action: {print("teste")}, isDisabled: .constant(false))
                         }
                         .padding(.leading, 21)
+                            
+                            //A lista tá aparecendo cortada e menor que o botão de criar experiência
+                            LocalExperienceListView()
+                        }
+                        
                         
     
                         
                         VStack (alignment: .leading, spacing: 16){
                             Text("reviews".localized(language))
                                 .font(.appHeadline)
-                                .padding(.leading, 21)
+                            
+                            VStack (alignment: .leading, spacing: 16){
+                                //Botão - muda a review
+                            CreateReviewsFilter()
+                            
+                            ReviewDynamicListView()
+                            }
                         }
-                        PhotoPickerView()
+                        .padding(.leading, 21)
+                        
+            
                     }
                 }
                 Spacer()
