@@ -32,7 +32,7 @@ struct SettingsProfileView: View {
                     }) //direcionar para ProfileEditView
             
                     // MARK: - SECTION CONFIGURAÇÕES
-                    SettingsProfileLabelView(labelText: "Conexões")
+                    SettingsProfileLabelView(labelText: "Configurações")
                     GroupBox(content: {
                         SettingsProfileRowView(settingsRowType: .onlyText, title: "Idioma", linkLabel: "Português") //colocar ação no botao!
                     }, label: {
