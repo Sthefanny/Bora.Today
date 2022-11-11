@@ -23,7 +23,9 @@
 		93046326291C30BE00CA7795 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046325291C30BE00CA7795 /* ImageView.swift */; };
 		93046328291C30EC00CA7795 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046327291C30EC00CA7795 /* PhotoPickerView.swift */; };
 		9304632A291C34DB00CA7795 /* CreateImagePickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046329291C34DB00CA7795 /* CreateImagePickerButton.swift */; };
-		9304632E291D7C0100CA7795 /* GiveReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304632D291D7C0100CA7795 /* GiveReviewView.swift */; };
+		93046331291DADBF00CA7795 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046330291DADBF00CA7795 /* RatingView.swift */; };
+		93046333291DAE5F00CA7795 /* ReviewRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046332291DAE5F00CA7795 /* ReviewRatingView.swift */; };
+		93046337291DB79800CA7795 /* ReviewDynamicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046336291DB79800CA7795 /* ReviewDynamicListView.swift */; };
 		93055CF1291AEAF600650C02 /* ReviewDynamiclList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93055CF0291AEAF600650C02 /* ReviewDynamiclList.swift */; };
 		9319EDDB28FF2B72006012D4 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319EDDA28FF2B72006012D4 /* ExperienceView.swift */; };
 		9319EDDD28FF33C2006012D4 /* IconLocationTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */; };
@@ -143,7 +145,9 @@
 		93046325291C30BE00CA7795 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		93046327291C30EC00CA7795 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		93046329291C34DB00CA7795 /* CreateImagePickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImagePickerButton.swift; sourceTree = "<group>"; };
-		9304632D291D7C0100CA7795 /* GiveReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveReviewView.swift; sourceTree = "<group>"; };
+		93046330291DADBF00CA7795 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		93046332291DAE5F00CA7795 /* ReviewRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRatingView.swift; sourceTree = "<group>"; };
+		93046336291DB79800CA7795 /* ReviewDynamicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDynamicListView.swift; sourceTree = "<group>"; };
 		93055CF0291AEAF600650C02 /* ReviewDynamiclList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDynamiclList.swift; sourceTree = "<group>"; };
 		9319EDDA28FF2B72006012D4 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 		9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLocationTextButton.swift; sourceTree = "<group>"; };
@@ -361,9 +365,19 @@
 		9304632C291D7BE700CA7795 /* Create Review */ = {
 			isa = PBXGroup;
 			children = (
-				9304632D291D7C0100CA7795 /* GiveReviewView.swift */,
+				9304632F291DAD7700CA7795 /* Components */,
+				93046332291DAE5F00CA7795 /* ReviewRatingView.swift */,
 			);
 			path = "Create Review";
+			sourceTree = "<group>";
+		};
+		9304632F291DAD7700CA7795 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				93046330291DADBF00CA7795 /* RatingView.swift */,
+				93046336291DB79800CA7795 /* ReviewDynamicListView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		9319EDD828FF2AB0006012D4 /* Experience */ = {
@@ -942,6 +956,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93046331291DADBF00CA7795 /* RatingView.swift in Sources */,
 				E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */,
 				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
 				E57D4AD129071A0400ACE493 /* NotificationSystemImageView.swift in Sources */,
@@ -949,7 +964,6 @@
 				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
 				E57DE48828F756E400DB4447 /* OnboardingTagStyle.swift in Sources */,
 				9304631C291B0F9700CA7795 /* LocalExperienceCardView.swift in Sources */,
-				9304632E291D7C0100CA7795 /* GiveReviewView.swift in Sources */,
 				E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
 				9319EDDB28FF2B72006012D4 /* ExperienceView.swift in Sources */,
@@ -966,6 +980,7 @@
 				E5CE02E428EB4C56000FCB77 /* RequestLocationView.swift in Sources */,
 				E505596B28FF38A300DB5A74 /* HistoryCardView.swift in Sources */,
 				E5206B2C28EE0DC900EFF316 /* ExperienceHomeView.swift in Sources */,
+				93046337291DB79800CA7795 /* ReviewDynamicListView.swift in Sources */,
 				E505596D28FF3A1800DB5A74 /* HistoryCardModel.swift in Sources */,
 				E5206B2C28EE0DC900EFF316 /* ExperienceHomeView.swift in Sources */,
 				E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */,
@@ -1021,6 +1036,7 @@
 				93046328291C30EC00CA7795 /* PhotoPickerView.swift in Sources */,
 				9353B985290AFE2100D3DB6D /* ExperienceReviewView.swift in Sources */,
 				E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */,
+				93046333291DAE5F00CA7795 /* ReviewRatingView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
 				93B5E6AD29197DA1004DE6B3 /* CreateReviewsFilter.swift in Sources */,
