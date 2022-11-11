@@ -18,6 +18,8 @@
 		013F9E7A290C553E00288327 /* CountryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F9E79290C553D00288327 /* CountryHelper.swift */; };
 		01AB5C992915942700C59E6A /* OnboardingCountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */; };
 		90124762290B0F3100A556FF /* CreateSelectTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90124761290B0F3100A556FF /* CreateSelectTagView.swift */; };
+		903ECF21291D7EAF008629AD /* PopUpCreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903ECF20291D7EAF008629AD /* PopUpCreateAccountView.swift */; };
+		903ECF23291D8CEE008629AD /* ProfileEmptyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903ECF22291D8CEE008629AD /* ProfileEmptyAccountView.swift */; };
 		9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */; };
 		9042C0AA28FF34050040693D /* ButtonAddPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A928FF34050040693D /* ButtonAddPhoto.swift */; };
 		9042C0AD28FF369E0040693D /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AC28FF369E0040693D /* TextFieldView.swift */; };
@@ -140,6 +142,8 @@
 		01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCountriesListView.swift; sourceTree = "<group>"; };
 		320CA60A3E816E73A23E3B55 /* Pods-Bora.Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.release.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.release.xcconfig"; sourceTree = "<group>"; };
 		90124761290B0F3100A556FF /* CreateSelectTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSelectTagView.swift; sourceTree = "<group>"; };
+		903ECF20291D7EAF008629AD /* PopUpCreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpCreateAccountView.swift; sourceTree = "<group>"; };
+		903ECF22291D8CEE008629AD /* ProfileEmptyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEmptyAccountView.swift; sourceTree = "<group>"; };
 		9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditExperienceModel.swift; sourceTree = "<group>"; };
 		9042C0A928FF34050040693D /* ButtonAddPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAddPhoto.swift; sourceTree = "<group>"; };
 		9042C0AC28FF369E0040693D /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
@@ -350,6 +354,15 @@
 				EB4EF8BFF7B58B2C2C48C99D /* Pods_Bora_Today.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		903ECF1F291D7E3F008629AD /* Pop up */ = {
+			isa = PBXGroup;
+			children = (
+				903ECF20291D7EAF008629AD /* PopUpCreateAccountView.swift */,
+				903ECF22291D8CEE008629AD /* ProfileEmptyAccountView.swift */,
+			);
+			path = "Pop up";
 			sourceTree = "<group>";
 		};
 		9042C0AB28FF36840040693D /* TextField */ = {
@@ -666,6 +679,7 @@
 		E5878AE228E9D5150044CE58 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				903ECF1F291D7E3F008629AD /* Pop up */,
 				90CB8295291C315800A92723 /* Empty State */,
 				904B33172914B061001B6EB4 /* Cards */,
 				9042C0AB28FF36840040693D /* TextField */,
@@ -986,11 +1000,13 @@
 				013F9E7A290C553E00288327 /* CountryHelper.swift in Sources */,
 				E554266B28F354D70088C652 /* UserModel.swift in Sources */,
 				9042C0AD28FF369E0040693D /* TextFieldView.swift in Sources */,
+				903ECF23291D8CEE008629AD /* ProfileEmptyAccountView.swift in Sources */,
 				01AB5C992915942700C59E6A /* OnboardingCountriesListView.swift in Sources */,
 				E56C538928E755F00078191F /* FontEnum.swift in Sources */,
 				938418972907374C000A66D1 /* ButtonDefaultBig.swift in Sources */,
 				E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */,
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
+				903ECF21291D7EAF008629AD /* PopUpCreateAccountView.swift in Sources */,
 				9042C0B028FF9B940040693D /* CreateDatePickerView.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
 				9353B989290B084400D3DB6D /* CreateUsersListView.swift in Sources */,
