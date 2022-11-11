@@ -10,6 +10,8 @@
 		011C5D4B2911A28E00539EED /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C5D4A2911A28E00539EED /* PickerView.swift */; };
 		012A74C3291C1D340071CBDD /* ExperienceProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */; };
 		012A74C7291C2DF80071CBDD /* SettingsProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */; };
+		012A74C9291D7B540071CBDD /* SettingsProfileLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74C8291D7B540071CBDD /* SettingsProfileLabelView.swift */; };
+		012A74CB291D8AFC0071CBDD /* SettingsProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74CA291D8AFC0071CBDD /* SettingsProfileRowView.swift */; };
 		013DDCB729030EE7003C5F88 /* OnboardingIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DDCB529030EE7003C5F88 /* OnboardingIntroView.swift */; };
 		013DDCB829030EE7003C5F88 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DDCB629030EE7003C5F88 /* OnboardingView.swift */; };
 		013DDCBA29030FCF003C5F88 /* OnboardingSelectCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DDCB929030FCF003C5F88 /* OnboardingSelectCountryView.swift */; };
@@ -108,6 +110,8 @@
 		011C5D4A2911A28E00539EED /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceProfileView.swift; sourceTree = "<group>"; };
 		012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileView.swift; sourceTree = "<group>"; };
+		012A74C8291D7B540071CBDD /* SettingsProfileLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileLabelView.swift; sourceTree = "<group>"; };
+		012A74CA291D8AFC0071CBDD /* SettingsProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileRowView.swift; sourceTree = "<group>"; };
 		013DDCB529030EE7003C5F88 /* OnboardingIntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingIntroView.swift; sourceTree = "<group>"; };
 		013DDCB629030EE7003C5F88 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		013DDCB929030FCF003C5F88 /* OnboardingSelectCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSelectCountryView.swift; sourceTree = "<group>"; };
@@ -278,6 +282,8 @@
 		013F9E76290B70B800288327 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				012A74C8291D7B540071CBDD /* SettingsProfileLabelView.swift */,
+				012A74CA291D8AFC0071CBDD /* SettingsProfileRowView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -880,6 +886,7 @@
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
 				9353B989290B084400D3DB6D /* CreateUsersListView.swift in Sources */,
+				012A74C9291D7B540071CBDD /* SettingsProfileLabelView.swift in Sources */,
 				9353B987290B010300D3DB6D /* CreateReviewImage.swift in Sources */,
 				013F9E72290B555700288327 /* OnboardingCountryPickerView.swift in Sources */,
 				017A96AE2919958E006D3D76 /* ProfileView.swift in Sources */,
@@ -914,6 +921,7 @@
 				E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */,
 				9353B985290AFE2100D3DB6D /* ExperienceReviewView.swift in Sources */,
 				E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */,
+				012A74CB291D8AFC0071CBDD /* SettingsProfileRowView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
