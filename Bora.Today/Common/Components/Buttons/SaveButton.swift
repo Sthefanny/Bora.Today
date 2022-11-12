@@ -13,6 +13,7 @@ struct SaveButton: View {
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
+    //O botão é de Salvar na Página Salvos
     var body: some View {
         ButtonStroke(buttonType: .imageAndTextBigger, text: "save".localized(language), icon: "bookmark.fill", action: {print("teste")}, isDisabled: .constant(false))
     }

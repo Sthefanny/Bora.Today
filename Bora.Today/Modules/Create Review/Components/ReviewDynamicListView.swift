@@ -1,39 +1,39 @@
 //
-//  CreateUsersListView.swift
+//  ReviewDynamicListView.swift
 //  Bora.Today
 //
-//  Created by Jessica Akemi Meguro on 27/10/22.
+//  Created by Jessica Akemi Meguro on 10/11/22.
 //
 
 import SwiftUI
 import SwiftFlags
 
-struct CreateUsersListView: View {
+struct ReviewDynamicListView: View {
+    
     private let model: [ReviewModel]
-    //lista de ReviewModel - List
     
     init() {
         model = [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3, ReviewModel.example1, ReviewModel.example2, ReviewModel.example3]
-    
+
     }
     
     var body: some View {
-        ScrollView (.horizontal, showsIndicators: false) {
-            HStack {
+        ScrollView (showsIndicators: false) {
+            VStack {
                 ForEach(0..<model.count) {index in
                     let item = model[index]
-                    ProfileImageView()
+                    ExperienceReviewView(model: item)
+                    Divider()
+                        .overlay(Color.appGray)
                 }
             }
-            .padding(.leading, AppConfig.safeAreaHorizontal)
         }
         
     }
 }
 
-
-struct CreateUsersListView_Previews: PreviewProvider {
+struct ReviewDynamicListView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateUsersListView()
+        ReviewDynamicListView()
     }
 }

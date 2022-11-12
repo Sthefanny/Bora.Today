@@ -69,6 +69,20 @@
 //SaveButton
 "save" = "Save";
 
+//PlaceExperienceView
+"CreateExperience" = "Create Experience";
+"all" = "See all";
+"friends" = "Friends";
+"sameCountry" = "Same Country";
+"reviews" = "Reviews";
+"experiencesHere" = "Experiências Here";
+
+//PhotoPicker
+"addPic" = "Select image";
+
+//GiveReviewView
+"publishReview" = "Publish Review";
+
 //CreateView
 "createViewTitle" = "Create experience";
 "textFieldTitle" = "Title of the experiment";

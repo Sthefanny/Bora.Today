@@ -69,6 +69,13 @@
 //SaveButton
 "save" = "Salvar";
 
+//PlaceExperienceView
+"CreateExperience" = "Criar experiência";
+"all" = "Todos";
+"friends" = "Amigos";
+"sameCountry" = "Mesmo país";
+"reviews" = "Avaliações";
+"experiencesHere" = "Experiências marcadas aqui";
 //CreateView
 "createViewTitle" = "Criar experiência";
 "textFieldTitle" = "Título da experiência";
@@ -79,6 +86,12 @@
 "textAreaPlaceholder" = "Ex.: Uma festa á fantasia com o tema circo!";
 "errorMessageTextArea" = "Nos dê mais um pouco de informações";
 "postButton" = "Publicar";
+
+//PhotoPicker
+"addPic" = "Adicionar foto";
+
+//GiveReviewView
+"publishReview" = "Publicar Avaliação";
 
 //CreateDatePicker
 "datePickerTitle" = "Data e hora";

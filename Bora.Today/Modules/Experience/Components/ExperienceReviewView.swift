@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ExperienceReviewView: View {
     let model: ReviewModel
+    //Prestar atenção pra ver se da pra salvar
     @State private var showPicture: Bool = false
+    
+    //se for diferente de nul = foto aparece, se não = foto não aparece (bool)
     
     var body: some View {
                 VStack {
@@ -43,16 +46,26 @@ struct ExperienceReviewView: View {
                                     TagDefaultView(model: TagModel(text: item, icon: "", color: Color.red), isSelected: false)
                                 }
                             }
+                            //API - Stel por favor tomar atenção - chamar isso da library (PhotoPickerView)
+                            HStack {
+                                ForEach(0..<model.images.count, id: \.self) { index in
+                                    let item = model.images[index]
+                                    ImageView(uiImage: item)
+                                }
+                            }
+                            .padding(.top, 4)
                         }
                     }
                 }
-                .frame(height: 131)
             }
         }
+
+//@ViewBuilder
+
 
 
 struct ExperienceReviewView_Previews: PreviewProvider {
     static var previews: some View {
-                ExperienceReviewView(model: ReviewModel.example1)
+                ExperienceReviewView(model: ReviewModel.example2)
     }
 }

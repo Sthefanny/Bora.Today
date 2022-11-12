@@ -1,10 +1,3 @@
-//
-//  ExperienceModel.swift
-//  Bora.Today
-//
-//  Created by Sthefanny Gonzaga on 04/10/22.
-//
-
 import Foundation
 
 struct ExperienceModel: Identifiable {
@@ -49,7 +42,7 @@ extension ExperienceModel {
 
         ExperienceModel(
             name: "Brooday",
-            description: "Começa assim pra gente ter uma descrição antes de ter que colocar em todos hahaha teste isso aqui é um teste",
+            description: "Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor.",
             location: "Outback",
             datetime: "Amanha, 18:00 AM",
             image: "exp2",
