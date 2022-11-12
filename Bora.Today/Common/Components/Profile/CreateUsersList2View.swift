@@ -11,7 +11,7 @@ import SwiftFlags
 //por algum motivo quebrou - não tá gerando imagens diferentes
     //Tem que pegar do perfil da pessoa
 
-struct CreateUsersListView: View {
+struct CreateUsersList2View: View {
     private let model: [UserModel]
     
     init() {
@@ -34,8 +34,8 @@ struct CreateUsersListView: View {
 }
 
 
-struct CreateUsersListView_Previews: PreviewProvider {
+struct CreateUsersList2View_Previews: PreviewProvider {
     static var previews: some View {
-        CreateUsersListView()
+        CreateUsersList2View()
     }
 }

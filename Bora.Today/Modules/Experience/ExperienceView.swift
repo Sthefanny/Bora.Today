@@ -57,7 +57,7 @@ struct ExperienceView: View {
                             .font(.appHeadline)
                             .padding(.leading, 21)
                         
-                        CreateUsersListView()
+                        CreateUsersList2View()
                     }
                     
                 }

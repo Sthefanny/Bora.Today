@@ -30,7 +30,7 @@
 		9319EDDD28FF33C2006012D4 /* IconLocationTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */; };
 		9353B985290AFE2100D3DB6D /* ExperienceReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353B984290AFE2100D3DB6D /* ExperienceReviewView.swift */; };
 		9353B987290B010300D3DB6D /* CreateReviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353B986290B010300D3DB6D /* CreateReviewImage.swift */; };
-		9353B989290B084400D3DB6D /* CreateUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353B988290B084400D3DB6D /* CreateUsersListView.swift */; };
+		9353B989290B084400D3DB6D /* CreateUsersList2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353B988290B084400D3DB6D /* CreateUsersList2View.swift */; };
 		9384188F29071FF6000A66D1 /* CreateHostedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384188E29071FF6000A66D1 /* CreateHostedButton.swift */; };
 		93841891290728A7000A66D1 /* ExperienceImageBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93841890290728A7000A66D1 /* ExperienceImageBannerView.swift */; };
 		9384189529073097000A66D1 /* ReportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384189429073097000A66D1 /* ReportButton.swift */; };
@@ -152,7 +152,7 @@
 		9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLocationTextButton.swift; sourceTree = "<group>"; };
 		9353B984290AFE2100D3DB6D /* ExperienceReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceReviewView.swift; sourceTree = "<group>"; };
 		9353B986290B010300D3DB6D /* CreateReviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewImage.swift; sourceTree = "<group>"; };
-		9353B988290B084400D3DB6D /* CreateUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsersListView.swift; sourceTree = "<group>"; };
+		9353B988290B084400D3DB6D /* CreateUsersList2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsersList2View.swift; sourceTree = "<group>"; };
 		9384188E29071FF6000A66D1 /* CreateHostedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHostedButton.swift; sourceTree = "<group>"; };
 		93841890290728A7000A66D1 /* ExperienceImageBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceImageBannerView.swift; sourceTree = "<group>"; };
 		9384189429073097000A66D1 /* ReportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportButton.swift; sourceTree = "<group>"; };
@@ -538,7 +538,7 @@
 		E554266328F34C9F0088C652 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				9353B988290B084400D3DB6D /* CreateUsersListView.swift */,
+				9353B988290B084400D3DB6D /* CreateUsersList2View.swift */,
 				E554266428F34CBC0088C652 /* ProfileImageView.swift */,
 				E554266628F34E900088C652 /* FlagView.swift */,
 			);
@@ -998,7 +998,7 @@
 				E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */,
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
-				9353B989290B084400D3DB6D /* CreateUsersListView.swift in Sources */,
+				9353B989290B084400D3DB6D /* CreateUsersList2View.swift in Sources */,
 				9353B987290B010300D3DB6D /* CreateReviewImage.swift in Sources */,
 				013F9E72290B555700288327 /* OnboardingCountryPickerView.swift in Sources */,
 				E554266528F34CBC0088C652 /* ProfileImageView.swift in Sources */,
