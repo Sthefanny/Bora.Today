@@ -102,3 +102,14 @@
 "experiences" = "Experiences";
 "places" = "Places";
 "map" = "Map";
+
+//PopUpCreateAccountView
+"createAccount" = "Create your account in";
+"discover" = "Discover experiences and live your unique journey";
+"continueApple" = "Continue with Apple";
+"legalText1" = "By continuing, you agree to our";
+"legalText2" = "and acknowledge that you have read our";
+"terms" = "Terms of Service";
+"privacyPolicy" = "Privacy Policy.";
+"already" = "Already have an account?";
+"logIn" = "Log in";

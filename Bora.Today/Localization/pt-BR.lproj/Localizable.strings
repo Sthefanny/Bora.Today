@@ -103,3 +103,11 @@
 "places" = "Locais";
 "map" = "Mapa";
 
+
+//PopUpCreateAccountView
+"createAccount" = "Crie sua conta no";
+"discover" = "Descubra experiências e viva sua jornada única";
+"continueApple" = "Continuar com Apple";
+"legalText" = "Ao continuar, você concorda com nossos Termos de Serviço e declara que leu nossa Política de Privacidade.";
+"already" = "Já tem uma conta?";
+"logIn" = "Log in";

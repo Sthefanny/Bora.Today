@@ -72,7 +72,7 @@ struct TextAreaLimitedView: View {
                 
                 Spacer()
                 
-                Text("\(manager.text.count)/200")
+                Text("\(manager.text.count)/300")
                     .font(.appSubheadline)
                     .foregroundColor(.appGrayText)
                     .padding(.trailing)
@@ -92,7 +92,7 @@ class TFManager: ObservableObject {
     
     @Published var text = "" {
         didSet {
-            if text.count > 200 && oldValue.count <= 200 {
+            if text.count > 300 && oldValue.count <= 300 {
                 text = oldValue
             }
         }

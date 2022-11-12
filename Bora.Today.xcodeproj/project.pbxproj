@@ -18,6 +18,8 @@
 		013F9E7A290C553E00288327 /* CountryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F9E79290C553D00288327 /* CountryHelper.swift */; };
 		01AB5C992915942700C59E6A /* OnboardingCountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */; };
 		90124762290B0F3100A556FF /* CreateSelectTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90124761290B0F3100A556FF /* CreateSelectTagView.swift */; };
+		903ECF21291D7EAF008629AD /* PopUpCreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903ECF20291D7EAF008629AD /* PopUpCreateAccountView.swift */; };
+		903ECF23291D8CEE008629AD /* ProfileEmptyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903ECF22291D8CEE008629AD /* ProfileEmptyAccountView.swift */; };
 		9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */; };
 		9042C0AA28FF34050040693D /* ButtonAddPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A928FF34050040693D /* ButtonAddPhoto.swift */; };
 		9042C0AD28FF369E0040693D /* TextFieldWithTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AC28FF369E0040693D /* TextFieldWithTitleView.swift */; };
@@ -28,6 +30,9 @@
 		90764B48290786DB008F1460 /* TextAreaLimitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90764B47290786DB008F1460 /* TextAreaLimitedView.swift */; };
 		90764B4A290793A0008F1460 /* CreateSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90764B49290793A0008F1460 /* CreateSliderView.swift */; };
 		9083E054290059BB002007B1 /* Bora-Today-Info.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9083E056290059BB002007B1 /* Bora-Today-Info.strings */; };
+		90CB8292291C1BA800A92723 /* ExperienceCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8291291C1BA800A92723 /* ExperienceCardListView.swift */; };
+		90CB8294291C2F1500A92723 /* PlaceCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8293291C2F1500A92723 /* PlaceCardListView.swift */; };
+		90CB8297291C319300A92723 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8296291C319300A92723 /* EmptyStateView.swift */; };
 		9319EDDB28FF2B72006012D4 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319EDDA28FF2B72006012D4 /* ExperienceView.swift */; };
 		9319EDDD28FF33C2006012D4 /* IconLocationTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */; };
 		9353B985290AFE2100D3DB6D /* ExperienceReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353B984290AFE2100D3DB6D /* ExperienceReviewView.swift */; };
@@ -142,6 +147,8 @@
 		01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCountriesListView.swift; sourceTree = "<group>"; };
 		320CA60A3E816E73A23E3B55 /* Pods-Bora.Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.release.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.release.xcconfig"; sourceTree = "<group>"; };
 		90124761290B0F3100A556FF /* CreateSelectTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSelectTagView.swift; sourceTree = "<group>"; };
+		903ECF20291D7EAF008629AD /* PopUpCreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpCreateAccountView.swift; sourceTree = "<group>"; };
+		903ECF22291D8CEE008629AD /* ProfileEmptyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEmptyAccountView.swift; sourceTree = "<group>"; };
 		9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditExperienceModel.swift; sourceTree = "<group>"; };
 		9042C0A928FF34050040693D /* ButtonAddPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAddPhoto.swift; sourceTree = "<group>"; };
 		9042C0AC28FF369E0040693D /* TextFieldWithTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitleView.swift; sourceTree = "<group>"; };
@@ -153,6 +160,9 @@
 		90764B49290793A0008F1460 /* CreateSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSliderView.swift; sourceTree = "<group>"; };
 		9083E055290059BB002007B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Bora-Today-Info.strings"; sourceTree = "<group>"; };
 		9083E057290059BF002007B1 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Bora-Today-Info.strings"; sourceTree = "<group>"; };
+		90CB8291291C1BA800A92723 /* ExperienceCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCardListView.swift; sourceTree = "<group>"; };
+		90CB8293291C2F1500A92723 /* PlaceCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardListView.swift; sourceTree = "<group>"; };
+		90CB8296291C319300A92723 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		9319EDDA28FF2B72006012D4 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 		9319EDDC28FF33C2006012D4 /* IconLocationTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLocationTextButton.swift; sourceTree = "<group>"; };
 		9353B984290AFE2100D3DB6D /* ExperienceReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceReviewView.swift; sourceTree = "<group>"; };
@@ -356,6 +366,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		903ECF1F291D7E3F008629AD /* Pop up */ = {
+			isa = PBXGroup;
+			children = (
+				903ECF20291D7EAF008629AD /* PopUpCreateAccountView.swift */,
+				903ECF22291D8CEE008629AD /* ProfileEmptyAccountView.swift */,
+			);
+			path = "Pop up";
+			sourceTree = "<group>";
+		};
 		9042C0AB28FF36840040693D /* TextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,8 +402,20 @@
 			children = (
 				904B33182914B07C001B6EB4 /* ExperienceCardView.swift */,
 				904B331A2914B08C001B6EB4 /* PlaceCardView.swift */,
+				904B33182914B07C001B6EB4 /* ExperienceCardView.swift */,
+				904B331A2914B08C001B6EB4 /* PlaceCardView.swift */,
+				90CB8291291C1BA800A92723 /* ExperienceCardListView.swift */,
+				90CB8293291C2F1500A92723 /* PlaceCardListView.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		90CB8295291C315800A92723 /* Empty State */ = {
+			isa = PBXGroup;
+			children = (
+				90CB8296291C319300A92723 /* EmptyStateView.swift */,
+			);
+			path = "Empty State";
 			sourceTree = "<group>";
 		};
 		9319EDD828FF2AB0006012D4 /* Experience */ = {
@@ -672,6 +703,8 @@
 		E5878AE228E9D5150044CE58 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				903ECF1F291D7E3F008629AD /* Pop up */,
+				90CB8295291C315800A92723 /* Empty State */,
 				904B33172914B061001B6EB4 /* Cards */,
 				9042C0AB28FF36840040693D /* TextField */,
 				011C5D4C29158B9000539EED /* CountriesList */,
@@ -989,7 +1022,9 @@
 				E5206B2C28EE0DC900EFF316 /* ExperienceHomeView.swift in Sources */,
 				E505596D28FF3A1800DB5A74 /* HistoryCardModel.swift in Sources */,
 				E5206B2C28EE0DC900EFF316 /* ExperienceHomeView.swift in Sources */,
+				90CB8292291C1BA800A92723 /* ExperienceCardListView.swift in Sources */,
 				E5C19A8C28E603C800556A80 /* TabItemDataModel.swift in Sources */,
+				90CB8297291C319300A92723 /* EmptyStateView.swift in Sources */,
 				E5CD4646291478530062263A /* DateHelper.swift in Sources */,
 				E56ACD162901C89F00BE2EE1 /* HistoryAchievementView.swift in Sources */,
 				9319EDDD28FF33C2006012D4 /* IconLocationTextButton.swift in Sources */,
@@ -998,12 +1033,15 @@
 				013F9E7A290C553E00288327 /* CountryHelper.swift in Sources */,
 				E554266B28F354D70088C652 /* UserModel.swift in Sources */,
 				9042C0AD28FF369E0040693D /* TextFieldWithTitleView.swift in Sources */,
+				9042C0AD28FF369E0040693D /* TextFieldView.swift in Sources */,
+				903ECF23291D8CEE008629AD /* ProfileEmptyAccountView.swift in Sources */,
 				01AB5C992915942700C59E6A /* OnboardingCountriesListView.swift in Sources */,
 				E56C538928E755F00078191F /* FontEnum.swift in Sources */,
 				938418972907374C000A66D1 /* ButtonDefaultBig.swift in Sources */,
 				E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */,
 				E5428157291C248F00CD1C7E /* TextFieldPlaceholder.swift in Sources */,
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
+				903ECF21291D7EAF008629AD /* PopUpCreateAccountView.swift in Sources */,
 				9042C0B028FF9B940040693D /* CreateDatePickerView.swift in Sources */,
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
 				9353B989290B084400D3DB6D /* CreateUsersListView.swift in Sources */,
@@ -1021,6 +1059,7 @@
 				E5711EBF28E344EC0027A01A /* StringLocalizationExtension.swift in Sources */,
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
 				9384189529073097000A66D1 /* ReportButton.swift in Sources */,
+				90CB8294291C2F1500A92723 /* PlaceCardListView.swift in Sources */,
 				E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */,
 				013DDCBC29031D6F003C5F88 /* OnboardingInterestsView.swift in Sources */,
 				013DDCBA29030FCF003C5F88 /* OnboardingSelectCountryView.swift in Sources */,
