@@ -95,6 +95,14 @@
 //CreateSliderView
 "sliderTitle" = "Number of participants";
 
+//DiscoverView
+"discoverTitle" = "Discover";
+"createButton" = "Create";
+"searchPlaceholder" = "Tags, Places, Experiences";
+"experiences" = "Experiences";
+"places" = "Places";
+"map" = "Map";
+
 //PopUpCreateAccountView
 "createAccount" = "Create your account in";
 "discover" = "Discover experiences and live your unique journey";

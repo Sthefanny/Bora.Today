@@ -22,7 +22,7 @@
 		903ECF23291D8CEE008629AD /* ProfileEmptyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903ECF22291D8CEE008629AD /* ProfileEmptyAccountView.swift */; };
 		9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */; };
 		9042C0AA28FF34050040693D /* ButtonAddPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A928FF34050040693D /* ButtonAddPhoto.swift */; };
-		9042C0AD28FF369E0040693D /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AC28FF369E0040693D /* TextFieldView.swift */; };
+		9042C0AD28FF369E0040693D /* TextFieldWithTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AC28FF369E0040693D /* TextFieldWithTitleView.swift */; };
 		9042C0B028FF9B940040693D /* CreateDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AF28FF9B940040693D /* CreateDatePickerView.swift */; };
 		9042C0B228FFA6070040693D /* CreateSelectStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0B128FFA6070040693D /* CreateSelectStickerView.swift */; };
 		904B33192914B07C001B6EB4 /* ExperienceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B33182914B07C001B6EB4 /* ExperienceCardView.swift */; };
@@ -68,8 +68,12 @@
 		E5206B2C28EE0DC900EFF316 /* ExperienceHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2B28EE0DC900EFF316 /* ExperienceHomeView.swift */; };
 		E5206B2E28EE10ED00EFF316 /* ExperienceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5206B2D28EE10ED00EFF316 /* ExperienceListView.swift */; };
 		E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6228D8EEDE003131F0 /* BottomMenuView.swift */; };
-		E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6528D8F13E003131F0 /* SearchView.swift */; };
 		E535BD6928D8F168003131F0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535BD6828D8F168003131F0 /* CreateView.swift */; };
+		E5428152291C1BC900CD1C7E /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5428151291C1BC900CD1C7E /* TextFieldView.swift */; };
+		E5428155291C1BF100CD1C7E /* OvalTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5428154291C1BF100CD1C7E /* OvalTextFieldStyle.swift */; };
+		E5428157291C248F00CD1C7E /* TextFieldPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5428156291C248F00CD1C7E /* TextFieldPlaceholder.swift */; };
+		E542815A291C2D8600CD1C7E /* SwitchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5428159291C2D8500CD1C7E /* SwitchButtonView.swift */; };
+		E542815C291C389A00CD1C7E /* SwitchSidesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E542815B291C389A00CD1C7E /* SwitchSidesEnum.swift */; };
 		E554265B28F33C190088C652 /* TagDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554265A28F33C190088C652 /* TagDefaultView.swift */; };
 		E554265D28F33E280088C652 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554265C28F33E280088C652 /* TagModel.swift */; };
 		E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554265F28F3495B0088C652 /* ReviewCardView.swift */; };
@@ -107,6 +111,7 @@
 		E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF228EA10460044CE58 /* ButtonText.swift */; };
 		E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */; };
 		E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */; };
+		E5AC55EF291AD5280077F45F /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC55EE291AD5280077F45F /* DiscoverView.swift */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
 		E5BE868A290B012900FDDA47 /* LocationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */; };
@@ -146,7 +151,7 @@
 		903ECF22291D8CEE008629AD /* ProfileEmptyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEmptyAccountView.swift; sourceTree = "<group>"; };
 		9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditExperienceModel.swift; sourceTree = "<group>"; };
 		9042C0A928FF34050040693D /* ButtonAddPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAddPhoto.swift; sourceTree = "<group>"; };
-		9042C0AC28FF369E0040693D /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		9042C0AC28FF369E0040693D /* TextFieldWithTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitleView.swift; sourceTree = "<group>"; };
 		9042C0AF28FF9B940040693D /* CreateDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDatePickerView.swift; sourceTree = "<group>"; };
 		9042C0B128FFA6070040693D /* CreateSelectStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSelectStickerView.swift; sourceTree = "<group>"; };
 		904B33182914B07C001B6EB4 /* ExperienceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCardView.swift; sourceTree = "<group>"; };
@@ -193,8 +198,12 @@
 		E5206B2B28EE0DC900EFF316 /* ExperienceHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceHomeView.swift; sourceTree = "<group>"; };
 		E5206B2D28EE10ED00EFF316 /* ExperienceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceListView.swift; sourceTree = "<group>"; };
 		E535BD6228D8EEDE003131F0 /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
-		E535BD6528D8F13E003131F0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E535BD6828D8F168003131F0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		E5428151291C1BC900CD1C7E /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		E5428154291C1BF100CD1C7E /* OvalTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalTextFieldStyle.swift; sourceTree = "<group>"; };
+		E5428156291C248F00CD1C7E /* TextFieldPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPlaceholder.swift; sourceTree = "<group>"; };
+		E5428159291C2D8500CD1C7E /* SwitchButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchButtonView.swift; sourceTree = "<group>"; };
+		E542815B291C389A00CD1C7E /* SwitchSidesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSidesEnum.swift; sourceTree = "<group>"; };
 		E554265A28F33C190088C652 /* TagDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDefaultView.swift; sourceTree = "<group>"; };
 		E554265C28F33E280088C652 /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
 		E554265F28F3495B0088C652 /* ReviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCardView.swift; sourceTree = "<group>"; };
@@ -233,6 +242,7 @@
 		E5878AF228EA10460044CE58 /* ButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonText.swift; sourceTree = "<group>"; };
 		E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBannerView.swift; sourceTree = "<group>"; };
 		E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CoveredByYourGrace-Regular.ttf"; sourceTree = "<group>"; };
+		E5AC55EE291AD5280077F45F /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryView.swift; sourceTree = "<group>"; };
@@ -368,8 +378,10 @@
 		9042C0AB28FF36840040693D /* TextField */ = {
 			isa = PBXGroup;
 			children = (
-				9042C0AC28FF369E0040693D /* TextFieldView.swift */,
+				E5428153291C1BE400CD1C7E /* Styles */,
+				9042C0AC28FF369E0040693D /* TextFieldWithTitleView.swift */,
 				90764B47290786DB008F1460 /* TextAreaLimitedView.swift */,
+				E5428151291C1BC900CD1C7E /* TextFieldView.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -388,6 +400,8 @@
 		904B33172914B061001B6EB4 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				904B33182914B07C001B6EB4 /* ExperienceCardView.swift */,
+				904B331A2914B08C001B6EB4 /* PlaceCardView.swift */,
 				904B33182914B07C001B6EB4 /* ExperienceCardView.swift */,
 				904B331A2914B08C001B6EB4 /* PlaceCardView.swift */,
 				90CB8291291C1BA800A92723 /* ExperienceCardListView.swift */,
@@ -510,14 +524,6 @@
 			path = "Bottom Menu";
 			sourceTree = "<group>";
 		};
-		E535BD6428D8F129003131F0 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				E535BD6528D8F13E003131F0 /* SearchView.swift */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
 		E535BD6728D8F159003131F0 /* Create */ = {
 			isa = PBXGroup;
 			children = (
@@ -525,6 +531,22 @@
 				E535BD6828D8F168003131F0 /* CreateView.swift */,
 			);
 			path = Create;
+			sourceTree = "<group>";
+		};
+		E5428153291C1BE400CD1C7E /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E5428154291C1BF100CD1C7E /* OvalTextFieldStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		E5428158291C2D6A00CD1C7E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E5428159291C2D8500CD1C7E /* SwitchButtonView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E554265928F33BDD0088C652 /* Tags */ = {
@@ -606,6 +628,7 @@
 				E56C538828E755F00078191F /* FontEnum.swift */,
 				E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */,
 				E57D4ACE2907128000ACE493 /* NotificationTypeEnum.swift */,
+				E542815B291C389A00CD1C7E /* SwitchSidesEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -615,6 +638,7 @@
 			children = (
 				E5C19A9528E6281300556A80 /* CornerRadiusStyleExtension.swift */,
 				E5711EBE28E344EC0027A01A /* StringLocalizationExtension.swift */,
+				E5428156291C248F00CD1C7E /* TextFieldPlaceholder.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -726,9 +750,19 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		E5AC55ED291ACF980077F45F /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				E5428158291C2D6A00CD1C7E /* Components */,
+				E5AC55EE291AD5280077F45F /* DiscoverView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 		E5BD6A6228D3B2120097D9C6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E5AC55ED291ACF980077F45F /* Discover */,
 				E58456C728FDCACA0072031A /* History */,
 				9319EDD828FF2AB0006012D4 /* Experience */,
 				013DDCB329030EE7003C5F88 /* Onboarding */,
@@ -736,7 +770,6 @@
 				E5BD6A6328D3B2610097D9C6 /* Home */,
 				E535BD6728D8F159003131F0 /* Create */,
 				013F9E73290B705900288327 /* Profile */,
-				E535BD6428D8F129003131F0 /* Search */,
 				E5711EC228E3472A0027A01A /* Settings */,
 			);
 			path = Modules;
@@ -964,7 +997,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E535BD6628D8F13E003131F0 /* SearchView.swift in Sources */,
 				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
 				E57D4AD129071A0400ACE493 /* NotificationSystemImageView.swift in Sources */,
 				E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */,
@@ -972,6 +1004,7 @@
 				E57DE48828F756E400DB4447 /* OnboardingTagStyle.swift in Sources */,
 				E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */,
 				E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */,
+				E5428155291C1BF100CD1C7E /* OvalTextFieldStyle.swift in Sources */,
 				9319EDDB28FF2B72006012D4 /* ExperienceView.swift in Sources */,
 				E5878AEC28E9E93C0044CE58 /* DefaultButtonStyle.swift in Sources */,
 				E5206B2A28EE074000EFF316 /* TopExperiencesModel.swift in Sources */,
@@ -999,12 +1032,14 @@
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				013F9E7A290C553E00288327 /* CountryHelper.swift in Sources */,
 				E554266B28F354D70088C652 /* UserModel.swift in Sources */,
+				9042C0AD28FF369E0040693D /* TextFieldWithTitleView.swift in Sources */,
 				9042C0AD28FF369E0040693D /* TextFieldView.swift in Sources */,
 				903ECF23291D8CEE008629AD /* ProfileEmptyAccountView.swift in Sources */,
 				01AB5C992915942700C59E6A /* OnboardingCountriesListView.swift in Sources */,
 				E56C538928E755F00078191F /* FontEnum.swift in Sources */,
 				938418972907374C000A66D1 /* ButtonDefaultBig.swift in Sources */,
 				E5CE02E828EB5E25000FCB77 /* BannerListView.swift in Sources */,
+				E5428157291C248F00CD1C7E /* TextFieldPlaceholder.swift in Sources */,
 				E56C538728E754610078191F /* FontSystem.swift in Sources */,
 				903ECF21291D7EAF008629AD /* PopUpCreateAccountView.swift in Sources */,
 				9042C0B028FF9B940040693D /* CreateDatePickerView.swift in Sources */,
@@ -1019,6 +1054,7 @@
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
 				9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */,
 				E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */,
+				E542815A291C2D8600CD1C7E /* SwitchButtonView.swift in Sources */,
 				9042C0AA28FF34050040693D /* ButtonAddPhoto.swift in Sources */,
 				E5711EBF28E344EC0027A01A /* StringLocalizationExtension.swift in Sources */,
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
@@ -1053,6 +1089,7 @@
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
+				E5428152291C1BC900CD1C7E /* TextFieldView.swift in Sources */,
 				E51CB0C5290B2ECD00DBAC7C /* CalendarView.swift in Sources */,
 				E5D027502903239300C7FAAA /* AchievementModel.swift in Sources */,
 				E51CB0C3290B2E0C00DBAC7C /* EventView.swift in Sources */,
@@ -1060,6 +1097,7 @@
 				E5206B2E28EE10ED00EFF316 /* ExperienceListView.swift in Sources */,
 				E51CB0C7290B31AE00DBAC7C /* FormattedDate.swift in Sources */,
 				9384188F29071FF6000A66D1 /* CreateHostedButton.swift in Sources */,
+				E542815C291C389A00CD1C7E /* SwitchSidesEnum.swift in Sources */,
 				93841891290728A7000A66D1 /* ExperienceImageBannerView.swift in Sources */,
 				E5206B2828EE038800EFF316 /* PageDotsIndexView.swift in Sources */,
 				E554265B28F33C190088C652 /* TagDefaultView.swift in Sources */,
@@ -1068,6 +1106,7 @@
 				E57D4ACD290711B100ACE493 /* NotificationModel.swift in Sources */,
 				E5CD464829147D6F0062263A /* CalendarEventView.swift in Sources */,
 				E57DE48528F7548600DB4447 /* TagOnBoardingView.swift in Sources */,
+				E5AC55EF291AD5280077F45F /* DiscoverView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 				E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */,
 				E5711EC428E347620027A01A /* SettingsView.swift in Sources */,

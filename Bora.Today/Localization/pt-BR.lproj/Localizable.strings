@@ -69,7 +69,6 @@
 //SaveButton
 "save" = "Salvar";
 
-
 //CreateView
 "createViewTitle" = "Criar experiência";
 "textFieldTitle" = "Título da experiência";
@@ -95,6 +94,15 @@
 
 //CreateSliderView
 "sliderTitle" = "Quantidade de participantes";
+
+//DiscoverView
+"discoverTitle" = "Explorar";
+"createButton" = "Criar";
+"searchPlaceholder" = "Tags, Locais, Experiências";
+"experiences" = "Experiências";
+"places" = "Locais";
+"map" = "Mapa";
+
 
 //PopUpCreateAccountView
 "createAccount" = "Crie sua conta no";

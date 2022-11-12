@@ -2,81 +2,37 @@
 //  TextFieldView.swift
 //  Bora.Today
 //
-//  Created by Larissa Paschoalin on 18/10/22.
+//  Created by Sthefanny Gonzaga on 09/11/22.
 //
 
 import SwiftUI
 
-
-struct OvalTextFieldStyle: TextFieldStyle {
-    func _body(configuration: TextField<Self._Label>) -> some View {
-        configuration
-            .padding(14)
-            .overlay(RoundedRectangle(cornerRadius: 26)
-                .stroke(Color.appGray))
-            .font(.appSubheadline)
-    }
-}
-
 struct TextFieldView: View {
-    let title: String
-    @State var value: String = ""
-    var isMandatory: Bool = true
-    var errorMessage: String = ""
-    var validate: ((String) -> Bool)?
     
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
+    @State var value: String = ""
+    var icon: String
+    @State var placeholder: String
     @FocusState private var isFocused: Bool
-    @State private var isValid: Bool?
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            
-            HStack {
-                Text(title)
-                    .font(.appHeadline)
-                    .foregroundColor(.appBlack)
-                
-                if isMandatory {
-                    Image("asterisk")
-                }
-            }
-            .padding(.bottom, 8)
-            
-            
             TextField("", text: $value)
                 .focused($isFocused)
-                .onChange(of: isFocused) { editingChanged in
-                    // Check if is focus in, then return
-                    if editingChanged {
-                        return
-                    }
-                    
-                    guard let validate = self.validate else { return }
-                    self.isValid = validate(self.value)
-                }
                 .textFieldStyle(OvalTextFieldStyle())
-                .padding(.bottom, 6)
-            
-            if !errorMessage.isEmpty && isValid == false {
-                Text(errorMessage)
-                    .font(.appCaption2)
-                    .foregroundColor(.appRed)
-            }
-            
-        }
-        
+                .placeholder(when: value.isEmpty) {
+                    HStack(spacing: 8) {
+                        Image(systemName: icon).font(.system(size: 12)).foregroundColor(.appGray)
+                        Text(placeholder.localized(language)).foregroundColor(.appGray).font(.appFootnote)
+                    }
+                    .padding(.horizontal)
+                }
     }
 }
 
 struct TextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        VStack {
-            TextFieldView(
-                title: "Titulo do Evento",
-                value: "",
-                errorMessage: "Por favor, informe o Titulo do Evento") { value in
-                    return !value.isEmpty
-                }
-        }
+        TextFieldView(icon: "magnifyingglass", placeholder: "Tags, Locais, Experiencias")
     }
 }

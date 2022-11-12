@@ -44,7 +44,7 @@ struct CreateView: View {
                     
                     CreateSelectStickerView()
                     
-                    TextFieldView(
+                    TextFieldWithTitleView(
                         title: "textFieldTitle".localized(language),
                         value: createExperience.title,
                         errorMessage: "errorMessageTitle".localized(language),
@@ -52,7 +52,7 @@ struct CreateView: View {
                     )
                     .padding(.horizontal, AppConfig.safeAreaHorizontal)
                     
-                    TextFieldView(
+                    TextFieldWithTitleView(
                         title: "textFieldPlace".localized(language),
                         value: createExperience.place,
                         errorMessage: "errorMessagePlace".localized(language),
