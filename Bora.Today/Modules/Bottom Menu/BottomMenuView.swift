@@ -40,7 +40,7 @@ struct BottomMenuView: View {
                         }
                         .tag(0)
                     
-                    SearchView()
+                    DiscoverView()
                         .tabItem {
                             Image(selection == 1 ? "search_selected" : "search")
                             Text("search".localized(language))
@@ -75,22 +75,6 @@ struct BottomMenuView: View {
                 Text("Unexpected status")
             }
         }
-    }
-}
-
-@ViewBuilder
-func getTabView(type: TabType) -> some View {
-    switch type {
-    case .home:
-        HomeView()
-    case .search:
-        SearchView()
-    case .create:
-        CreateView()
-    case .history:
-        HistoryView()
-    case .profile:
-        HomeView()
     }
 }
 

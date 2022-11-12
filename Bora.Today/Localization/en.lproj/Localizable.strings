@@ -82,3 +82,48 @@
 
 //GiveReviewView
 "publishReview" = "Publish Review";
+
+//CreateView
+"createViewTitle" = "Create experience";
+"textFieldTitle" = "Title of the experiment";
+"errorMessageTitle" = "Please enter a title";
+"textFieldPlace" = "Place";
+"errorMessagePlace" = "Ops, you need to inform the location";
+"textAreaTitle" = "Description";
+"textAreaPlaceholder" = "E.g.: A costume party with a circus theme!";
+"errorMessageTextArea" = "Give us a little more information";
+"postButton" = "Post";
+
+//CreateDatePicker
+"datePickerTitle" = "Date and time";
+
+//CreateSelectStickerView
+"selectStickerTitle" = "Select up to 3 stickers";
+"selectStickerFootnote" = "to show how amazing your experience will be!";
+
+
+//CreateSelectTagView
+"selectTagTitle" = "Select up to 3 categories";
+"more" = "More";
+
+//CreateSliderView
+"sliderTitle" = "Number of participants";
+
+//DiscoverView
+"discoverTitle" = "Discover";
+"createButton" = "Create";
+"searchPlaceholder" = "Tags, Places, Experiences";
+"experiences" = "Experiences";
+"places" = "Places";
+"map" = "Map";
+
+//PopUpCreateAccountView
+"createAccount" = "Create your account in";
+"discover" = "Discover experiences and live your unique journey";
+"continueApple" = "Continue with Apple";
+"legalText1" = "By continuing, you agree to our";
+"legalText2" = "and acknowledge that you have read our";
+"terms" = "Terms of Service";
+"privacyPolicy" = "Privacy Policy.";
+"already" = "Already have an account?";
+"logIn" = "Log in";

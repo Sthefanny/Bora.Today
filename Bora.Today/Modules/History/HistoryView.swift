@@ -24,27 +24,25 @@ struct HistoryView: View {
     
     var body: some View {
         GeometryReader { screen in
-            ZStack {
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 0) {
-                        _buildHeader
-                        
-                        _buildWelcome
-                        
-                        _buildCards
-                        
-                        _buildAchievements
-                    }
-                    .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
-                    .padding(.vertical, 20)
+            ScrollView {
+                VStack(alignment: .leading, spacing: 0) {
+                    _buildHeader
+                    
+                    _buildWelcome
+                    
+                    _buildCards
+                    
+                    _buildAchievements
                 }
-                .frame(height: screen.size.height)
-                .popover(isPresented: $isNotificationsPresented) {
-                    NotificationsView(isNotificationsPresented: $isNotificationsPresented)
-                }
-                
-                LocationHistoryView(isLocationHistoryPresented: $isLocationHistoryPresented)
+                .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
+                .padding(.vertical, 20)
             }
+            .frame(height: screen.size.height)
+            .popover(isPresented: $isNotificationsPresented) {
+                NotificationsView(isNotificationsPresented: $isNotificationsPresented)
+            }
+            
+            LocationHistoryView(isLocationHistoryPresented: $isLocationHistoryPresented)
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)

@@ -76,9 +76,51 @@
 "sameCountry" = "Mesmo país";
 "reviews" = "Avaliações";
 "experiencesHere" = "Experiências marcadas aqui";
+//CreateView
+"createViewTitle" = "Criar experiência";
+"textFieldTitle" = "Título da experiência";
+"errorMessageTitle" = "Por favor, informe um título";
+"textFieldPlace" = "Local";
+"errorMessagePlace" = "Opa, precisa informar o local";
+"textAreaTitle" = "Descrição";
+"textAreaPlaceholder" = "Ex.: Uma festa á fantasia com o tema circo!";
+"errorMessageTextArea" = "Nos dê mais um pouco de informações";
+"postButton" = "Publicar";
 
 //PhotoPicker
 "addPic" = "Adicionar foto";
 
 //GiveReviewView
 "publishReview" = "Publicar Avaliação";
+
+//CreateDatePicker
+"datePickerTitle" = "Data e hora";
+
+//CreateSelectStickerView
+"selectStickerTitle" = "Selecione até 3 adesivos";
+"selectStickerFootnote" = "pra mostrar o quanto sua experiência vai ser incrível!";
+
+
+//CreateSelectTagView
+"selectTagTitle" = "Selecione até 3 categorias";
+"more" = "Ver mais";
+
+//CreateSliderView
+"sliderTitle" = "Quantidade de participantes";
+
+//DiscoverView
+"discoverTitle" = "Explorar";
+"createButton" = "Criar";
+"searchPlaceholder" = "Tags, Locais, Experiências";
+"experiences" = "Experiências";
+"places" = "Locais";
+"map" = "Mapa";
+
+
+//PopUpCreateAccountView
+"createAccount" = "Crie sua conta no";
+"discover" = "Descubra experiências e viva sua jornada única";
+"continueApple" = "Continuar com Apple";
+"legalText" = "Ao continuar, você concorda com nossos Termos de Serviço e declara que leu nossa Política de Privacidade.";
+"already" = "Já tem uma conta?";
+"logIn" = "Log in";
