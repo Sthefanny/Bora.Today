@@ -138,6 +138,7 @@
 		E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF228EA10460044CE58 /* ButtonText.swift */; };
 		E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */; };
 		E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */; };
+		E5A6320D292026DA006027AF /* CreateUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320C292026DA006027AF /* CreateUsersListView.swift */; };
 		E5AC55EF291AD5280077F45F /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC55EE291AD5280077F45F /* DiscoverView.swift */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
@@ -296,6 +297,7 @@
 		E5878AF228EA10460044CE58 /* ButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonText.swift; sourceTree = "<group>"; };
 		E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBannerView.swift; sourceTree = "<group>"; };
 		E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CoveredByYourGrace-Regular.ttf"; sourceTree = "<group>"; };
+		E5A6320C292026DA006027AF /* CreateUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsersListView.swift; sourceTree = "<group>"; };
 		E5AC55EE291AD5280077F45F /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
@@ -714,6 +716,7 @@
 			children = (
 				E554266428F34CBC0088C652 /* ProfileImageView.swift */,
 				E554266628F34E900088C652 /* FlagView.swift */,
+				E5A6320C292026DA006027AF /* CreateUsersListView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1221,6 +1224,7 @@
 				9042C0AA28FF34050040693D /* ButtonAddPhoto.swift in Sources */,
 				E5711EBF28E344EC0027A01A /* StringLocalizationExtension.swift in Sources */,
 				E5100BD2292024F7009F1D99 /* RatingView.swift in Sources */,
+				E5A6320D292026DA006027AF /* CreateUsersListView.swift in Sources */,
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
 				9384189529073097000A66D1 /* ReportButton.swift in Sources */,
 				93046326291C30BE00CA7795 /* ImageView.swift in Sources */,

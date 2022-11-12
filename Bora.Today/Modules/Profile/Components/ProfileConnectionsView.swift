@@ -33,7 +33,7 @@ struct ProfileConnectionsView: View {
             .padding(.horizontal, AppConfig.safeAreaHorizontal)
             .padding(.bottom, 16)
             
-//            CreateUsersListView()
+            CreateUsersListView()
         }
     }
 }
