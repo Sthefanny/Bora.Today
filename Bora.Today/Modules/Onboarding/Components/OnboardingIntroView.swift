@@ -21,7 +21,7 @@ struct OnboardingIntroView: View {
             VStack(alignment: .center, spacing: 0){
                 
                 Text(introTitle)
-                    .font(.custom(AppFont.coveredByYourGrace.name, size: 40))
+                    .font(.custom(AppFont.coveredByYourGrace.name, size: 50))
                     .padding(.top, 0)
                     .padding(.bottom, 16)
                 

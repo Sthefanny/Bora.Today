@@ -23,13 +23,14 @@ struct OnboardingCountriesListView_Previews: PreviewProvider {
     }
 }
 
-struct HeaderView: View {
+private struct HeaderView: View {
     
     var headerTitle: String?
     
     var body: some View {
         ZStack (alignment: .center){
 //            NavigationLink(destination: Text("ssi"), label: {
+            Button(action: {print("clicou")}, label: {
                 HStack(spacing:4){
                     Image(systemName: "chevron.left")
                         .font(.system(size: 16))
@@ -37,8 +38,8 @@ struct HeaderView: View {
                         .font(.appButtonText)
                     Spacer()
                 }.foregroundColor(Color.appBlueButton)
-//            })
-            
+            })
+             
             Text(headerTitle ?? "")
                 .font(.appTitle2)
         } .padding(.horizontal, AppConfig.safeAreaHorizontal)

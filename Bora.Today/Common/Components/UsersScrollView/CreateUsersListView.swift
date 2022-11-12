@@ -25,7 +25,7 @@ struct CreateUsersListView: View {
                     ProfileImageView()
                 }
             }
-            .padding(.leading, 21)
+            .padding(.leading, AppConfig.safeAreaHorizontal)
         }
         
     }

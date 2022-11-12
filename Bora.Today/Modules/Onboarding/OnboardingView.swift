@@ -15,11 +15,10 @@ struct OnboardingView: View {
         GeometryReader { screen in
             ZStack {
                 TabView(selection: $currentIndex) {
-                    OnboardingIntroView(introTitle: "Olá explorador", introSubtitle: "Bora iniciar a sua jornada?", introDescription: "Seja bem vinde a este amado aplicativo de adaptação da sua nova jornada", backgroundColor: .appGreen)
+                    OnboardingIntroView(introTitle: "Olá \nexplorador!", introSubtitle: "Bora se aventurar?", introDescription: "Descubra novos lugares e experiências, faça novas amizades e crie uma rede de apoio!", backgroundColor: .appGreen)
                         .tag(0)
-                    OnboardingSelectCountryView(backgroundColor: .appBlue, foregroundColor: .appWhite)
-                        .tag(1)
-                    OnboardingInterestsView(title: "Escolha até seis interesses", subheadline: "Receba recomendações de experiências", backgroundColor: .appOrange)
+                    OnboardingSelectCountryView(boraMeaningTitle: "bo.ra.", boraMeaningSubheadline: "Substantivo feminino", boraMeaningText: "Expressão que incentiva a saída de outra pessoa ou que faça algo.\nPra gente, é como se fosse o pontapé inicial pra novas aventuras.", boraMeaningCallToAction: "então bora começar?",backgroundColor: .appBlue, foregroundColor: .appWhite)
+                    OnboardingInterestsView(title: "Escolha até seis interesses", subheadline: "E receba recomendações personalizadas", backgroundColor: .appOrange)
                         .tag(2)
                 }
                 .ignoresSafeArea()

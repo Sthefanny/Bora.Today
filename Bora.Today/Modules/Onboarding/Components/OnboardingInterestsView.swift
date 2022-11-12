@@ -26,7 +26,7 @@ struct OnboardingInterestsView: View {
                         .padding(.bottom, 8)
                     
                     Text(subheadline)
-                        .font(.appTitle3)
+                        .font(.appSubheadline)
                         .padding(.top, 0)
                         .padding(.bottom, 32)
                 }
@@ -82,7 +82,7 @@ struct OnboardingInterestsView: View {
 
 struct OnboardingInterestsView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingInterestsView(title: "Escolha até seis interesses", subheadline: "Receba recomendações de experiências", backgroundColor: .appOrange)
+        OnboardingInterestsView(title: "Escolha até seis interesses", subheadline: "E receba recomendações personalizadas", backgroundColor: .appOrange)
     }
 }
 
