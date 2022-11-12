@@ -127,3 +127,22 @@
 "privacyPolicy" = "Privacy Policy.";
 "already" = "Already have an account?";
 "logIn" = "Log in";
+
+//ProfileView
+"settings" = "Settings";
+"connect" = "Connect";
+"lastExperiences" = "Last experiences";
+"conections" = "Conections";
+
+//SettingsProfileView
+"language" = "Language";
+"about" = "About";
+"aboutBora" = "About Bora";
+"evaluateBora" = "Evaluate Bora.Today";
+"contactUs" = "Contact Us";
+"logout" = "Logout";
+
+//SettingsProfileChangeLanguageView
+"portuguese" = "Portuguese";
+"english" = "English";
+"settingsLanguageTitle" = "Choose the language";

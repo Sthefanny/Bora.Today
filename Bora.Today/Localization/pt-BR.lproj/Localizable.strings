@@ -121,6 +121,28 @@
 "createAccount" = "Crie sua conta no";
 "discover" = "Descubra experiências e viva sua jornada única";
 "continueApple" = "Continuar com Apple";
-"legalText" = "Ao continuar, você concorda com nossos Termos de Serviço e declara que leu nossa Política de Privacidade.";
+"legalText1" = "Ao continuar, você concorda com nossos";
+"legalText2" = "e declara que leu nossa";
+"terms" = "Terms of Service";
+"privacyPolicy" = "Privacy Policy.";
 "already" = "Já tem uma conta?";
 "logIn" = "Log in";
+
+//ProfileView
+"settings" = "Configurações";
+"connect" = "Conectar";
+"lastExperiences" = "Últimas experiências";
+"conections" = "Conexões";
+
+//SettingsProfileView
+"language" = "Idioma";
+"about" = "Sobre";
+"aboutBora" = "Sobre o Bora";
+"evaluateBora" = "Avaliar Bora.Today";
+"contactUs" = "Fale Conosco";
+"logout" = "Sair";
+
+//SettingsProfileChangeLanguageView
+"portuguese" = "Português";
+"english" = "Inglês";
+"settingsLanguageTitle" = "Escolha o idioma";

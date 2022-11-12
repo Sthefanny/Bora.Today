@@ -18,7 +18,7 @@ extension TopExperienceModel {
     static var example: TopExperienceModel {
 
         TopExperienceModel(
-            experiences: [ExperienceModel.example1, ExperienceModel.example2, ExperienceModel.example3, ExperienceModel.example3, ExperienceModel.example3, ExperienceModel.example3, ExperienceModel.example3, ExperienceModel.example3, ExperienceModel.example3, ExperienceModel.example3, ExperienceModel.example3]
+            experiences: [ExperienceModel.example1, ExperienceModel.example2, ExperienceModel.example3]
         )
     }
 }

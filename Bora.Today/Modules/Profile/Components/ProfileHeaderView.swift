@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
     @Binding var isModelView : Bool
     @Binding var halfButtonHeight: CGFloat
+    
+    @State private var goesToSettings: Bool = false
+    @State private var goesToConnection: Bool = false
 
     let model : UserModel
 
@@ -31,11 +37,15 @@ struct ProfileHeaderView: View {
             //                        .padding(.bottom, 16)
             
             if isModelView == true {
-                ButtonDefault(buttonType: .textOnly, text: "Configurações", icon: "", action: {print("teste")}, isDisabled: .constant(false))
-                    .offset(y: halfButtonHeight)
+                NavigationLink(destination: SettingsProfileView(), isActive: $goesToSettings) {
+                    ButtonDefault(buttonType: .textOnlyBigger, text: "settings".localized(language), icon: "", action: {goesToSettings = true}, isDisabled: .constant(false))
+                        .offset(y: halfButtonHeight)
+                }
             } else {
-                ButtonDefault(buttonType: .textOnly, text: "Conectar", icon: "", action: {print("teste")}, isDisabled: .constant(false))
-                    .offset(y: halfButtonHeight)
+                NavigationLink(destination: SettingsProfileView(), isActive: $goesToConnection) {
+                    ButtonDefault(buttonType: .textOnlyBigger, text: "connect".localized(language), icon: "", action: {goesToConnection = true}, isDisabled: .constant(false))
+                        .offset(y: halfButtonHeight)
+                }
             }
         }
     }

@@ -12,9 +12,11 @@ struct TagDefaultView: View {
     @State var isSelected: Bool
     
     var body: some View {
-        HStack {
+        HStack(spacing: 4) {
             if model.icon != nil {
                 Image(systemName: model.icon!)
+                    .resizable()
+                    .frame(width: 12, height: 12)
                     .foregroundColor(isSelected ? Color.appWhite : model.color)
             }
             

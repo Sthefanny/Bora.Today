@@ -9,6 +9,7 @@ import Foundation
 
 enum ButtonType: String {
     case textOnly
+    case textOnlyBigger
     case imageOnly
     case imageAndText
     case imageAndTextBigger

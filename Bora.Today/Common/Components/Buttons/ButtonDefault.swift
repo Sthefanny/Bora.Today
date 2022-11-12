@@ -23,6 +23,10 @@ struct ButtonDefault: View {
             case .textOnly:
                 Text(text)
                     .font(.appButtonText)
+            case .textOnlyBigger:
+                Text(text)
+                    .font(.appButtonText)
+                    .padding(.horizontal, 20)
             case .imageOnly:
                 Image(systemName: icon)
                     .font(.system(size: 20))
@@ -45,7 +49,7 @@ struct ButtonDefault: View {
 struct ButtonDefault_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ButtonDefault(buttonType: .imageAndTextBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, isDisabled: .constant(false))
+            ButtonDefault(buttonType: .textOnlyBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, isDisabled: .constant(false))
                 .previewDevice("iPhone 12")
         }
     }

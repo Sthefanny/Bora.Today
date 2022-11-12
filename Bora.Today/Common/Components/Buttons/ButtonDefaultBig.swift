@@ -22,6 +22,10 @@ struct ButtonDefaultBig: View {
             case .textOnly:
                 Text(text)
                     .font(.appButtonText)
+            case .textOnlyBigger:
+                Text(text)
+                    .font(.appButtonText)
+                    .padding(.horizontal, 20)
             case .imageOnly:
                 Image(systemName: icon)
                     .font(.system(size: 20))

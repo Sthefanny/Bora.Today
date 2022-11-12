@@ -139,6 +139,7 @@
 		E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */; };
 		E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */; };
 		E5A6320D292026DA006027AF /* CreateUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320C292026DA006027AF /* CreateUsersListView.swift */; };
+		E5A6320F29204BDA006027AF /* SettingsProfileChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */; };
 		E5AC55EF291AD5280077F45F /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC55EE291AD5280077F45F /* DiscoverView.swift */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
@@ -298,6 +299,7 @@
 		E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBannerView.swift; sourceTree = "<group>"; };
 		E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CoveredByYourGrace-Regular.ttf"; sourceTree = "<group>"; };
 		E5A6320C292026DA006027AF /* CreateUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsersListView.swift; sourceTree = "<group>"; };
+		E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileChangeLanguageView.swift; sourceTree = "<group>"; };
 		E5AC55EE291AD5280077F45F /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
@@ -368,12 +370,10 @@
 		013F9E73290B705900288327 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				017A96AF291997BB006D3D76 /* Components */,
 				01A600A0291EFAF50092584C /* AllConnections */,
-				01A6009E291EF7610092584C /* ProfileAllConnectionsView.swift */,
 				013F9E75290B709500288327 /* EditProfile */,
 				013F9E74290B707200288327 /* Settings */,
-				012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */,
-				017A96AF291997BB006D3D76 /* Components */,
 				017A96AD2919958E006D3D76 /* ProfileView.swift */,
 			);
 			path = Profile;
@@ -383,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				013F9E76290B70B800288327 /* Components */,
+				012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -401,6 +402,7 @@
 				012A74C8291D7B540071CBDD /* SettingsProfileLabelView.swift */,
 				012A74CA291D8AFC0071CBDD /* SettingsProfileRowView.swift */,
 				01336D17291EF43700AA4F35 /* SettingsProfileMyProfileRowView.swift */,
+				E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -447,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				01A600A1291EFB030092584C /* Components */,
+				01A6009E291EF7610092584C /* ProfileAllConnectionsView.swift */,
 			);
 			path = AllConnections;
 			sourceTree = "<group>";
@@ -1210,6 +1213,7 @@
 				E5711EB928E33DFB0027A01A /* PlaceAnnotationView.swift in Sources */,
 				012A74C9291D7B540071CBDD /* SettingsProfileLabelView.swift in Sources */,
 				013F9E72290B555700288327 /* OnboardingCountryPickerView.swift in Sources */,
+				E5A6320F29204BDA006027AF /* SettingsProfileChangeLanguageView.swift in Sources */,
 				017A96AE2919958E006D3D76 /* ProfileView.swift in Sources */,
 				E554266528F34CBC0088C652 /* ProfileImageView.swift in Sources */,
 				E573753228F0A41400A40A26 /* StickerListView.swift in Sources */,

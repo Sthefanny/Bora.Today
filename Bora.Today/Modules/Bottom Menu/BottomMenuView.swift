@@ -25,8 +25,6 @@ struct BottomMenuView: View {
     
     var body: some View {
         
-        
-        
         GeometryReader { screen in
             switch locationManager.authorizationStatus {
             case .notDetermined, .restricted, .denied:
@@ -61,12 +59,13 @@ struct BottomMenuView: View {
                         }
                         .tag(3)
                 
-                    SettingsView()                        .tabItem {
+                    ProfileView(isSelfProfile: true, model: UserModel.example1)                        .tabItem {
                             Image(selection == 4 ? "profile_selected" : "profile")
                             Text("profile".localized(language))
                         }
                         .tag(4)
                 }
+                .ignoresSafeArea()
                 .frame(height: screen.size.height)
                 .accentColor(.appBlack)
                 .padding(.top, 20)
@@ -75,6 +74,7 @@ struct BottomMenuView: View {
                 Text("Unexpected status")
             }
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 

@@ -61,6 +61,8 @@ struct TextButtonStyle: ButtonStyle {
         switch self.buttonType {
         case .textOnly:
             return 30
+        case .textOnlyBigger:
+            return 30
         case .imageOnly:
             return 9
         case .imageAndText:

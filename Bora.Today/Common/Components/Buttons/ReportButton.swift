@@ -25,6 +25,10 @@ struct ReportButton: View {
                     Text(text)
                         .font(.appButtonText)
                         .foregroundColor(color)
+                case .textOnlyBigger:
+                    Text(text)
+                        .font(.appButtonText)
+                        .padding(.horizontal, 20)
                 case .imageOnly:
                     Image(systemName: icon)
                         .font(.system(size: 20))

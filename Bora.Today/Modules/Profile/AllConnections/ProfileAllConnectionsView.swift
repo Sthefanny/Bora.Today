@@ -35,6 +35,8 @@ struct ProfileAllConnectionsView: View {
                 }
             }
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 
@@ -46,16 +48,23 @@ struct ProfileAllConnectionsView_Previews: PreviewProvider {
 
 private struct HeaderView: View {
     
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var headerTitle: String?
     
     var body: some View {
         ZStack (alignment: .center){
             //            NavigationLink(destination: Text("ssi"), label: {
-            Button(action: {print("clicou")}, label: {
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }, label: {
                 HStack(spacing:4){
                     Image(systemName: "chevron.left")
                         .font(.system(size: 16))
-                    Text("Voltar")
+                    Text("back".localized(language))
                         .font(.appButtonText)
                     Spacer()
                 }.foregroundColor(Color.appBlueButton)
