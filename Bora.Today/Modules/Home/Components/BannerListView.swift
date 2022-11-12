@@ -12,7 +12,6 @@ struct BannerListView: View {
     @State private var currentIndex = 0
     
     var body: some View {
-        GeometryReader { screen in
             TabView(selection: $currentIndex.animation()) {
                 ForEach(0..<model.experiences.count, id: \.self) { index in
                     let item = model.experiences[index]
@@ -21,8 +20,6 @@ struct BannerListView: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
             .overlay(PageDotsIndexView(numberOfPages: model.experiences.count, currentIndex: currentIndex))
-            
-        }
     }
 }
 

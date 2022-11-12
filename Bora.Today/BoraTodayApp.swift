@@ -36,6 +36,8 @@ struct BoraTodayApp: App {
             NavigationView {
                 BottomMenuView()
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

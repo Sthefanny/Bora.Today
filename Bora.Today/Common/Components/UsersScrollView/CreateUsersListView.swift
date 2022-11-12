@@ -22,7 +22,7 @@ struct CreateUsersListView: View {
             HStack {
                 ForEach(0..<model.count) {index in
                     let item = model[index]
-                    ProfileImageView(image: item.user.image, country: item.user.originCountry)
+                    ProfileImageView()
                 }
             }
             .padding(.leading, AppConfig.safeAreaHorizontal)

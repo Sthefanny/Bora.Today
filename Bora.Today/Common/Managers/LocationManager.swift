@@ -88,7 +88,14 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
                    let location = item.placemark.location {
                     print("\(name): \(location.coordinate.latitude),\(location.coordinate.longitude)")
                     
-                    self.mapLocations.append(PlaceModel(name: name, latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))
+                    self.mapLocations.append(PlaceModel(
+                        name: name,
+                        rating: 1.0,
+                        address: "teste",
+                        openTime: "teste",
+                        url: "teste",
+                        latitude: location.coordinate.latitude,
+                        longitude: location.coordinate.longitude))
                 }
             }
         }

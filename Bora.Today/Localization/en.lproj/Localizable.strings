@@ -3,6 +3,9 @@
 "settings_language" = "Language";
 "settings_language_footer" = "Choose interface language.";
 
+//General
+"back" = "Back";
+
 //Bottom Menu
 "home" = "Home";
 "create" = "Create";
@@ -21,6 +24,34 @@
 "configure" = "Configure";
 "activeLocationDescription" = "In order to continue using the app, you must allow us to track your location in your phone's settings";
 
+//HistoryView
+"historyTitle" = "History";
+"notificationsButton" = "Notifications";
+"historyGreeting1" = "Hello";
+"historyGreeting2" = "This is your story in:";
+"yourAchievements" = "Your achievements";
+
+//NofiticationsView
+"notificationTitle" = "Notifications";
+"notificationRowTitle" = "How was the";
+"notificationRowText" = "Tell us about your experience :)";
+"notificationConnectionText" = "has connected with you!";
+"notificationGoingToText" = "goes to -";
+
+//LocationHistoryView
+"locationHistoryTitle" = "Your location history:";
+"locationHistoryButton" = "Add new location";
+
+//CalendarView
+"agendaTitle" = "Agenda";
+
+//Agenda
+"today" = "Today";
+"yesterday" = "Yesterday";
+"tomorrow" = "Tomorrow";
+"from" = "From";
+"to" = "To";
+
 //ExpandTextView
 "aboutExperience" = "About the experience";
 "viewMore" = "View More";
@@ -37,3 +68,48 @@
 
 //SaveButton
 "save" = "Save";
+
+//CreateView
+"createViewTitle" = "Create experience";
+"textFieldTitle" = "Title of the experiment";
+"errorMessageTitle" = "Please enter a title";
+"textFieldPlace" = "Place";
+"errorMessagePlace" = "Ops, you need to inform the location";
+"textAreaTitle" = "Description";
+"textAreaPlaceholder" = "E.g.: A costume party with a circus theme!";
+"errorMessageTextArea" = "Give us a little more information";
+"postButton" = "Post";
+
+//CreateDatePicker
+"datePickerTitle" = "Date and time";
+
+//CreateSelectStickerView
+"selectStickerTitle" = "Select up to 3 stickers";
+"selectStickerFootnote" = "to show how amazing your experience will be!";
+
+
+//CreateSelectTagView
+"selectTagTitle" = "Select up to 3 categories";
+"more" = "More";
+
+//CreateSliderView
+"sliderTitle" = "Number of participants";
+
+//DiscoverView
+"discoverTitle" = "Discover";
+"createButton" = "Create";
+"searchPlaceholder" = "Tags, Places, Experiences";
+"experiences" = "Experiences";
+"places" = "Places";
+"map" = "Map";
+
+//PopUpCreateAccountView
+"createAccount" = "Create your account in";
+"discover" = "Discover experiences and live your unique journey";
+"continueApple" = "Continue with Apple";
+"legalText1" = "By continuing, you agree to our";
+"legalText2" = "and acknowledge that you have read our";
+"terms" = "Terms of Service";
+"privacyPolicy" = "Privacy Policy.";
+"already" = "Already have an account?";
+"logIn" = "Log in";

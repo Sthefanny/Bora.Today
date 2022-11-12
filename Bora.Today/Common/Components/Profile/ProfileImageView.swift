@@ -9,26 +9,36 @@ import SwiftUI
 import SwiftFlags
 
 struct ProfileImageView: View {
-    let image: String
-    let country: String
+    var size: Double
+    var flagPosition: Double
+    private var model: UserModel
+    
+    init(size: Double = 70) {
+        self.size = size
+        self.flagPosition = size / 2.6
+        self.model = UserModel.example1
+    }
     
     var body: some View {
         ZStack {
-            Image(image)
+            Image(model.image)
                 .resizable()
                 .clipShape(Circle(), style: FillStyle())
-                .frame(width: 70, height: 70, alignment: .center)
+                .frame(width: size, height: size, alignment: .center)
                 .overlay(Circle()
                 .stroke(Color.red, lineWidth: 0))
             
-            FlagView(countryCode: country, size: 18)
-                .offset(x: 27, y: 27)
+            FlagView(countryCode: model.originCountry, size: 18)
+                .offset(x: flagPosition, y: flagPosition)
         }
     }
 }
 
 struct ProfileImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileImageView(image: "today_bg", country: "BR")
+        VStack {
+            ProfileImageView()
+            ProfileImageView(size: 54)
+        }
     }
 }

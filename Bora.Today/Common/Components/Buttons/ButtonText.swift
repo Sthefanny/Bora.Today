@@ -12,6 +12,7 @@ struct ButtonText: View {
     var text: String
     var icon: String
     var action: () -> Void
+    var color: Color
     @Binding var isDisabled: Bool
     
     var body: some View {
@@ -23,16 +24,20 @@ struct ButtonText: View {
             case .textOnly:
                 Text(text)
                     .font(.appButtonText)
+                    .foregroundColor(color)
             case .imageOnly:
                 Image(systemName: icon)
                     .font(.system(size: 20))
+                    .foregroundColor(color)
             case .imageAndText:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
-                    .padding(.horizontal, 5)
+                    .foregroundColor(color)
+                    .padding(.horizontal, 0)
             case .imageAndTextBigger:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
+                    .foregroundColor(color)
                     .padding(.horizontal, 20)
             }
         }
@@ -44,7 +49,7 @@ struct ButtonText: View {
 
 struct ButtonText_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonText(buttonType: .imageAndTextBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, isDisabled: .constant(false))
+        ButtonText(buttonType: .imageAndTextBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, color: .red, isDisabled: .constant(false))
             .previewDevice("iPhone 12")
     }
 }

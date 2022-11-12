@@ -3,6 +3,9 @@
 "settings_language" = "Linguagem";
 "settings_language_footer" = "Escolha o idioma da interface.";
 
+//General
+"back" = "Voltar";
+
 //Bottom Menu
 "home" = "Casa";
 "create" = "Criar";
@@ -21,6 +24,34 @@
 "configure" = "Configurar";
 "activeLocationDescription" = "Para continuar usando o app é necessário que você permita rastrearmos sua localização nos ajustes do seu celular";
 
+//HistoryView
+"historyTitle" = "História";
+"notificationsButton" = "Notificações";
+"historyGreeting1" = "Olá";
+"historyGreeting2" = "Essa é sua história em:";
+"yourAchievements" = "Suas conquistas";
+
+//NofiticationsView
+"notificationTitle" = "Notificações";
+"notificationRowTitle" = "Como foi";
+"notificationRowText" = "Conte como foi sua experiência :)";
+"notificationConnectionText" = "se conectou com você!";
+"notificationGoingToText" = "vai para -";
+
+//LocationHistoryView
+"locationHistoryTitle" = "Seu histórico de locais:";
+"locationHistoryButton" = "Adicionar novo local";
+
+//CalendarView
+"agendaTitle" = "Agenda";
+
+//Agenda
+"today" = "Hoje";
+"yesterday" = "Ontem";
+"tomorrow" = "Amanhã";
+"from" = "De";
+"to" = "Até";
+
 //ExpandTextView
 "aboutExperience" = "Sobre a experiência";
 "viewMore" = "Ler Mais";
@@ -38,3 +69,45 @@
 //SaveButton
 "save" = "Salvar";
 
+//CreateView
+"createViewTitle" = "Criar experiência";
+"textFieldTitle" = "Título da experiência";
+"errorMessageTitle" = "Por favor, informe um título";
+"textFieldPlace" = "Local";
+"errorMessagePlace" = "Opa, precisa informar o local";
+"textAreaTitle" = "Descrição";
+"textAreaPlaceholder" = "Ex.: Uma festa á fantasia com o tema circo!";
+"errorMessageTextArea" = "Nos dê mais um pouco de informações";
+"postButton" = "Publicar";
+
+//CreateDatePicker
+"datePickerTitle" = "Data e hora";
+
+//CreateSelectStickerView
+"selectStickerTitle" = "Selecione até 3 adesivos";
+"selectStickerFootnote" = "pra mostrar o quanto sua experiência vai ser incrível!";
+
+
+//CreateSelectTagView
+"selectTagTitle" = "Selecione até 3 categorias";
+"more" = "Ver mais";
+
+//CreateSliderView
+"sliderTitle" = "Quantidade de participantes";
+
+//DiscoverView
+"discoverTitle" = "Explorar";
+"createButton" = "Criar";
+"searchPlaceholder" = "Tags, Locais, Experiências";
+"experiences" = "Experiências";
+"places" = "Locais";
+"map" = "Mapa";
+
+
+//PopUpCreateAccountView
+"createAccount" = "Crie sua conta no";
+"discover" = "Descubra experiências e viva sua jornada única";
+"continueApple" = "Continuar com Apple";
+"legalText" = "Ao continuar, você concorda com nossos Termos de Serviço e declara que leu nossa Política de Privacidade.";
+"already" = "Já tem uma conta?";
+"logIn" = "Log in";
