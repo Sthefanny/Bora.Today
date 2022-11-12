@@ -140,6 +140,7 @@
 		E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */; };
 		E5A6320D292026DA006027AF /* CreateUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320C292026DA006027AF /* CreateUsersListView.swift */; };
 		E5A6320F29204BDA006027AF /* SettingsProfileChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */; };
+		E5A6321129205C08006027AF /* StickerInImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6321029205C08006027AF /* StickerInImageView.swift */; };
 		E5AC55EF291AD5280077F45F /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC55EE291AD5280077F45F /* DiscoverView.swift */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
@@ -300,6 +301,7 @@
 		E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CoveredByYourGrace-Regular.ttf"; sourceTree = "<group>"; };
 		E5A6320C292026DA006027AF /* CreateUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsersListView.swift; sourceTree = "<group>"; };
 		E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileChangeLanguageView.swift; sourceTree = "<group>"; };
+		E5A6321029205C08006027AF /* StickerInImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerInImageView.swift; sourceTree = "<group>"; };
 		E5AC55EE291AD5280077F45F /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
@@ -658,6 +660,7 @@
 			children = (
 				E5180A6228EF5EAF0066E1E4 /* StickerView.swift */,
 				E573753128F0A41400A40A26 /* StickerListView.swift */,
+				E5A6321029205C08006027AF /* StickerInImageView.swift */,
 			);
 			path = Stickers;
 			sourceTree = "<group>";
@@ -1215,6 +1218,7 @@
 				013F9E72290B555700288327 /* OnboardingCountryPickerView.swift in Sources */,
 				E5A6320F29204BDA006027AF /* SettingsProfileChangeLanguageView.swift in Sources */,
 				017A96AE2919958E006D3D76 /* ProfileView.swift in Sources */,
+				E5A6321129205C08006027AF /* StickerInImageView.swift in Sources */,
 				E554266528F34CBC0088C652 /* ProfileImageView.swift in Sources */,
 				E573753228F0A41400A40A26 /* StickerListView.swift in Sources */,
 				93B5E6AF2919970F004DE6B3 /* LocalsView.swift in Sources */,
