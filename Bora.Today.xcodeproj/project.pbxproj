@@ -431,13 +431,6 @@
 			path = "Components ";
 			sourceTree = "<group>";
 		};
-		01549293291AD55E0068218A /* UsersScrollView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UsersScrollView;
-			sourceTree = "<group>";
-		};
 		017A96AF291997BB006D3D76 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -857,7 +850,6 @@
 				E5A6321429206F1E006027AF /* Header */,
 				E50ACA11292021F8001CB8AF /* Pop up */,
 				9304632B291C3C2300CA7795 /* PhotoPicker */,
-				01549293291AD55E0068218A /* UsersScrollView */,
 				90CB8295291C315800A92723 /* Empty State */,
 				904B33172914B061001B6EB4 /* Cards */,
 				9042C0AB28FF36840040693D /* TextField */,
