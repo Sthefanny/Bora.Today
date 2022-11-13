@@ -9,9 +9,5 @@
 		<string>PalmerLakeScript-Regular.otf</string>
 		<string>CoveredByYourGrace-Regular.ttf</string>
 	</array>
-    <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>NSPhotoLibraryAddUsageDescription</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>NSPhotoLibraryUsageDescription</string>
 </dict>
 </plist>
