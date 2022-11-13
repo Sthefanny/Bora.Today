@@ -15,24 +15,29 @@ struct RequestLocationView: View {
     
     var body: some View {
         GeometryReader { screen in
-            HStack(alignment: .center) {
-                VStack(spacing: 16) {
-                    Text("activeLocation".localized(language))
-                        .font(.custom(AppFont.coveredByYourGrace.name, size: 40))
-                        .padding(0)
-                    
-                    Text("activeLocationDescription".localized(language))
-                        .font(.appSubheadline)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                        .frame(width: screen.size.width * 0.7, alignment: .center)
-                    
-                    ButtonDefault(buttonType: ButtonType.iconAndTextBigger, text: "configure".localized(language), icon: "", action: {
-                        AppHelper.openMobileSettings()
-                    }, isDisabled: $isDisabled)
+            ZStack {
+                Color.white
+                HStack(alignment: .center) {
+                    VStack(spacing: 16) {
+                        Text("activeLocation".localized(language))
+                            .font(.custom(AppFont.coveredByYourGrace.name, size: 40))
+                            .foregroundColor(.appBlack)
+                            .padding(0)
+                        
+                        Text("activeLocationDescription".localized(language))
+                            .font(.appSubheadline)
+                            .fontWeight(.medium)
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.center)
+                            .frame(width: screen.size.width * 0.7, alignment: .center)
+                        
+                        ButtonDefault(buttonType: ButtonType.iconAndTextBigger, text: "configure".localized(language), icon: "", action: {
+                            AppHelper.openMobileSettings()
+                        }, isDisabled: $isDisabled)
+                    }
                 }
+                .frame(width: screen.size.width, height: screen.size.height, alignment: .center)
             }
-            .frame(width: screen.size.width, height: screen.size.height, alignment: .center)
         }
     }
 }

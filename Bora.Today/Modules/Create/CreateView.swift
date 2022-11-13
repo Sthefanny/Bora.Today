@@ -46,9 +46,9 @@ struct CreateView: View {
                         }
                         
                         //adicioanr photo picker aqui
-                        Text("PHOTO PICKER")
-                            .padding(.horizontal, AppConfig.safeAreaHorizontal)
-                            .padding(.top, 16)
+//                        Text("PHOTO PICKER")
+//                            .padding(.horizontal, AppConfig.safeAreaHorizontal)
+//                            .padding(.top, 16)
                     
                         
                         CreateSelectStickerView()
