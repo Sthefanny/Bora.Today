@@ -212,6 +212,30 @@ extension TagModel {
             color: Color.appGreen
         )
     }
+    
+    static var accessible: TagModel {
+        TagModel(
+            text: "Acessível",
+            icon: nil,
+            color: Color.red
+        )
+    }
+    
+    static var fun: TagModel {
+        TagModel(
+            text: "Divertido",
+            icon: nil,
+            color: Color.red
+        )
+    }
+    
+    static var cheap: TagModel {
+        TagModel(
+            text: "Barato",
+            icon: nil,
+            color: Color.red
+        )
+    }
 }
 
 #if DEBUG

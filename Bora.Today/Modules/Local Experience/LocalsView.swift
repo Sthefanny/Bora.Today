@@ -9,83 +9,84 @@ import SwiftUI
 
 struct LocalsView: View {
     
-    let model: ExperienceModel
+    let model: PlaceModel
     
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
     
     var body: some View {
-        ScrollView {
-            VStack (alignment: .leading) {
-                
-                Spacer()
-                
-                //Esse banner tem que puxar o mapkit
-                ExperienceImageBannerView(model: ExperienceModel.example1)
-                
-                VStack (alignment: .leading, spacing: 32){
+        VStack {
+            HeaderView(headerTitle: "location".localized(language))
+            
+            ScrollView {
+                VStack (alignment: .leading, spacing: 0) {
                     
-                    VStack (alignment: .leading, spacing: 16) {
-                        Text(model.name)
-                            .font(.appTitle3)
-                            .padding(.leading, 21)
+                    //Esse banner tem que puxar o mapkit
+                    ExperienceImageBannerView(model: ExperienceModel.example1)
+                    
+                    VStack (alignment: .leading, spacing: 0){
                         
-                        HStack (alignment: .center, spacing: 12){
+                        VStack (alignment: .leading, spacing: 16) {
+                            Text(model.name)
+                                .font(.appTitle3)
+                                .padding(.leading, 21)
+                            
                             VStack (alignment: .leading, spacing: 4){
                                 IconLocationTextButton(model: ExperienceModel.example1)
                                 
                                 HStack {
                                     Image(systemName: "clock.fill")
-                                    Text(model.datetime)
+                                    Text(model.openTime)
                                 }
                                 .font(.appFootnote)
+                                
+                                HStack {
+                                    Image(systemName: "link")
+                                    
+                                    
+                                    Link(model.url, destination: URL(string: model.url)!)
+                                        .font(.appFootnote)
+                                        .foregroundColor(.appBlueButton)
+                                }
                             }
-                        }
-                        .padding(.init(top: 0, leading: 21, bottom: 0, trailing: 21))
-                        
-                        HStack (alignment: .center){
-                        VStack (alignment: .leading, spacing: 16){
-                            Text("experiencesHere".localized(language))
-                                .font(.appHeadline)
+                            .padding(.horizontal, 21)
                             
-                            //NÃO TÁ DO TAMANHO CERTO - 119
-                            CreateExperienceCornerButton(buttonType: ButtonType.iconAndTextBigger, text: "Create Experience", icon: "createIcon2", action: {print("teste")}, isDisabled: .constant(false))
-                        }
-                        .padding(.leading, 21)
+                            VStack (alignment: .leading, spacing: 0){
+                                Text("experiencesHere".localized(language))
+                                    .font(.appHeadline)
+                                
+                                LocalExperienceListView()
+                                    .padding(.vertical, 16)
+                            }
+                            .padding(.leading, 21)
+                            .padding(.top, 16)
                             
-                            //A lista tá aparecendo cortada e menor que o botão de criar experiência
-                            LocalExperienceListView()
-                        }
-                        
-                        
-    
-                        
-                        VStack (alignment: .leading, spacing: 16){
-                            Text("reviews".localized(language))
-                                .font(.appHeadline)
                             
                             VStack (alignment: .leading, spacing: 16){
-                                //Botão - muda a review
-                            CreateReviewsFilter()
-                            
-                            ReviewDynamicListView()
+                                Text("reviews".localized(language))
+                                    .font(.appHeadline)
+                                
+                                VStack (alignment: .leading, spacing: 16){
+                                    //Botão - muda a review
+                                    CreateReviewsFilter()
+                                    
+                                    ReviewDynamicListView()
+                                }
                             }
+                            .padding(.horizontal, 21)
                         }
-                        .padding(.leading, 21)
-                        
-            
                     }
                 }
-                Spacer()
             }
-            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
     
     struct LocalsView_Previews: PreviewProvider {
         static var previews: some View {
-            LocalsView(model: ExperienceModel.example1)
+            LocalsView(model: PlaceModel.place1)
         }
     }
 }

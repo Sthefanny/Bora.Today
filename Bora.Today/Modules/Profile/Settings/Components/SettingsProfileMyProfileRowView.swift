@@ -14,7 +14,7 @@ struct SettingsProfileMyProfileRowView: View {
     var body: some View {
         HStack {
             HStack{
-                ProfileImageView()
+                ProfileImageView(model: nil)
                 VStack(alignment: .leading, spacing: 4) {
                     Text(model.name)
                         .font(.appTitle2)

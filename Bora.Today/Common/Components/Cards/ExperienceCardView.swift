@@ -12,9 +12,13 @@ struct ExperienceCardView: View {
     var isInDiscover: Bool
     @State var isSaved: Bool
     
+    @State private var goesToExperience: Bool = false
+    
     var body: some View {
         
         HStack(spacing: 0) {
+            
+            NavigationLink(destination: ExperienceView(model: model), isActive: $goesToExperience) {}
             
             Image(model.image)
                 .resizable()
@@ -23,7 +27,7 @@ struct ExperienceCardView: View {
                 .cornerRadius(18)
                 .padding(.trailing, 12)
                 .onTapGesture {
-                    print("-leva para página da experiência-")
+                    GoToExperience()
                 }
             
             VStack(alignment: .leading, spacing: 0) {
@@ -37,12 +41,12 @@ struct ExperienceCardView: View {
                     .font(.appSubheadline)
                     .foregroundColor(.appBlack)
                     .padding(.bottom, 8)
-    
+                
                 
                 HStack {
                     Image("pin_place")
                         .foregroundColor(.black)
-
+                    
                     
                     Text(model.location)
                         .font(.appFootnote)
@@ -62,12 +66,12 @@ struct ExperienceCardView: View {
                 }
             }
             .onTapGesture {
-                print("-leva para página da experiência-")
+                GoToExperience()
             }
             
             Spacer()
             
-        
+            
             if isInDiscover {
                 Image(systemName: isSaved ? "bookmark.fill" : "bookmark")
                     .font(.system(size: 24))
@@ -81,10 +85,14 @@ struct ExperienceCardView: View {
                     .foregroundColor(.appBlueButton)
                     .font(.title)
                     .onTapGesture {
-                        print("-leva para página da experiência-")
-                }
+                        GoToExperience()
+                    }
             }
         }
+    }
+    
+    private func GoToExperience() {
+        goesToExperience = true
     }
 }
 

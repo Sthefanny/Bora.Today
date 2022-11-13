@@ -12,4 +12,5 @@ enum SettingsRowType: String {
     case onlyText
     case onlyImage
     case textAndImage
+    case review
 }

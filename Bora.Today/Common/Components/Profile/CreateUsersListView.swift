@@ -8,9 +8,6 @@
 import SwiftUI
 import SwiftFlags
 
-//por algum motivo quebrou - não tá gerando imagens diferentes
-    //Tem que pegar do perfil da pessoa
-
 struct CreateUsersListView: View {
     private let model: [UserModel]
     
@@ -24,7 +21,7 @@ struct CreateUsersListView: View {
             HStack {
                 ForEach(0..<model.count) {index in
                     let item = model[index]
-                    ProfileImageView()
+                    ProfileImageView(model: item)
                 }
             }
             .padding(.leading, 21)

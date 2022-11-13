@@ -11,24 +11,24 @@ import SwiftFlags
 struct ProfileImageView: View {
     var size: Double
     var flagPosition: Double
-    private var model: UserModel
+    var model: UserModel?
     
-    init(size: Double = 70) {
+    init(model: UserModel?, size: Double = 70) {
         self.size = size
         self.flagPosition = size / 2.6
-        self.model = UserModel.example1
+        self.model = model ?? UserModel.example1
     }
     
     var body: some View {
         ZStack {
-            Image(model.image)
+            Image(model!.image)
                 .resizable()
                 .clipShape(Circle(), style: FillStyle())
                 .frame(width: size, height: size, alignment: .center)
                 .overlay(Circle()
                 .stroke(Color.red, lineWidth: 0))
             
-            FlagView(countryCode: model.originCountry, size: 18)
+            FlagView(countryCode: model!.originCountry, size: 18)
                 .offset(x: flagPosition, y: flagPosition)
         }
     }
@@ -37,8 +37,8 @@ struct ProfileImageView: View {
 struct ProfileImageView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            ProfileImageView()
-            ProfileImageView(size: 54)
+            ProfileImageView(model: nil)
+            ProfileImageView(model: nil, size: 54)
         }
     }
 }

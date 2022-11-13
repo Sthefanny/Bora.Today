@@ -11,6 +11,8 @@ struct ExperienceHomeView: View {
     let model: ExperienceModel
     let isFirst: Bool
     
+    @State private var goesToExperience: Bool = false
+    
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
@@ -29,8 +31,13 @@ struct ExperienceHomeView: View {
                 }
             }
             .padding(.leading, getPadding())
+            .onTapGesture {
+                goesToExperience = true
+            }
             
             StickerListView(stickerList: model.stickers!)
+            
+            NavigationLink(destination: ExperienceView(model: model), isActive: $goesToExperience) {}
         }
     }
     
@@ -51,10 +58,9 @@ struct ExperienceHomeView: View {
     }
     
     func _buildPlaceDetails() -> some View {
-        HStack {
+        HStack(spacing: 4) {
             Image("pin_place")
                 .foregroundColor(.black)
-                .padding(.horizontal, 4)
             
             Text(model.location)
                 .font(.appFootnote)
@@ -64,7 +70,7 @@ struct ExperienceHomeView: View {
     }
     
     func _buildDateDetails() -> some View {
-        HStack {
+        HStack(spacing: 4) {
             Image("time")
                 .foregroundColor(.black)
             

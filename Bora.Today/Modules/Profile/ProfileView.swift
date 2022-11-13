@@ -22,6 +22,8 @@ struct ProfileView: View {
     
     let model : UserModel
     
+    var shouldShowBack: Bool = false
+    
     var body: some View {
         GeometryReader { outerscreen in
             ScrollView {
@@ -30,15 +32,18 @@ struct ProfileView: View {
                         if isSelfProfile == true {
                             backgroundPrivateColor
                                 .edgesIgnoringSafeArea(.top)
-//                                .frame(height: outerscreen.size.height * 0.35)
                         } else {
                             backgroundPublicColor
                                 .edgesIgnoringSafeArea(.top)
-//                                .frame(height: outerscreen.size.height * 0.32) // valor antigo (sem geometry readers)
                         }
-                        ProfileHeaderView(isModelView: $isSelfProfile, halfButtonHeight: $halfButtonHeight, model: UserModel.example2)
-                            .padding(.top, 52)
-                        //                    .padding(.bottom, 16 + halfButtonHeight)
+                        VStack {
+                            if shouldShowBack {
+                                HeaderView()
+                                    .padding(.top, 32)
+                            }
+                            ProfileHeaderView(isModelView: $isSelfProfile, halfButtonHeight: $halfButtonHeight, model: UserModel.example2)
+                                .padding(.top, 52)
+                        }
                     }
                     .edgesIgnoringSafeArea(.top)
                     
@@ -52,7 +57,6 @@ struct ProfileView: View {
                     .padding(.horizontal, AppConfig.safeAreaHorizontal)
                     
                     TagInterestsView(model: UserModel.example1)
-//                        .padding(.leading, AppConfig.safeAreaHorizontal)
                         .padding(.bottom, 32)
                     
                     ProfileConnectionsView()
@@ -66,12 +70,10 @@ struct ProfileView: View {
                         }
                         .padding(.bottom, 16)
                         LatestExperiencesListView(model: TopExperienceModel.example)
-//                            .frame(height: 300000)
                     }
                     .padding(.horizontal, AppConfig.safeAreaHorizontal)
                 }
             }
-//            .frame(width: outerscreen.size.width, height: .infinity)
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
@@ -83,6 +85,6 @@ struct ProfileView: View {
 
 struct ProfilePublicView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(isSelfProfile: true, model: .example2)
+        ProfileView(isSelfProfile: true, model: .example2, shouldShowBack: true)
     }
 }

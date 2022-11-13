@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct SettingsProfileRowView: View {
     // MARK: - PROPERTIES
+    @Environment(\.requestReview) var requestReview
     
     var settingsRowType: SettingsRowType
     
@@ -34,48 +36,70 @@ struct SettingsProfileRowView: View {
                 
                 // MARK: - ONLY IMAGE
             case .onlyImage:
-                Text(title)
-                    .font(.appButtonText)
-                    .foregroundColor(.appBlack)
-                Spacer()
                 Link(destination: URL(string: "https://\(linkDestination!)")!) {
-                    Image(systemName: imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundColor(.appBlueButton)
-                        .frame(width: 13, height: 13)
-                }
-                
-                // MARK: - ONLY TEXT
-            case .onlyText:
-                Text(title)
-                    .font(.appButtonText)
-                    .foregroundColor(.appBlack)
-                Spacer()
-                Button(action: {print("action!")}, label: {
-                    Text(linkLabel ?? "")
-                        .font(.appSubheadline)
-                        .foregroundColor(.appBlueButton)
-                })
-                
-                // MARK: - TEXT AND IMAGE
-            case .textAndImage:
-                Text(title)
-                    .font(.appButtonText)
-                    .foregroundColor(.appBlack)
-                Spacer()
-                Link(destination: URL(string: "https://\(linkDestination!)")!) {
-                    HStack(spacing:4) {
-                        Text(linkLabel ?? "")
-                            .font(.appSubheadline)
-                            .foregroundColor(.appBlueButton)
+                    HStack {
+                        Text(title)
+                            .font(.appButtonText)
+                            .foregroundColor(.appBlack)
+                        Spacer()
                         Image(systemName: imageName)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(.appBlueButton)
-                            .frame(width: 13, height: 13)
+                        .frame(width: 13, height: 13)
                     }
                 }
+                
+                // MARK: - ONLY TEXT
+            case .onlyText:
+                Button(action: {print("action!")}, label: {
+                    Text(title)
+                        .font(.appButtonText)
+                        .foregroundColor(.appBlack)
+                    Spacer()
+                    HStack {
+                        Text(linkLabel ?? "")
+                            .font(.appSubheadline)
+                        .foregroundColor(.appBlueButton)
+                    }
+                })
+                
+                // MARK: - TEXT AND IMAGE
+            case .textAndImage:
+                Link(destination: URL(string: "https://\(linkDestination!)")!) {
+                    HStack {
+                        Text(title)
+                            .font(.appButtonText)
+                            .foregroundColor(.appBlack)
+                        Spacer()
+                        HStack(spacing:4) {
+                            Text(linkLabel ?? "")
+                                .font(.appSubheadline)
+                                .foregroundColor(.appBlueButton)
+                            Image(systemName: imageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(.appBlueButton)
+                                .frame(width: 13, height: 13)
+                        }
+                    }
+                }
+            case .review:
+                Button(action: {
+                    requestReview()
+                }, label: {
+                    HStack {
+                        Text(title)
+                            .font(.appButtonText)
+                            .foregroundColor(.appBlack)
+                        Spacer()
+                        Image(systemName: imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(.appBlueButton)
+                        .frame(width: 13, height: 13)
+                    }
+                })
             }
         }
     }

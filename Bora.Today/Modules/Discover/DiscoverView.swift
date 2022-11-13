@@ -6,41 +6,65 @@
 //
 
 import SwiftUI
-import MapKit
 
 struct DiscoverView: View {
     
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
-    @StateObject var locationManager = LocationManager()
-    
     @State private var selection = 0
     
     @State private var goesToCreate: Bool = false
+    @State private var goesToExperience: Bool = false
+    @State private var goesToLocal: Bool = false
+    
+    @State private var experienceModel: ExperienceModel?
+    @State private var placeModel: PlaceModel?
+    
+    @State var discoverVisualization: DiscoverVisualization = .experience
+    @State var viewType: DiscoverType = .map
     
     var body: some View {
         GeometryReader { screen in
-            ScrollView {
-                VStack(alignment: .leading, spacing: 0) {
-                    _buildHeader
-                    
-                    _buildSearch
-                    
-                    _buildViewTypes
-                    
-                    Map(coordinateRegion: $locationManager.region, showsUserLocation: true)
+            VStack(alignment: .leading, spacing: 0) {
+                _buildHeader
+                
+                _buildSearch
+                
+                _buildViewTypes
+                
+                if viewType == .map {
+                    DiscoverMapView(discoverVisualization: $discoverVisualization)
+                        .padding(.bottom, AppConfig.bottomMenuHeight / 2)
+                } else {
+                    if discoverVisualization == .experience {
+                        ScrollView {
+                            ExperienceCardListView()
+                        }
+                    } else {
+                        ScrollView {
+                            PlaceCardListView()
+                        }
+                    }
                 }
-                .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
+                
+                if experienceModel != nil {
+                    NavigationLink("", destination: ExperienceView(model: experienceModel!), isActive: $goesToExperience)
+                }
+                
+                if placeModel != nil {
+                    NavigationLink("", destination: LocalsView(model: placeModel!), isActive: $goesToLocal)
+                }
             }
-            .frame(height: screen.size.height)
+            .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
         }
+        .edgesIgnoringSafeArea(.bottom)
         .navigationBarTitle("")
         .navigationBarHidden(true)
         .onAppear() {
             AppHelper.logPage(pageName: "\(DiscoverView.self)")
-//            locationManager.requestLocation()
-//            locationManager.test()
+            experienceModel = ExperienceModel.example1
+            placeModel = PlaceModel.place1
         }
     }
     
@@ -71,22 +95,26 @@ struct DiscoverView: View {
     
     private var _buildViewTypes: some View {
         HStack(alignment: .center, spacing: 0) {
-            SwitchButtonView(leftText: "experiences".localized(language), rightText: "places".localized(language), leftAction: {}, rightAction: {})
+            SwitchButtonView(leftText: "experiences".localized(language), rightText: "places".localized(language), leftAction: {
+                self.discoverVisualization = .experience
+            }, rightAction: {
+                self.discoverVisualization = .place
+            })
             
             Spacer()
             
-            ButtonDefault(buttonType: .iconAndText, text: "map".localized(language), icon: "map.fill", action: {}, isDisabled: .constant(false))
+            if viewType == .map {
+                ButtonDefault(buttonType: .iconAndText, text: "list".localized(language), icon: "list.bullet.circle.fill", action: {
+                    viewType = .list
+                }, isDisabled: .constant(false))
+            } else {
+                ButtonDefault(buttonType: .iconAndText, text: "map".localized(language), icon: "map.fill", action: {
+                    viewType = .map
+                }, isDisabled: .constant(false))
+            }
         }
         .padding(.horizontal, 21)
         .padding(.bottom, 16)
-    }
-    
-    private func ShowCardExperience() -> any View {
-        Text("teste")
-    }
-    
-    private func ShowCardPlace() -> any View {
-        Text("teste")
     }
 }
 

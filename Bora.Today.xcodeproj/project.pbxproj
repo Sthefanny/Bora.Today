@@ -45,7 +45,6 @@
 		90CB8292291C1BA800A92723 /* ExperienceCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8291291C1BA800A92723 /* ExperienceCardListView.swift */; };
 		90CB8294291C2F1500A92723 /* PlaceCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8293291C2F1500A92723 /* PlaceCardListView.swift */; };
 		90CB8297291C319300A92723 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8296291C319300A92723 /* EmptyStateView.swift */; };
-		9304631C291B0F9700CA7795 /* LocalExperienceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304631B291B0F9700CA7795 /* LocalExperienceCardView.swift */; };
 		9304631E291C1D5200CA7795 /* LocalExperienceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304631D291C1D5200CA7795 /* LocalExperienceListView.swift */; };
 		93046324291C30A500CA7795 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046323291C30A500CA7795 /* PhotoPicker.swift */; };
 		93046326291C30BE00CA7795 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046325291C30BE00CA7795 /* ImageView.swift */; };
@@ -101,6 +100,10 @@
 		E5428157291C248F00CD1C7E /* TextFieldPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5428156291C248F00CD1C7E /* TextFieldPlaceholder.swift */; };
 		E542815A291C2D8600CD1C7E /* SwitchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5428159291C2D8500CD1C7E /* SwitchButtonView.swift */; };
 		E542815C291C389A00CD1C7E /* SwitchSidesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E542815B291C389A00CD1C7E /* SwitchSidesEnum.swift */; };
+		E54D086E29212BCE00A4CD3F /* ExperienceCardOnMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54D086D29212BCE00A4CD3F /* ExperienceCardOnMapView.swift */; };
+		E54D087029212BDA00A4CD3F /* PlaceCardOnMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54D086F29212BDA00A4CD3F /* PlaceCardOnMapView.swift */; };
+		E54D08722921336700A4CD3F /* DiscoverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54D08712921336700A4CD3F /* DiscoverMapView.swift */; };
+		E54D0874292134B500A4CD3F /* DiscoverTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54D0873292134B500A4CD3F /* DiscoverTypeEnum.swift */; };
 		E554265B28F33C190088C652 /* TagDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554265A28F33C190088C652 /* TagDefaultView.swift */; };
 		E554265D28F33E280088C652 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554265C28F33E280088C652 /* TagModel.swift */; };
 		E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554265F28F3495B0088C652 /* ReviewCardView.swift */; };
@@ -205,7 +208,6 @@
 		90CB8291291C1BA800A92723 /* ExperienceCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCardListView.swift; sourceTree = "<group>"; };
 		90CB8293291C2F1500A92723 /* PlaceCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardListView.swift; sourceTree = "<group>"; };
 		90CB8296291C319300A92723 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
-		9304631B291B0F9700CA7795 /* LocalExperienceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExperienceCardView.swift; sourceTree = "<group>"; };
 		9304631D291C1D5200CA7795 /* LocalExperienceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExperienceListView.swift; sourceTree = "<group>"; };
 		93046323291C30A500CA7795 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		93046325291C30BE00CA7795 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
@@ -261,6 +263,10 @@
 		E5428156291C248F00CD1C7E /* TextFieldPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPlaceholder.swift; sourceTree = "<group>"; };
 		E5428159291C2D8500CD1C7E /* SwitchButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchButtonView.swift; sourceTree = "<group>"; };
 		E542815B291C389A00CD1C7E /* SwitchSidesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSidesEnum.swift; sourceTree = "<group>"; };
+		E54D086D29212BCE00A4CD3F /* ExperienceCardOnMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCardOnMapView.swift; sourceTree = "<group>"; };
+		E54D086F29212BDA00A4CD3F /* PlaceCardOnMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardOnMapView.swift; sourceTree = "<group>"; };
+		E54D08712921336700A4CD3F /* DiscoverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverMapView.swift; sourceTree = "<group>"; };
+		E54D0873292134B500A4CD3F /* DiscoverTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTypeEnum.swift; sourceTree = "<group>"; };
 		E554265A28F33C190088C652 /* TagDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDefaultView.swift; sourceTree = "<group>"; };
 		E554265C28F33E280088C652 /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
 		E554265F28F3495B0088C652 /* ReviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCardView.swift; sourceTree = "<group>"; };
@@ -501,6 +507,8 @@
 				904B331A2914B08C001B6EB4 /* PlaceCardView.swift */,
 				90CB8291291C1BA800A92723 /* ExperienceCardListView.swift */,
 				90CB8293291C2F1500A92723 /* PlaceCardListView.swift */,
+				E54D086D29212BCE00A4CD3F /* ExperienceCardOnMapView.swift */,
+				E54D086F29212BDA00A4CD3F /* PlaceCardOnMapView.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -568,7 +576,6 @@
 				93B5E6A929197D77004DE6B3 /* CreateExperienceCornerButton.swift */,
 				93B5E6AC29197DA1004DE6B3 /* CreateReviewsFilter.swift */,
 				93B5E6B029199996004DE6B3 /* LocalBannerView.swift */,
-				9304631B291B0F9700CA7795 /* LocalExperienceCardView.swift */,
 				9304631D291C1D5200CA7795 /* LocalExperienceListView.swift */,
 			);
 			path = Components;
@@ -695,6 +702,7 @@
 			isa = PBXGroup;
 			children = (
 				E5428159291C2D8500CD1C7E /* SwitchButtonView.swift */,
+				E54D08712921336700A4CD3F /* DiscoverMapView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -781,6 +789,7 @@
 				E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */,
 				E57D4ACE2907128000ACE493 /* NotificationTypeEnum.swift */,
 				E542815B291C389A00CD1C7E /* SwitchSidesEnum.swift */,
+				E54D0873292134B500A4CD3F /* DiscoverTypeEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -1171,7 +1180,6 @@
 				E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */,
 				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
 				E57DE48828F756E400DB4447 /* OnboardingTagStyle.swift in Sources */,
-				9304631C291B0F9700CA7795 /* LocalExperienceCardView.swift in Sources */,
 				01549295291AE3C30068218A /* TagInterestsView.swift in Sources */,
 				01549299291AEB4A0068218A /* ProfileConnectionsView.swift in Sources */,
 				E56C538B28E757BD0078191F /* ColorConfig.swift in Sources */,
@@ -1241,6 +1249,7 @@
 				E5100BD2292024F7009F1D99 /* RatingView.swift in Sources */,
 				E5A6320D292026DA006027AF /* CreateUsersListView.swift in Sources */,
 				E5711EBC28E3441B0027A01A /* LanguageEnum.swift in Sources */,
+				E54D086E29212BCE00A4CD3F /* ExperienceCardOnMapView.swift in Sources */,
 				9384189529073097000A66D1 /* ReportButton.swift in Sources */,
 				93046326291C30BE00CA7795 /* ImageView.swift in Sources */,
 				90CB8294291C2F1500A92723 /* PlaceCardListView.swift in Sources */,
@@ -1262,6 +1271,7 @@
 				93DF14902901DA6F0027D985 /* CreateTextExpandView.swift in Sources */,
 				E5180A6528EF635A0066E1E4 /* StickerModel.swift in Sources */,
 				013DDCBE29032166003C5F88 /* OnboardingInterestsListView.swift in Sources */,
+				E54D087029212BDA00A4CD3F /* PlaceCardOnMapView.swift in Sources */,
 				E554266728F34E900088C652 /* FlagView.swift in Sources */,
 				0154929B291AECF30068218A /* LatestExperiencesListView.swift in Sources */,
 				E5BE868C290B0A9700FDDA47 /* LocationHistoryModel.swift in Sources */,
@@ -1274,6 +1284,7 @@
 				9353B985290AFE2100D3DB6D /* ExperienceReviewView.swift in Sources */,
 				E5180A6328EF5EAF0066E1E4 /* StickerView.swift in Sources */,
 				93046333291DAE5F00CA7795 /* ReviewRatingView.swift in Sources */,
+				E54D0874292134B500A4CD3F /* DiscoverTypeEnum.swift in Sources */,
 				012A74CB291D8AFC0071CBDD /* SettingsProfileRowView.swift in Sources */,
 				9042C0B228FFA6070040693D /* CreateSelectStickerView.swift in Sources */,
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
@@ -1285,6 +1296,7 @@
 				E51CB0C5290B2ECD00DBAC7C /* CalendarView.swift in Sources */,
 				E5D027502903239300C7FAAA /* AchievementModel.swift in Sources */,
 				E51CB0C3290B2E0C00DBAC7C /* EventView.swift in Sources */,
+				E54D08722921336700A4CD3F /* DiscoverMapView.swift in Sources */,
 				E5100BD1292024F7009F1D99 /* ReviewDynamicListView.swift in Sources */,
 				E5180A5C28EF5C210066E1E4 /* ReviewListView.swift in Sources */,
 				017A96B1291997DA006D3D76 /* ProfileImageLargeView.swift in Sources */,
@@ -1473,7 +1485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1510,7 +1522,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

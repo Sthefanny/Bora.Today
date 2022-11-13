@@ -74,7 +74,7 @@ struct NotificationsView: View {
             case .howWasExperience:
                 NotificationSystemImageView()
             case .connection, .goingToEvent:
-                ProfileImageView(size: 54)
+                ProfileImageView(model: nil, size: 54)
             }
         }
     }

@@ -60,6 +60,9 @@
 //ExperienceView
 "participants" = "Participants";
 
+//LocalsView
+"location" = "Location";
+
 //CreateHostedButton
 "hosted" = "Hosted by";
 
@@ -115,6 +118,7 @@
 "experiences" = "Experiences";
 "places" = "Places";
 "map" = "Map";
+"list" = "List";
 
 //PopUpCreateAccountView
 "createAccount" = "Create your account in";

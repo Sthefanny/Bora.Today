@@ -11,11 +11,12 @@ import SwiftUI
 struct DefaultTagModifier: ViewModifier {
     var color: Color
     var isSelected: Bool
+    var hasIcon: Bool
     
     func body(content: Content) -> some View {
         if isSelected {
             content
-                .padding(.horizontal, 15)
+                .padding(.horizontal, hasIcon ? 15 : 10)
                 .padding(.vertical, 5)
                 .background(
                     RoundedRectangle(cornerRadius: 16)
@@ -23,7 +24,7 @@ struct DefaultTagModifier: ViewModifier {
                 )
         } else {
             content
-                .padding(.horizontal, 15)
+                .padding(.horizontal, hasIcon ? 15 : 10)
                 .padding(.vertical, 5)
                 .background(
                     RoundedRectangle(cornerRadius: 16)
@@ -40,8 +41,9 @@ struct DefaultTagModifier: ViewModifier {
 extension HStack {
     func DefaultTagStyle(
         color: Color,
-        isSelected: Bool
+        isSelected: Bool,
+        hasIcon: Bool
     ) -> some View {
-        modifier(DefaultTagModifier(color: color, isSelected: isSelected))
+        modifier(DefaultTagModifier(color: color, isSelected: isSelected, hasIcon: hasIcon))
     }
 }

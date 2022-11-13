@@ -12,6 +12,8 @@ struct PlaceCardView: View {
     var isInDiscover: Bool
     @State var isSaved: Bool
     
+    @State private var goesToLocal: Bool = false
+    
     var body: some View {
         
         HStack(spacing: 0) {
@@ -69,8 +71,12 @@ struct PlaceCardView: View {
                 }
             }
             
+            NavigationLink(destination: LocalsView(model: model), isActive: $goesToLocal) {}
+            
         }
-        
+        .onTapGesture {
+            goesToLocal = true
+        }
     }
 }
 

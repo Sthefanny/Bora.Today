@@ -24,7 +24,7 @@ struct TagDefaultView: View {
                 .font(.appFootnote)
                 .foregroundColor(isSelected ? Color.appWhite : Color.appBlack)
         }
-        .DefaultTagStyle(color: model.color, isSelected: isSelected)
+        .DefaultTagStyle(color: model.color, isSelected: isSelected, hasIcon: model.icon != nil)
         .onTapGesture {
             isSelected.toggle()
         }

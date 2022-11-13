@@ -19,7 +19,6 @@ struct ExperienceImageBannerView: View {
                     .scaledToFill()
             }
             .padding(.bottom, 16)
-            .padding(.top, 16)
         }
     }
 

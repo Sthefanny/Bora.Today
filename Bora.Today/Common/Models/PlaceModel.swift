@@ -33,7 +33,7 @@ extension PlaceModel {
             rating: 3.1,
             address: "Av. Sete de Setembro, 3165 - Rebouças, Curitiba - PR",
             openTime: "7h - 22h",
-            url: "utfpr.com",
+            url: "http://utfpr.com",
             latitude: 20,
             longitude: 20)
         
@@ -46,7 +46,7 @@ extension PlaceModel {
             rating: 5.0,
             address: "Rua Imaculada Conceição, 1155 - Prado Velho, Curitiba - PR",
             openTime: "8h30 - 17h",
-            url: "ada.com",
+            url: "http://ada.com",
             latitude: 40,
             longitude: 40)
         
@@ -59,7 +59,7 @@ extension PlaceModel {
             rating: 1.2,
             address: "Rua Gen. Carneiro, 360 - Alto da Glória, Curitiba - PR",
             openTime: "8h30 - 17h",
-            url: "ceu.com",
+            url: "http://ceu.com",
             latitude: 50,
             longitude: 50)
         

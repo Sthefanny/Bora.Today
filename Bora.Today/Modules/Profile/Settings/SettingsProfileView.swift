@@ -78,7 +78,7 @@ struct SettingsProfileView: View {
                                         .frame(height:1)
                                         .overlay(Color.appWhite)
                                         .padding(.vertical,0)
-                                    SettingsProfileRowView(settingsRowType: .onlyImage, title: "evaluateBora".localized(language), linkDestination: "") //link da loja
+                                    SettingsProfileRowView(settingsRowType: .review, title: "evaluateBora".localized(language), linkDestination: "") //link da loja
                                     Divider()
                                         .frame(height:1)
                                         .overlay(Color.appWhite)

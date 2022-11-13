@@ -33,7 +33,7 @@ struct BoraTodayApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
+            NavigationStack {
                 BottomMenuView()
             }
             .navigationBarTitle("")

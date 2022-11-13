@@ -16,7 +16,7 @@ struct SingleConnectionView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 0){
-            ProfileImageView()
+            ProfileImageView(model: nil)
                 .padding(.bottom,8)
             Text(name)
                 .font(.appCallout)

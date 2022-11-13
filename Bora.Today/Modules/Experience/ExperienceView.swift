@@ -14,67 +14,68 @@ struct ExperienceView: View {
     private var language = LocalizationManager.shared.language
     
     var body: some View {
-        ScrollView {
-            VStack (alignment: .center) {
-                
-                Spacer()
-                
-                ExperienceImageBannerView(model: ExperienceModel.example1)
-                
-                VStack (alignment: .leading, spacing: 32){
+        VStack {
+            HeaderView(headerTitle: "experience".localized(language))
+            
+            ScrollView {
+                VStack (alignment: .center, spacing: 0) {
                     
-                    VStack (alignment: .leading, spacing: 16) {
-                        Text(model.name)
-                            .font(.appTitle3)
+                    ExperienceImageBannerView(model: ExperienceModel.example1)
+                    
+                    VStack (alignment: .leading, spacing: 32){
                         
-                        HStack (alignment: .center, spacing: 12){
-                            VStack (alignment: .leading, spacing: 4){
-                                IconLocationTextButton(model: ExperienceModel.example1)
-                                
-                                HStack {
-                                    Image(systemName: "clock.fill")
-                                    Text(model.datetime)
-                                }
-                                .font(.appFootnote)
-                                
-                            }
-                            Spacer()
+                        VStack (alignment: .leading, spacing: 16) {
+                            Text(model.name)
+                                .font(.appTitle3)
                             
-                            CreateHostedButton(model: ReviewModel.example1)
+                            HStack (alignment: .center, spacing: 12){
+                                VStack (alignment: .leading, spacing: 4){
+                                    IconLocationTextButton(model: ExperienceModel.example1)
+                                    
+                                    HStack {
+                                        Image(systemName: "clock.fill")
+                                        Text(model.datetime)
+                                    }
+                                    .font(.appFootnote)
+                                    
+                                }
+                                
+                                Spacer()
+                                
+                                CreateHostedButton(model: ReviewModel.example1)
+                            }
+                        }
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                        
+                        
+                        //Chamar texto do Model - Lari já fez
+                        CreateTextExpandView(ExperienceModel.example3, lineLimit: 3)
+                            .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                        
+                        VStack (alignment: .leading, spacing: 16){
+                            Text("participants".localized(language))
+                                .font(.appHeadline)
+                                .padding(.leading, 21)
+                            
+                            CreateUsersListView()
                         }
                     }
-                    .padding(.horizontal, AppConfig.safeAreaHorizontal)
                     
-                    
-                    //Chamar texto do Model - Lari já fez
-                    CreateTextExpandView(ExperienceModel.example3, lineLimit: 3)
-                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
-                    
-                    VStack (alignment: .leading, spacing: 16){
-                        Text("participants".localized(language))
-                            .font(.appHeadline)
-                            .padding(.leading, 21)
+                    HStack (alignment: .center, spacing: 12){
+                        SaveButton()
                         
-                        CreateUsersListView()
+                        ButtonDefaultBig(buttonType: .iconAndTextBigger, text: "Bora!", icon: "seal.fill", action: {print("teste")}, isDisabled: .constant(false))
                     }
+                    .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                    .padding(.top, 64)
+                    .padding(.bottom, 16)
+                    
                     
                 }
-                
-                Spacer()
-                    .frame(height: 64)
-                
-                HStack (alignment: .center, spacing: 12){
-                    SaveButton()
-                    
-                    ButtonDefaultBig(buttonType: .iconAndTextBigger, text: "Bora!", icon: "seal.fill", action: {print("teste")}, isDisabled: .constant(false))
-                }
-                .padding(.horizontal, AppConfig.safeAreaHorizontal)
-                
-                
             }
-            Spacer()
         }
-        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 

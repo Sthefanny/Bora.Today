@@ -18,8 +18,7 @@ struct ReviewDynamicListView: View {
     }
     
     var body: some View {
-        ScrollView (showsIndicators: false) {
-            VStack {
+            LazyVStack {
                 ForEach(0..<model.count) {index in
                     let item = model[index]
                     ExperienceReviewView(model: item)
@@ -27,8 +26,6 @@ struct ReviewDynamicListView: View {
                         .overlay(Color.appGray)
                 }
             }
-        }
-        
     }
 }
 
