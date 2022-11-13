@@ -9,7 +9,7 @@
 //Bottom Menu
 "home" = "Casa";
 "create" = "Criar";
-"search" = "Buscar";
+"discoverTitle" = "Explorar";
 "history" = "Historia";
 "profile" = "Perfil";
 
@@ -109,7 +109,6 @@
 "sliderTitle" = "Quantidade de participantes";
 
 //DiscoverView
-"discoverTitle" = "Explorar";
 "createButton" = "Criar";
 "searchPlaceholder" = "Tags, Locais, Experiências";
 "experiences" = "Experiências";

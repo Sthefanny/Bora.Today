@@ -55,11 +55,11 @@ struct DefaultButtonStyle: ButtonStyle {
             return 30
         case .textOnlyBigger:
             return 30
-        case .imageOnly:
+        case .iconOnly:
             return 30
-        case .imageAndText:
+        case .iconAndText, .imageAndText:
             return 30
-        case .imageAndTextBigger:
+        case .iconAndTextBigger:
             return 30
         }
     }

@@ -11,8 +11,6 @@ struct LocalsView: View {
     
     let model: ExperienceModel
     
-    @StateObject var locationManager = LocationManager()
-    
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
@@ -52,7 +50,7 @@ struct LocalsView: View {
                                 .font(.appHeadline)
                             
                             //NÃO TÁ DO TAMANHO CERTO - 119
-                            CreateExperienceCornerButton(buttonType: ButtonType.imageAndTextBigger, text: "Create Experience", icon: "createIcon2", action: {print("teste")}, isDisabled: .constant(false))
+                            CreateExperienceCornerButton(buttonType: ButtonType.iconAndTextBigger, text: "Create Experience", icon: "createIcon2", action: {print("teste")}, isDisabled: .constant(false))
                         }
                         .padding(.leading, 21)
                             

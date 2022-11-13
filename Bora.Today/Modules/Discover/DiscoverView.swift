@@ -17,6 +17,8 @@ struct DiscoverView: View {
     
     @State private var selection = 0
     
+    @State private var goesToCreate: Bool = false
+    
     var body: some View {
         GeometryReader { screen in
             ScrollView {
@@ -27,13 +29,7 @@ struct DiscoverView: View {
                     
                     _buildViewTypes
                     
-                    
                     Map(coordinateRegion: $locationManager.region, showsUserLocation: true)
-                        .onAppear {
-                            locationManager.test()
-                        }
-                    
-                    
                 }
                 .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
             }
@@ -43,7 +39,8 @@ struct DiscoverView: View {
         .navigationBarHidden(true)
         .onAppear() {
             AppHelper.logPage(pageName: "\(DiscoverView.self)")
-            locationManager.requestLocation()
+//            locationManager.requestLocation()
+//            locationManager.test()
         }
     }
     
@@ -55,14 +52,11 @@ struct DiscoverView: View {
             
             Spacer()
             
-            HStack(spacing: 4) {
-                Image("create")
-                    .renderingMode(.template)
-                    .foregroundColor(.appBlueButton)
-                
-                Text("createButton".localized(language))
-                    .font(.appButtonText)
-                    .foregroundColor(.appBlueButton)
+            
+            NavigationLink(destination: CreateView(shouldShowBack: true), isActive: $goesToCreate) {
+                ButtonText(buttonType: .imageAndText, text: "createButton".localized(language), icon: "create", action: {
+                    goesToCreate = true
+                }, color: .appBlueButton, isDisabled: .constant(false))
             }
         }
         .padding(.horizontal, 21)
@@ -81,7 +75,7 @@ struct DiscoverView: View {
             
             Spacer()
             
-            ButtonDefault(buttonType: .imageAndText, text: "map".localized(language), icon: "map.fill", action: {}, isDisabled: .constant(false))
+            ButtonDefault(buttonType: .iconAndText, text: "map".localized(language), icon: "map.fill", action: {}, isDisabled: .constant(false))
         }
         .padding(.horizontal, 21)
         .padding(.bottom, 16)

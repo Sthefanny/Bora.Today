@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct SaveButton: View {
-    @StateObject var locationManager = LocationManager()
-    
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
     //O botão é de Salvar na Página Salvos
     var body: some View {
-        ButtonStroke(buttonType: .imageAndTextBigger, text: "save".localized(language), icon: "bookmark.fill", action: {print("teste")}, isDisabled: .constant(false))
+        ButtonStroke(buttonType: .iconAndTextBigger, text: "save".localized(language), icon: "bookmark.fill", action: {print("teste")}, isDisabled: .constant(false))
     }
 }
 

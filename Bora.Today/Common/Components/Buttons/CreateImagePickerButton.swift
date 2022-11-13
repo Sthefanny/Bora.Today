@@ -15,8 +15,6 @@ struct CreateImagePickerButton: View {
     var action: () -> Void
     @Binding var isDisabled: Bool
     
-    @StateObject var locationManager = LocationManager()
-    
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
@@ -35,10 +33,10 @@ struct CreateImagePickerButton: View {
                     Text(text)
                         .font(.appButtonText)
                         .padding(.horizontal, 20)
-                case .imageOnly:
+                case .iconOnly:
                     Image(systemName: icon)
                         .font(.system(size: 20))
-                case .imageAndText:
+                case .iconAndText, .imageAndText:
                     VStack {
                         Image(icon)
                         Text(text)
@@ -49,7 +47,7 @@ struct CreateImagePickerButton: View {
                     .foregroundColor(.appWhite)
                     .tint(Color.appBlueButton)
                     .cornerRadius(18)
-                case .imageAndTextBigger:
+                case .iconAndTextBigger:
                     VStack (alignment: .center, spacing: 4){
                         Image(systemName: icon)
                         Text(text)
@@ -70,6 +68,6 @@ struct CreateImagePickerButton: View {
 
 struct CreateImagePickerButton_Previews: PreviewProvider {
     static var previews: some View {
-        CreateImagePickerButton(buttonType: .imageAndTextBigger, text: "Adicionar Foto", icon: "camera", action:{print("teste")}, isDisabled: .constant(false))
+        CreateImagePickerButton(buttonType: .iconAndTextBigger, text: "Adicionar Foto", icon: "camera", action:{print("teste")}, isDisabled: .constant(false))
     }
 }

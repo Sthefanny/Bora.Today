@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileAllConnectionsView: View {
-   
+    
     private let model: [ReviewModel]
     //lista de ReviewModel - List
     
@@ -23,16 +23,17 @@ struct ProfileAllConnectionsView: View {
     }
     
     var body: some View {
-        ScrollView {
-            VStack{
-                HeaderView(headerTitle: "Conexões")
-                    .padding(.bottom,32)
+        VStack{
+            HeaderView(headerTitle: "Conexões")
+            
+            ScrollView {
                 LazyVGrid(columns: columns, spacing: 24){
                     ForEach(0..<model.count, id: \.self) {index in
                         let item = model[index]
                         SingleConnectionView(image: item.user.image, country: item.user.originCountry, name: item.user.name, username: item.user.username)
                     }
                 }
+                .padding(.top, 32)
             }
         }
         .navigationBarTitle("")
@@ -43,35 +44,5 @@ struct ProfileAllConnectionsView: View {
 struct ProfileAllConnectionsView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileAllConnectionsView()
-    }
-}
-
-private struct HeaderView: View {
-    
-    @AppStorage("language")
-    private var language = LocalizationManager.shared.language
-    
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
-    var headerTitle: String?
-    
-    var body: some View {
-        ZStack (alignment: .center){
-            //            NavigationLink(destination: Text("ssi"), label: {
-            Button(action: {
-                self.presentationMode.wrappedValue.dismiss()
-            }, label: {
-                HStack(spacing:4){
-                    Image(systemName: "chevron.left")
-                        .font(.system(size: 16))
-                    Text("back".localized(language))
-                        .font(.appButtonText)
-                    Spacer()
-                }.foregroundColor(Color.appBlueButton)
-            })
-            
-            Text(headerTitle ?? "")
-                .font(.appTitle2)
-        } .padding(.horizontal, AppConfig.safeAreaHorizontal)
     }
 }

@@ -13,8 +13,8 @@ struct BottomMenuView: View {
     private var language = LocalizationManager.shared.language
     
     @StateObject var locationManager = LocationManager()
-    @State var selectedIndex: Int = 0
-    @State private var selection = 0
+    
+    @State var selectedTab: TabType = .home
     
     init() {
         UITabBar.appearance().barTintColor = UIColor(Color.appWhite)
@@ -30,40 +30,40 @@ struct BottomMenuView: View {
             case .notDetermined, .restricted, .denied:
                 RequestLocationView()
             case .authorizedAlways, .authorizedWhenInUse:
-                TabView(selection: $selection) {
+                TabView(selection: $selectedTab) {
                     HomeView()
                         .tabItem {
-                            Image(selection == 0 ? "home_selected" : "home")
+                            Image(selectedTab == .home ? "home_selected" : "home")
                             Text("home".localized(language))
                         }
-                        .tag(0)
+                        .tag(TabType.home)
                     
                     DiscoverView()
                         .tabItem {
-                            Image(selection == 1 ? "search_selected" : "search")
-                            Text("search".localized(language))
+                            Image(selectedTab == .discover ? "search_selected" : "search")
+                            Text("discoverTitle".localized(language))
                         }
-                        .tag(1)
+                        .tag(TabType.discover)
                     
                     CreateView()
                         .tabItem {
-                            Image(selection == 2 ? "create_selected" : "create")
+                            Image(selectedTab == .create ? "create_selected" : "create")
                             Text("create".localized(language))
                         }
-                        .tag(2)
+                        .tag(TabType.create)
                     
                     HistoryView()
                         .tabItem {
-                            Image(selection == 3 ? "history_selected" : "history")
+                            Image(selectedTab == .history ? "history_selected" : "history")
                             Text("history".localized(language))
                         }
-                        .tag(3)
-                
+                        .tag(TabType.history)
+                    
                     ProfileView(isSelfProfile: true, model: UserModel.example1)                        .tabItem {
-                            Image(selection == 4 ? "profile_selected" : "profile")
-                            Text("profile".localized(language))
-                        }
-                        .tag(4)
+                        Image(selectedTab == .profile ? "profile_selected" : "profile")
+                        Text("profile".localized(language))
+                    }
+                    .tag(TabType.profile)
                 }
                 .ignoresSafeArea()
                 .frame(height: screen.size.height)

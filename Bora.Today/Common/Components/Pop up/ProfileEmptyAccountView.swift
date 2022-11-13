@@ -30,7 +30,7 @@ struct ProfileEmptyAccountView: View {
                     .padding(.horizontal, 40)
                     .padding(.bottom, 32)
                 
-                ButtonDefault(buttonType: ButtonType.imageAndTextBigger, text: "continueApple".localized(language), icon: "apple.logo", action: {}, isDisabled: .constant(false))
+                ButtonDefault(buttonType: ButtonType.iconAndTextBigger, text: "continueApple".localized(language), icon: "apple.logo", action: {}, isDisabled: .constant(false))
                     .padding(.bottom, 16)
                 
                 VStack(spacing: 2) {

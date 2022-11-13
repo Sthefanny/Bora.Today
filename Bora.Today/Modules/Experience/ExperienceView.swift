@@ -10,8 +10,6 @@ import SwiftUI
 struct ExperienceView: View {
     let model: ExperienceModel
     
-    @StateObject var locationManager = LocationManager()
-    
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
@@ -68,7 +66,7 @@ struct ExperienceView: View {
                 HStack (alignment: .center, spacing: 12){
                     SaveButton()
                     
-                    ButtonDefaultBig(buttonType: .imageAndTextBigger, text: "Bora!", icon: "seal.fill", action: {print("teste")}, isDisabled: .constant(false))
+                    ButtonDefaultBig(buttonType: .iconAndTextBigger, text: "Bora!", icon: "seal.fill", action: {print("teste")}, isDisabled: .constant(false))
                 }
                 .padding(.horizontal, AppConfig.safeAreaHorizontal)
                 

@@ -56,7 +56,7 @@ struct HistoryView: View {
             
             Spacer()
             
-            ButtonText(buttonType: .imageAndText, text: "notificationsButton".localized(language), icon: "bell.badge", action: {
+            ButtonText(buttonType: .iconAndText, text: "notificationsButton".localized(language), icon: "bell.badge", action: {
                 self.isNotificationsPresented = true
             }, color: .appBlueButton, isDisabled: $isDisabled)
         }

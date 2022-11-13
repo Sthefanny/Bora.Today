@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RequestLocationView: View {
-    @EnvironmentObject var locationManager: LocationManager
     @State var isDisabled = false
     
     @AppStorage("language")
@@ -28,7 +27,7 @@ struct RequestLocationView: View {
                         .multilineTextAlignment(.center)
                         .frame(width: screen.size.width * 0.7, alignment: .center)
                     
-                    ButtonDefault(buttonType: ButtonType.imageAndTextBigger, text: "configure".localized(language), icon: "", action: {
+                    ButtonDefault(buttonType: ButtonType.iconAndTextBigger, text: "configure".localized(language), icon: "", action: {
                         AppHelper.openMobileSettings()
                     }, isDisabled: $isDisabled)
                 }

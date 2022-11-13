@@ -10,9 +10,10 @@ import Foundation
 enum ButtonType: String {
     case textOnly
     case textOnlyBigger
-    case imageOnly
+    case iconOnly
+    case iconAndText
+    case iconAndTextBigger
     case imageAndText
-    case imageAndTextBigger
 }
 
 enum ButtonStatus: String {

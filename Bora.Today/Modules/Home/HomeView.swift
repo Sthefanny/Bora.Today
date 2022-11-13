@@ -9,9 +9,7 @@ import SwiftUI
 import FirebaseAnalytics
 import MapKit
 
-struct HomeView: View {
-    @StateObject var locationManager = LocationManager()
-    
+struct HomeView: View {    
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     

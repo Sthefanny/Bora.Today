@@ -26,14 +26,14 @@ struct ButtonDefaultBig: View {
                 Text(text)
                     .font(.appButtonText)
                     .padding(.horizontal, 20)
-            case .imageOnly:
+            case .iconOnly:
                 Image(systemName: icon)
                     .font(.system(size: 20))
-            case .imageAndText:
+            case .iconAndText, .imageAndText:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
                     .padding(.horizontal, 5)
-            case .imageAndTextBigger:
+            case .iconAndTextBigger:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
                     .frame(maxWidth: .infinity)
@@ -48,7 +48,7 @@ struct ButtonDefaultBig: View {
 
 struct ButtonDefaultBig_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonDefaultBig(buttonType: .imageAndTextBigger, text: "Bora!", icon: "seal.fill", action: {print("teste")}, isDisabled: .constant(false))
+        ButtonDefaultBig(buttonType: .iconAndTextBigger, text: "Bora!", icon: "seal.fill", action: {print("teste")}, isDisabled: .constant(false))
 
     }
 }

@@ -27,14 +27,14 @@ struct ButtonStroke: View {
                 Text(text)
                     .font(.appButtonText)
                     .padding(.horizontal, 20)
-            case .imageOnly:
+            case .iconOnly:
                 Image(systemName: icon)
                     .font(.system(size: 20))
-            case .imageAndText:
+            case .iconAndText, .imageAndText:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
                     .padding(.horizontal, 5)
-            case .imageAndTextBigger:
+            case .iconAndTextBigger:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
                     .padding(.horizontal, 20)
@@ -48,7 +48,7 @@ struct ButtonStroke: View {
 
 struct ButtonStroke_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonStroke(buttonType: .imageAndTextBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, isDisabled: .constant(false))
+        ButtonStroke(buttonType: .iconAndTextBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, isDisabled: .constant(false))
             .previewDevice("iPhone 12")
     }
 }

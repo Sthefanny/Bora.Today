@@ -141,6 +141,7 @@
 		E5A6320D292026DA006027AF /* CreateUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320C292026DA006027AF /* CreateUsersListView.swift */; };
 		E5A6320F29204BDA006027AF /* SettingsProfileChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */; };
 		E5A6321129205C08006027AF /* StickerInImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6321029205C08006027AF /* StickerInImageView.swift */; };
+		E5A6321629206F46006027AF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6321529206F46006027AF /* HeaderView.swift */; };
 		E5AC55EF291AD5280077F45F /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC55EE291AD5280077F45F /* DiscoverView.swift */; };
 		E5BD6A6528D3B2740097D9C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6428D3B2740097D9C6 /* HomeView.swift */; };
 		E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */; };
@@ -154,7 +155,6 @@
 		E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9528E6281300556A80 /* CornerRadiusStyleExtension.swift */; };
 		E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9728E6298400556A80 /* TabBottomView.swift */; };
 		E5C19A9A28E62A9B00556A80 /* TabTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */; };
-		E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9B28E62B1800556A80 /* CustomTabView.swift */; };
 		E5C19A9F28E62DE800556A80 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C19A9E28E62DE800556A80 /* AppConfig.swift */; };
 		E5CD4646291478530062263A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD4645291478530062263A /* DateHelper.swift */; };
 		E5CD464829147D6F0062263A /* CalendarEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD464729147D6F0062263A /* CalendarEventView.swift */; };
@@ -302,6 +302,7 @@
 		E5A6320C292026DA006027AF /* CreateUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsersListView.swift; sourceTree = "<group>"; };
 		E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileChangeLanguageView.swift; sourceTree = "<group>"; };
 		E5A6321029205C08006027AF /* StickerInImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerInImageView.swift; sourceTree = "<group>"; };
+		E5A6321529206F46006027AF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E5AC55EE291AD5280077F45F /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		E5BD6A6428D3B2740097D9C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5BD6A6828D3B3DB0097D9C6 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
@@ -314,7 +315,6 @@
 		E5C19A9528E6281300556A80 /* CornerRadiusStyleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusStyleExtension.swift; sourceTree = "<group>"; };
 		E5C19A9728E6298400556A80 /* TabBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBottomView.swift; sourceTree = "<group>"; };
 		E5C19A9928E62A9B00556A80 /* TabTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTypeEnum.swift; sourceTree = "<group>"; };
-		E5C19A9B28E62B1800556A80 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		E5C19A9E28E62DE800556A80 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E5CD4645291478530062263A /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		E5CD464729147D6F0062263A /* CalendarEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventView.swift; sourceTree = "<group>"; };
@@ -855,6 +855,7 @@
 		E5878AE228E9D5150044CE58 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E5A6321429206F1E006027AF /* Header */,
 				E50ACA11292021F8001CB8AF /* Pop up */,
 				9304632B291C3C2300CA7795 /* PhotoPicker */,
 				01549293291AD55E0068218A /* UsersScrollView */,
@@ -906,6 +907,14 @@
 				E5711EB828E33DFB0027A01A /* PlaceAnnotationView.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		E5A6321429206F1E006027AF /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6321529206F46006027AF /* HeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		E5AC55ED291ACF980077F45F /* Discover */ = {
@@ -973,7 +982,6 @@
 			children = (
 				E5C19A9028E6080300556A80 /* TabItemView.swift */,
 				E5C19A9728E6298400556A80 /* TabBottomView.swift */,
-				E5C19A9B28E62B1800556A80 /* CustomTabView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1222,7 +1230,6 @@
 				E554266528F34CBC0088C652 /* ProfileImageView.swift in Sources */,
 				E573753228F0A41400A40A26 /* StickerListView.swift in Sources */,
 				93B5E6AF2919970F004DE6B3 /* LocalsView.swift in Sources */,
-				E5C19A9C28E62B1800556A80 /* CustomTabView.swift in Sources */,
 				E58456C928FDCB2D0072031A /* HistoryView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
 				E50ACA14292021F8001CB8AF /* PopUpCreateAccountView.swift in Sources */,
@@ -1285,6 +1292,7 @@
 				93DF3604291ECBD000196878 /* TagReviewModel.swift in Sources */,
 				9304632A291C34DB00CA7795 /* CreateImagePickerButton.swift in Sources */,
 				E51CB0C7290B31AE00DBAC7C /* FormattedDate.swift in Sources */,
+				E5A6321629206F46006027AF /* HeaderView.swift in Sources */,
 				9384188F29071FF6000A66D1 /* CreateHostedButton.swift in Sources */,
 				E542815C291C389A00CD1C7E /* SwitchSidesEnum.swift in Sources */,
 				93841891290728A7000A66D1 /* ExperienceImageBannerView.swift in Sources */,

@@ -32,7 +32,7 @@ struct EmptyStateView: View {
                 .padding(.bottom, 32)
                 
             
-            ButtonDefault(buttonType: .imageAndTextBigger, text: buttonText, icon: "", action: {
+            ButtonDefault(buttonType: .iconAndTextBigger, text: buttonText, icon: "", action: {
                 print("mandar para a pagina que ta passando")
             }, isDisabled: .constant(false))
         }

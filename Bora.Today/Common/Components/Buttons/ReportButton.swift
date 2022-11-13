@@ -29,16 +29,16 @@ struct ReportButton: View {
                     Text(text)
                         .font(.appButtonText)
                         .padding(.horizontal, 20)
-                case .imageOnly:
+                case .iconOnly:
                     Image(systemName: icon)
                         .font(.system(size: 20))
                         .foregroundColor(color)
-                case .imageAndText:
+                case .iconAndText, .imageAndText:
                     Label(text, systemImage: icon)
                         .font(.appButtonText)
                         .foregroundColor(color)
                         .padding(.horizontal, 5)
-                case .imageAndTextBigger:
+                case .iconAndTextBigger:
                     Label(text, systemImage: icon)
                         .font(.appButtonText)
                         .foregroundColor(color)
@@ -51,6 +51,6 @@ struct ReportButton: View {
 
 struct ReportButton_Previews: PreviewProvider {
     static var previews: some View {
-        ReportButton(buttonType: .imageAndTextBigger, text: "Report", icon: "exclamationmark.bubble", color: Color.appRed,  action: {print("teste")}, isDisabled: .constant(false))
+        ReportButton(buttonType: .iconAndTextBigger, text: "Report", icon: "exclamationmark.bubble", color: Color.appRed,  action: {print("teste")}, isDisabled: .constant(false))
     }
 }

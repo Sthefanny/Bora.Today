@@ -29,16 +29,26 @@ struct ButtonText: View {
                 Text(text)
                     .font(.appButtonText)
                     .padding(.horizontal, 20)
-            case .imageOnly:
+            case .iconOnly:
                 Image(systemName: icon)
                     .font(.system(size: 20))
                     .foregroundColor(color)
-            case .imageAndText:
+            case .iconAndText:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
                     .foregroundColor(color)
                     .padding(.horizontal, 0)
-            case .imageAndTextBigger:
+            case .imageAndText:
+                HStack(spacing: 4) {
+                    Image(icon)
+                        .renderingMode(.template)
+                        .foregroundColor(color)
+                    
+                    Text(text)
+                        .font(.appButtonText)
+                        .foregroundColor(color)
+                }
+            case .iconAndTextBigger:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
                     .foregroundColor(color)
@@ -53,7 +63,7 @@ struct ButtonText: View {
 
 struct ButtonText_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonText(buttonType: .imageAndTextBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, color: .red, isDisabled: .constant(false))
+        ButtonText(buttonType: .iconAndTextBigger, text: "Teste", icon: "record.circle", action: {print("teste")}, color: .red, isDisabled: .constant(false))
             .previewDevice("iPhone 12")
     }
 }

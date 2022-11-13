@@ -5,7 +5,6 @@
 import SwiftUI
 
 struct PhotoPickerView: View {
-    @StateObject var locationManager = LocationManager()
     
     @AppStorage("language")
     private var language = LocalizationManager.shared.language

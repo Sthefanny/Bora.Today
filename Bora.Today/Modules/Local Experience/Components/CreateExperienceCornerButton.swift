@@ -15,8 +15,6 @@ struct CreateExperienceCornerButton: View {
     var action: () -> Void
     @Binding var isDisabled: Bool
     
-    @StateObject var locationManager = LocationManager()
-    
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
@@ -33,14 +31,14 @@ struct CreateExperienceCornerButton: View {
                 Text(text)
                     .font(.appButtonText)
                     .padding(.horizontal, 20)
-            case .imageOnly:
+            case .iconOnly:
                 Image(systemName: icon)
                     .font(.system(size: 20))
-            case .imageAndText:
+            case .iconAndText, .imageAndText:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
                     .padding(.horizontal, 5)
-            case .imageAndTextBigger:
+            case .iconAndTextBigger:
                 VStack {
                     Image(icon)
                     Text(text)
@@ -61,6 +59,6 @@ struct CreateExperienceCornerButton: View {
 
 struct CreateExperienceCornerButton_Previews: PreviewProvider {
     static var previews: some View {
-        CreateExperienceCornerButton(buttonType: ButtonType.imageAndTextBigger, text: "Create Experience", icon: "createIcon2", action: {print("teste")}, isDisabled: .constant(false))
+        CreateExperienceCornerButton(buttonType: ButtonType.iconAndTextBigger, text: "Create Experience", icon: "createIcon2", action: {print("teste")}, isDisabled: .constant(false))
     }
 }

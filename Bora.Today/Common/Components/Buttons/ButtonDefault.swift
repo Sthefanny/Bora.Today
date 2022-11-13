@@ -27,14 +27,14 @@ struct ButtonDefault: View {
                 Text(text)
                     .font(.appButtonText)
                     .padding(.horizontal, 20)
-            case .imageOnly:
+            case .iconOnly:
                 Image(systemName: icon)
                     .font(.system(size: 20))
-            case .imageAndText:
+            case .iconAndText, .imageAndText:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
                     .padding(.horizontal, 5)
-            case .imageAndTextBigger:
+            case .iconAndTextBigger:
                 Label(text, systemImage: icon)
                     .font(.appButtonText)
                     .padding(.horizontal, 20)

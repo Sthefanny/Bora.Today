@@ -93,7 +93,7 @@ struct LocationHistoryView: View {
     }
     
     var _buildButton: some View {
-        ButtonDefault(buttonType: ButtonType.imageAndTextBigger, text: "locationHistoryButton".localized(language), icon: "plus", action: {}, isDisabled: .constant(false))
+        ButtonDefault(buttonType: ButtonType.iconAndTextBigger, text: "locationHistoryButton".localized(language), icon: "plus", action: {}, isDisabled: .constant(false))
     }
 }
 

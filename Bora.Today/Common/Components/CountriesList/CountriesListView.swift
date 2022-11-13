@@ -9,8 +9,6 @@ import SwiftUI
 
 struct CountriesListView: View {
     
-    @StateObject var locationManager = LocationManager()
-    
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
