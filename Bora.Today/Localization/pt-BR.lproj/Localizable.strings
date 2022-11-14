@@ -1,0 +1,151 @@
+"hello_world" = "Olá mundo!";
+"this_text_localised" = "This text was localized on the fly as well.";
+"settings_language" = "Linguagem";
+"settings_language_footer" = "Escolha o idioma da interface.";
+
+//General
+"back" = "Voltar";
+
+//Bottom Menu
+"home" = "Casa";
+"create" = "Criar";
+"discoverTitle" = "Explorar";
+"history" = "Historia";
+"profile" = "Perfil";
+
+//Today
+"today_title" = "Hoje em Curitiba";
+"recommended" = "Recomendados";
+"reviewsTitle" = "Reviews";
+"reviewsText" = "Acompanhe o que outras pessoas estão achando";
+
+//RequestLocationView
+"activeLocation" = "Ative sua Localização";
+"configure" = "Configurar";
+"activeLocationDescription" = "Para continuar usando o app é necessário que você permita rastrearmos sua localização nos ajustes do seu celular";
+
+//HistoryView
+"historyTitle" = "História";
+"notificationsButton" = "Notificações";
+"historyGreeting1" = "Olá";
+"historyGreeting2" = "Essa é sua história em:";
+"yourAchievements" = "Suas conquistas";
+
+//NofiticationsView
+"notificationTitle" = "Notificações";
+"notificationRowTitle" = "Como foi";
+"notificationRowText" = "Conte como foi sua experiência :)";
+"notificationConnectionText" = "se conectou com você!";
+"notificationGoingToText" = "vai para -";
+
+//LocationHistoryView
+"locationHistoryTitle" = "Seu histórico de locais:";
+"locationHistoryButton" = "Adicionar novo local";
+
+//CalendarView
+"agendaTitle" = "Agenda";
+
+//Agenda
+"today" = "Hoje";
+"yesterday" = "Ontem";
+"tomorrow" = "Amanhã";
+"from" = "De";
+"to" = "Até";
+
+//ExpandTextView
+"aboutExperience" = "Sobre a experiência";
+"viewMore" = "Ler Mais";
+"viewLess" = "Ler Menos";
+
+//ExperienceView
+"participants" = "Participantes";
+
+//LocalsView
+"location" = "Local";
+
+//CreateHostedButton
+"hosted" = "Criado por";
+
+//ReportButton
+"report" = "Reportar";
+
+//SaveButton
+"save" = "Salvar";
+
+//PlaceExperienceView
+"CreateExperience" = "Criar experiência";
+"all" = "Todos";
+"friends" = "Amigos";
+"sameCountry" = "Mesmo país";
+"reviews" = "Avaliações";
+"experiencesHere" = "Experiências marcadas aqui";
+//CreateView
+"createViewTitle" = "Criar experiência";
+"textFieldTitle" = "Título da experiência";
+"errorMessageTitle" = "Por favor, informe um título";
+"textFieldPlace" = "Local";
+"errorMessagePlace" = "Opa, precisa informar o local";
+"textAreaTitle" = "Descrição";
+"textAreaPlaceholder" = "Ex.: Uma festa á fantasia com o tema circo!";
+"errorMessageTextArea" = "Nos dê mais um pouco de informações";
+"postButton" = "Publicar";
+
+//PhotoPicker
+"addPic" = "Adicionar foto";
+
+//GiveReviewView
+"publishReview" = "Publicar Avaliação";
+
+//CreateDatePicker
+"datePickerTitle" = "Data e hora";
+
+//CreateSelectStickerView
+"selectStickerTitle" = "Selecione até 3 adesivos";
+"selectStickerFootnote" = "pra mostrar o quanto sua experiência vai ser incrível!";
+
+
+//CreateSelectTagView
+"selectTagTitle" = "Selecione até 3 categorias";
+"more" = "Ver mais";
+
+//CreateSliderView
+"sliderTitle" = "Quantidade de participantes";
+
+//DiscoverView
+"createButton" = "Criar";
+"searchPlaceholder" = "Tags, Locais, Experiências";
+"experiences" = "Experiências";
+"places" = "Locais";
+"map" = "Mapa";
+"list" = "Lista";
+
+
+//PopUpCreateAccountView
+"createAccount" = "Crie sua conta no";
+"discover" = "Descubra experiências e viva sua jornada única";
+"continueApple" = "Continuar com Apple";
+"legalText1" = "Ao continuar, você concorda com nossos";
+"legalText2" = "e declara que leu nossa";
+"terms" = "Terms of Service";
+"privacyPolicy" = "Privacy Policy.";
+"already" = "Já tem uma conta?";
+"logIn" = "Log in";
+
+//ProfileView
+"settings" = "Configurações";
+"connect" = "Conectar";
+"lastExperiences" = "Últimas experiências";
+"conections" = "Conexões";
+
+//SettingsProfileView
+"language" = "Idioma";
+"about" = "Sobre";
+"aboutBora" = "Sobre o Bora";
+"evaluateBora" = "Avaliar Bora.Today";
+"contactUs" = "Fale Conosco";
+"logout" = "Sair";
+
+//SettingsProfileChangeLanguageView
+"portuguese" = "Português";
+"english" = "Inglês";
+"settingsLanguageTitle" = "Escolha o idioma";

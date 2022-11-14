@@ -1,0 +1,20 @@
+PODS:
+  - SwiftFlags (1.2.0)
+  - SwiftLint (0.49.1)
+
+DEPENDENCIES:
+  - SwiftFlags
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SwiftFlags
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  SwiftFlags: 73f4cceae8babdafa9d43ba239bdfb922068b835
+  SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
+
+PODFILE CHECKSUM: 0619c105c97ccbb39eea8a9a3ed8132405f4bc36
+
+COCOAPODS: 1.11.3
