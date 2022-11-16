@@ -12,6 +12,8 @@ struct DiscoverView: View {
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
+    @StateObject var locationManager = LocationManager()
+    
     @State private var selection = 0
     
     @State private var goesToCreate: Bool = false
@@ -23,6 +25,8 @@ struct DiscoverView: View {
     
     @State var discoverVisualization: DiscoverVisualization = .experience
     @State var viewType: DiscoverType = .map
+    
+    @EnvironmentObject var textFieldData: TextFieldData
     
     var body: some View {
         GeometryReader { screen in
@@ -88,7 +92,11 @@ struct DiscoverView: View {
     }
     
     private var _buildSearch: some View {
-        TextFieldView(icon: "magnifyingglass", placeholder: "searchPlaceholder")
+        TextFieldView(icon: "magnifyingglass", placeholder: "searchPlaceholder", action: {
+            if viewType == .map {
+                locationManager.search(textFieldData.text)
+            }
+        })
             .padding(.bottom, 16)
             .padding(.horizontal, 21)
     }

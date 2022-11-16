@@ -11,8 +11,8 @@ struct PlaceCardListView: View {
     
     private var model: [PlaceModel] = [
         .place1,
-        .place2,
-        .place3
+        .place1,
+        .place1
     ]
     
     var body: some View {

@@ -11,14 +11,33 @@ import MapKit
 struct PlaceModel: Identifiable {
     let id = UUID()
     let name: String
-    let rating: Double
-    let address: String
-    let openTime: String
     let url: String
     let latitude: Double
     let longitude: Double
+    let postalCode: String
+    let street: String
+    let district: String
+    let city: String
+    let state: String
+    let country: String
+    let address: String
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+    
+    init(name: String, url: String, latitude: Double, longitude: Double, postalCode: String, street: String, district: String, city: String, state: String, country: String) {
+        self.name = name
+        self.url = url
+        self.latitude = latitude
+        self.longitude = longitude
+        self.postalCode = postalCode
+        self.street = street
+        self.district = district
+        self.city = city
+        self.state = state
+        self.country = country
+        
+        self.address = "\(street) - \(district)"
     }
 }
 
@@ -30,38 +49,16 @@ extension PlaceModel {
         
         PlaceModel(
             name: "Universidade Tecnológica Federal do Paraná",
-            rating: 3.1,
-            address: "Av. Sete de Setembro, 3165 - Rebouças, Curitiba - PR",
-            openTime: "7h - 22h",
             url: "http://utfpr.com",
             latitude: 20,
-            longitude: 20)
-        
-    }
-    
-    static var place2: PlaceModel {
-        
-        PlaceModel(
-            name: "Apple Developer Academy",
-            rating: 5.0,
-            address: "Rua Imaculada Conceição, 1155 - Prado Velho, Curitiba - PR",
-            openTime: "8h30 - 17h",
-            url: "http://ada.com",
-            latitude: 40,
-            longitude: 40)
-        
-    }
-    
-    static var place3: PlaceModel {
-        
-        PlaceModel(
-            name: "Casa da Estudante Universitária de Curitiba",
-            rating: 1.2,
-            address: "Rua Gen. Carneiro, 360 - Alto da Glória, Curitiba - PR",
-            openTime: "8h30 - 17h",
-            url: "http://ceu.com",
-            latitude: 50,
-            longitude: 50)
+            longitude: 20,
+            postalCode: "89036-050",
+            street: "Rua Alberto Stein, 199",
+            district: "Velha",
+            city: "Blumenau",
+            state: "SC",
+            country: "Brazil"
+        )
         
     }
     

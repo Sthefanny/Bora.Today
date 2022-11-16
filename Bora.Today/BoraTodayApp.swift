@@ -30,6 +30,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct BoraTodayApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var textFieldData = TextFieldData()
     
     var body: some Scene {
         WindowGroup {
@@ -38,6 +39,7 @@ struct BoraTodayApp: App {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .environmentObject(textFieldData)
         }
     }
 }

@@ -22,7 +22,7 @@ struct PlaceCardView: View {
                 Image(systemName: "star.fill")
                     .foregroundColor(.appBlueButton)
                 
-                Text(String(format: "%.1f", model.rating))
+                Text(String(format: "%.1f", 3)) // ToDo: pegar da Api
         
             }.padding(.trailing, 22)
             
@@ -82,6 +82,6 @@ struct PlaceCardView: View {
 
 struct PlaceCardView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaceCardView(model: .place2, isInDiscover: true, isSaved: false)
+        PlaceCardView(model: .place1, isInDiscover: true, isSaved: false)
     }
 }

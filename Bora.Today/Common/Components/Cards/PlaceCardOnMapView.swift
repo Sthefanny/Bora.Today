@@ -42,7 +42,7 @@ struct PlaceCardOnMapView: View {
                             .frame(width: 16, height: 16)
                             .foregroundColor(.appBlueButton)
                         
-                        Text(String(format: "%.1f", model.rating))
+                        Text(String(format: "%.1f", 3)) //ToDo: Chamar da API
                             .font(.appSubheadline)
                 
                     }

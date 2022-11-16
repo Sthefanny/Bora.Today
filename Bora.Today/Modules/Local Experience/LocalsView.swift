@@ -36,12 +36,6 @@ struct LocalsView: View {
                                 IconLocationTextButton(model: ExperienceModel.example1)
                                 
                                 HStack {
-                                    Image(systemName: "clock.fill")
-                                    Text(model.openTime)
-                                }
-                                .font(.appFootnote)
-                                
-                                HStack {
                                     Image(systemName: "link")
                                     
                                     

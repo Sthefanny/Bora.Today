@@ -19,6 +19,7 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
         span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
     )
     @Published var mapLocations: [PlaceModel] = []
+    @Published var shouldUpdate: Bool = true
     
     override init() {
         locationManager = CLLocationManager()
@@ -37,9 +38,12 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.first else { return }
+        guard let location = locations.last else { return }
         
-        DispatchQueue.main.async {
+        self.lastLocation = location
+        
+        if shouldUpdate {
+            shouldUpdate = false
             self.location = location.coordinate
             self.region = MKCoordinateRegion(
                 center: location.coordinate,
@@ -68,35 +72,51 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
         self.authorizationStatus = status
     }
     
-    func test() {
+    func search(_ term: String) {
         let searchRequest = MKLocalSearch.Request()
-        searchRequest.naturalLanguageQuery = "PUCPR"
+        searchRequest.naturalLanguageQuery = term
         
-        // Set the region to an associated map view's region.
         searchRequest.region = region
         
         let search = MKLocalSearch(request: searchRequest)
         search.start { (response, error) in
             guard let response = response else {
                 print (error as Any)
-                AppHelper.logError(domain: "LocationManager.test", code: nil)
+                AppHelper.logError(domain: "LocationManager.search", code: nil)
                 return
             }
             
             for item in response.mapItems {
-                if let name = item.name,
-                   let location = item.placemark.location {
-                    print("\(name): \(location.coordinate.latitude),\(location.coordinate.longitude)")
-                    
-                    self.mapLocations.append(PlaceModel(
-                        name: name,
-                        rating: 1.0,
-                        address: "teste",
-                        openTime: "teste",
-                        url: "teste",
-                        latitude: location.coordinate.latitude,
-                        longitude: location.coordinate.longitude))
-                }
+                let location = item.placemark.location?.coordinate
+                
+                let placeMark = item.placemark as MKPlacemark
+                let address = placeMark.addressDictionary! as NSDictionary
+                
+                let name = item.name
+                let street = address.object(forKey: "Street") as? String
+                let district = address.object(forKey: "SubLocality") as? String
+                let city = address.object(forKey: "City") as? String
+                let state = address.object(forKey: "State") as? String
+                let postalCode = address.object(forKey: "ZIP") as? String
+                let country = address.object(forKey: "Country") as? String
+                
+                let url = item.url?.absoluteString
+                
+                self.mapLocations = []
+                self.mapLocations.append(
+                    PlaceModel(
+                        name: name ?? "",
+                        url: url ?? "",
+                        latitude: location?.latitude ?? 0,
+                        longitude: location?.longitude ?? 0,
+                        postalCode: postalCode ?? "",
+                        street: street ?? "",
+                        district: district ?? "",
+                        city: city ?? "",
+                        state: state ?? "",
+                        country: country ?? ""
+                    )
+                )
             }
         }
     }
