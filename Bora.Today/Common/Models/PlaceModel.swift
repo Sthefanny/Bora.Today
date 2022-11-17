@@ -41,7 +41,6 @@ struct PlaceModel: Identifiable {
     }
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension PlaceModel {
     
@@ -63,4 +62,3 @@ extension PlaceModel {
     }
     
 }
-#endif

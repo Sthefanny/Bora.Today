@@ -17,7 +17,6 @@ struct HistoryCardModel {
     let additionalText: String?
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension HistoryCardModel {
     
@@ -60,4 +59,3 @@ extension HistoryCardModel {
         )
     }
 }
-#endif

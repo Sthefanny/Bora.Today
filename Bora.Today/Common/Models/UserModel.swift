@@ -20,7 +20,6 @@ struct UserModel: Identifiable {
     let history: [HistoryCardModel] // Todo: isso vai mudar
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension UserModel {
     
@@ -69,4 +68,3 @@ extension UserModel {
         )
     }
 }
-#endif
