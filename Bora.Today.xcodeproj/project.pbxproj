@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011B63D72926ABBA009257CB /* HeaderDoubleButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B63D62926ABB9009257CB /* HeaderDoubleButtonsView.swift */; };
+		011B63D92926B0DB009257CB /* UserPhotoAndEditButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B63D82926B0DB009257CB /* UserPhotoAndEditButtonView.swift */; };
+		011B63DD2926C114009257CB /* EditProfileInterestsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B63DC2926C114009257CB /* EditProfileInterestsListView.swift */; };
 		011C5D4B2911A28E00539EED /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C5D4A2911A28E00539EED /* PickerView.swift */; };
 		012A74C3291C1D340071CBDD /* ExperienceProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */; };
 		012A74C7291C2DF80071CBDD /* SettingsProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */; };
@@ -31,6 +34,7 @@
 		01A6009F291EF7610092584C /* ProfileAllConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6009E291EF7610092584C /* ProfileAllConnectionsView.swift */; };
 		01A600A3291EFB400092584C /* SingleConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A600A2291EFB400092584C /* SingleConnectionView.swift */; };
 		01AB5C992915942700C59E6A /* OnboardingCountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */; };
+		01F5D1C32925953C000F52F1 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D1C22925953C000F52F1 /* EditProfileView.swift */; };
 		90124762290B0F3100A556FF /* CreateSelectTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90124761290B0F3100A556FF /* CreateSelectTagView.swift */; };
 		9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */; };
 		9042C0AA28FF34050040693D /* ButtonAddPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A928FF34050040693D /* ButtonAddPhoto.swift */; };
@@ -167,6 +171,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011B63D62926ABB9009257CB /* HeaderDoubleButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDoubleButtonsView.swift; sourceTree = "<group>"; };
+		011B63D82926B0DB009257CB /* UserPhotoAndEditButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotoAndEditButtonView.swift; sourceTree = "<group>"; };
+		011B63DC2926C114009257CB /* EditProfileInterestsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileInterestsListView.swift; sourceTree = "<group>"; };
 		011C5D4A2911A28E00539EED /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceProfileView.swift; sourceTree = "<group>"; };
 		012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileView.swift; sourceTree = "<group>"; };
@@ -191,6 +198,7 @@
 		01A6009E291EF7610092584C /* ProfileAllConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAllConnectionsView.swift; sourceTree = "<group>"; };
 		01A600A2291EFB400092584C /* SingleConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleConnectionView.swift; sourceTree = "<group>"; };
 		01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCountriesListView.swift; sourceTree = "<group>"; };
+		01F5D1C22925953C000F52F1 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		320CA60A3E816E73A23E3B55 /* Pods-Bora.Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.release.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.release.xcconfig"; sourceTree = "<group>"; };
 		90124761290B0F3100A556FF /* CreateSelectTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSelectTagView.swift; sourceTree = "<group>"; };
 		9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditExperienceModel.swift; sourceTree = "<group>"; };
@@ -344,6 +352,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011B63D52926AAF2009257CB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				011B63D62926ABB9009257CB /* HeaderDoubleButtonsView.swift */,
+				011B63D82926B0DB009257CB /* UserPhotoAndEditButtonView.swift */,
+				011B63DC2926C114009257CB /* EditProfileInterestsListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		011C5D4C29158B9000539EED /* CountriesList */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +415,8 @@
 		013F9E75290B709500288327 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				011B63D52926AAF2009257CB /* Components */,
+				01F5D1C22925953C000F52F1 /* EditProfileView.swift */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -1221,6 +1241,7 @@
 				93B5E6AF2919970F004DE6B3 /* LocalsView.swift in Sources */,
 				E58456C928FDCB2D0072031A /* HistoryView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
+				011B63D72926ABBA009257CB /* HeaderDoubleButtonsView.swift in Sources */,
 				E50ACA14292021F8001CB8AF /* PopUpCreateAccountView.swift in Sources */,
 				9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */,
 				E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */,
@@ -1258,6 +1279,7 @@
 				E5BE868C290B0A9700FDDA47 /* LocationHistoryModel.swift in Sources */,
 				E554265D28F33E280088C652 /* TagModel.swift in Sources */,
 				E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */,
+				011B63D92926B0DB009257CB /* UserPhotoAndEditButtonView.swift in Sources */,
 				9384189929073951000A66D1 /* SaveButton.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
 				E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */,
@@ -1281,7 +1303,9 @@
 				E5100BD1292024F7009F1D99 /* ReviewDynamicListView.swift in Sources */,
 				E5180A5C28EF5C210066E1E4 /* ReviewListView.swift in Sources */,
 				017A96B1291997DA006D3D76 /* ProfileImageLargeView.swift in Sources */,
+				01F5D1C32925953C000F52F1 /* EditProfileView.swift in Sources */,
 				E5206B2E28EE10ED00EFF316 /* ExperienceListView.swift in Sources */,
+				011B63DD2926C114009257CB /* EditProfileInterestsListView.swift in Sources */,
 				93DF3604291ECBD000196878 /* TagReviewModel.swift in Sources */,
 				9304632A291C34DB00CA7795 /* CreateImagePickerButton.swift in Sources */,
 				E51CB0C7290B31AE00DBAC7C /* FormattedDate.swift in Sources */,
@@ -1454,7 +1478,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
-				DEVELOPMENT_TEAM = H7R4J57657;
+				DEVELOPMENT_TEAM = Y2B8GB8AKH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bora-Today-Info.plist";
@@ -1495,7 +1519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
-				DEVELOPMENT_TEAM = H7R4J57657;
+				DEVELOPMENT_TEAM = Y2B8GB8AKH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bora-Today-Info.plist";

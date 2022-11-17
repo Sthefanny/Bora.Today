@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ProfileAllConnectionsView: View {
     
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
     private let model: [ReviewModel]
     //lista de ReviewModel - List
     
