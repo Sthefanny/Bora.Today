@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct OnboardingSelectCountryView: View {
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
     
     @State var boraMeaningTitle: String
     @State var boraMeaningSubheadline: String
@@ -18,6 +20,8 @@ struct OnboardingSelectCountryView: View {
     var foregroundColor: Color
     @State private var showPicker: Bool = false
     
+    @State private var selectedCountry: String?
+    
     var body: some View {
         GeometryReader { screen in
             ZStack {
@@ -26,17 +30,16 @@ struct OnboardingSelectCountryView: View {
                     BoraMeaningView(boraMeaningTitle: $boraMeaningTitle, boraMeaningSubheadline: $boraMeaningSubheadline, boraMeaningText: $boraMeaningText, boraMeaningCallToAction: $boraMeaningCallToAction)
                     
                     VStack(alignment: .leading, spacing: 0){
-                        Text("Qual seu país de origem?")
+                        Text("whatsYourOriginalCountry".localized(language))
                             .font(.appTitle3)
                             .padding(.top, 32)
                             .padding(.bottom, 8)
-                            .padding(.leading,21)
-                        OnboardingCountryPickerView()
-                            .frame(height: 50)
-//                        NavigationLink(destination: OnboardingCountriesListView(), label: {
-//                            OnboardingCountryPickerView()
-//                                .frame(height: 50)
-//                        })
+                            .padding(.leading, 21)
+                        
+                        NavigationLink(destination: OnboardingCountriesListView(selectedCountry: $selectedCountry), label: {
+                            OnboardingCountryPickerView(selectedCountry: $selectedCountry)
+                                .frame(height: 50)
+                        })
                     }
                     .multilineTextAlignment(.center)
                 }

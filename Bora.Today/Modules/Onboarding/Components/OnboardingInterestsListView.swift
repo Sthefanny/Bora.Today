@@ -10,7 +10,7 @@ import SwiftUI
 struct OnboardingInterestsListView: View {
     let model: [TagModel]
     private let adaptiveColumns = [
-        GridItem(.adaptive(minimum: 108)),
+        GridItem(.adaptive(minimum: 108, maximum: 208)),
     ]
 
     var body: some View {

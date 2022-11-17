@@ -149,3 +149,25 @@
 "portuguese" = "Português";
 "english" = "Inglês";
 "settingsLanguageTitle" = "Escolha o idioma";
+
+//PhotoPickerView
+"addImage" = "Adicionar Imagem";
+"addCoverImage" = "Adicionar foto de capa";
+
+//OnboardingView
+"introTitle" = "Olá \nexplorador!";
+"introSubtitle" = "Bora se aventurar?";
+"introDescription" = "Descubra novos lugares e experiências,\nfaça novas amizades e crie uma rede de apoio!";
+"boraMeaningTitle" = "bo.ra.";
+"boraMeaningSubheadline" = "Substantivo feminino";
+"boraMeaningText" = "Expressão que incentiva a saída de outra pessoa ou que faça algo.\nPra gente, é como se fosse o pontapé inicial pra novas aventuras.";
+"boraMeaningCallToAction" = "então bora começar?";
+"onboardingInterestsTitle" = "Escolha até seis interesses";
+"onboardingInterestsSubheadline" = "E receba recomendações personalizadas";
+"skip" = "Pular";
+"complete" = "Concluir";
+
+//CountryList
+"whatsYourOriginalCountry" = "Qual seu país de origem?";
+"selectCountry" = "Selecionar país";
+"yourOriginalCountry" = "Seu país de origem";

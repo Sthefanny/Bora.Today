@@ -31,6 +31,7 @@ struct HeaderView: View {
             
             Text(headerTitle != nil ? headerTitle!.localized(language) : "")
                 .font(.appTitle2)
+                .foregroundColor(.appBlack)
         }
         .padding(.horizontal, AppConfig.safeAreaHorizontal)
         .padding(.top, 16)
@@ -39,6 +40,6 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView()
+        HeaderView(headerTitle: "Teste")
     }
 }

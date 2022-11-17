@@ -48,7 +48,7 @@ struct ExperienceReviewView: View {
                             TagDefaultView(model: item, isSelected: false)
                         }
                     }
-                    //API - Stel por favor tomar atenção - chamar isso da library (PhotoPickerView)
+                    
                     HStack {
                         ForEach(0..<model.images.count, id: \.self) { index in
                             let item = model.images[index]

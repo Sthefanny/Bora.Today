@@ -7,50 +7,73 @@
 
 import SwiftUI
 
-struct OnboardingView: View {
+class OnboardingData: ObservableObject{
     
-    @State private var currentIndex = 0
+    @Published var currentIndex : Int = 0
+    
+}
+
+struct OnboardingView: View {
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
+    @ObservedObject private var onboardingData = OnboardingData()
+    @State private var color: Color = Color.appGreen
+    
+    @State private var goesToHome: Bool = false
     
     var body: some View {
         GeometryReader { screen in
             ZStack {
-                TabView(selection: $currentIndex) {
-                    OnboardingIntroView(introTitle: "Olá \nexplorador!", introSubtitle: "Bora se aventurar?", introDescription: "Descubra novos lugares e experiências, faça novas amizades e crie uma rede de apoio!", backgroundColor: .appGreen)
-                        .tag(0)
-                    OnboardingSelectCountryView(boraMeaningTitle: "bo.ra.", boraMeaningSubheadline: "Substantivo feminino", boraMeaningText: "Expressão que incentiva a saída de outra pessoa ou que faça algo.\nPra gente, é como se fosse o pontapé inicial pra novas aventuras.", boraMeaningCallToAction: "então bora começar?",backgroundColor: .appBlue, foregroundColor: .appWhite)
-                    OnboardingInterestsView(title: "Escolha até seis interesses", subheadline: "E receba recomendações personalizadas", backgroundColor: .appOrange)
-                        .tag(2)
+                switch onboardingData.currentIndex {
+                case 0:
+                    Color.appGreen
+                case 1:
+                    Color.appBlue
+                case 2:
+                    Color.appOrange
+                default:
+                    Color.appGreen
                 }
-                .ignoresSafeArea()
+                
+                TabView(selection: $onboardingData.currentIndex) {
+                    OnboardingIntroView(introTitle: "introTitle".localized(language), introSubtitle: "introSubtitle".localized(language), introDescription: "introDescription".localized(language), backgroundColor: .appGreen)
+                        .tag(0)
+                        .contentShape(Rectangle()).gesture(DragGesture())
+                    OnboardingSelectCountryView(boraMeaningTitle: "boraMeaningTitle".localized(language), boraMeaningSubheadline: "boraMeaningSubheadline".localized(language), boraMeaningText: "boraMeaningText".localized(language), boraMeaningCallToAction: "boraMeaningCallToAction".localized(language), backgroundColor: .appBlue, foregroundColor: .appWhite)
+                        .tag(1)
+                        .contentShape(Rectangle()).gesture(DragGesture())
+                    OnboardingInterestsView(title: "onboardingInterestsTitle".localized(language), subheadline: "onboardingInterestsSubheadline".localized(language), backgroundColor: .appOrange)
+                        .tag(2)
+                        .contentShape(Rectangle()).gesture(DragGesture())
+                }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
+                .padding(.bottom, 32)
+                
                 VStack {
                     HStack {
                         Spacer()
-                        Button(action: {
-                            //end onboarding
-                            currentIndex -= 1
-                        }) {
-                            Text("Pular")
-                                .font(.appHeadline)
-                                .foregroundColor(.appWhite)
-                                .opacity(0.5)
+                        NavigationLink(destination: BottomMenuView(), isActive: $goesToHome) {
+                            Button(action: {
+                                self.goesToHome = true
+                            }) {
+                                Text("skip".localized(language))
+                                    .font(.appHeadline)
+                                    .foregroundColor(.appWhite)
+                                    .opacity(0.5)
+                            }
                         }
                     }
                     .padding(.horizontal,AppConfig.safeAreaHorizontal)
                     Spacer()
-                    ChangeScreenButtons()
+                    ChangeScreenButtons(currentIndex: $onboardingData.currentIndex, goesToHome: $goesToHome)
                 }
-                
-               
-                
-                
-               
-                //                .animation(.easeOut, value: 0.2)
-                //.overlay(PageDotsIndexView(numberOfPages: 3, currentIndex: currentIndex, circleSize: 6, circleSpacing: 6, primaryColor: .appWhite))
+                .padding(.bottom, 32)
+                .padding(.top, 64)
             }
         }
-        
+        .ignoresSafeArea()
     }
 }
 
@@ -61,8 +84,13 @@ struct OnboardingView_Previews: PreviewProvider {
 }
 
 struct ChangeScreenButtons: View {
-    @State private var currentIndex = 0
-
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
+    @Binding var currentIndex: Int
+    
+    @Binding var goesToHome: Bool
+    
     var body: some View {
         HStack(alignment: .center, spacing: 0) {
             if currentIndex > 0 {
@@ -71,23 +99,25 @@ struct ChangeScreenButtons: View {
                 }) {
                     Image(systemName: "chevron.backward.circle.fill")
                         .font(.system(size: 38))
-//                            .resizable()
-//                            .frame(width: screen.size.width * 0.09, height: screen.size.width * 0.09)
                 }
             }
             Spacer()
-            Button(action: {
-                if currentIndex != 2 {
-                    currentIndex += 1
-                }
-            }) {
-                HStack{
-                    if currentIndex == 2 {
-                        Text("Concluir")
-                    } else {
+            HStack{
+                if currentIndex == 2 {
+                    Button(action: {
+                        self.goesToHome = true
+                    }) {
+                        Text("complete".localized(language))
+                    }
+                } else {
+                    Button(action: {
+                        if currentIndex != 2 {
+                            currentIndex += 1
+                        }
+                    }) {
                         Image(systemName: "chevron.forward.circle.fill")
-                                .resizable()
-                                .frame(width: 36, height: 36)
+                            .resizable()
+                            .frame(width: 36, height: 36)
                     }
                 }
             }
