@@ -39,7 +39,7 @@ struct ProfileView: View {
                         VStack {
                             if shouldShowBack {
                                 HeaderView()
-                                    .padding(.top, 32)
+                                    .padding(.top, 46)
                             }
                             ProfileHeaderView(isModelView: $isSelfProfile, halfButtonHeight: $halfButtonHeight, model: UserModel.example2)
                                 .padding(.top, 52)

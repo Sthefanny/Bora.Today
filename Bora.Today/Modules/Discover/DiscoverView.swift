@@ -16,10 +16,6 @@ struct DiscoverView: View {
     
     @State private var selection = 0
     
-    @State private var goesToCreate: Bool = false
-    @State private var goesToExperience: Bool = false
-    @State private var goesToLocal: Bool = false
-    
     @State private var experienceModel: ExperienceModel?
     @State private var placeModel: PlaceModel?
     
@@ -51,14 +47,6 @@ struct DiscoverView: View {
                         }
                     }
                 }
-                
-                if experienceModel != nil {
-                    NavigationLink("", destination: ExperienceView(model: experienceModel!), isActive: $goesToExperience)
-                }
-                
-                if placeModel != nil {
-                    NavigationLink("", destination: LocalsView(model: placeModel!), isActive: $goesToLocal)
-                }
             }
             .frame(width: screen.size.width, height: screen.size.height, alignment: .topLeading)
         }
@@ -81,10 +69,8 @@ struct DiscoverView: View {
             Spacer()
             
             
-            NavigationLink(destination: CreateView(shouldShowBack: true), isActive: $goesToCreate) {
-                ButtonText(buttonType: .imageAndText, text: "createButton".localized(language), icon: "create", action: {
-                    goesToCreate = true
-                }, color: .appBlueButton, isDisabled: .constant(false))
+            NavigationLink(destination: CreateView(shouldShowBack: true)) {
+                ButtonText(buttonType: .imageAndText, text: "createButton".localized(language), icon: "create", action: {}, color: .appBlueButton, isDisabled: .constant(false))
             }
         }
         .padding(.horizontal, 21)

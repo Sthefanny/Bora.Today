@@ -10,49 +10,44 @@ import SwiftUI
 struct ExperienceCardOnMapView: View {
     let model: ExperienceModel
     
-    @State private var goesToExperience: Bool = false
-    
     var body: some View {
         
-        HStack(spacing: 16) {
-            
-            Image(model.image)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 78, height: 78)
-                .clipShape(Circle())
-            
-            VStack(alignment: .leading, spacing: 5) {
-                Text(model.name)
-                    .font(.appHeadline)
-                    .foregroundColor(.appBlack)
+        NavigationLink(destination: ExperienceView(model: model)) {
+            HStack(spacing: 16) {
                 
-                Text(model.description)
-                    .lineLimit(2)
-                    .font(.appSubheadline)
-                    .foregroundColor(.appBlack)
+                Image(model.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 78, height: 78)
+                    .clipShape(Circle())
                 
-                HStack {
-                    Image("time")
-                        .foregroundColor(.black)
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(model.name)
+                        .font(.appHeadline)
+                        .foregroundColor(.appBlack)
                     
-                    Text(model.datetime)
-                        .font(.appFootnote)
-                        .foregroundColor(.appGrayText)
+                    Text(model.description)
+                        .lineLimit(2)
+                        .font(.appSubheadline)
+                        .foregroundColor(.appBlack)
                     
+                    HStack {
+                        Image("time")
+                            .foregroundColor(.black)
+                        
+                        Text(model.datetime)
+                            .font(.appFootnote)
+                            .foregroundColor(.appGrayText)
+                        
+                    }
                 }
             }
-            
-            NavigationLink(destination: ExperienceView(model: model), isActive: $goesToExperience) {}
+            .padding(16)
+            .background(Color.appWhite)
+            .cornerRadius(18)
+            .shadow(color: .appGray, radius: 4, x: 0, y: 0)
+            .frame(minWidth: 0, maxWidth: 348, minHeight: 119, maxHeight: 119)
         }
-        .onTapGesture {
-            goesToExperience = true
-        }
-        .padding(16)
-        .background(Color.appWhite)
-        .cornerRadius(18)
-        .shadow(color: .appGray, radius: 4, x: 0, y: 0)
-        .frame(minWidth: 0, maxWidth: 348, minHeight: 119, maxHeight: 119)
     }
 }
 

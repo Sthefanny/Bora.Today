@@ -20,8 +20,6 @@ struct OnboardingView: View {
     @ObservedObject private var onboardingData = OnboardingData()
     @State private var color: Color = Color.appGreen
     
-    @State private var goesToHome: Bool = false
-    
     var body: some View {
         GeometryReader { screen in
             ZStack {
@@ -54,20 +52,47 @@ struct OnboardingView: View {
                 VStack {
                     HStack {
                         Spacer()
-                        NavigationLink(destination: BottomMenuView(), isActive: $goesToHome) {
-                            Button(action: {
-                                self.goesToHome = true
-                            }) {
-                                Text("skip".localized(language))
-                                    .font(.appHeadline)
-                                    .foregroundColor(.appWhite)
-                                    .opacity(0.5)
-                            }
+                        NavigationLink(destination: BottomMenuView()) {
+                            
+                            Text("skip".localized(language))
+                                .font(.appHeadline)
+                                .foregroundColor(.appWhite)
+                                .opacity(0.5)
                         }
                     }
                     .padding(.horizontal,AppConfig.safeAreaHorizontal)
                     Spacer()
-                    ChangeScreenButtons(currentIndex: $onboardingData.currentIndex, goesToHome: $goesToHome)
+                    HStack(alignment: .center, spacing: 0) {
+                        if onboardingData.currentIndex > 0 {
+                            Button(action: {
+                                onboardingData.currentIndex -= 1
+                            }) {
+                                Image(systemName: "chevron.backward.circle.fill")
+                                    .font(.system(size: 38))
+                            }
+                        }
+                        Spacer()
+                        HStack{
+                            if onboardingData.currentIndex == 2 {
+                                NavigationLink(destination: BottomMenuView()) {
+                                    Text("complete".localized(language))
+                                }
+                            } else {
+                                Button(action: {
+                                    if onboardingData.currentIndex != 2 {
+                                        onboardingData.currentIndex += 1
+                                    }
+                                }) {
+                                    Image(systemName: "chevron.forward.circle.fill")
+                                        .resizable()
+                                        .frame(width: 36, height: 36)
+                                }
+                            }
+                        }
+                    }
+                    .foregroundColor(.appWhite)
+                    .padding(.horizontal,AppConfig.safeAreaHorizontal)
+                    .padding(.vertical, 10)
                 }
                 .padding(.bottom, 32)
                 .padding(.top, 64)
@@ -80,50 +105,5 @@ struct OnboardingView: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
-    }
-}
-
-struct ChangeScreenButtons: View {
-    @AppStorage("language")
-    private var language = LocalizationManager.shared.language
-    
-    @Binding var currentIndex: Int
-    
-    @Binding var goesToHome: Bool
-    
-    var body: some View {
-        HStack(alignment: .center, spacing: 0) {
-            if currentIndex > 0 {
-                Button(action: {
-                    currentIndex -= 1
-                }) {
-                    Image(systemName: "chevron.backward.circle.fill")
-                        .font(.system(size: 38))
-                }
-            }
-            Spacer()
-            HStack{
-                if currentIndex == 2 {
-                    Button(action: {
-                        self.goesToHome = true
-                    }) {
-                        Text("complete".localized(language))
-                    }
-                } else {
-                    Button(action: {
-                        if currentIndex != 2 {
-                            currentIndex += 1
-                        }
-                    }) {
-                        Image(systemName: "chevron.forward.circle.fill")
-                            .resizable()
-                            .frame(width: 36, height: 36)
-                    }
-                }
-            }
-        }
-        .foregroundColor(.appWhite)
-        .padding(.horizontal,AppConfig.safeAreaHorizontal)
-        .padding(.vertical, 10)
     }
 }

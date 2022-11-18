@@ -1,6 +1,6 @@
 import Foundation
 
-struct ExperienceModel: Identifiable {
+struct ExperienceModel: Identifiable, Hashable {
     let id = UUID()
     let name: String
     var description: String

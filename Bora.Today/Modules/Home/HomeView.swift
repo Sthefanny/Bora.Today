@@ -15,7 +15,8 @@ struct HomeView: View {
     
     var body: some View {
         GeometryReader { screen in
-            ScrollView {
+            ZStack {
+                Color.white
                 VStack(alignment: .leading, spacing: 0) {
                     Text("today_title".localized(language))
                         .font(.appTitle1)
@@ -23,25 +24,30 @@ struct HomeView: View {
                         .padding(.vertical, 16)
                         .padding(.leading, 21)
                     
-                    BannerListView(model: TopExperienceModel.example)
-                        .frame(height: screen.size.height * 0.3)
-                    
-                    Text("recommended".localized(language))
-                        .font(.appTitle3)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.appBlack)
-                        .padding(.vertical, 16)
-                        .padding(.leading, 21)
-                    
-                    ExperienceListView(model: TopExperienceModel.example)
-                        .frame(height: screen.size.height * 0.4)
-                    
-                    ReviewListView(model: [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3])
-                        .frame(height: screen.size.height * 0.35)
-                    Spacer()
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 0) {
+                            
+                            BannerListView(model: TopExperienceModel.example)
+                                .frame(height: screen.size.height * 0.3)
+                            
+                            Text("recommended".localized(language))
+                                .font(.appTitle3)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.appBlack)
+                                .padding(.vertical, 16)
+                                .padding(.leading, 21)
+                            
+                            ExperienceListView(model: TopExperienceModel.example)
+                                .frame(height: screen.size.height * 0.4)
+                            
+                            ReviewListView(model: [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3])
+                                .frame(height: screen.size.height * 0.35)
+                            Spacer()
+                        }
+                    }
+                    .frame(height: screen.size.height)
                 }
             }
-            .frame(height: screen.size.height)
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)

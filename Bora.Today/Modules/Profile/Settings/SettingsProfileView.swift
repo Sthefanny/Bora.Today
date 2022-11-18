@@ -15,7 +15,7 @@ struct SettingsProfileView: View {
     private var backgroundPrivateColor: Color
     private var model : UserModel
     
-    @State var goesToLanguageSelection = false
+    @State var languageSelectionIsPresented = false
     
     init() {
         self.backgroundPrivateColor = Color.appYellow
@@ -23,16 +23,18 @@ struct SettingsProfileView: View {
     }
     
     var body: some View {
-        VStack {
-            HeaderView(headerTitle: "settings".localized(language))
-            
-            ScrollView {
-                ZStack {
+        ZStack {
+            VStack {
+                HeaderView(headerTitle: "settings".localized(language))
+                
+                ScrollView {
                     VStack{
                         VStack {
                             Button(action: {}, label: {
                                 GroupBox(content: {
-                                    SettingsProfileMyProfileRowView(model: model)
+                                    NavigationLink(destination: EditProfileView(model: model)) {
+                                        SettingsProfileMyProfileRowView(model: model)
+                                    }
                                 }, label: {
                                 })
                                 .groupBoxStyle(SettingsProfileGroupBoxStyle(backgroundPrivateColor: backgroundPrivateColor))
@@ -48,7 +50,7 @@ struct SettingsProfileView: View {
                                         .foregroundColor(.appBlack)
                                     Spacer()
                                     Button(action: {
-                                        self.goesToLanguageSelection = true
+                                        self.languageSelectionIsPresented = true
                                     }, label: {
                                         Text(LocalizationManager.shared.language == .english ? "english".localized(language) : "portuguese".localized(language))
                                             .font(.appSubheadline)
@@ -110,10 +112,9 @@ struct SettingsProfileView: View {
                         //            Spacer()
                         
                     }
-                    
-                    SettingsProfileChangeLanguageView(isPresented: $goesToLanguageSelection)
                 }
             }
+            SettingsProfileChangeLanguageView(isPresented: $languageSelectionIsPresented)
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
