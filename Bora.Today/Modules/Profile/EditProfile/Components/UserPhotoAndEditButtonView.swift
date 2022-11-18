@@ -9,6 +9,9 @@ import SwiftUI
 
 struct UserPhotoAndEditButtonView: View {
     
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
     let model : UserModel
     
     var body: some View {
@@ -26,7 +29,8 @@ struct UserPhotoAndEditButtonView: View {
             Button(action: {
                 
             }, label: {
-                Text("Alterar foto de perfil")
+                Text("changeProfilePhoto"
+                    .localized(language))
                     .font(.appButtonText)
                     .foregroundColor(.appBlueButton)
             })

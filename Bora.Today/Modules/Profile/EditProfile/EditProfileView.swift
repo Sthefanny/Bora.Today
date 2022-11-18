@@ -11,6 +11,7 @@ struct EditProfileView: View {
     
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
+    
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum: 110)),
     ]
@@ -53,7 +54,10 @@ struct EditProfileView: View {
     
     var body: some View {
         VStack{
-            HeaderDoubleButtonsView(firstButtonText: "Cancelar", headerTitle: "Editar Perfil", secondButtonText: "Salvar")
+            HeaderDoubleButtonsView(firstButtonText: "cancelButton"
+                .localized(language), headerTitle: "editProfile"
+                .localized(language), secondButtonText: "save"
+                .localized(language))
                 .padding(.bottom,32)
             
             UserPhotoAndEditButtonView(model: model)
@@ -61,7 +65,8 @@ struct EditProfileView: View {
             
             VStack{
                 HStack{
-                    Text("Nome")
+                    Text("name"
+                        .localized(language))
                         .font(.appCallout)
                     Spacer()
                     TextField(model.name, text: $name)
@@ -73,7 +78,8 @@ struct EditProfileView: View {
                 Divider()
                 
                 HStack{
-                    Text("Nome de usuário")
+                    Text("username"
+                        .localized(language))
                         .font(.appCallout)
                     Spacer()
                     TextField("@" + model.username, text: $username)
@@ -84,7 +90,8 @@ struct EditProfileView: View {
                 Divider()
                 
                 HStack{
-                    Text("Bio")
+                    Text("bio"
+                        .localized(language))
                         .font(.appCallout)
                     Spacer()
                     Text(model.bio)
@@ -103,28 +110,37 @@ struct EditProfileView: View {
                 
                 HStack{
                     VStack(alignment:.leading, spacing: 4){
-                        Text("País de Origem")
+                        Text("originCountry"
+                            .localized(language))
                             .font(.appCallout)
-                        Text("Aparecerá no perfil")
+                        Text("originCountryInfo"
+                            .localized(language))
                             .font(.appCaption1)
                             .foregroundColor(.appGray)
                     }
                     Spacer()
-                    HStack(spacing:4){
-                        Text(model.originCountry)
-                            .font(.appFootnote)
-                        Image(systemName: "chevron.right")
-                            .font(.system(size: 14))
-                    }
-                    .foregroundColor(.appBlueButton)
+                    Button(action: {
+                        print("action")
+                        //go to country list view
+                    }, label: {
+                        HStack(spacing:4){
+                            Text(model.originCountry)
+                                .font(.appFootnote)
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 14))
+                        }
+                        .foregroundColor(.appBlueButton)
+                    })
                 }
                 Divider()
                 
                 HStack{
                     VStack(alignment:.leading, spacing: 4){
-                        Text("Interesses")
+                        Text("interests"
+                            .localized(language))
                             .font(.appCallout)
-                        Text("Máx. 3")
+                        Text("interestsInfo"
+                            .localized(language))
                             .font(.appCaption1)
                             .foregroundColor(.appGray)
                     }

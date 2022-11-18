@@ -149,3 +149,17 @@
 "portuguese" = "Portuguese";
 "english" = "English";
 "settingsLanguageTitle" = "Choose the language";
+
+//EditProfileView
+"cancelButton" = "Cancel";
+"editProfile" = "Edit Profile";
+"name" = "Name";
+"username" = "Username";
+"bio" = "Bio";
+"originCountry" = "Country of origin";
+"originCountryInfo" = "Will appear on your profile";
+"interests" = "Interests";
+"interestsInfo" = "Max. 3";
+
+//UserPhotoAndEditButtonView
+"changeProfilePhoto" = "Change profile photo";
