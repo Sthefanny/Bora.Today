@@ -101,7 +101,6 @@ extension TagReviewModel {
     }
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension TagReviewModel {
     
@@ -132,4 +131,3 @@ extension TagReviewModel {
         )
     }
 }
-#endif

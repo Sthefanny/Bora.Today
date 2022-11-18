@@ -50,7 +50,6 @@
 		90CB8294291C2F1500A92723 /* PlaceCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8293291C2F1500A92723 /* PlaceCardListView.swift */; };
 		90CB8297291C319300A92723 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8296291C319300A92723 /* EmptyStateView.swift */; };
 		9304631E291C1D5200CA7795 /* LocalExperienceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304631D291C1D5200CA7795 /* LocalExperienceListView.swift */; };
-		93046324291C30A500CA7795 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046323291C30A500CA7795 /* PhotoPicker.swift */; };
 		93046326291C30BE00CA7795 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046325291C30BE00CA7795 /* ImageView.swift */; };
 		93046328291C30EC00CA7795 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046327291C30EC00CA7795 /* PhotoPickerView.swift */; };
 		9304632A291C34DB00CA7795 /* CreateImagePickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046329291C34DB00CA7795 /* CreateImagePickerButton.swift */; };
@@ -216,7 +215,6 @@
 		90CB8293291C2F1500A92723 /* PlaceCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardListView.swift; sourceTree = "<group>"; };
 		90CB8296291C319300A92723 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		9304631D291C1D5200CA7795 /* LocalExperienceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExperienceListView.swift; sourceTree = "<group>"; };
-		93046323291C30A500CA7795 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		93046325291C30BE00CA7795 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		93046327291C30EC00CA7795 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		93046329291C34DB00CA7795 /* CreateImagePickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImagePickerButton.swift; sourceTree = "<group>"; };
@@ -536,7 +534,6 @@
 			isa = PBXGroup;
 			children = (
 				E50ACA162920224B001CB8AF /* CreateReviewImage.swift */,
-				93046323291C30A500CA7795 /* PhotoPicker.swift */,
 				93046325291C30BE00CA7795 /* ImageView.swift */,
 				93046327291C30EC00CA7795 /* PhotoPickerView.swift */,
 			);
@@ -1294,7 +1291,6 @@
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
 				93B5E6AD29197DA1004DE6B3 /* CreateReviewsFilter.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
-				93046324291C30A500CA7795 /* PhotoPicker.swift in Sources */,
 				E5428152291C1BC900CD1C7E /* TextFieldView.swift in Sources */,
 				E51CB0C5290B2ECD00DBAC7C /* CalendarView.swift in Sources */,
 				E5D027502903239300C7FAAA /* AchievementModel.swift in Sources */,
@@ -1475,7 +1471,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
 				DEVELOPMENT_TEAM = Y2B8GB8AKH;
@@ -1491,6 +1487,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -1517,7 +1514,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
 				DEVELOPMENT_TEAM = Y2B8GB8AKH;
 				ENABLE_PREVIEWS = YES;
@@ -1532,6 +1529,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;

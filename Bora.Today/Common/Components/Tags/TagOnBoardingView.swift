@@ -20,6 +20,9 @@ struct TagOnBoardingView: View {
             }
             
             Text(model.text)
+                .lineLimit(1)
+                .allowsTightening(true)
+                .minimumScaleFactor(0.5)
                 .font(.appButtonText)
                 .foregroundColor(isSelected ? model.color : Color.appWhite)
         }

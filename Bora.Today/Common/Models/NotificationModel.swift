@@ -14,7 +14,6 @@ struct NotificationModel: Identifiable {
     let username: String?
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension NotificationModel {
     
@@ -45,4 +44,3 @@ extension NotificationModel {
         )
     }
 }
-#endif

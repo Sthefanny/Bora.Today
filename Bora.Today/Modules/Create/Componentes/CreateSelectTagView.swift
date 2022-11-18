@@ -42,7 +42,7 @@ struct CreateSelectTagView: View {
                 Spacer()
                 
                 Button(action: {
-                    print("abrir modal com todas as tags")
+                    print("abrir modal com todas as tags") //ToDo
                 }) {
                     Text("\(Text("more".localized(language))) \(Image(systemName: "chevron.right"))")
                     
@@ -60,6 +60,7 @@ struct CreateSelectTagView: View {
                             .padding(.trailing, index == tags.count - 1 ? 21 : 0)
                     }
                 }
+                .padding(.vertical, 1)
             }
             
         }

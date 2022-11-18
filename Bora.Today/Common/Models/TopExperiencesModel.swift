@@ -11,7 +11,6 @@ struct TopExperienceModel {
     var experiences: [ExperienceModel]
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension TopExperienceModel {
     
@@ -22,4 +21,3 @@ extension TopExperienceModel {
         )
     }
 }
-#endif

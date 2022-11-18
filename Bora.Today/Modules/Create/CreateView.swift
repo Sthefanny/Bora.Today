@@ -19,6 +19,8 @@ struct CreateView: View {
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
+    @State private var selectedImages: [UIImage] = []
+    
     var shouldShowBack: Bool = false
     
     var createExperience = CreateExperience()
@@ -26,7 +28,6 @@ struct CreateView: View {
     func validateTextField(value: String) -> Bool {
         return !value.isEmpty
     }
-    //var photoSelected: Bool = false
     
     var body: some View {
         GeometryReader { screen in
@@ -45,11 +46,8 @@ struct CreateView: View {
                                 .padding(.horizontal, AppConfig.safeAreaHorizontal)
                         }
                         
-                        //adicioanr photo picker aqui
-//                        Text("PHOTO PICKER")
-//                            .padding(.horizontal, AppConfig.safeAreaHorizontal)
-//                            .padding(.top, 16)
-                    
+                        PhotoPickerView(selectedImages: $selectedImages, maxSelectionCount: 1, isCover: true)
+                            .frame(width: screen.size.width, alignment: .center)
                         
                         CreateSelectStickerView()
                         
@@ -86,7 +84,7 @@ struct CreateView: View {
                         CreateSliderView()
                             .padding(.horizontal, AppConfig.safeAreaHorizontal)
                         
-                        ButtonDefault(buttonType: .textOnly, text: "postButton".localized(language), icon: "", action: {
+                        ButtonDefault(buttonType: .textOnlyBigger, text: "postButton".localized(language), icon: "", action: {
                             print("publicar")
                         }, isDisabled: .constant(false))
                         .frame(width: screen.size.width, alignment: .center)

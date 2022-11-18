@@ -18,7 +18,6 @@ struct ReviewModel: Identifiable {
     let images: [UIImage]
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension ReviewModel {
     
@@ -58,4 +57,3 @@ extension ReviewModel {
         )
     }
 }
-#endif

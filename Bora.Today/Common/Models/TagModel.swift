@@ -238,7 +238,6 @@ extension TagModel {
     }
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension TagModel {
     
@@ -269,4 +268,3 @@ extension TagModel {
         )
     }
 }
-#endif

@@ -18,7 +18,6 @@ struct EventModel: Identifiable {
     let location: String
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension EventModel {
     
@@ -61,4 +60,3 @@ extension EventModel {
         )
     }
 }
-#endif

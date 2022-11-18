@@ -12,7 +12,6 @@ struct CreateEditExperienceModel: Identifiable {
     let selectedSticker: StickerModel
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension CreateEditExperienceModel {
     
@@ -25,4 +24,3 @@ extension CreateEditExperienceModel {
     }
     
 }
-#endif

@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct OnboardingCountryPickerView: View {
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
     
     @State var selectedIndex: Int? = nil
     let options: [String] = CountryHelper.getCountries()
     let isSelected: Bool = false
+    
+    @Binding var selectedCountry: String?
     
     var body: some View {
         GeometryReader { screen in
@@ -22,7 +26,7 @@ struct OnboardingCountryPickerView: View {
                     .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 0)
                     .overlay(content: {
                         HStack{
-                           Text("Seu país de origem")
+                            Text(selectedCountry != nil ? selectedCountry! : "yourOriginalCountry".localized(language))
 //                            PickerField("Seu país de origem", data: self.options, selectionIndex: self.$selectedIndex)
                                 .font(.appSubheadline)
                                 .foregroundColor(.appGrayText)
@@ -45,7 +49,7 @@ struct OnboardingCountryPickerView: View {
 
 struct OnboardingCountryPicker_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingCountryPickerView()
+        OnboardingCountryPickerView(selectedCountry: .constant(nil))
             .previewInterfaceOrientation(.portrait)
     }
 }

@@ -10,7 +10,6 @@ struct ExperienceModel: Identifiable {
     let stickers: [StickerModel]?
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension ExperienceModel {
     
@@ -50,4 +49,3 @@ extension ExperienceModel {
         )
     }
 }
-#endif

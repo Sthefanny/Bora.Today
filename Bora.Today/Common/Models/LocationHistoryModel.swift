@@ -12,7 +12,6 @@ struct LocationHistoryModel: Identifiable {
     let location: String
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension LocationHistoryModel {
     
@@ -51,5 +50,4 @@ extension LocationHistoryModel {
         )
     }
 }
-#endif
 
