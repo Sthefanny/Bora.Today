@@ -150,6 +150,20 @@
 "english" = "Inglês";
 "settingsLanguageTitle" = "Escolha o idioma";
 
+//EditProfileView
+"cancelButton" = "Cancelar";
+"editProfile" = "Editar Perfil";
+"name" = "Nome";
+"username" = "Nome de usuário";
+"bio" = "Bio";
+"originCountry" = "País de Origem";
+"originCountryInfo" = "Aparecerá no perfil";
+"interests" = "Interesses";
+"interestsInfo" = "Máx. 3";
+
+//UserPhotoAndEditButtonView
+"changeProfilePhoto" = "Alterar foto de perfil";
+
 //PhotoPickerView
 "addImage" = "Adicionar Imagem";
 "addCoverImage" = "Adicionar foto de capa";
