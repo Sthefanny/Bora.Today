@@ -26,7 +26,7 @@ struct ProfileView: View {
     
     var body: some View {
         GeometryReader { outerscreen in
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(alignment: .center, spacing: 0) {
                     ZStack{
                         if isSelfProfile == true {
@@ -41,7 +41,7 @@ struct ProfileView: View {
                                 HeaderView()
                                     .padding(.top, 46)
                             }
-                            ProfileHeaderView(isModelView: $isSelfProfile, halfButtonHeight: $halfButtonHeight, model: UserModel.example2)
+                            ProfileHeaderView(isModelView: $isSelfProfile, halfButtonHeight: $halfButtonHeight, model: model)
                                 .padding(.top, 52)
                         }
                     }
@@ -56,7 +56,7 @@ struct ProfileView: View {
                     }
                     .padding(.horizontal, AppConfig.safeAreaHorizontal)
                     
-                    TagInterestsView(model: UserModel.example1)
+                    TagInterestsView(model: model)
                         .padding(.bottom, 32)
                     
                     ProfileConnectionsView()

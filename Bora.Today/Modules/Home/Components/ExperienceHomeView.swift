@@ -58,9 +58,12 @@ struct ExperienceHomeView: View {
             Image("pin_place")
                 .foregroundColor(.black)
             
-            Text(model.location)
+            Text(model.event.location.name)
                 .font(.appFootnote)
+                .lineLimit(1)
+                .multilineTextAlignment(.leading)
                 .foregroundColor(.appGrayText)
+                .frame(maxWidth: 170, alignment: .leading)
             
         }
     }
@@ -70,7 +73,7 @@ struct ExperienceHomeView: View {
             Image("time")
                 .foregroundColor(.black)
             
-            Text(model.datetime)
+            Text(DateHelper.getFormattedDate(model.event.initialDate, format: "MMM dd, HH:mm"))
                 .font(.appFootnote)
                 .foregroundColor(.appGrayText)
             

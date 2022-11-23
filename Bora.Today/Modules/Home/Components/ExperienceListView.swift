@@ -12,17 +12,18 @@ struct ExperienceListView: View {
     let model: TopExperienceModel
     
     var body: some View {
-        GeometryReader { screen in
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    
-                    ForEach(0..<model.experiences.count, id: \.self) { index in
-                        let item = model.experiences[index]
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 12) {
+                
+                ForEach(0..<model.experiences.count, id: \.self) { index in
+                    let item = model.experiences[index]
+                    NavigationLink(destination: ExperienceView(model: item)) {
                         ExperienceHomeView(model: item, isFirst: index == 0)
                     }
                 }
             }
         }
+        .padding(.bottom, 32)
     }
 }
 

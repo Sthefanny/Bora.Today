@@ -38,6 +38,7 @@ struct ExperienceCardView: View {
                         .font(.appSubheadline)
                         .foregroundColor(.appBlack)
                         .padding(.bottom, 8)
+                        .multilineTextAlignment(.leading)
                     
                     
                     HStack {
@@ -45,7 +46,7 @@ struct ExperienceCardView: View {
                             .foregroundColor(.black)
                         
                         
-                        Text(model.location)
+                        Text(model.event.location.name)
                             .font(.appFootnote)
                             .foregroundColor(.appGrayText)
                         
@@ -56,7 +57,7 @@ struct ExperienceCardView: View {
                         Image("time")
                             .foregroundColor(.black)
                         
-                        Text(model.datetime)
+                        Text(DateHelper.getFormattedDate(model.event.initialDate, format: "MMM dd, HH:mm"))
                             .font(.appFootnote)
                             .foregroundColor(.appGrayText)
                         

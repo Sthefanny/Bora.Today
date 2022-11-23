@@ -32,7 +32,7 @@ struct PhotoPickerView: View {
                     }
                 } else {
                     if selectedImages.count > 0 {
-                        ScrollView(.horizontal) {
+                        ScrollView(.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(selectedImages, id: \.self) { img in
                                     Image(uiImage: img)

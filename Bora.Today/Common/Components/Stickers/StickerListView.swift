@@ -35,6 +35,6 @@ struct StickerListView: View {
 
 struct StickerListView_Previews: PreviewProvider {
     static var previews: some View {
-        StickerListView(stickerList: [StickerModel.top])
+        StickerListView(stickerList: [StickerModel.top, StickerModel.legal])
     }
 }

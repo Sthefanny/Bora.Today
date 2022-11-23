@@ -61,4 +61,37 @@ extension PlaceModel {
         
     }
     
+    static var place2: PlaceModel {
+        
+        PlaceModel(
+            name: "Parque Barigui",
+            url: "",
+            latitude: 20,
+            longitude: 20,
+            postalCode: "81036-050",
+            street: "Rua Barigui, 123",
+            district: "Barigui",
+            city: "Curitiba",
+            state: "PR",
+            country: "Brazil"
+        )
+        
+    }
+    static var place3: PlaceModel {
+        
+        PlaceModel(
+            name: "Casa da Stel",
+            url: "",
+            latitude: 20,
+            longitude: 20,
+            postalCode: "81036-050",
+            street: "Rua ABC, 57",
+            district: "Jardim das Américas",
+            city: "Curitiba",
+            state: "PR",
+            country: "Brazil"
+        )
+        
+    }
+    
 }

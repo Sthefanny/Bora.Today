@@ -17,10 +17,10 @@ struct ExperienceView: View {
         VStack {
             HeaderView(headerTitle: "experience".localized(language))
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack (alignment: .center, spacing: 0) {
                     
-                    ExperienceImageBannerView(model: ExperienceModel.example1)
+                    ExperienceImageBannerView(model: model)
                     
                     VStack (alignment: .leading, spacing: 32){
                         
@@ -30,11 +30,12 @@ struct ExperienceView: View {
                             
                             HStack (alignment: .center, spacing: 12){
                                 VStack (alignment: .leading, spacing: 4){
-                                    IconLocationTextButton(model: ExperienceModel.example1)
+                                    
+                                    IconLocationTextButton(model: model)
                                     
                                     HStack {
                                         Image(systemName: "clock.fill")
-                                        Text(model.datetime)
+                                        Text(DateHelper.getFormattedDate(model.event.initialDate, format: "MMM dd, HH:mm"))
                                     }
                                     .font(.appFootnote)
                                     
@@ -42,7 +43,7 @@ struct ExperienceView: View {
                                 
                                 Spacer()
                                 
-                                CreateHostedButton(model: ReviewModel.example1)
+                                CreateHostedButton(model: model.createdBy)
                             }
                         }
                         .padding(.horizontal, AppConfig.safeAreaHorizontal)
@@ -82,6 +83,6 @@ struct ExperienceView: View {
 struct ExperienceView_Previews: PreviewProvider {
     static var previews: some View {
         ExperienceView(model: ExperienceModel.example1)
-//            .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
+        //            .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
     }
 }

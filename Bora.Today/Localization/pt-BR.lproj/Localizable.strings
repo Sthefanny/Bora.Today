@@ -51,6 +51,7 @@
 "tomorrow" = "Amanhã";
 "from" = "De";
 "to" = "Até";
+"yourScheduledExperiences" = "Suas experiências agendadas:";
 
 //ExpandTextView
 "aboutExperience" = "Sobre a experiência";
@@ -115,6 +116,7 @@
 "createButton" = "Criar";
 "searchPlaceholder" = "Tags, Locais, Experiências";
 "experiences" = "Experiências";
+"experience" = "Experiência";
 "places" = "Locais";
 "map" = "Mapa";
 "list" = "Lista";

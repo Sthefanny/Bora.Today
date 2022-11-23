@@ -31,20 +31,19 @@ struct CreateView: View {
     
     var body: some View {
         GeometryReader { screen in
-            VStack {
+            VStack(alignment: .leading) {
                 if shouldShowBack {
                     HeaderView(headerTitle: "createViewTitle")
+                } else {
+                    Text("createViewTitle".localized(language))
+                        .font(.appTitle1)
+                        .foregroundColor(.appBlack)
+                        .padding(.top, 16)
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
                 }
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack(alignment: .leading, spacing: 24) {
-                        if !shouldShowBack {
-                            Text("createViewTitle".localized(language))
-                                .font(.appTitle1)
-                                .foregroundColor(.appBlack)
-                                .padding(.top, 16)
-                                .padding(.horizontal, AppConfig.safeAreaHorizontal)
-                        }
                         
                         PhotoPickerView(selectedImages: $selectedImages, maxSelectionCount: 1, isCover: true)
                             .frame(width: screen.size.width, alignment: .center)

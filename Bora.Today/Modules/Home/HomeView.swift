@@ -38,14 +38,13 @@ struct HomeView: View {
                                 .padding(.leading, 21)
                             
                             ExperienceListView(model: TopExperienceModel.example)
-                                .frame(height: screen.size.height * 0.4)
                             
                             ReviewListView(model: [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3])
-                                .frame(height: screen.size.height * 0.35)
-                            Spacer()
+                            
+                            HomeAgendaListView()
+                                .padding(.top, 32)
                         }
                     }
-                    .frame(height: screen.size.height)
                 }
             }
         }
@@ -57,6 +56,5 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
     }
 }

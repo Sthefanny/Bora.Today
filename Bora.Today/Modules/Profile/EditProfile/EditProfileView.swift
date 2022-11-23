@@ -145,7 +145,7 @@ struct EditProfileView: View {
                             .foregroundColor(.appGray)
                     }
                     Spacer()
-                    ScrollView {
+                    ScrollView(showsIndicators: false) {
                         EditProfileInterestsListView(model: model.tags ?? [TagModel.museus])
                         ZStack {
                             LazyVGrid(columns: adaptiveColumns,alignment: .leading, spacing: 8) {

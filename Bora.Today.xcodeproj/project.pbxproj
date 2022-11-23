@@ -114,6 +114,8 @@
 		E554266728F34E900088C652 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554266628F34E900088C652 /* FlagView.swift */; };
 		E554266928F354840088C652 /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554266828F354840088C652 /* ReviewModel.swift */; };
 		E554266B28F354D70088C652 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554266A28F354D70088C652 /* UserModel.swift */; };
+		E55E13BE2928275E0003E296 /* HomeAgendaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E13BD2928275E0003E296 /* HomeAgendaListView.swift */; };
+		E55E13C02928292D0003E296 /* HomeAgendaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E13BF2928292D0003E296 /* HomeAgendaItemView.swift */; };
 		E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E569F6F328DA48BA004115CA /* LocationManager.swift */; };
 		E56ACD162901C89F00BE2EE1 /* HistoryAchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56ACD152901C89F00BE2EE1 /* HistoryAchievementView.swift */; };
 		E56C538728E754610078191F /* FontSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C538628E754610078191F /* FontSystem.swift */; };
@@ -279,6 +281,8 @@
 		E554266628F34E900088C652 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
 		E554266828F354840088C652 /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
 		E554266A28F354D70088C652 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E55E13BD2928275E0003E296 /* HomeAgendaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAgendaListView.swift; sourceTree = "<group>"; };
+		E55E13BF2928292D0003E296 /* HomeAgendaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAgendaItemView.swift; sourceTree = "<group>"; };
 		E569F6F328DA48BA004115CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E56ACD152901C89F00BE2EE1 /* HistoryAchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAchievementView.swift; sourceTree = "<group>"; };
 		E56C538628E754610078191F /* FontSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSystem.swift; sourceTree = "<group>"; };
@@ -784,6 +788,8 @@
 				E5206B2B28EE0DC900EFF316 /* ExperienceHomeView.swift */,
 				E5206B2D28EE10ED00EFF316 /* ExperienceListView.swift */,
 				E5180A5B28EF5C210066E1E4 /* ReviewListView.swift */,
+				E55E13BD2928275E0003E296 /* HomeAgendaListView.swift */,
+				E55E13BF2928292D0003E296 /* HomeAgendaItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1211,6 +1217,7 @@
 				E5CD4646291478530062263A /* DateHelper.swift in Sources */,
 				E56ACD162901C89F00BE2EE1 /* HistoryAchievementView.swift in Sources */,
 				9319EDDD28FF33C2006012D4 /* IconLocationTextButton.swift in Sources */,
+				E55E13BE2928275E0003E296 /* HomeAgendaListView.swift in Sources */,
 				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				013F9E7A290C553E00288327 /* CountryHelper.swift in Sources */,
@@ -1293,6 +1300,7 @@
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
 				E5428152291C1BC900CD1C7E /* TextFieldView.swift in Sources */,
 				E51CB0C5290B2ECD00DBAC7C /* CalendarView.swift in Sources */,
+				E55E13C02928292D0003E296 /* HomeAgendaItemView.swift in Sources */,
 				E5D027502903239300C7FAAA /* AchievementModel.swift in Sources */,
 				E51CB0C3290B2E0C00DBAC7C /* EventView.swift in Sources */,
 				E54D08722921336700A4CD3F /* DiscoverMapView.swift in Sources */,
@@ -1471,7 +1479,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
 				DEVELOPMENT_TEAM = H7R4J57657;
@@ -1514,7 +1522,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
 				DEVELOPMENT_TEAM = H7R4J57657;
 				ENABLE_PREVIEWS = YES;

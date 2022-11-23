@@ -23,7 +23,7 @@ struct SettingsProfileChangeLanguageView: View {
                     VStack(spacing: 0) {
                         _buildHeader
                         
-                        ScrollView {
+                        ScrollView(showsIndicators: false) {
                             VStack(spacing: 0) {
                                 LazyVStack(alignment: .leading, spacing: 8) {
                                     _buildLanguageOption(countryCode: "BR", lang: "portuguese".localized(language))

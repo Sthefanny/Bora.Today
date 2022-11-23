@@ -24,7 +24,7 @@ struct HistoryView: View {
     
     var body: some View {
         GeometryReader { screen in
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 0) {
                     _buildHeader
                     

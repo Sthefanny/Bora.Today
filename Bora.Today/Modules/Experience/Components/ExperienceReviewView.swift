@@ -46,6 +46,7 @@ struct ExperienceReviewView: View {
                         ForEach(0..<model.tags!.count, id: \.self) { index in
                             let item = model.tags![index]
                             TagDefaultView(model: item, isSelected: false)
+                                .disabled(true)
                         }
                     }
                     

@@ -19,7 +19,7 @@ struct LocalsView: View {
         VStack {
             HeaderView(headerTitle: "location".localized(language))
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack (alignment: .leading, spacing: 0) {
                     
                     //Esse banner tem que puxar o mapkit
@@ -35,13 +35,17 @@ struct LocalsView: View {
                             VStack (alignment: .leading, spacing: 4){
                                 IconLocationTextButton(model: ExperienceModel.example1)
                                 
-                                HStack {
-                                    Image(systemName: "link")
-                                    
-                                    
-                                    Link(model.url, destination: URL(string: model.url)!)
-                                        .font(.appFootnote)
-                                        .foregroundColor(.appBlueButton)
+                                if model.url != nil && !model.url.isEmpty {
+                                    HStack {
+                                        Image(systemName: "link")
+                                            .resizable()
+                                            .frame(width: 15, height: 15)
+                                            .foregroundColor(.black)
+                                        
+                                        Link(model.url, destination: URL(string: model.url)!)
+                                            .font(.appFootnote)
+                                            .foregroundColor(.appBlueButton)
+                                    }
                                 }
                             }
                             .padding(.horizontal, 21)
