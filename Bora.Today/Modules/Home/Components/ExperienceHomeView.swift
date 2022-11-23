@@ -23,6 +23,7 @@ struct ExperienceHomeView: View {
                         .foregroundColor(.appBlack)
                         .padding(.top, 12)
                         .padding(.bottom, 8)
+                        .frame(maxWidth: 150, alignment: .leading)
                     
                     
                     VStack(alignment: .leading, spacing: 4) {
@@ -34,6 +35,7 @@ struct ExperienceHomeView: View {
             }
             
             StickerListView(stickerList: model.stickers!)
+                .frame(maxWidth: 150, alignment: .leading)
         }
     }
     
@@ -63,7 +65,7 @@ struct ExperienceHomeView: View {
                 .lineLimit(1)
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.appGrayText)
-                .frame(maxWidth: 170, alignment: .leading)
+                .frame(maxWidth: 150, alignment: .leading)
             
         }
     }
@@ -83,6 +85,6 @@ struct ExperienceHomeView: View {
 
 struct ExperienceHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ExperienceHomeView(model: ExperienceModel.example1, isFirst: true)
+        ExperienceHomeView(model: ExperienceModel.example3, isFirst: true)
     }
 }

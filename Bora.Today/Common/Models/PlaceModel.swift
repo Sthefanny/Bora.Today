@@ -48,50 +48,79 @@ extension PlaceModel {
         
         PlaceModel(
             name: "Universidade Tecnológica Federal do Paraná",
-            url: "http://utfpr.com",
+            url: "www.utfpr.edu.br",
             latitude: 20,
             longitude: 20,
             postalCode: "89036-050",
-            street: "Rua Alberto Stein, 199",
+            street: "Av. Sete de Setembro, 3165 - Rebouças, Curitiba - PR",
             district: "Velha",
-            city: "Blumenau",
-            state: "SC",
+            city: "Curitiba",
+            state: "PR",
             country: "Brazil"
         )
-        
     }
     
     static var place2: PlaceModel {
         
         PlaceModel(
-            name: "Parque Barigui",
-            url: "",
+            name: "Apple Developer Academy",
+            url: "developeracademy.pucpr.br",
             latitude: 20,
             longitude: 20,
-            postalCode: "81036-050",
-            street: "Rua Barigui, 123",
-            district: "Barigui",
+            postalCode: "89036-050",
+            street: "Rua Imaculada Conceição, 1155 - Prado Velho, Curitiba - PR",
+            district: "Velha",
             city: "Curitiba",
             state: "PR",
             country: "Brazil"
         )
-        
     }
+    
     static var place3: PlaceModel {
         
         PlaceModel(
-            name: "Casa da Stel",
-            url: "",
+            name: "Casa da Estudante Universitária de Curitiba",
+            url: "www.ceupr.com",
             latitude: 20,
             longitude: 20,
-            postalCode: "81036-050",
-            street: "Rua ABC, 57",
-            district: "Jardim das Américas",
+            postalCode: "89036-050",
+            street: "Rua Gen. Carneiro, 360 - Alto da Glória, Curitiba - PR",
+            district: "Velha",
             city: "Curitiba",
             state: "PR",
             country: "Brazil"
         )
-        
     }
     
+    static var place4: PlaceModel {
+        
+        PlaceModel(
+            name: "Hostel Social - Café e Bar",
+            url: "instagram.com/hostelsocial",
+            latitude: 20,
+            longitude: 20,
+            postalCode: "89036-050",
+            street: "Rua Brg. Franco, 2691 - Rebouças, Curitiba - PR",
+            district: "Velha",
+            city: "Curitiba",
+            state: "PR",
+            country: "Brazil"
+        )
+    }
+    
+    static var place5: PlaceModel {
+        
+        PlaceModel(
+            name: "Capivara's Hostel & Lounge Bar",
+            url: "instagram.com/capivarashostelloungebar/",
+            latitude: 20,
+            longitude: 20,
+            postalCode: "89036-050",
+            street: "Rua Desembargador Motta, 3535 - Mercês, Curitiba - PR, 80430-232",
+            district: "Velha",
+            city: "Curitiba",
+            state: "PR",
+            country: "Brazil"
+        )
+    }
 }

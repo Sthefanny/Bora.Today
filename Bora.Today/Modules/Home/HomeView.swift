@@ -37,7 +37,7 @@ struct HomeView: View {
                                 .padding(.vertical, 16)
                                 .padding(.leading, 21)
                             
-                            ExperienceListView(model: TopExperienceModel.example)
+                            ExperienceListView(model: [ExperienceModel.example1, ExperienceModel.example2, ExperienceModel.example3, ExperienceModel.example4, ExperienceModel.example5, ExperienceModel.example6, ExperienceModel.example7])
                             
                             ReviewListView(model: [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3])
                             
