@@ -41,6 +41,8 @@
 		9042C0AD28FF369E0040693D /* TextFieldWithTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AC28FF369E0040693D /* TextFieldWithTitleView.swift */; };
 		9042C0B028FF9B940040693D /* CreateDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AF28FF9B940040693D /* CreateDatePickerView.swift */; };
 		9042C0B228FFA6070040693D /* CreateSelectStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0B128FFA6070040693D /* CreateSelectStickerView.swift */; };
+		90482256292C4FB400CA2036 /* PopUpAllTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90482255292C4FB400CA2036 /* PopUpAllTags.swift */; };
+		9048225A292C5AE100CA2036 /* TagDefaultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90482259292C5AE100CA2036 /* TagDefaultListView.swift */; };
 		904B33192914B07C001B6EB4 /* ExperienceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B33182914B07C001B6EB4 /* ExperienceCardView.swift */; };
 		904B331B2914B08C001B6EB4 /* PlaceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B331A2914B08C001B6EB4 /* PlaceCardView.swift */; };
 		90764B48290786DB008F1460 /* TextAreaLimitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90764B47290786DB008F1460 /* TextAreaLimitedView.swift */; };
@@ -205,6 +207,8 @@
 		9042C0AC28FF369E0040693D /* TextFieldWithTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitleView.swift; sourceTree = "<group>"; };
 		9042C0AF28FF9B940040693D /* CreateDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDatePickerView.swift; sourceTree = "<group>"; };
 		9042C0B128FFA6070040693D /* CreateSelectStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSelectStickerView.swift; sourceTree = "<group>"; };
+		90482255292C4FB400CA2036 /* PopUpAllTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpAllTags.swift; sourceTree = "<group>"; };
+		90482259292C5AE100CA2036 /* TagDefaultListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDefaultListView.swift; sourceTree = "<group>"; };
 		904B33182914B07C001B6EB4 /* ExperienceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCardView.swift; sourceTree = "<group>"; };
 		904B331A2914B08C001B6EB4 /* PlaceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardView.swift; sourceTree = "<group>"; };
 		90764B47290786DB008F1460 /* TextAreaLimitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaLimitedView.swift; sourceTree = "<group>"; };
@@ -606,6 +610,8 @@
 			children = (
 				E50ACA12292021F8001CB8AF /* PopUpCreateAccountView.swift */,
 				E50ACA13292021F8001CB8AF /* ProfileEmptyAccountView.swift */,
+				90482255292C4FB400CA2036 /* PopUpAllTags.swift */,
+				90482259292C5AE100CA2036 /* TagDefaultListView.swift */,
 			);
 			path = "Pop up";
 			sourceTree = "<group>";
@@ -1211,6 +1217,7 @@
 				E5CD4646291478530062263A /* DateHelper.swift in Sources */,
 				E56ACD162901C89F00BE2EE1 /* HistoryAchievementView.swift in Sources */,
 				9319EDDD28FF33C2006012D4 /* IconLocationTextButton.swift in Sources */,
+				90482256292C4FB400CA2036 /* PopUpAllTags.swift in Sources */,
 				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				013F9E7A290C553E00288327 /* CountryHelper.swift in Sources */,
@@ -1319,6 +1326,7 @@
 				E57DE48528F7548600DB4447 /* TagOnBoardingView.swift in Sources */,
 				93B5E6B129199996004DE6B3 /* LocalBannerView.swift in Sources */,
 				E5AC55EF291AD5280077F45F /* DiscoverView.swift in Sources */,
+				9048225A292C5AE100CA2036 /* TagDefaultListView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 				E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */,
 			);
