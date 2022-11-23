@@ -18,6 +18,7 @@ struct UserModel: Identifiable {
     let tags: [TagModel]?
     let bio: String
     let history: [HistoryCardModel] // Todo: isso vai mudar
+//    let experiencesGone: [ExperienceModel]?
 }
 
 // MARK: - Example Item
@@ -35,6 +36,7 @@ extension UserModel {
             tags: [TagModel.familia, TagModel.comidas, TagModel.jogos],
             bio: "Estudante de Design na UFPR, cria de Curitiba, estou sempre afim de um buffet de pastel, sorvetinho no shopping e jogos para relaxar 🕶️",
             history: [HistoryCardModel.example1, HistoryCardModel.example2, HistoryCardModel.example3]
+//            ,experiencesGone: [ExperienceModel.example2]
         )
     }
     
@@ -53,6 +55,7 @@ extension UserModel {
                   ],
             bio: "Micreira Senior, atualmente moro em Curitiba e curto a falta de sol daqui. Em um momento de transição de ciclos, tô em busca de novos hobbies e aventuras ☂️",
             history: [HistoryCardModel.example1, HistoryCardModel.example2, HistoryCardModel.example3]
+//            ,experiencesGone: [ExperienceModel.example1, ExperienceModel.example3]
         )
     }
     
@@ -128,6 +131,7 @@ extension UserModel {
             tags: [TagModel.jogos, TagModel.atividadeFísica, TagModel.pets],
             bio: "Uma desenvolvedora apaixonada por Flutter e uma ex-streamer que ama jogar. Adoro rolês mais tranquilos que envolvam comida boa, rock e jogos com os amigos 👾",
             history: [HistoryCardModel.example1, HistoryCardModel.example2, HistoryCardModel.example3]
+//            ,experiencesGone: [ExperienceModel.example3]
         )
     }
 }

@@ -27,7 +27,7 @@ struct SettingsProfileView: View {
             VStack {
                 HeaderView(headerTitle: "settings".localized(language))
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack{
                         VStack {
                             Button(action: {}, label: {

@@ -14,7 +14,7 @@ struct SettingsProfileMyProfileRowView: View {
     var body: some View {
         HStack {
             HStack{
-                ProfileImageView(model: nil)
+                ProfileImageView(model: model)
                 VStack(alignment: .leading, spacing: 4) {
                     Text(model.name)
                         .font(.appTitle2)
@@ -24,6 +24,7 @@ struct SettingsProfileMyProfileRowView: View {
                         .font(.caption2)
                         .foregroundColor(.appGrayText)
                 }
+                .padding(.horizontal, 16)
             }
             Spacer()
             Image(systemName: "chevron.right")

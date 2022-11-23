@@ -30,12 +30,13 @@ struct ExperienceCardOnMapView: View {
                         .lineLimit(2)
                         .font(.appSubheadline)
                         .foregroundColor(.appBlack)
+                        .multilineTextAlignment(.leading)
                     
                     HStack {
                         Image("time")
                             .foregroundColor(.black)
                         
-                        Text(model.datetime)
+                        Text(DateHelper.getFormattedDate(model.event.initialDate, format: "MMM dd, HH:mm"))
                             .font(.appFootnote)
                             .foregroundColor(.appGrayText)
                         

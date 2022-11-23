@@ -14,12 +14,12 @@ struct ProfileHeaderView: View {
     
     @Binding var isModelView : Bool
     @Binding var halfButtonHeight: CGFloat
+    @Binding var isPresented: Bool
     
-    @State private var goesToSettings: Bool = false
-    @State private var goesToConnection: Bool = false
-
+    @Binding var isConnected: Bool
+    
     let model : UserModel
-
+    
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             ProfileImageLargeView(image: model.image, country: model.originCountry)
@@ -37,15 +37,26 @@ struct ProfileHeaderView: View {
             //                        .padding(.bottom, 16)
             
             if isModelView == true {
-                NavigationLink(destination: SettingsProfileView(), isActive: $goesToSettings) {
-                    ButtonDefault(buttonType: .textOnlyBigger, text: "settings".localized(language), icon: "", action: {goesToSettings = true}, isDisabled: .constant(false))
+                NavigationLink(destination: SettingsProfileView()) {
+                    Text("settings".localized(language))
+                        .font(.appButtonText)
+                        .padding(.horizontal, 20)
+                        .padding(10)
+                        .foregroundColor(.appButtonWhiteContent)
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .fill(Color.appBlueButton))
+                        .cornerRadius(30)
                         .offset(y: halfButtonHeight)
                 }
             } else {
-                NavigationLink(destination: SettingsProfileView(), isActive: $goesToConnection) {
-                    ButtonDefault(buttonType: .textOnlyBigger, text: "connect".localized(language), icon: "", action: {goesToConnection = true}, isDisabled: .constant(false))
-                        .offset(y: halfButtonHeight)
-                }
+                ButtonDefault(buttonType: .textOnlyBigger, text: isConnected ? "disconnect".localized(language) : "connect".localized(language), icon: "", action: {
+                    if isConnected {
+                        isPresented.toggle()
+                    } else {
+                        isConnected.toggle()
+                    }
+                }, isDisabled: .constant(false))
+                    .offset(y: halfButtonHeight)
             }
         }
     }
@@ -54,6 +65,6 @@ struct ProfileHeaderView: View {
 
 struct ProfileHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileHeaderView(isModelView: .constant(true), halfButtonHeight: .constant(35/2), model: UserModel.example1)
+        ProfileHeaderView(isModelView: .constant(true), halfButtonHeight: .constant(35/2), isPresented: .constant(false), isConnected: .constant(false), model: UserModel.example1)
     }
 }

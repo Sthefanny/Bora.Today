@@ -13,26 +13,15 @@ struct IconLocationTextButton: View {
     //var isButton - se for botão ele passa pro Maps, se não a cor é preta.
     
     var body: some View {
-        VStack (alignment: .leading){
-        _buildPlaceDetails()
-        }
-    }
-    
-    func _buildPlaceDetails() -> some View {
-        HStack {
-            Image("pin_place")
-                .foregroundColor(.black)
-             
-        
-            Button(
-                model.location,
-              action: {
-                //codígo de mostrar o mapa MapKit
-              }
-            )
-            .font(.appFootnote)
-            .foregroundColor(.appBlueButton)
-            
+        NavigationLink(destination: LocalsView(model: model.event.location)) {
+            HStack {
+                Image("pin_place")
+                    .foregroundColor(.black)
+                
+                Text(model.event.location.name)
+                    .font(.appFootnote)
+                    .foregroundColor(.appBlueButton)
+            }
         }
     }
 }

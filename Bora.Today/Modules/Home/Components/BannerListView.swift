@@ -13,7 +13,6 @@ struct BannerListView: View {
     
     var body: some View {
         VStack {
-            
             TabView(selection: $currentIndex.animation()) {
                 ForEach(0..<model.experiences.count, id: \.self) { index in
                     let item = model.experiences[index]

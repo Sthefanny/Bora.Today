@@ -51,6 +51,7 @@
 "tomorrow" = "Amanhã";
 "from" = "De";
 "to" = "Até";
+"yourScheduledExperiences" = "Suas experiências agendadas:";
 
 //ExpandTextView
 "aboutExperience" = "Sobre a experiência";
@@ -115,6 +116,7 @@
 "createButton" = "Criar";
 "searchPlaceholder" = "Tags, Locais, Experiências";
 "experiences" = "Experiências";
+"experience" = "Experiência";
 "places" = "Locais";
 "map" = "Mapa";
 "list" = "Lista";
@@ -134,6 +136,7 @@
 //ProfileView
 "settings" = "Configurações";
 "connect" = "Conectar";
+"disconnect" = "Desconectar";
 "lastExperiences" = "Últimas experiências";
 "conections" = "Conexões";
 
@@ -185,3 +188,8 @@
 "whatsYourOriginalCountry" = "Qual seu país de origem?";
 "selectCountry" = "Selecionar país";
 "yourOriginalCountry" = "Seu país de origem";
+
+//UnfriendView
+"unfriendTitle" = "Desfazer amizade?";
+"unfriendDescription" = "Você não verá mais o perfil de Maria Ines e ela não verá mais seu perfil.";
+"unfriendButton" = "Desfazer amizade";

@@ -34,7 +34,7 @@ struct OnboardingInterestsView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal,21)
                 
-                ScrollView() {
+                ScrollView(showsIndicators: false) {
                     VStack(alignment: .leading, spacing:16){
                         TagSegmentView(tagSegmentTitle: "Vibe", model:[
                             TagModel.familia,

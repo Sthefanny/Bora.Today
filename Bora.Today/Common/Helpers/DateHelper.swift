@@ -19,6 +19,15 @@ class DateHelper {
         return dateFormatted
     }
     
+    static func getDateAsString(_ date: Date) -> String {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "pt_BR")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let dateFormatted = dateFormatter.string(from: date)
+        return dateFormatted
+    }
+    
     static func getHour(_ stringDate: String) -> String {
         
         let dateToChange = getDate(stringDate)
@@ -26,6 +35,17 @@ class DateHelper {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "pt_BR")
         dateFormatter.dateFormat = "HH:mm"
+        let dateFormatted = dateFormatter.string(from: dateToChange)
+        return dateFormatted
+    }
+    
+    static func getFormattedDate(_ stringDate: String, format: String) -> String {
+        
+        let dateToChange = getDate(stringDate)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "pt_BR")
+        dateFormatter.dateFormat = format
         let dateFormatted = dateFormatter.string(from: dateToChange)
         return dateFormatted
     }

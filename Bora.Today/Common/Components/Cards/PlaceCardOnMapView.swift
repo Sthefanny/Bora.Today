@@ -18,6 +18,7 @@ struct PlaceCardOnMapView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Text(model.name)
                         .font(.appHeadline)
+                        .multilineTextAlignment(.leading)
                         .foregroundColor(.appBlack)
                     
                     HStack(alignment: .top, spacing: 0) {

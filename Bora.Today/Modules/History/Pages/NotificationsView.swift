@@ -27,7 +27,7 @@ struct NotificationsView: View {
             VStack(spacing: 0) {
                 _buildHeader
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack(spacing: 0) {
                         LazyVStack(alignment: .leading, spacing: 16) {
                             ForEach(0..<model.count, id: \.self) { index in

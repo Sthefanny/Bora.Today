@@ -18,7 +18,7 @@ struct CountriesListView: View {
     
     var body: some View {
         
-        ScrollView{
+        ScrollView(showsIndicators: false){
             ForEach(CountryHelper.getCountries(), id:\.self) { index in
                 LazyVStack(alignment: .leading) {
                     HStack(spacing: 8){

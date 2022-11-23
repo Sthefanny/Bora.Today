@@ -21,7 +21,9 @@ struct CreateUsersListView: View {
             HStack {
                 ForEach(0..<model.count) {index in
                     let item = model[index]
-                    ProfileImageView(model: item)
+                    NavigationLink(destination: ProfileView(isSelfProfile: false, model: item, shouldShowBack: true)) {
+                        ProfileImageView(model: item)
+                    }
                 }
             }
             .padding(.leading, 21)

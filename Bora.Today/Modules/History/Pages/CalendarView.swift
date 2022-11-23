@@ -7,7 +7,7 @@ class CalendarData: ObservableObject{
     @Published var selectedDate : Date = Date()
     @Published var titleOfMonth : Date = Date()
     @Published var crntPage: Date = Date()
-    @Published var dateSelectedModel: [EventModel] = []
+    @Published var dateSelectedModel: [ExperienceModel] = []
     
 }
 
@@ -18,7 +18,7 @@ struct CalendarView: View {
     @ObservedObject private var calendarData = CalendarData()
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    var model: [EventModel] = [EventModel.example1, EventModel.example2, EventModel.example3, EventModel.example1, EventModel.example2, EventModel.example3]
+    var model: [ExperienceModel] = [ExperienceModel.example1, ExperienceModel.example2, ExperienceModel.example3, ExperienceModel.example1, ExperienceModel.example2, ExperienceModel.example3]
     
     var strDateSelected: String {
         
@@ -126,14 +126,16 @@ struct CalendarView: View {
                 .padding(.top, 32)
                 .padding(.bottom, 24)
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack(spacing: 50) {
                         
                         ForEach(0..<$calendarData.dateSelectedModel.count, id: \.self) { index in
                             let item = calendarData.dateSelectedModel[index]
-                            CalendarEventView(model: item)
-                                .padding(.top, index == 0 ? 0 : 16)
-                                .padding(.bottom, index == calendarData.dateSelectedModel.count - 1 ? 20 : 0)
+                            NavigationLink(destination: ExperienceView(model: item)) {
+                                CalendarEventView(model: item)
+                                    .padding(.top, index == 0 ? 0 : 16)
+                                    .padding(.bottom, index == calendarData.dateSelectedModel.count - 1 ? 20 : 0)
+                            }
                         }
                     }
                 }
@@ -158,8 +160,8 @@ struct CustomCalendar: UIViewRepresentable {
     @Binding var mnthNm: Date
     @Binding var pageCurrent: Date
     
-    var model: [EventModel]
-    @Binding var dateSelectedModel: [EventModel]
+    var model: [ExperienceModel]
+    @Binding var dateSelectedModel: [ExperienceModel]
     
     var calendar = FSCalendar()
     
@@ -201,9 +203,9 @@ struct CustomCalendar: UIViewRepresentable {
     class Coordinator: NSObject, FSCalendarDelegate, FSCalendarDataSource {
         
         var parent: CustomCalendar
-        var model: [EventModel]
+        var model: [ExperienceModel]
         
-        init(_ parent: CustomCalendar, model: [EventModel]) {
+        init(_ parent: CustomCalendar, model: [ExperienceModel]) {
             
             self.parent = parent
             self.model = model
@@ -216,7 +218,7 @@ struct CustomCalendar: UIViewRepresentable {
             
             for index in 0..<model.count {
                 let item = model[index]
-                let dateFormatted = DateHelper.getDate(item.initialDate)
+                let dateFormatted = DateHelper.getDate(item.event.initialDate)
                 if (dateFormatted.formatted(date: .complete, time: .omitted) == date.formatted(date: .complete, time: .omitted)) {
                     parent.dateSelectedModel.append(item)
                 }
@@ -233,7 +235,7 @@ struct CustomCalendar: UIViewRepresentable {
             var eventDates: [Date] = []
             
             model.forEach { item in
-                let dateFormatted = DateHelper.getDate(item.initialDate)
+                let dateFormatted = DateHelper.getDate(item.event.initialDate)
                 eventDates.append(dateFormatted)
             }
             

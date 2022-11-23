@@ -11,7 +11,7 @@ struct CalendarEventView: View {
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
-    var model: EventModel
+    var model: ExperienceModel
     
     var body: some View {
         GeometryReader { screen in
@@ -19,17 +19,18 @@ struct CalendarEventView: View {
                 HStack(spacing: 0) {
                     VStack (alignment: .leading, spacing: 4) {
                         HStack (spacing: 16) {
-                            Text("from".localized(language) + " " + DateHelper.getHour(model.initialDate))
+                            Text("from".localized(language) + " " + DateHelper.getHour(model.event.initialDate))
                                 .font(.appCallout)
                                 .foregroundColor(.appBlack)
                                 .frame(width: screen.size.width * 0.22, alignment: .leading)
                             
                             Text(model.name)
                                 .font(.appHeadline)
+                                .foregroundColor(.appBlack)
                         }
                         
                         HStack (spacing: 16) {
-                            Text("to".localized(language) + " " + DateHelper.getHour(model.finalDate))
+                            Text("to".localized(language) + " " + DateHelper.getHour(model.event.finalDate))
                                 .font(.appSubheadline)
                                 .foregroundColor(.appGray)
                                 .frame(width: screen.size.width * 0.22, alignment: .leading)
@@ -37,9 +38,9 @@ struct CalendarEventView: View {
                             HStack(spacing: 4) {
                                 Image("pin_place")
                                 
-                                Text(model.location)
+                                Text(model.event.location.name)
                                     .font(.appFootnote)
-                                .foregroundColor(.appDarkGray)
+                                    .foregroundColor(.appDarkGray)
                             }
                         }
                     }
@@ -59,6 +60,6 @@ struct CalendarEventView: View {
 
 struct CalendarEventView_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarEventView(model: EventModel.example1)
+        CalendarEventView(model: ExperienceModel.example1)
     }
 }

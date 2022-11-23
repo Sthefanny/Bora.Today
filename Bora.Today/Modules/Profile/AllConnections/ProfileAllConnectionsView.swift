@@ -29,7 +29,7 @@ struct ProfileAllConnectionsView: View {
         VStack{
             HeaderView(headerTitle: "Conexões")
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 LazyVGrid(columns: columns, spacing: 24){
                     ForEach(0..<model.count, id: \.self) {index in
                         let item = model[index]

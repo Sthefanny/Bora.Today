@@ -38,13 +38,9 @@ struct DiscoverView: View {
                         .padding(.bottom, AppConfig.bottomMenuHeight / 2)
                 } else {
                     if discoverVisualization == .experience {
-                        ScrollView {
-                            ExperienceCardListView()
-                        }
+                        ExperienceCardListView()
                     } else {
-                        ScrollView {
-                            PlaceCardListView()
-                        }
+                        PlaceCardListView()
                     }
                 }
             }
@@ -83,8 +79,8 @@ struct DiscoverView: View {
                 locationManager.search(textFieldData.text)
             }
         })
-            .padding(.bottom, 16)
-            .padding(.horizontal, 21)
+        .padding(.bottom, 16)
+        .padding(.horizontal, 21)
     }
     
     private var _buildViewTypes: some View {

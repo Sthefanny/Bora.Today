@@ -41,6 +41,7 @@ struct BoraTodayApp: App {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .environmentObject(textFieldData)
+            .preferredColorScheme(.light)
         }
     }
 }

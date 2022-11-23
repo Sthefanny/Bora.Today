@@ -31,7 +31,7 @@ struct CreateTextExpandView: View {
                         .foregroundColor(.appBlack)
                         .lineLimit(expanded ? nil : lineLimit)
                     
-                    ScrollView(.vertical) {
+                    ScrollView(.vertical, showsIndicators: false) {
                         Text(model.description)
                             .font(.appFootnote)
                             .foregroundColor(.appBlack)

@@ -64,6 +64,7 @@ struct HistoryCardView: View {
             HStack {
                 Text(model.additionalText ?? "")
                     .font(.custom(AppFont.figtree.name, size: 14))
+                    .multilineTextAlignment(.leading)
                     .foregroundColor(.appWhite)
                     .fixedSize(horizontal: false, vertical: true)
                     .lineLimit(2)
