@@ -136,6 +136,7 @@
 //ProfileView
 "settings" = "Settings";
 "connect" = "Connect";
+"disconnect" = "Disconnect";
 "lastExperiences" = "Last experiences";
 "conections" = "Conections";
 
@@ -187,3 +188,8 @@
 "whatsYourOriginalCountry" = "What is your country of origin?";
 "selectCountry" = "Select country";
 "yourOriginalCountry" = "Your country of origin";
+
+//UnfriendView
+"unfriendTitle" = "Unfriend?";
+"unfriendDescription" = "You will no longer see Maria Ines' profile and she will no longer see your profile.";
+"unfriendButton" = "Unfriend";

@@ -145,6 +145,8 @@
 		E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF228EA10460044CE58 /* ButtonText.swift */; };
 		E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */; };
 		E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */; };
+		E5914E7A292E947E00908328 /* CreatedExpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5914E79292E947E00908328 /* CreatedExpView.swift */; };
+		E5914E7C292EA45F00908328 /* UnfriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5914E7B292EA45F00908328 /* UnfriendView.swift */; };
 		E5A6320D292026DA006027AF /* CreateUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320C292026DA006027AF /* CreateUsersListView.swift */; };
 		E5A6320F29204BDA006027AF /* SettingsProfileChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */; };
 		E5A6321129205C08006027AF /* StickerInImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6321029205C08006027AF /* StickerInImageView.swift */; };
@@ -313,6 +315,8 @@
 		E5878AF228EA10460044CE58 /* ButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonText.swift; sourceTree = "<group>"; };
 		E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBannerView.swift; sourceTree = "<group>"; };
 		E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CoveredByYourGrace-Regular.ttf"; sourceTree = "<group>"; };
+		E5914E79292E947E00908328 /* CreatedExpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedExpView.swift; sourceTree = "<group>"; };
+		E5914E7B292EA45F00908328 /* UnfriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfriendView.swift; sourceTree = "<group>"; };
 		E5A6320C292026DA006027AF /* CreateUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsersListView.swift; sourceTree = "<group>"; };
 		E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileChangeLanguageView.swift; sourceTree = "<group>"; };
 		E5A6321029205C08006027AF /* StickerInImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerInImageView.swift; sourceTree = "<group>"; };
@@ -462,6 +466,7 @@
 				01549298291AEB4A0068218A /* ProfileConnectionsView.swift */,
 				012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */,
 				0154929A291AECF30068218A /* LatestExperiencesListView.swift */,
+				E5914E7B292EA45F00908328 /* UnfriendView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -825,6 +830,7 @@
 				E57D4ACA29070CCA00ACE493 /* NotificationsView.swift */,
 				E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */,
 				E51CB0C2290B2E0C00DBAC7C /* EventView.swift */,
+				E5914E79292E947E00908328 /* CreatedExpView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -1181,6 +1187,7 @@
 				01336D18291EF43700AA4F35 /* SettingsProfileMyProfileRowView.swift in Sources */,
 				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
 				E57D4AD129071A0400ACE493 /* NotificationSystemImageView.swift in Sources */,
+				E5914E7C292EA45F00908328 /* UnfriendView.swift in Sources */,
 				E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */,
 				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
 				E57DE48828F756E400DB4447 /* OnboardingTagStyle.swift in Sources */,
@@ -1297,6 +1304,7 @@
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
 				93B5E6AD29197DA1004DE6B3 /* CreateReviewsFilter.swift in Sources */,
+				E5914E7A292E947E00908328 /* CreatedExpView.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
 				E5428152291C1BC900CD1C7E /* TextFieldView.swift in Sources */,
 				E51CB0C5290B2ECD00DBAC7C /* CalendarView.swift in Sources */,
