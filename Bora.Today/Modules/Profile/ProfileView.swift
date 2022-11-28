@@ -75,12 +75,14 @@ struct ProfileView: View {
                                 Spacer()
                             }
                             .padding(.bottom, 16)
+                            
                             LatestExperiencesListView(model: TopExperienceModel.example)
                         }
                         .padding(.horizontal, AppConfig.safeAreaHorizontal)
                         
                     }
                 }
+                .padding(.bottom, 64)
                 
                 UnfriendView(isPresented: $isPresented, isConnected: $isConnected)
             }

@@ -9,6 +9,7 @@ struct ExperienceModel: Identifiable {
     let stickers: [StickerModel]?
     let reviews: [ReviewModel]?
     let createdBy: UserModel
+    let isSaved: Bool
 }
 
 // MARK: - Example Item
@@ -23,7 +24,8 @@ extension ExperienceModel {
             image: "exp2",
             stickers: [StickerModel.irado, StickerModel.wow],
             reviews: [ReviewModel.example1],
-            createdBy: UserModel.example2
+            createdBy: UserModel.example2,
+            isSaved: false
         )
     }
     
@@ -39,7 +41,8 @@ extension ExperienceModel {
                        StickerModel.top
                       ],
             reviews: [ReviewModel.example2, ReviewModel.example3],
-            createdBy: UserModel.example3
+            createdBy: UserModel.example3,
+            isSaved: true
         )
     }
     
@@ -54,7 +57,8 @@ extension ExperienceModel {
                        StickerModel.hmmm,
                        StickerModel.delicia],
             reviews: [ReviewModel.example3, ReviewModel.example1, ReviewModel.example2],
-            createdBy: UserModel.example1
+            createdBy: UserModel.example1,
+            isSaved: false
         )
     }
     
@@ -68,7 +72,8 @@ extension ExperienceModel {
             stickers: [StickerModel.relax,
                        StickerModel.legal],
             reviews: [ReviewModel.example3, ReviewModel.example1, ReviewModel.example2],
-            createdBy: UserModel.example1
+            createdBy: UserModel.example1,
+            isSaved: false
         )
     }
     
@@ -82,7 +87,8 @@ extension ExperienceModel {
             stickers: [StickerModel.hmmm,
                        StickerModel.relax],
             reviews: [ReviewModel.example3, ReviewModel.example1, ReviewModel.example2],
-            createdBy: UserModel.example1
+            createdBy: UserModel.example1,
+            isSaved: true
         )
     }
     
@@ -97,7 +103,8 @@ extension ExperienceModel {
                        StickerModel.hmmm,
                        StickerModel.relax],
             reviews: [ReviewModel.example3, ReviewModel.example1, ReviewModel.example2],
-            createdBy: UserModel.example1
+            createdBy: UserModel.example1,
+            isSaved: true
         )
     }
     
@@ -110,7 +117,8 @@ extension ExperienceModel {
             image: "exp1",
             stickers: [StickerModel.bora],
             reviews: [ReviewModel.example3, ReviewModel.example1, ReviewModel.example2],
-            createdBy: UserModel.example1
+            createdBy: UserModel.example1,
+            isSaved: false
         )
     }
 }

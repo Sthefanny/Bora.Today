@@ -32,6 +32,7 @@ struct ExperienceCardView: View {
                         .font(.appHeadline)
                         .foregroundColor(.appBlack)
                         .padding(.bottom, 8)
+                        .multilineTextAlignment(.leading)
                     
                     Text(model.description)
                         .lineLimit(2)
@@ -49,6 +50,7 @@ struct ExperienceCardView: View {
                         Text(model.event.location.name)
                             .font(.appFootnote)
                             .foregroundColor(.appGrayText)
+                            .multilineTextAlignment(.leading)
                         
                     }
                     .padding(.bottom, 4)

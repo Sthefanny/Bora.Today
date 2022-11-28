@@ -112,7 +112,8 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
                         district: district ?? "",
                         city: city ?? "",
                         state: state ?? "",
-                        country: country ?? ""
+                        country: country ?? "",
+                        reviews: nil
                     )
                 )
             }

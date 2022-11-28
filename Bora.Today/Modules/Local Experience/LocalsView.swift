@@ -60,19 +60,20 @@ struct LocalsView: View {
                             .padding(.leading, 21)
                             .padding(.top, 16)
                             
-                            
-                            VStack (alignment: .leading, spacing: 16){
-                                Text("reviews".localized(language))
-                                    .font(.appHeadline)
-                                
+                            if model.reviews != nil {
                                 VStack (alignment: .leading, spacing: 16){
-                                    //Botão - muda a review
-                                    CreateReviewsFilter()
+                                    Text("reviews".localized(language))
+                                        .font(.appHeadline)
                                     
-                                    ReviewDynamicListView()
+                                    VStack (alignment: .leading, spacing: 16){
+                                        //Botão - muda a review
+                                        CreateReviewsFilter()
+                                        
+                                        ReviewDynamicListView(model: model.reviews!)
+                                    }
                                 }
+                                .padding(.horizontal, 21)
                             }
-                            .padding(.horizontal, 21)
                         }
                     }
                 }

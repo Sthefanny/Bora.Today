@@ -22,7 +22,7 @@ struct ProfileAllConnectionsView: View {
     ]
     
     init() {
-        model = [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3, ReviewModel.example1, ReviewModel.example2, ReviewModel.example3,ReviewModel.example1, ReviewModel.example2, ReviewModel.example3, ReviewModel.example1, ReviewModel.example2, ReviewModel.example3,ReviewModel.example1, ReviewModel.example2, ReviewModel.example3, ReviewModel.example1, ReviewModel.example2, ReviewModel.example3,ReviewModel.example1, ReviewModel.example2, ReviewModel.example3, ReviewModel.example1, ReviewModel.example2, ReviewModel.example3]
+        model = [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3, ReviewModel.example4, ReviewModel.example5, ReviewModel.example6,ReviewModel.example7]
     }
     
     var body: some View {
@@ -33,12 +33,13 @@ struct ProfileAllConnectionsView: View {
                 LazyVGrid(columns: columns, spacing: 24){
                     ForEach(0..<model.count, id: \.self) {index in
                         let item = model[index]
-                        SingleConnectionView(image: item.user.image, country: item.user.originCountry, name: item.user.name, username: item.user.username)
+                        SingleConnectionView(model: item.user)
                     }
                 }
                 .padding(.top, 32)
             }
         }
+        .padding(.horizontal, 21)
         .navigationBarTitle("")
         .navigationBarHidden(true)
     }

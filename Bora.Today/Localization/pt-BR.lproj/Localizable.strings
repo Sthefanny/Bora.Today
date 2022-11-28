@@ -80,6 +80,7 @@
 "sameCountry" = "Mesmo país";
 "reviews" = "Avaliações";
 "experiencesHere" = "Experiências marcadas aqui";
+
 //CreateView
 "createViewTitle" = "Criar experiência";
 "textFieldTitle" = "Título da experiência";
@@ -193,3 +194,11 @@
 "unfriendTitle" = "Desfazer amizade?";
 "unfriendDescription" = "Você não verá mais o perfil de Maria Ines e ela não verá mais seu perfil.";
 "unfriendButton" = "Desfazer amizade";
+
+//CreatedExpView
+"createdTitle" = "Criados";
+
+//SavedView
+"savedTitle" = "Salvos";
+
+"evaluations" = "Avaliações";

@@ -23,7 +23,7 @@ struct ProfileConnectionsView: View {
                 
                 NavigationLink(destination: ProfileAllConnectionsView()) {
                     HStack(spacing: 4) {
-                        Text("20" + "+")
+                        Text("7" + "+")
                             .font(.appCallout)
                         Image(systemName: "chevron.right")
                             .resizable()

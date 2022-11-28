@@ -49,8 +49,7 @@ struct ExperienceView: View {
                         .padding(.horizontal, AppConfig.safeAreaHorizontal)
                         
                         
-                        //Chamar texto do Model - Lari já fez
-                        CreateTextExpandView(ExperienceModel.example3, lineLimit: 3)
+                        CreateTextExpandView(model, lineLimit: 3)
                             .padding(.horizontal, AppConfig.safeAreaHorizontal)
                         
                         VStack (alignment: .leading, spacing: 16){
@@ -62,15 +61,36 @@ struct ExperienceView: View {
                         }
                     }
                     
-                    HStack (alignment: .center, spacing: 12){
-                        SaveButton()
-                        
-                        ButtonDefaultBig(buttonType: .iconAndTextBigger, text: "Bora!", icon: "seal.fill", action: {print("teste")}, isDisabled: .constant(false))
+                    if model.isSaved {
+                        if model.reviews != nil {
+                            VStack (alignment: .leading, spacing: 16){
+                                Text("evaluations".localized(language))
+                                    .font(.appHeadline)
+                                    .foregroundColor(.appBlack)
+                                    .padding(.bottom, 16)
+                                
+                                VStack (alignment: .leading, spacing: 16){
+                                    //Botão - muda a review
+                                    CreateReviewsFilter()
+                                    
+                                    ReviewDynamicListView(model: model.reviews!)
+                                }
+                            }
+                            .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                            .padding(.top, 32)
+                            .padding(.bottom, 16)
+                        }
                     }
-                    .padding(.horizontal, AppConfig.safeAreaHorizontal)
-                    .padding(.top, 64)
-                    .padding(.bottom, 16)
-                    
+                    else {
+                        HStack (alignment: .center, spacing: 12){
+                            SaveButton()
+                            
+                            ButtonDefaultBig(buttonType: .iconAndTextBigger, text: "Bora!", icon: "seal.fill", action: {print("teste")}, isDisabled: .constant(false))
+                        }
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                        .padding(.top, 64)
+                        .padding(.bottom, 16)
+                    }
                     
                 }
             }
@@ -82,7 +102,7 @@ struct ExperienceView: View {
 
 struct ExperienceView_Previews: PreviewProvider {
     static var previews: some View {
-        ExperienceView(model: ExperienceModel.example1)
+        ExperienceView(model: ExperienceModel.example2)
         //            .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
     }
 }

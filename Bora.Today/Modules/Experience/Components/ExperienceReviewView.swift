@@ -16,7 +16,7 @@ struct ExperienceReviewView: View {
     
     var body: some View {
         HStack(alignment: .top, spacing: 16) {
-                ProfileImageView(model: nil, size: 48)
+            ProfileImageView(model: model.user, size: 48)
                 
                 VStack(alignment: .leading) {
                     HStack(alignment: .top) {

@@ -29,6 +29,7 @@ struct PlaceCardView: View {
                 VStack(alignment: .leading, spacing: 0) {
                     Text(model.name)
                         .font(.appHeadline)
+                        .multilineTextAlignment(.leading)
                         .foregroundColor(.appBlack)
                         .padding(.bottom, 8)
                     
@@ -40,6 +41,7 @@ struct PlaceCardView: View {
                         
                         Text(model.address)
                             .font(.appFootnote)
+                            .multilineTextAlignment(.leading)
                             .foregroundColor(.appGrayText)
                         
                     }
@@ -61,12 +63,11 @@ struct PlaceCardView: View {
                                 //FUTURAMENTE LEVAR PARA A PAGINA DE SALVOS QUANDO SALVAR ALGUM PELA PRIMEIRA VEZ
                             }
                     } else {
-                        Image(systemName: "chevron.right")
-                            .foregroundColor(.appBlueButton)
-                            .font(.title)
-                            .onTapGesture {
-                                print("-leva para página da experiência-")
-                            }
+                        NavigationLink(destination: LocalsView(model: model)) {
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.appBlueButton)
+                                .font(.title)
+                        }
                     }
                 }
             }

@@ -193,3 +193,11 @@
 "unfriendTitle" = "Unfriend?";
 "unfriendDescription" = "You will no longer see Maria Ines' profile and she will no longer see your profile.";
 "unfriendButton" = "Unfriend";
+
+//CreatedExpView
+"createdTitle" = "Created";
+
+//SavedView
+"savedTitle" = "Saved";
+
+"evaluations" = "Evaluations";

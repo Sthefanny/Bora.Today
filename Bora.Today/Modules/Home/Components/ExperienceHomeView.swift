@@ -21,6 +21,7 @@ struct ExperienceHomeView: View {
                     Text(model.name)
                         .font(.appHeadline)
                         .foregroundColor(.appBlack)
+                        .multilineTextAlignment(.leading)
                         .padding(.top, 12)
                         .padding(.bottom, 8)
                         .frame(maxWidth: 150, alignment: .leading)
@@ -36,6 +37,7 @@ struct ExperienceHomeView: View {
             
             StickerListView(stickerList: model.stickers!)
                 .frame(maxWidth: 150, alignment: .leading)
+            
         }
     }
     

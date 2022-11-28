@@ -21,11 +21,12 @@ struct PlaceModel: Identifiable {
     let state: String
     let country: String
     let address: String
+    let reviews: [ReviewModel]?
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     
-    init(name: String, url: String, latitude: Double, longitude: Double, postalCode: String, street: String, district: String, city: String, state: String, country: String) {
+    init(name: String, url: String, latitude: Double, longitude: Double, postalCode: String, street: String, district: String, city: String, state: String, country: String, reviews: [ReviewModel]?) {
         self.name = name
         self.url = url
         self.latitude = latitude
@@ -36,6 +37,7 @@ struct PlaceModel: Identifiable {
         self.city = city
         self.state = state
         self.country = country
+        self.reviews = reviews
         
         self.address = "\(street) - \(district)"
     }
@@ -56,7 +58,8 @@ extension PlaceModel {
             district: "Velha",
             city: "Curitiba",
             state: "PR",
-            country: "Brazil"
+            country: "Brazil",
+            reviews: [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3]
         )
     }
     
@@ -72,7 +75,8 @@ extension PlaceModel {
             district: "Velha",
             city: "Curitiba",
             state: "PR",
-            country: "Brazil"
+            country: "Brazil",
+            reviews: [ReviewModel.example3, ReviewModel.example2]
         )
     }
     
@@ -88,7 +92,8 @@ extension PlaceModel {
             district: "Velha",
             city: "Curitiba",
             state: "PR",
-            country: "Brazil"
+            country: "Brazil",
+            reviews: [ReviewModel.example2]
         )
     }
     
@@ -104,7 +109,8 @@ extension PlaceModel {
             district: "Velha",
             city: "Curitiba",
             state: "PR",
-            country: "Brazil"
+            country: "Brazil",
+            reviews: [ReviewModel.example1, ReviewModel.example3]
         )
     }
     
@@ -120,7 +126,8 @@ extension PlaceModel {
             district: "Velha",
             city: "Curitiba",
             state: "PR",
-            country: "Brazil"
+            country: "Brazil",
+            reviews: [ReviewModel.example3, ReviewModel.example2, ReviewModel.example1]
         )
     }
 }

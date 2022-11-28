@@ -21,6 +21,7 @@ struct IconLocationTextButton: View {
                 Text(model.event.location.name)
                     .font(.appFootnote)
                     .foregroundColor(.appBlueButton)
+                    .multilineTextAlignment(.leading)
             }
         }
     }
@@ -28,6 +29,6 @@ struct IconLocationTextButton: View {
 
 struct IconLocationTextButton_Previews: PreviewProvider {
     static var previews: some View {
-        IconLocationTextButton(model: ExperienceModel.example1)
+        IconLocationTextButton(model: ExperienceModel.example2)
     }
 }
