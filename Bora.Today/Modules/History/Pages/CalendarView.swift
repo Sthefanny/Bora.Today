@@ -126,18 +126,28 @@ struct CalendarView: View {
                 .padding(.top, 32)
                 .padding(.bottom, 24)
                 
-                ScrollView(showsIndicators: false) {
-                    VStack(spacing: 50) {
-                        
-                        ForEach(0..<$calendarData.dateSelectedModel.count, id: \.self) { index in
-                            let item = calendarData.dateSelectedModel[index]
-                            NavigationLink(destination: ExperienceView(model: item)) {
-                                CalendarEventView(model: item)
-                                    .padding(.top, index == 0 ? 0 : 16)
-                                    .padding(.bottom, index == calendarData.dateSelectedModel.count - 1 ? 20 : 0)
+                if $calendarData.dateSelectedModel.count > 0 {
+                    ScrollView(showsIndicators: false) {
+                        VStack(spacing: 50) {
+                            
+                            ForEach(0..<$calendarData.dateSelectedModel.count, id: \.self) { index in
+                                let item = calendarData.dateSelectedModel[index]
+                                NavigationLink(destination: ExperienceView(model: item)) {
+                                    CalendarEventView(model: item)
+                                        .padding(.top, index == 0 ? 0 : 16)
+                                        .padding(.bottom, index == calendarData.dateSelectedModel.count - 1 ? 20 : 0)
+                                }
                             }
                         }
                     }
+                    
+                } else {
+                    ScrollView(showsIndicators: false) {
+                        EmptyStateView(text: "Você ainda não marcou nada pra hoje", buttonText: "Explorar experiências")
+                            .frame(width: screen.size.width, alignment: .center)
+                    }
+                    .padding(.top, 12)
+                    .padding(.bottom, 12)
                 }
             }
         }

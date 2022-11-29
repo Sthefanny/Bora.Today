@@ -20,7 +20,7 @@ extension EventModel {
     static var example1: EventModel {
 
         EventModel(
-            initialDate: DateHelper.getDateAsString(Date.now),
+            initialDate: "2022-12-01T11:00:00-0300",
             finalDate: "2022-11-02T09:00:00-0300",
             location: PlaceModel.place2
         )
@@ -29,7 +29,7 @@ extension EventModel {
     static var example2: EventModel {
 
         EventModel(
-            initialDate: "2022-11-05T11:00:00-0300",
+            initialDate: "2022-12-05T11:00:00-0300",
             finalDate: "2022-11-05T13:00:00-0300",
             location: PlaceModel.place1
         )
