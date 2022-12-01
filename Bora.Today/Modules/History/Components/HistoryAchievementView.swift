@@ -35,18 +35,23 @@ struct HistoryAchievementView: View {
                     }
                 }
             }
-            .padding(.top, 16)
+            .padding(.vertical, 16)
         }
     }
     
     private func _buildCard(item: AchievementModel) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Image(item.image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
                 .cornerRadius(18)
+                .frame(width: 140, height: 218)
+                .clipped()
             
             Text(item.date)
                 .font(.appCaption1)
                 .foregroundColor(.appBlack)
+                .padding(.leading, 10)
         }
     }
 }

@@ -10,12 +10,7 @@ import SwiftFlags
 
 struct ReviewDynamicListView: View {
     
-    private let model: [ReviewModel]
-    
-    init() {
-        model = [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3, ReviewModel.example1, ReviewModel.example2, ReviewModel.example3]
-
-    }
+    var model: [ReviewModel]
     
     var body: some View {
             LazyVStack {
@@ -31,6 +26,6 @@ struct ReviewDynamicListView: View {
 
 struct ReviewDynamicListView_Previews: PreviewProvider {
     static var previews: some View {
-        ReviewDynamicListView()
+        ReviewDynamicListView(model: [ReviewModel.example1, ReviewModel.example2, ReviewModel.example3, ReviewModel.example1, ReviewModel.example2, ReviewModel.example3])
     }
 }

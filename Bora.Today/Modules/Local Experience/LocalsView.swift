@@ -19,7 +19,7 @@ struct LocalsView: View {
         VStack {
             HeaderView(headerTitle: "location".localized(language))
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack (alignment: .leading, spacing: 0) {
                     
                     //Esse banner tem que puxar o mapkit
@@ -35,19 +35,17 @@ struct LocalsView: View {
                             VStack (alignment: .leading, spacing: 4){
                                 IconLocationTextButton(model: ExperienceModel.example1)
                                 
-                                HStack {
-                                    Image(systemName: "clock.fill")
-                                    Text(model.openTime)
-                                }
-                                .font(.appFootnote)
-                                
-                                HStack {
-                                    Image(systemName: "link")
-                                    
-                                    
-                                    Link(model.url, destination: URL(string: model.url)!)
-                                        .font(.appFootnote)
-                                        .foregroundColor(.appBlueButton)
+                                if model.url != nil && !model.url.isEmpty {
+                                    HStack {
+                                        Image(systemName: "link")
+                                            .resizable()
+                                            .frame(width: 15, height: 15)
+                                            .foregroundColor(.black)
+                                        
+                                        Link(model.url, destination: URL(string: model.url)!)
+                                            .font(.appFootnote)
+                                            .foregroundColor(.appBlueButton)
+                                    }
                                 }
                             }
                             .padding(.horizontal, 21)
@@ -62,19 +60,20 @@ struct LocalsView: View {
                             .padding(.leading, 21)
                             .padding(.top, 16)
                             
-                            
-                            VStack (alignment: .leading, spacing: 16){
-                                Text("reviews".localized(language))
-                                    .font(.appHeadline)
-                                
+                            if model.reviews != nil {
                                 VStack (alignment: .leading, spacing: 16){
-                                    //Botão - muda a review
-                                    CreateReviewsFilter()
+                                    Text("reviews".localized(language))
+                                        .font(.appHeadline)
                                     
-                                    ReviewDynamicListView()
+                                    VStack (alignment: .leading, spacing: 16){
+                                        //Botão - muda a review
+                                        CreateReviewsFilter()
+                                        
+                                        ReviewDynamicListView(model: model.reviews!)
+                                    }
                                 }
+                                .padding(.horizontal, 21)
                             }
-                            .padding(.horizontal, 21)
                         }
                     }
                 }

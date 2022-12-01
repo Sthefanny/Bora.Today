@@ -9,27 +9,29 @@ import SwiftUI
 
 struct SingleConnectionView: View {
     
-    var image: String
-    var country: String
-    var name: String
-    var username: String
+    var model: UserModel
     
     var body: some View {
-        VStack(alignment: .center, spacing: 0){
-            ProfileImageView(model: nil)
-                .padding(.bottom,8)
-            Text(name)
-                .font(.appCallout)
-                .foregroundColor(.appBlack)
-                .padding(.bottom,4)
-            Text("@"+username)
-                .font(.appCaption1)
-                .foregroundColor(.appGray)
-        }    }
+        NavigationLink(destination: ProfileView(isSelfProfile: false, model: model, shouldShowBack: true)) {
+            VStack(alignment: .center, spacing: 0){
+                ProfileImageView(model: model)
+                    .padding(.bottom,8)
+                
+                Text(model.name)
+                    .font(.appCallout)
+                    .foregroundColor(.appBlack)
+                    .padding(.bottom,4)
+                
+                Text("@" + model.username)
+                    .font(.appCaption1)
+                    .foregroundColor(.appGray)
+            }
+        }
+    }
 }
 
 struct SingleConnectionView_Previews: PreviewProvider {
     static var previews: some View {
-        SingleConnectionView(image: "today_bg", country: "BR", name: "Maria Ines", username: "maria_ines")
+        SingleConnectionView(model: UserModel.example7)
     }
 }

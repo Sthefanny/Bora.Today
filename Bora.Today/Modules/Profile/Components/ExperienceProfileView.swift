@@ -47,9 +47,12 @@ struct ExperienceProfileView: View {
                 .foregroundColor(.black)
                 .padding(.horizontal, 4)
             
-            Text(model.location)
+            Text(model.event.location.name)
                 .font(.appFootnote)
+                .lineLimit(1)
+                .multilineTextAlignment(.leading)
                 .foregroundColor(.appGrayText)
+                .frame(maxWidth: 170, alignment: .leading)
             
         }
     }
@@ -59,7 +62,7 @@ struct ExperienceProfileView: View {
             Image("time")
                 .foregroundColor(.black)
             
-            Text(model.datetime)
+            Text(DateHelper.getFormattedDate(model.event.initialDate, format: "MMM dd, HH:mm"))
                 .font(.appFootnote)
                 .foregroundColor(.appGrayText)
             
@@ -69,6 +72,6 @@ struct ExperienceProfileView: View {
 
 struct ExperienceProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ExperienceHomeView(model: ExperienceModel.example1, isFirst: true)
+        ExperienceHomeView(model: ExperienceModel.example2, isFirst: true)
     }
 }

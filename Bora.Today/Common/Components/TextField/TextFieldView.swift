@@ -6,6 +6,12 @@
 //
 
 import SwiftUI
+import Combine
+
+class TextFieldData: ObservableObject{
+    @Published var text: String = ""
+}
+
 
 struct TextFieldView: View {
     
@@ -16,6 +22,9 @@ struct TextFieldView: View {
     var icon: String
     @State var placeholder: String
     @FocusState private var isFocused: Bool
+    @State var action: () -> Void
+    
+    @EnvironmentObject var textFieldData: TextFieldData
     
     var body: some View {
             TextField("", text: $value)
@@ -28,11 +37,16 @@ struct TextFieldView: View {
                     }
                     .padding(.horizontal)
                 }
+                .onChange(of: value) {_ in
+                    textFieldData.text = value
+                    self.action()
+                }
+                .environmentObject(textFieldData)
     }
 }
 
 struct TextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        TextFieldView(icon: "magnifyingglass", placeholder: "Tags, Locais, Experiencias")
+        TextFieldView(icon: "magnifyingglass", placeholder: "Tags, Locais, Experiencias", action: {})
     }
 }

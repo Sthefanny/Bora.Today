@@ -15,18 +15,18 @@ struct StickerListView: View {
             if stickerList != nil {
                 
                 if stickerList!.count == 1 {
-                    StickerInImageView(model: stickerList![0], index: CGFloat(0), positionX: CGFloat(-50), positionY: CGFloat(-90))
+                    StickerInImageView(model: stickerList![0], index: CGFloat(0), positionX: CGFloat(10), positionY: CGFloat(-90))
                 }
                 
                 if stickerList!.count == 2 {
-                    StickerInImageView(model: stickerList![0], index: CGFloat(0), positionX: CGFloat(-50), positionY: CGFloat(-90))
-                    StickerInImageView(model: stickerList![1], index: CGFloat(0), positionX: CGFloat(-57), positionY: CGFloat(-58))
+                    StickerInImageView(model: stickerList![0], index: CGFloat(0), positionX: CGFloat(10), positionY: CGFloat(-90))
+                    StickerInImageView(model: stickerList![1], index: CGFloat(0), positionX: CGFloat(17), positionY: CGFloat(-58))
                 }
                 
                 if stickerList!.count == 3 {
-                    StickerInImageView(model: stickerList![0], index: CGFloat(0), positionX: CGFloat(-17), positionY: CGFloat(-58))
-                    StickerInImageView(model: stickerList![1], index: CGFloat(0), positionX: CGFloat(-45), positionY: CGFloat(-80))
-                    StickerInImageView(model: stickerList![2], index: CGFloat(0), positionX: CGFloat(-10), positionY: CGFloat(-90))
+                    StickerInImageView(model: stickerList![0], index: CGFloat(0), positionX: CGFloat(30), positionY: CGFloat(-58))
+                    StickerInImageView(model: stickerList![1], index: CGFloat(0), positionX: CGFloat(10), positionY: CGFloat(-80))
+                    StickerInImageView(model: stickerList![2], index: CGFloat(0), positionX: CGFloat(43), positionY: CGFloat(-90))
                 }
             }
         }

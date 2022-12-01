@@ -8,17 +8,30 @@
 import SwiftUI
 
 struct OnboardingCountriesListView: View {
+    @AppStorage("language")
+    private var language = LocalizationManager.shared.language
+    
+    @Binding var selectedCountry: String?
+    
     var body: some View {
-        VStack{
-            HeaderView(headerTitle: "Selecionar país")
-            Spacer(minLength: 32)
-            CountriesListView()
+        ZStack {
+            Color.appWhite
+                .ignoresSafeArea()
+            
+            VStack{
+                HeaderView(headerTitle: "selectCountry".localized(language))
+                    .padding(.bottom, 32)
+                CountriesListView(selectedCountry: $selectedCountry)
+                    .padding(.horizontal, 21)
+            }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
 }
 
 struct OnboardingCountriesListView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingCountriesListView()
+        OnboardingCountriesListView(selectedCountry: .constant(nil))
     }
 }

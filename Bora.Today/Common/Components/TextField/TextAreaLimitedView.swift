@@ -44,7 +44,7 @@ struct TextAreaLimitedView: View {
            .padding(.bottom, 8)
             
             //axis: .vertical
-            TextField(example, text: $manager.text)
+            TextField(example, text: $manager.text, axis: .vertical)
                 .focused($isFocused)
                 .onChange(of: isFocused) { editingChanged in
                     // Check if is focus in, then return

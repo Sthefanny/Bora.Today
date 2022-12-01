@@ -73,7 +73,7 @@ struct ImageBannerView: View {
             Image("pin_place")
                 .foregroundColor(.black)
             
-            Text(model.location)
+            Text(model.event.location.name)
                 .font(.appFootnote)
                 .foregroundColor(.appGrayText)
             
@@ -85,7 +85,7 @@ struct ImageBannerView: View {
             Image("time")
                 .foregroundColor(.black)
             
-            Text(model.datetime)
+            Text(DateHelper.getFormattedDate(model.event.initialDate, format: "MMM dd, HH:mm"))
                 .font(.appFootnote)
                 .foregroundColor(.appGrayText)
             

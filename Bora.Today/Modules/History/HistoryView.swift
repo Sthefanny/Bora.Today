@@ -24,7 +24,7 @@ struct HistoryView: View {
     
     var body: some View {
         GeometryReader { screen in
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 0) {
                     _buildHeader
                     
@@ -105,9 +105,13 @@ struct HistoryView: View {
             
             VStack (spacing: 12) {
                 
-                HistoryCardView(model: model.history[1])
+                NavigationLink(destination: SavedView()) {
+                    HistoryCardView(model: model.history[1])
+                }
                 
-                HistoryCardView(model: model.history[2])
+                NavigationLink(destination: CreatedExpView()) {
+                    HistoryCardView(model: model.history[2])
+                }
             }
         }
         .padding(.horizontal, 21)

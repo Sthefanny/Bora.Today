@@ -22,11 +22,11 @@ struct DiscoverMapView: View {
             if discoverVisualization == .experience {
                 ExperienceCardOnMapView(model: ExperienceModel.example1)
                     .padding(.horizontal, 21)
-                    .padding(.bottom, 16)
+                    .padding(.bottom, 48)
             } else {
                 PlaceCardOnMapView(model: PlaceModel.place1)
                     .padding(.horizontal, 21)
-                    .padding(.bottom, 16)
+                    .padding(.bottom, 48)
             }
         }
     }

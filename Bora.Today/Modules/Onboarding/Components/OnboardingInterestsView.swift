@@ -34,36 +34,36 @@ struct OnboardingInterestsView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal,21)
                 
-                ScrollView() {
+                ScrollView(showsIndicators: false) {
                     VStack(alignment: .leading, spacing:16){
-                        TagSegmentView(tagSegmentTitle: "Vibe", array:[
+                        TagSegmentView(tagSegmentTitle: "Vibe", model:[
                             TagModel.familia,
                             TagModel.amigos,
                             TagModel.romance,
                             TagModel.independencia,
                         ])
-                        TagSegmentView(tagSegmentTitle: "Arte e Cultura", array: [
+                        TagSegmentView(tagSegmentTitle: "Arte e Cultura", model: [
                             TagModel.danca,
                             TagModel.jogos,
                             TagModel.musica,
                             TagModel.linguagens,
                             TagModel.museus,
                         ])
-                        TagSegmentView(tagSegmentTitle: "Aventuras", array: [
+                        TagSegmentView(tagSegmentTitle: "Aventuras", model: [
                             TagModel.arLivre,
                             TagModel.passeios,
                             TagModel.natureza,
                             TagModel.adrenalina,
                             TagModel.parques,
                         ])
-                        TagSegmentView(tagSegmentTitle: "Gastronomia", array: [
+                        TagSegmentView(tagSegmentTitle: "Gastronomia", model: [
                             TagModel.comidas,
                             TagModel.happyHour,
                             TagModel.eventos,
                             TagModel.noPrecinho,
                             TagModel.bebidas,
                         ])
-                        TagSegmentView(tagSegmentTitle: "Bem-estar", array: [
+                        TagSegmentView(tagSegmentTitle: "Bem-estar", model: [
                             TagModel.saude,
                             TagModel.pets,
                             TagModel.hobbies,
@@ -72,9 +72,10 @@ struct OnboardingInterestsView: View {
                         ])
                         .padding(.bottom, 64)
                     }
-                    .padding(.horizontal,21)
+                    .padding(.horizontal, 21)
 
                 }
+                .padding(.bottom, 64)
             }
         }
     }
@@ -88,7 +89,7 @@ struct OnboardingInterestsView_Previews: PreviewProvider {
 
 struct TagSegmentView: View {
     let tagSegmentTitle: String
-    let array: [TagModel]
+    let model: [TagModel]
     
     var body: some View {
         VStack(alignment: .leading, spacing:0){
@@ -98,7 +99,7 @@ struct TagSegmentView: View {
                 .padding(.top, 0)
                 .padding(.bottom, 8)
             
-            OnboardingInterestsListView(model: array)
+            OnboardingInterestsListView(model: model)
         }
     }
 }

@@ -13,7 +13,6 @@ struct AchievementModel: Identifiable {
     let date: String
 }
 
-#if DEBUG
 // MARK: - Example Item
 extension AchievementModel {
     
@@ -41,5 +40,4 @@ extension AchievementModel {
         )
     }
 }
-#endif
 

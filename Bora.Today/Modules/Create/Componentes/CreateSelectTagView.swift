@@ -31,18 +31,14 @@ struct CreateSelectTagView: View {
                     Text("\(Text("selectTagTitle".localized(language))) \(Image("asterisk"))")
                         .font(.appHeadline)
                         .foregroundColor(.appBlack)
-                    
-//                    Text("em que categorias se encaixa?")
-//                        .font(.appFootnote)
                         
                 }
-                //.padding(.bottom, 8)
                
                 
                 Spacer()
                 
                 Button(action: {
-                    print("abrir modal com todas as tags")
+                    print("COLOCAR POP UP AQUI PopUpAllTags()")
                 }) {
                     Text("\(Text("more".localized(language))) \(Image(systemName: "chevron.right"))")
                     
@@ -60,6 +56,7 @@ struct CreateSelectTagView: View {
                             .padding(.trailing, index == tags.count - 1 ? 21 : 0)
                     }
                 }
+                .padding(.vertical, 1)
             }
             
         }

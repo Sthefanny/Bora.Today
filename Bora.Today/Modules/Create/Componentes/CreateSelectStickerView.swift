@@ -25,7 +25,6 @@ struct CreateSelectStickerView: View {
     ]
     
     var body: some View {
-        ScrollView(.vertical) {
             VStack(alignment: .leading, spacing: 0) {
                 
                 Text("selectStickerTitle".localized(language))
@@ -48,9 +47,9 @@ struct CreateSelectStickerView: View {
                         }
                         
                     }
+                    .padding(.vertical, 2)
                 }
             }
-        }
     }
 }
 

@@ -15,6 +15,8 @@ struct HeaderView: View {
     
     var headerTitle: String?
     
+    var showCreateButton: Bool = false
+    
     var body: some View {
         ZStack (alignment: .center){
             Button(action: {
@@ -28,17 +30,26 @@ struct HeaderView: View {
                     Spacer()
                 }.foregroundColor(Color.appBlueButton)
             })
+            .padding(.leading, AppConfig.safeAreaHorizontal)
             
             Text(headerTitle != nil ? headerTitle!.localized(language) : "")
                 .font(.appTitle2)
+                .foregroundColor(.appBlack)
+            
+            if showCreateButton {
+                NavigationLink(destination: CreateView(shouldShowBack: true)) {
+                    ButtonText(buttonType: .imageAndText, text: "createButton".localized(language), icon: "create", action: {}, color: .appBlueButton, isDisabled: .constant(false))
+                        .disabled(true)
+                }
+                .frame(width: UIScreen.main.bounds.width - AppConfig.safeAreaHorizontal, alignment: .trailing)
+            }
         }
-        .padding(.horizontal, AppConfig.safeAreaHorizontal)
         .padding(.top, 16)
     }
 }
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView()
+        HeaderView(headerTitle: "Teste", showCreateButton: true)
     }
 }

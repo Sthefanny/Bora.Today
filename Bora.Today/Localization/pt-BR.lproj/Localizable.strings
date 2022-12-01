@@ -51,6 +51,7 @@
 "tomorrow" = "Amanhã";
 "from" = "De";
 "to" = "Até";
+"yourScheduledExperiences" = "Suas experiências agendadas:";
 
 //ExpandTextView
 "aboutExperience" = "Sobre a experiência";
@@ -79,6 +80,7 @@
 "sameCountry" = "Mesmo país";
 "reviews" = "Avaliações";
 "experiencesHere" = "Experiências marcadas aqui";
+
 //CreateView
 "createViewTitle" = "Criar experiência";
 "textFieldTitle" = "Título da experiência";
@@ -115,6 +117,7 @@
 "createButton" = "Criar";
 "searchPlaceholder" = "Tags, Locais, Experiências";
 "experiences" = "Experiências";
+"experience" = "Experiência";
 "places" = "Locais";
 "map" = "Mapa";
 "list" = "Lista";
@@ -134,6 +137,7 @@
 //ProfileView
 "settings" = "Configurações";
 "connect" = "Conectar";
+"disconnect" = "Desconectar";
 "lastExperiences" = "Últimas experiências";
 "conections" = "Conexões";
 
@@ -149,3 +153,52 @@
 "portuguese" = "Português";
 "english" = "Inglês";
 "settingsLanguageTitle" = "Escolha o idioma";
+
+//EditProfileView
+"cancelButton" = "Cancelar";
+"editProfile" = "Editar Perfil";
+"name" = "Nome";
+"username" = "Nome de usuário";
+"bio" = "Bio";
+"originCountry" = "País de Origem";
+"originCountryInfo" = "Aparecerá no perfil";
+"interests" = "Interesses";
+"interestsInfo" = "Máx. 3";
+
+//UserPhotoAndEditButtonView
+"changeProfilePhoto" = "Alterar foto de perfil";
+
+//PhotoPickerView
+"addImage" = "Adicionar Imagem";
+"addCoverImage" = "Adicionar foto de capa";
+
+//OnboardingView
+"introTitle" = "Olá \nexplorador!";
+"introSubtitle" = "Bora se aventurar?";
+"introDescription" = "Descubra novos lugares e experiências,\nfaça novas amizades e crie uma rede de apoio!";
+"boraMeaningTitle" = "bo.ra.";
+"boraMeaningSubheadline" = "Substantivo feminino";
+"boraMeaningText" = "Expressão que incentiva a saída de outra pessoa ou que faça algo.\nPra gente, é como se fosse o pontapé inicial pra novas aventuras.";
+"boraMeaningCallToAction" = "então bora começar?";
+"onboardingInterestsTitle" = "Escolha até seis interesses";
+"onboardingInterestsSubheadline" = "E receba recomendações personalizadas";
+"skip" = "Pular";
+"complete" = "Concluir";
+
+//CountryList
+"whatsYourOriginalCountry" = "Qual seu país de origem?";
+"selectCountry" = "Selecionar país";
+"yourOriginalCountry" = "Seu país de origem";
+
+//UnfriendView
+"unfriendTitle" = "Desfazer amizade?";
+"unfriendDescription" = "Você não verá mais o perfil de Maria Ines e ela não verá mais seu perfil.";
+"unfriendButton" = "Desfazer amizade";
+
+//CreatedExpView
+"createdTitle" = "Criados";
+
+//SavedView
+"savedTitle" = "Salvos";
+
+"evaluations" = "Avaliações";

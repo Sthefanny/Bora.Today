@@ -12,11 +12,15 @@ struct CountriesListView: View {
     @AppStorage("language")
     private var language = LocalizationManager.shared.language
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    @Binding var selectedCountry: String?
+    
     var body: some View {
         
-        ScrollView{
+        ScrollView(showsIndicators: false){
             ForEach(CountryHelper.getCountries(), id:\.self) { index in
-                VStack(alignment: .leading) {
+                LazyVStack(alignment: .leading) {
                     HStack(spacing: 8){
 //                        FlagView(countryCode: index, size: 18)
                         Text(index.localized(language))
@@ -25,6 +29,10 @@ struct CountriesListView: View {
                     }
                     .padding(.leading, 16)
                     .padding(.vertical, 8)
+                    .onTapGesture {
+                        selectedCountry = index.localized(language)
+                        self.presentationMode.wrappedValue.dismiss()
+                    }
 
                     Divider()
                         .background(Color.appGray)
@@ -33,19 +41,10 @@ struct CountriesListView: View {
         }
     }
 }
-        // não ficou em ordem alfabética
-        
-//        List(NSLocale.isoCountryCodes.sorted(), id: \.self) { countryCode in
-//            HStack {
-//                FlagView(countryCode: countryCode, size: 18)
-//                Text(Locale.current.localizedString(forRegionCode: countryCode) ?? "")
-//                Spacer()
-//            }
-//        }
 
 
 struct CountriesListView_Previews: PreviewProvider {
     static var previews: some View {
-        CountriesListView()
+        CountriesListView(selectedCountry: .constant(nil))
     }
 }

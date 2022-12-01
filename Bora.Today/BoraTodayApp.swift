@@ -30,14 +30,18 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct BoraTodayApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var textFieldData = TextFieldData()
     
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                BottomMenuView()
+                OnboardingView()
+//                BottomMenuView()
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .environmentObject(textFieldData)
+            .preferredColorScheme(.light)
         }
     }
 }

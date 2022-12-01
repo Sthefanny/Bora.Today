@@ -16,7 +16,7 @@ struct ExperienceReviewView: View {
     
     var body: some View {
         HStack(alignment: .top, spacing: 16) {
-                ProfileImageView(model: nil, size: 48)
+            ProfileImageView(model: model.user, size: 48)
                 
                 VStack(alignment: .leading) {
                     HStack(alignment: .top) {
@@ -46,9 +46,10 @@ struct ExperienceReviewView: View {
                         ForEach(0..<model.tags!.count, id: \.self) { index in
                             let item = model.tags![index]
                             TagDefaultView(model: item, isSelected: false)
+                                .disabled(true)
                         }
                     }
-                    //API - Stel por favor tomar atenção - chamar isso da library (PhotoPickerView)
+                    
                     HStack {
                         ForEach(0..<model.images.count, id: \.self) { index in
                             let item = model.images[index]

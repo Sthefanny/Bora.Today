@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011B63D72926ABBA009257CB /* HeaderDoubleButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B63D62926ABB9009257CB /* HeaderDoubleButtonsView.swift */; };
+		011B63D92926B0DB009257CB /* UserPhotoAndEditButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B63D82926B0DB009257CB /* UserPhotoAndEditButtonView.swift */; };
+		011B63DD2926C114009257CB /* EditProfileInterestsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B63DC2926C114009257CB /* EditProfileInterestsListView.swift */; };
 		011C5D4B2911A28E00539EED /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C5D4A2911A28E00539EED /* PickerView.swift */; };
 		012A74C3291C1D340071CBDD /* ExperienceProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */; };
 		012A74C7291C2DF80071CBDD /* SettingsProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */; };
@@ -31,12 +34,15 @@
 		01A6009F291EF7610092584C /* ProfileAllConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6009E291EF7610092584C /* ProfileAllConnectionsView.swift */; };
 		01A600A3291EFB400092584C /* SingleConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A600A2291EFB400092584C /* SingleConnectionView.swift */; };
 		01AB5C992915942700C59E6A /* OnboardingCountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */; };
+		01F5D1C32925953C000F52F1 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D1C22925953C000F52F1 /* EditProfileView.swift */; };
 		90124762290B0F3100A556FF /* CreateSelectTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90124761290B0F3100A556FF /* CreateSelectTagView.swift */; };
 		9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */; };
 		9042C0AA28FF34050040693D /* ButtonAddPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0A928FF34050040693D /* ButtonAddPhoto.swift */; };
 		9042C0AD28FF369E0040693D /* TextFieldWithTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AC28FF369E0040693D /* TextFieldWithTitleView.swift */; };
 		9042C0B028FF9B940040693D /* CreateDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0AF28FF9B940040693D /* CreateDatePickerView.swift */; };
 		9042C0B228FFA6070040693D /* CreateSelectStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042C0B128FFA6070040693D /* CreateSelectStickerView.swift */; };
+		90482256292C4FB400CA2036 /* PopUpAllTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90482255292C4FB400CA2036 /* PopUpAllTags.swift */; };
+		9048225A292C5AE100CA2036 /* TagDefaultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90482259292C5AE100CA2036 /* TagDefaultListView.swift */; };
 		904B33192914B07C001B6EB4 /* ExperienceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B33182914B07C001B6EB4 /* ExperienceCardView.swift */; };
 		904B331B2914B08C001B6EB4 /* PlaceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B331A2914B08C001B6EB4 /* PlaceCardView.swift */; };
 		90764B48290786DB008F1460 /* TextAreaLimitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90764B47290786DB008F1460 /* TextAreaLimitedView.swift */; };
@@ -46,7 +52,6 @@
 		90CB8294291C2F1500A92723 /* PlaceCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8293291C2F1500A92723 /* PlaceCardListView.swift */; };
 		90CB8297291C319300A92723 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8296291C319300A92723 /* EmptyStateView.swift */; };
 		9304631E291C1D5200CA7795 /* LocalExperienceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304631D291C1D5200CA7795 /* LocalExperienceListView.swift */; };
-		93046324291C30A500CA7795 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046323291C30A500CA7795 /* PhotoPicker.swift */; };
 		93046326291C30BE00CA7795 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046325291C30BE00CA7795 /* ImageView.swift */; };
 		93046328291C30EC00CA7795 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046327291C30EC00CA7795 /* PhotoPickerView.swift */; };
 		9304632A291C34DB00CA7795 /* CreateImagePickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93046329291C34DB00CA7795 /* CreateImagePickerButton.swift */; };
@@ -111,6 +116,8 @@
 		E554266728F34E900088C652 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554266628F34E900088C652 /* FlagView.swift */; };
 		E554266928F354840088C652 /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554266828F354840088C652 /* ReviewModel.swift */; };
 		E554266B28F354D70088C652 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554266A28F354D70088C652 /* UserModel.swift */; };
+		E55E13BE2928275E0003E296 /* HomeAgendaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E13BD2928275E0003E296 /* HomeAgendaListView.swift */; };
+		E55E13C02928292D0003E296 /* HomeAgendaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E13BF2928292D0003E296 /* HomeAgendaItemView.swift */; };
 		E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E569F6F328DA48BA004115CA /* LocationManager.swift */; };
 		E56ACD162901C89F00BE2EE1 /* HistoryAchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56ACD152901C89F00BE2EE1 /* HistoryAchievementView.swift */; };
 		E56C538728E754610078191F /* FontSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C538628E754610078191F /* FontSystem.swift */; };
@@ -131,6 +138,7 @@
 		E57DE48A28F75C6D00DB4447 /* DefaultTagStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57DE48928F75C6D00DB4447 /* DefaultTagStyle.swift */; };
 		E581AFA828DB8D8500288B4D /* Figtree.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E581AFA728DB8D8500288B4D /* Figtree.ttf */; };
 		E58456C928FDCB2D0072031A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58456C828FDCB2D0072031A /* HistoryView.swift */; };
+		E586B8082935277100149147 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586B8072935277100149147 /* SavedView.swift */; };
 		E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE428E9D5360044CE58 /* ButtonDefault.swift */; };
 		E5878AE728E9DB1C0044CE58 /* ButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */; };
 		E5878AEA28E9E30F0044CE58 /* ButtonStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AE928E9E30F0044CE58 /* ButtonStroke.swift */; };
@@ -140,6 +148,8 @@
 		E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF228EA10460044CE58 /* ButtonText.swift */; };
 		E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */; };
 		E58F7EFC28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */; };
+		E5914E7A292E947E00908328 /* CreatedExpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5914E79292E947E00908328 /* CreatedExpView.swift */; };
+		E5914E7C292EA45F00908328 /* UnfriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5914E7B292EA45F00908328 /* UnfriendView.swift */; };
 		E5A6320D292026DA006027AF /* CreateUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320C292026DA006027AF /* CreateUsersListView.swift */; };
 		E5A6320F29204BDA006027AF /* SettingsProfileChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */; };
 		E5A6321129205C08006027AF /* StickerInImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A6321029205C08006027AF /* StickerInImageView.swift */; };
@@ -167,6 +177,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011B63D62926ABB9009257CB /* HeaderDoubleButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDoubleButtonsView.swift; sourceTree = "<group>"; };
+		011B63D82926B0DB009257CB /* UserPhotoAndEditButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotoAndEditButtonView.swift; sourceTree = "<group>"; };
+		011B63DC2926C114009257CB /* EditProfileInterestsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileInterestsListView.swift; sourceTree = "<group>"; };
 		011C5D4A2911A28E00539EED /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceProfileView.swift; sourceTree = "<group>"; };
 		012A74C6291C2DF80071CBDD /* SettingsProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileView.swift; sourceTree = "<group>"; };
@@ -191,6 +204,7 @@
 		01A6009E291EF7610092584C /* ProfileAllConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAllConnectionsView.swift; sourceTree = "<group>"; };
 		01A600A2291EFB400092584C /* SingleConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleConnectionView.swift; sourceTree = "<group>"; };
 		01AB5C982915942700C59E6A /* OnboardingCountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCountriesListView.swift; sourceTree = "<group>"; };
+		01F5D1C22925953C000F52F1 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		320CA60A3E816E73A23E3B55 /* Pods-Bora.Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bora.Today.release.xcconfig"; path = "Target Support Files/Pods-Bora.Today/Pods-Bora.Today.release.xcconfig"; sourceTree = "<group>"; };
 		90124761290B0F3100A556FF /* CreateSelectTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSelectTagView.swift; sourceTree = "<group>"; };
 		9042C0A728FF28040040693D /* CreateEditExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditExperienceModel.swift; sourceTree = "<group>"; };
@@ -198,6 +212,8 @@
 		9042C0AC28FF369E0040693D /* TextFieldWithTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitleView.swift; sourceTree = "<group>"; };
 		9042C0AF28FF9B940040693D /* CreateDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDatePickerView.swift; sourceTree = "<group>"; };
 		9042C0B128FFA6070040693D /* CreateSelectStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSelectStickerView.swift; sourceTree = "<group>"; };
+		90482255292C4FB400CA2036 /* PopUpAllTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpAllTags.swift; sourceTree = "<group>"; };
+		90482259292C5AE100CA2036 /* TagDefaultListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDefaultListView.swift; sourceTree = "<group>"; };
 		904B33182914B07C001B6EB4 /* ExperienceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCardView.swift; sourceTree = "<group>"; };
 		904B331A2914B08C001B6EB4 /* PlaceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardView.swift; sourceTree = "<group>"; };
 		90764B47290786DB008F1460 /* TextAreaLimitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaLimitedView.swift; sourceTree = "<group>"; };
@@ -208,7 +224,6 @@
 		90CB8293291C2F1500A92723 /* PlaceCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardListView.swift; sourceTree = "<group>"; };
 		90CB8296291C319300A92723 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		9304631D291C1D5200CA7795 /* LocalExperienceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExperienceListView.swift; sourceTree = "<group>"; };
-		93046323291C30A500CA7795 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		93046325291C30BE00CA7795 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		93046327291C30EC00CA7795 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		93046329291C34DB00CA7795 /* CreateImagePickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImagePickerButton.swift; sourceTree = "<group>"; };
@@ -273,6 +288,8 @@
 		E554266628F34E900088C652 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
 		E554266828F354840088C652 /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
 		E554266A28F354D70088C652 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E55E13BD2928275E0003E296 /* HomeAgendaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAgendaListView.swift; sourceTree = "<group>"; };
+		E55E13BF2928292D0003E296 /* HomeAgendaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAgendaItemView.swift; sourceTree = "<group>"; };
 		E569F6F328DA48BA004115CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E56ACD152901C89F00BE2EE1 /* HistoryAchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAchievementView.swift; sourceTree = "<group>"; };
 		E56C538628E754610078191F /* FontSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSystem.swift; sourceTree = "<group>"; };
@@ -294,6 +311,7 @@
 		E581AFA728DB8D8500288B4D /* Figtree.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Figtree.ttf; sourceTree = "<group>"; };
 		E581AFA928DB8DC700288B4D /* Bora-Today-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bora-Today-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E58456C828FDCB2D0072031A /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		E586B8072935277100149147 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
 		E5878AE428E9D5360044CE58 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
 		E5878AE628E9DB1C0044CE58 /* ButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEnum.swift; sourceTree = "<group>"; };
 		E5878AE928E9E30F0044CE58 /* ButtonStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStroke.swift; sourceTree = "<group>"; };
@@ -303,6 +321,8 @@
 		E5878AF228EA10460044CE58 /* ButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonText.swift; sourceTree = "<group>"; };
 		E5878AF528EA1B8B0044CE58 /* ImageBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBannerView.swift; sourceTree = "<group>"; };
 		E58F7EFB28F7496E00F8D756 /* CoveredByYourGrace-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CoveredByYourGrace-Regular.ttf"; sourceTree = "<group>"; };
+		E5914E79292E947E00908328 /* CreatedExpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedExpView.swift; sourceTree = "<group>"; };
+		E5914E7B292EA45F00908328 /* UnfriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfriendView.swift; sourceTree = "<group>"; };
 		E5A6320C292026DA006027AF /* CreateUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsersListView.swift; sourceTree = "<group>"; };
 		E5A6320E29204BDA006027AF /* SettingsProfileChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileChangeLanguageView.swift; sourceTree = "<group>"; };
 		E5A6321029205C08006027AF /* StickerInImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerInImageView.swift; sourceTree = "<group>"; };
@@ -344,6 +364,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011B63D52926AAF2009257CB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				011B63D62926ABB9009257CB /* HeaderDoubleButtonsView.swift */,
+				011B63D82926B0DB009257CB /* UserPhotoAndEditButtonView.swift */,
+				011B63DC2926C114009257CB /* EditProfileInterestsListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		011C5D4C29158B9000539EED /* CountriesList */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +427,8 @@
 		013F9E75290B709500288327 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				011B63D52926AAF2009257CB /* Components */,
+				01F5D1C22925953C000F52F1 /* EditProfileView.swift */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -440,6 +472,7 @@
 				01549298291AEB4A0068218A /* ProfileConnectionsView.swift */,
 				012A74C2291C1D340071CBDD /* ExperienceProfileView.swift */,
 				0154929A291AECF30068218A /* LatestExperiencesListView.swift */,
+				E5914E7B292EA45F00908328 /* UnfriendView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -516,7 +549,6 @@
 			isa = PBXGroup;
 			children = (
 				E50ACA162920224B001CB8AF /* CreateReviewImage.swift */,
-				93046323291C30A500CA7795 /* PhotoPicker.swift */,
 				93046325291C30BE00CA7795 /* ImageView.swift */,
 				93046327291C30EC00CA7795 /* PhotoPickerView.swift */,
 			);
@@ -589,6 +621,8 @@
 			children = (
 				E50ACA12292021F8001CB8AF /* PopUpCreateAccountView.swift */,
 				E50ACA13292021F8001CB8AF /* ProfileEmptyAccountView.swift */,
+				90482255292C4FB400CA2036 /* PopUpAllTags.swift */,
+				90482259292C5AE100CA2036 /* TagDefaultListView.swift */,
 			);
 			path = "Pop up";
 			sourceTree = "<group>";
@@ -767,6 +801,8 @@
 				E5206B2B28EE0DC900EFF316 /* ExperienceHomeView.swift */,
 				E5206B2D28EE10ED00EFF316 /* ExperienceListView.swift */,
 				E5180A5B28EF5C210066E1E4 /* ReviewListView.swift */,
+				E55E13BD2928275E0003E296 /* HomeAgendaListView.swift */,
+				E55E13BF2928292D0003E296 /* HomeAgendaItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -802,6 +838,8 @@
 				E57D4ACA29070CCA00ACE493 /* NotificationsView.swift */,
 				E5BE8689290B012900FDDA47 /* LocationHistoryView.swift */,
 				E51CB0C2290B2E0C00DBAC7C /* EventView.swift */,
+				E5914E79292E947E00908328 /* CreatedExpView.swift */,
+				E586B8072935277100149147 /* SavedView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -1158,6 +1196,7 @@
 				01336D18291EF43700AA4F35 /* SettingsProfileMyProfileRowView.swift in Sources */,
 				E5711EB628E337C80027A01A /* PlaceModel.swift in Sources */,
 				E57D4AD129071A0400ACE493 /* NotificationSystemImageView.swift in Sources */,
+				E5914E7C292EA45F00908328 /* UnfriendView.swift in Sources */,
 				E5878AF628EA1B8B0044CE58 /* ImageBannerView.swift in Sources */,
 				E5C19A9628E6281300556A80 /* CornerRadiusStyleExtension.swift in Sources */,
 				E57DE48828F756E400DB4447 /* OnboardingTagStyle.swift in Sources */,
@@ -1186,6 +1225,7 @@
 				E505596B28FF38A300DB5A74 /* HistoryCardView.swift in Sources */,
 				E5206B2C28EE0DC900EFF316 /* ExperienceHomeView.swift in Sources */,
 				E5206B2C28EE0DC900EFF316 /* ExperienceHomeView.swift in Sources */,
+				E586B8082935277100149147 /* SavedView.swift in Sources */,
 				E505596D28FF3A1800DB5A74 /* HistoryCardModel.swift in Sources */,
 				E5206B2C28EE0DC900EFF316 /* ExperienceHomeView.swift in Sources */,
 				90CB8292291C1BA800A92723 /* ExperienceCardListView.swift in Sources */,
@@ -1194,6 +1234,8 @@
 				E5CD4646291478530062263A /* DateHelper.swift in Sources */,
 				E56ACD162901C89F00BE2EE1 /* HistoryAchievementView.swift in Sources */,
 				9319EDDD28FF33C2006012D4 /* IconLocationTextButton.swift in Sources */,
+				90482256292C4FB400CA2036 /* PopUpAllTags.swift in Sources */,
+				E55E13BE2928275E0003E296 /* HomeAgendaListView.swift in Sources */,
 				E5878AE528E9D5360044CE58 /* ButtonDefault.swift in Sources */,
 				E5C19A9128E6080300556A80 /* TabItemView.swift in Sources */,
 				013F9E7A290C553E00288327 /* CountryHelper.swift in Sources */,
@@ -1221,6 +1263,7 @@
 				93B5E6AF2919970F004DE6B3 /* LocalsView.swift in Sources */,
 				E58456C928FDCB2D0072031A /* HistoryView.swift in Sources */,
 				E535BD6328D8EEDE003131F0 /* BottomMenuView.swift in Sources */,
+				011B63D72926ABBA009257CB /* HeaderDoubleButtonsView.swift in Sources */,
 				E50ACA14292021F8001CB8AF /* PopUpCreateAccountView.swift in Sources */,
 				9042C0A828FF28040040693D /* CreateEditExperienceModel.swift in Sources */,
 				E5711EC128E346A00027A01A /* LocalizationManager.swift in Sources */,
@@ -1258,6 +1301,7 @@
 				E5BE868C290B0A9700FDDA47 /* LocationHistoryModel.swift in Sources */,
 				E554265D28F33E280088C652 /* TagModel.swift in Sources */,
 				E5878AF128EA0F1B0044CE58 /* TextButtonStyle.swift in Sources */,
+				011B63D92926B0DB009257CB /* UserPhotoAndEditButtonView.swift in Sources */,
 				9384189929073951000A66D1 /* SaveButton.swift in Sources */,
 				E5168E7728BD49CF0052174E /* BoraTodayApp.swift in Sources */,
 				E5C19A9828E6298400556A80 /* TabBottomView.swift in Sources */,
@@ -1271,17 +1315,20 @@
 				E569F6F428DA48BA004115CA /* LocationManager.swift in Sources */,
 				E554266028F3495B0088C652 /* ReviewCardView.swift in Sources */,
 				93B5E6AD29197DA1004DE6B3 /* CreateReviewsFilter.swift in Sources */,
+				E5914E7A292E947E00908328 /* CreatedExpView.swift in Sources */,
 				E5878AF328EA10460044CE58 /* ButtonText.swift in Sources */,
-				93046324291C30A500CA7795 /* PhotoPicker.swift in Sources */,
 				E5428152291C1BC900CD1C7E /* TextFieldView.swift in Sources */,
 				E51CB0C5290B2ECD00DBAC7C /* CalendarView.swift in Sources */,
+				E55E13C02928292D0003E296 /* HomeAgendaItemView.swift in Sources */,
 				E5D027502903239300C7FAAA /* AchievementModel.swift in Sources */,
 				E51CB0C3290B2E0C00DBAC7C /* EventView.swift in Sources */,
 				E54D08722921336700A4CD3F /* DiscoverMapView.swift in Sources */,
 				E5100BD1292024F7009F1D99 /* ReviewDynamicListView.swift in Sources */,
 				E5180A5C28EF5C210066E1E4 /* ReviewListView.swift in Sources */,
 				017A96B1291997DA006D3D76 /* ProfileImageLargeView.swift in Sources */,
+				01F5D1C32925953C000F52F1 /* EditProfileView.swift in Sources */,
 				E5206B2E28EE10ED00EFF316 /* ExperienceListView.swift in Sources */,
+				011B63DD2926C114009257CB /* EditProfileInterestsListView.swift in Sources */,
 				93DF3604291ECBD000196878 /* TagReviewModel.swift in Sources */,
 				9304632A291C34DB00CA7795 /* CreateImagePickerButton.swift in Sources */,
 				E51CB0C7290B31AE00DBAC7C /* FormattedDate.swift in Sources */,
@@ -1299,6 +1346,7 @@
 				E57DE48528F7548600DB4447 /* TagOnBoardingView.swift in Sources */,
 				93B5E6B129199996004DE6B3 /* LocalBannerView.swift in Sources */,
 				E5AC55EF291AD5280077F45F /* DiscoverView.swift in Sources */,
+				9048225A292C5AE100CA2036 /* TagDefaultListView.swift in Sources */,
 				E5BD6A6928D3B3DB0097D9C6 /* AppHelper.swift in Sources */,
 				E5878AEF28EA01880044CE58 /* StrokeButtonStyle.swift in Sources */,
 			);
@@ -1451,13 +1499,14 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
 				DEVELOPMENT_TEAM = H7R4J57657;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bora-Today-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bora.Today-Dev";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need access to your location to show you relevant events. With \"Always\" we'll also send you nice notifications.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need access to your location to show you relevant events. With \"Always\" we'll also send you nice notifications.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to show you relevant events.";
@@ -1467,6 +1516,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -1493,12 +1543,13 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"Bora.Today/Preview Content\"";
 				DEVELOPMENT_TEAM = H7R4J57657;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bora-Today-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Bora.Today;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need access to your location to show you relevant events. With \"Always\" we'll also send you nice notifications.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need access to your location to show you relevant events. With \"Always\" we'll also send you nice notifications.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to show you relevant events.";
@@ -1508,6 +1559,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;

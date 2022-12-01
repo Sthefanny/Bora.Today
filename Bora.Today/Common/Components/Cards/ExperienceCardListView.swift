@@ -12,17 +12,21 @@ struct ExperienceCardListView: View {
     private var model: [ExperienceModel] = [
         .example1,
         .example2,
-        .example3
+        .example3,
+        .example4,
+        .example5,
+        .example6,
+        .example7
     ]
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             VStack(spacing: 0) {
                 LazyVStack(alignment: .leading, spacing: 16) {
                     ForEach(0..<model.count, id: \.self) { index in
                         let item = model[index]
                         HStack(spacing: 8) {
-                            ExperienceCardView(model: item, isInDiscover: true, isSaved: false)
+                            ExperienceCardView(model: item, isInDiscover: true, isSaved: item.isSaved)
                         }
                         Divider()
                             .overlay(Color.appGray)

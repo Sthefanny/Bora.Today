@@ -11,12 +11,12 @@ struct PlaceCardListView: View {
     
     private var model: [PlaceModel] = [
         .place1,
-        .place2,
-        .place3
+        .place1,
+        .place1
     ]
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             VStack(spacing: 0) {
                 LazyVStack(alignment: .leading, spacing: 16) {
                     ForEach(0..<model.count, id: \.self) { index in

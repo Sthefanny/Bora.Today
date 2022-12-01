@@ -14,6 +14,8 @@ struct ReviewRatingView: View {
     
     @Binding var rating: Int
     
+    @State private var selectedImages: [UIImage] = []
+    
     var body: some View {
         
         VStack {
@@ -26,7 +28,7 @@ struct ReviewRatingView: View {
             }
             
             //Adicionar componente TextField da Lari
-            PhotoPickerView()
+            PhotoPickerView(selectedImages: $selectedImages, maxSelectionCount: 3, isCover: false)
             
             //Adicionar TagReviewModel
             

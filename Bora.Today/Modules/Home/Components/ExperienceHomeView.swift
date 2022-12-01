@@ -11,33 +11,33 @@ struct ExperienceHomeView: View {
     let model: ExperienceModel
     let isFirst: Bool
     
-    @State private var goesToExperience: Bool = false
-    
     var body: some View {
         ZStack {
-            VStack(alignment: .leading, spacing: 0) {
-                _buildImage()
-                
-                Text(model.name)
-                    .font(.appHeadline)
-                    .foregroundColor(.appBlack)
-                    .padding(.top, 12)
-                    .padding(.bottom, 8)
-                
-                
-                VStack(alignment: .leading, spacing: 4) {
-                    _buildPlaceDetails()
-                    _buildDateDetails()
+            
+            NavigationLink(destination: ExperienceView(model: model)) {
+                VStack(alignment: .leading, spacing: 0) {
+                    _buildImage()
+                    
+                    Text(model.name)
+                        .font(.appHeadline)
+                        .foregroundColor(.appBlack)
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, 12)
+                        .padding(.bottom, 8)
+                        .frame(maxWidth: 150, alignment: .leading)
+                    
+                    
+                    VStack(alignment: .leading, spacing: 4) {
+                        _buildPlaceDetails()
+                        _buildDateDetails()
+                    }
                 }
-            }
-            .padding(.leading, getPadding())
-            .onTapGesture {
-                goesToExperience = true
+                .padding(.leading, getPadding())
             }
             
             StickerListView(stickerList: model.stickers!)
+                .frame(maxWidth: 150, alignment: .leading)
             
-            NavigationLink(destination: ExperienceView(model: model), isActive: $goesToExperience) {}
         }
     }
     
@@ -62,9 +62,12 @@ struct ExperienceHomeView: View {
             Image("pin_place")
                 .foregroundColor(.black)
             
-            Text(model.location)
+            Text(model.event.location.name)
                 .font(.appFootnote)
+                .lineLimit(1)
+                .multilineTextAlignment(.leading)
                 .foregroundColor(.appGrayText)
+                .frame(maxWidth: 150, alignment: .leading)
             
         }
     }
@@ -74,7 +77,7 @@ struct ExperienceHomeView: View {
             Image("time")
                 .foregroundColor(.black)
             
-            Text(model.datetime)
+            Text(DateHelper.getFormattedDate(model.event.initialDate, format: "MMM dd, HH:mm"))
                 .font(.appFootnote)
                 .foregroundColor(.appGrayText)
             
@@ -84,6 +87,6 @@ struct ExperienceHomeView: View {
 
 struct ExperienceHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ExperienceHomeView(model: ExperienceModel.example1, isFirst: true)
+        ExperienceHomeView(model: ExperienceModel.example3, isFirst: true)
     }
 }

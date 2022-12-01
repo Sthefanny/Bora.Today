@@ -14,36 +14,34 @@ struct ReviewListView: View {
     private var language = LocalizationManager.shared.language
     
     var body: some View {
-        GeometryReader { screen in
-            ZStack {
-                Color.appPink.background()
+        ZStack {
+            Color.appPink.background()
+            VStack(alignment: .leading) {
                 VStack(alignment: .leading) {
-                    VStack(alignment: .leading) {
-                        Text("reviewsTitle".localized(language))
-                            .font(.appTitle3)
+                    Text("reviewsTitle".localized(language))
+                        .font(.appTitle3)
                         .foregroundColor(.appWhite)
-                        
-                        Text("reviewsText".localized(language))
-                            .font(.appFootnote)
-                            .foregroundColor(.appWhite)
-                    }
-                    .padding(.leading, 21)
                     
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 12) {
-                            
-                            ForEach(0..<model.count, id: \.self) { index in
-                                let item = model[index]
-                                ReviewCardView(model: item)
-                                    .frame(width: screen.size.width - 40, alignment: .center)
-                                    .padding(.leading, index == 0 ? 21 : 0)
-                                    .padding(.trailing, index == model.count - 1 ? 21 : 0)
-                            }
+                    Text("reviewsText".localized(language))
+                        .font(.appFootnote)
+                        .foregroundColor(.appWhite)
+                }
+                .padding(.leading, 21)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        
+                        ForEach(0..<model.count, id: \.self) { index in
+                            let item = model[index]
+                            ReviewCardView(model: item)
+                                .frame(width: UIScreen.main.bounds.width - 40, alignment: .center)
+                                .padding(.leading, index == 0 ? 21 : 0)
+                                .padding(.trailing, index == model.count - 1 ? 21 : 0)
                         }
                     }
                 }
-                .padding(.vertical, 24)
             }
+            .padding(.vertical, 24)
         }
     }
 }

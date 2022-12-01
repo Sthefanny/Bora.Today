@@ -19,7 +19,7 @@ struct LatestExperiencesListView: View {
         LazyVGrid(columns: columns, alignment: .center, spacing: spacing) {
             ForEach(0..<model.experiences.count, id: \.self) { index in
                 let item = model.experiences[index]
-                ExperienceProfileView(model: item)
+                ExperienceHomeView(model: item, isFirst: false)
             }
         }
     }

@@ -24,55 +24,67 @@ struct ProfileView: View {
     
     var shouldShowBack: Bool = false
     
+    @State var isPresented = false
+    
+    @State private var isConnected: Bool = false
+    
     var body: some View {
         GeometryReader { outerscreen in
-            ScrollView {
-                VStack(alignment: .center, spacing: 0) {
-                    ZStack{
-                        if isSelfProfile == true {
-                            backgroundPrivateColor
-                                .edgesIgnoringSafeArea(.top)
-                        } else {
-                            backgroundPublicColor
-                                .edgesIgnoringSafeArea(.top)
-                        }
-                        VStack {
-                            if shouldShowBack {
-                                HeaderView()
-                                    .padding(.top, 32)
-                            }
-                            ProfileHeaderView(isModelView: $isSelfProfile, halfButtonHeight: $halfButtonHeight, model: UserModel.example2)
-                                .padding(.top, 52)
-                        }
-                    }
-                    .edgesIgnoringSafeArea(.top)
-                    
+            ZStack {
+                ScrollView(showsIndicators: false) {
                     VStack(alignment: .center, spacing: 0) {
-                        Text(model.bio)
-                            .font(.footnote)
-                            .multilineTextAlignment(.center)
-                            .padding(.top, 16 + halfButtonHeight)
-                            .padding(.bottom, 8)
-                    }
-                    .padding(.horizontal, AppConfig.safeAreaHorizontal)
-                    
-                    TagInterestsView(model: UserModel.example1)
-                        .padding(.bottom, 32)
-                    
-                    ProfileConnectionsView()
-                        .padding(.bottom, 32)
-                    
-                    VStack{
-                        HStack(spacing: 0){
-                            Text("lastExperiences".localized(language))
-                                .font(.appHeadline)
-                            Spacer()
+                        ZStack{
+                            if isSelfProfile == true {
+                                backgroundPrivateColor
+                                    .edgesIgnoringSafeArea(.top)
+                            } else {
+                                backgroundPublicColor
+                                    .edgesIgnoringSafeArea(.top)
+                            }
+                            VStack {
+                                if shouldShowBack {
+                                    HeaderView()
+                                        .padding(.top, 46)
+                                }
+                                ProfileHeaderView(isModelView: $isSelfProfile, halfButtonHeight: $halfButtonHeight, isPresented: $isPresented, isConnected: $isConnected, model: model)
+                                    .padding(.top, 52)
+                            }
                         }
-                        .padding(.bottom, 16)
-                        LatestExperiencesListView(model: TopExperienceModel.example)
+                        .edgesIgnoringSafeArea(.top)
+                        
+                        VStack(alignment: .center, spacing: 0) {
+                            Text(model.bio)
+                                .font(.footnote)
+                                .multilineTextAlignment(.center)
+                                .padding(.top, 16 + halfButtonHeight)
+                                .padding(.bottom, 8)
+                        }
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                        
+                        TagInterestsView(model: model)
+                            .padding(.bottom, 32)
+                            .padding(.top, 8)
+                        
+                        ProfileConnectionsView()
+                            .padding(.bottom, 32)
+                        
+                        VStack{
+                            HStack(spacing: 0){
+                                Text("lastExperiences".localized(language))
+                                    .font(.appHeadline)
+                                Spacer()
+                            }
+                            .padding(.bottom, 16)
+                            
+                            LatestExperiencesListView(model: TopExperienceModel.example)
+                        }
+                        .padding(.horizontal, AppConfig.safeAreaHorizontal)
+                        
                     }
-                    .padding(.horizontal, AppConfig.safeAreaHorizontal)
                 }
+                .padding(.bottom, 64)
+                
+                UnfriendView(isPresented: $isPresented, isConnected: $isConnected)
             }
         }
         .navigationBarTitle("")

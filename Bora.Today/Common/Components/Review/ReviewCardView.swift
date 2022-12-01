@@ -13,7 +13,7 @@ struct ReviewCardView: View {
     var body: some View {
         VStack {
             HStack(alignment: .top) {
-                ProfileImageView(model: nil)
+                ProfileImageView(model: model.user)
                 VStack(alignment: .leading) {
                     HStack(alignment: .top) {
                         Text("@" + model.user.username + " em " + model.location)
@@ -40,6 +40,7 @@ struct ReviewCardView: View {
                         ForEach(0..<model.tags!.count, id: \.self) { index in
                             let item = model.tags![index]
                             TagDefaultView(model: item, isSelected: false)
+                                .disabled(true)
                         }
                     }
                 }

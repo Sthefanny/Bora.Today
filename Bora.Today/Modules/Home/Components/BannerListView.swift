@@ -12,14 +12,18 @@ struct BannerListView: View {
     @State private var currentIndex = 0
     
     var body: some View {
+        VStack {
             TabView(selection: $currentIndex.animation()) {
                 ForEach(0..<model.experiences.count, id: \.self) { index in
                     let item = model.experiences[index]
-                    ImageBannerView(model: item, isFirst: index == 0, isLast: index == model.experiences.count-1)
+                    NavigationLink(destination: ExperienceView(model: item)) {
+                        ImageBannerView(model: item, isFirst: index == 0, isLast: index == model.experiences.count-1)
+                    }
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
             .overlay(PageDotsIndexView(numberOfPages: model.experiences.count, currentIndex: currentIndex))
+        }
     }
 }
 
